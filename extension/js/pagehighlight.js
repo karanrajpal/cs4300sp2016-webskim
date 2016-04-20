@@ -8,11 +8,13 @@ keywords.filter(function(item, pos) {
 var paras = document.querySelectorAll('p.story-body-text.story-content');
 for (var i = 0; i < paras.length; i++) {
 	for (var j = 0; j < keywords.length; j++) {
-		if(paras[i].innerHTML.toLowerCase().indexOf(keywords[j])>0) {
-			// paras[i].style.background = 'yellow';
-			var sentences = paras[i].split('. ');
-			console.log(sentences);
-			debugger;
+		var sentences = paras[i].innerHTML.split('. ');
+		paras[i].innerHTML = '';
+		for (var k = 0; k < sentences.length; k++) {
+			if(sentences[k].toLowerCase().indexOf(keywords[j])>0) {
+				sentences[k]='<mark>'+sentences[k]+'</mark>';
+			}
 		}
+		paras[i].innerHTML+=sentences.join('. ');
 	}
 }
