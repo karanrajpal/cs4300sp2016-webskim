@@ -7,6 +7,7 @@
 
   "browser_action": {
     "default_icon": "icon.png",
+    "default_title": "WebSkim for Chrome"
     "default_popup": "popup.html"
   },
   "content_scripts": [
@@ -17,7 +18,14 @@
     }
   ],
   "permissions": [
+    "tabs",
     "activeTab",
-    "https://ajax.googleapis.com/"
-  ]
+    "https://ajax.googleapis.com/",
+    "https://www.twitter.com/",
+    "https://api.twitter.com/oauth/request_token",
+    "https://api.twitter.com/oauth/authorize",
+    "https://api.twitter.com/oauth/access_token",
+    "https://api.twitter.com/"
+]
+  }
 }
