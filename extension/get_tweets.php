@@ -1,4 +1,5 @@
 <?php
+
 	require_once('twitter_proxy.php');
 	// Twitter OAuth Config options
 	$oauth_access_token = '763105153-dHwnEyUXc6dye08ezOGHCBS8axicocUlohDltfVs';
@@ -20,6 +21,14 @@
 		$count							// The number of tweets to pull out
 	);
 	// Invoke the get method to retrieve results via a cURL request
+	function console_log( $data ){
+		echo '<script>';
+		echo 'console.log('. json_encode( $data ) .')';
+		echo '</script>';
+	}
+	$myvar = array(1,2,3);
+	console_log($myvar);
+
 	$tweets = $twitter_proxy->get($twitter_url);
 	echo $tweets;
 ?>
