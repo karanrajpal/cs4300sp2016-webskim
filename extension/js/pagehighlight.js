@@ -1,3 +1,4 @@
+var jsonScore;
 function getKeywords() {
 	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
 	keywords.filter(function(item, pos) { 
@@ -9,31 +10,62 @@ function getKeywords() {
 	return keywords;
 }
 
+function getArticleCategory() {
+  return document.querySelector('[name="CG"]').getAttribute('content');
+
+}
+
+function getJSONFile(articleCategory) {
+  return JSON.parse(articleCategory+"JSON");
+}
 var keywords = getKeywords();
 console.log(keywords);
+var articleCategory = getArticleCategory();
+// console.log(getJSONFile(articleCategory)["inning"]);
+console.log("The article category is: "+ articleCategory);
 
 function highlight() {
+  // sentencesScore
+  var scores = [];
+  var scoreTotal = 0;
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
 	for (var i = 0; i < paras.length; i++) {
 		for (var j = 0; j < keywords.length; j++) {
 			var sentences = paras[i].innerHTML.split('. ');
 			paras[i].innerHTML = '';
 			for (var k = 0; k < sentences.length; k++) {
-				if(sentences[k].toLowerCase().indexOf(keywords[j])>0) {
-					sentences[k]='<mark>'+sentences[k]+'</mark>';
-				}
+        var words = sentences[k].split(" ");
+        var scoreOfThisSentence = 0;
+        for(var m=0; m<words.length; m++) {
+          var word = words[m];
+          if(jsonScore[word]!= undefined) {
+            scoreOfThisSentence+=jsonScore[word];
+          }
+        }
+        console.log(scoreOfThisSentence);
+        scores.push(scoreOfThisSentence);
+        scoreTotal+=scoreOfThisSentence;
+        if(scoreOfThisSentence/words.length>0.02) {
+          sentences[k]='<mark>'+sentences[k]+'</mark>';
+        }
+				// if(sentences[k].toLowerCase().indexOf(keywords[j])>0) {
+    //       scoreOfThisSentence+= 0.5;
+				// 	sentences[k]='<mark>'+sentences[k]+'</mark>';
+				// }
 			}
 			paras[i].innerHTML+=sentences.join('. ');
 		}
 	}
+  console.log("The average score is "+scoreTotal/scores.length);
 }
 
-highlight();
-
-// httpGet(weightUrl,null,function() {
-// 	var response = event.target.responseText;
-// 	setSavedData('sports',response);
-// });
+var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+httpGet(weightUrl,null,function() {
+	var response = event.target.responseText;
+  jsonScore = JSON.parse(response);
+  highlight();
+	// setSavedData('sports',response);
+});
 
 /* Helper functions */
 function setSavedData(key, value) {
@@ -1682,11 +1714,11 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 	    params,
 	    function (reply,err) {
 	    	if (err) {
-	    		console.log('error with searching for tweets');
-	    		console.log(err);
+	    		// console.log('error with searching for tweets');
+	    		// console.log(err);
 	    	}
 	    	if (reply){
-	    		console.log(reply.statuses);
+	    		// console.log(reply.statuses);
 	    		var tweets = reply.statuses;
 	    		for (var j = tweets.length - 1; j >= 0; j--) {
 	    			all_tweets.push(tweets[j].text);
