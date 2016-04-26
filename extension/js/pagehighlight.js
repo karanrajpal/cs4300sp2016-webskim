@@ -1629,13 +1629,21 @@ cb.__call(
     }
 );
 
+/*****************************************************************************************************************************************/
+/*****************************************************************************************************************************************/
+/********************************************GET RELEVANT TWEETS FROM TWITTER SEARCH API *************************************************/
+/*****************************************************************************************************************************************/
+/*****************************************************************************************************************************************/
+
 var all_tweets = [];
+var tweetWindow = window.open('');
 for (var i = keywords.length - 1; i >= 0; i--) {
 
 	var params = {
     	q: keywords[i],
     	result_type: "recent",
-    	count: 100
+    	count: 100,
+    	lang: 'en'
 	};
 
 	cb.__call(
@@ -1647,11 +1655,44 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 	    		console.log(err);
 	    	}
 	    	if (reply){
-	    		console.log(reply.statuses);
 	    		var tweets = reply.statuses;
+	    		var tweetDict = {};
 	    		for (var j = tweets.length - 1; j >= 0; j--) {
-	    			all_tweets.push(tweets[j].text);
-	    		};
+	    			var t = tweets[j].text;
+	    			
+	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
+	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
+					t = t.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~]/gi, '');
+					t = t.replace(/[\s+]/gi, ' ');
+					t = t.toLowerCase();
+	    			all_tweets.push(t);
+	    			
+	    			tweetWindow.document.write(t);
+					tweetWindow.document.write('<br/>');
+	    			
+	    			//frequency of words in tweets
+	    			var words = t.split(' ');
+					for (var k = 0; k < words.length; k++) {
+						var word = words[k];
+						if (!tweetDict[word]){
+							tweetDict[word] = 1;
+						}
+						else {
+							tweetDict[word]++;
+						}
+					}
+	    		}
+
+	    		//all tweets have been processed, see if any words are above threshold
+	    		var threshold = 0.5;
+	    		for (var w in tweetDict) {
+	    			if (tweetDict[w]/tweets.length > threshold && (keywords.indexOf(w) == -1) && w != 'the') {
+	    				keywords.push(w);
+	    				console.log('added keyword');
+	    				console.log(w);
+	    			}
+	    		}
+	    		console.log(tweetDict);
 	    	}
 	    },
 	    true
@@ -1659,5 +1700,12 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 };
 
 setTimeout(function(){
+	/*for (var j = all_tweets.length - 1; j >= 0; j--) {
+		var t = all_tweets[j];
+		
+		all_tweets[j] = t;
+	};*/
 	console.log('all tweets');
-	console.log(all_tweets);}, 10000);
+	console.log(all_tweets);
+	
+}, 15000);
