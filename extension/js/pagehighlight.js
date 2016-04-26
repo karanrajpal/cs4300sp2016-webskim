@@ -18,17 +18,69 @@ function getArticleCategory() {
 function getJSONFile(articleCategory) {
   return JSON.parse(articleCategory+"JSON");
 }
+
+showScoreTooltip = function() {
+    var tooltip = document.createElement('div');
+    tooltip.id="tooltip";
+    tooltip.style.position='fixed';
+    tooltip.style.width="220px";
+    tooltip.style.height="150px";
+    tooltip.style.right="10px";
+    tooltip.style.top="50px";
+    tooltip.style.padding = "10px";
+    tooltip.style.backgroundColor="black";
+    tooltip.style.opacity = '0.8';
+    tooltip.style.fontFamily = 'sans-serif';
+    tooltip.style.fontSize = '15px';
+    tooltip.style.zIndex = '1000000';
+    tooltip.style.color = 'white';
+    document.body.appendChild(tooltip);
+    tooltip.innerHTML = '<h2 style="font-family:\'sans-serif\';">Sentence score stats</h2>\
+    <br>\
+    <div id="averagescore">Reading the article...</div>\
+    <br>\
+    <div>Score : <span id="sent"></span></div>\
+    ';
+}();
+
 var keywords = getKeywords();
 console.log(keywords);
 var articleCategory = getArticleCategory();
 // console.log(getJSONFile(articleCategory)["inning"]);
-console.log("The article category is: "+ articleCategory);
+// console.log("The article category is: "+ articleCategory);
 
 function highlight() {
   // sentencesScore
   var scores = [];
   var scoreTotal = 0;
+  var wordLengthTotal= 0;
+  var totalNumberOfWords = 0;
+  var totalNumberOfSentences = 0;
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
+  for (var i = 0; i < paras.length; i++) {
+    for (var j = 0; j < keywords.length; j++) {
+      var sentences = paras[i].innerHTML.split('. ');
+      totalNumberOfSentences+=sentences.length;
+      for (var k = 0; k < sentences.length; k++) {
+        var words = sentences[k].split(" ");
+        var scoreOfThisSentence = 0;
+        for(var m=0; m<words.length; m++) {
+          var word = words[m];
+          totalNumberOfWords++;
+          wordLengthTotal+=word.length;
+          if(jsonScore[word]!= undefined) {
+            scoreOfThisSentence+=jsonScore[word];
+          }
+        }
+        scores.push(scoreOfThisSentence);
+        scoreTotal+=scoreOfThisSentence;
+      }
+    }
+  }
+  var avgScoreOfASentence = scoreTotal/scores.length;
+  var avgNumberOfWords = totalNumberOfWords/totalNumberOfSentences;
+  document.getElementById('averagescore').innerHTML="Threshold: "+avgScoreOfASentence/avgNumberOfWords;
+
 	for (var i = 0; i < paras.length; i++) {
 		for (var j = 0; j < keywords.length; j++) {
 			var sentences = paras[i].innerHTML.split('. ');
@@ -42,21 +94,17 @@ function highlight() {
             scoreOfThisSentence+=jsonScore[word];
           }
         }
-        console.log(scoreOfThisSentence);
-        scores.push(scoreOfThisSentence);
-        scoreTotal+=scoreOfThisSentence;
-        if(scoreOfThisSentence/words.length>0.02) {
-          sentences[k]='<mark>'+sentences[k]+'</mark>';
+        // console.log(scoreOfThisSentence);
+        if(scoreOfThisSentence/words.length>avgScoreOfASentence/avgNumberOfWords) {
+          sentences[k]='<mark data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
+          var sentscore = document.getElementById(\'sent\');\
+        sentscore.innerHTML = this.getAttribute(\'data-score\');\
+  ">'+sentences[k]+'</mark>';
         }
-				// if(sentences[k].toLowerCase().indexOf(keywords[j])>0) {
-    //       scoreOfThisSentence+= 0.5;
-				// 	sentences[k]='<mark>'+sentences[k]+'</mark>';
-				// }
 			}
 			paras[i].innerHTML+=sentences.join('. ');
 		}
 	}
-  console.log("The average score is "+scoreTotal/scores.length);
 }
 
 var weightUrl = "http://karanrajpal.in/webskim/sports.php";
@@ -1679,56 +1727,56 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
     }
   }
-})();
+});
 
-var cb = new Codebird();
-console.log('created codebird');
-cb.__call(
-    "oauth2_token",
-    {},
-    function (reply, err) {
-        var bearer_token;
-        if (err) {
-            console.log("error response or timeout exceeded" + err.error);
-        }
-        if (reply) {
-            bearer_token = reply.access_token;
-            console.log('bearer token');
-            console.log(bearer_token);
-            cb.setBearerToken(bearer_token);
-        }
-    }
-);
+// var cb = new Codebird();
+// console.log('created codebird');
+// cb.__call(
+//     "oauth2_token",
+//     {},
+//     function (reply, err) {
+//         var bearer_token;
+//         if (err) {
+//             console.log("error response or timeout exceeded" + err.error);
+//         }
+//         if (reply) {
+//             bearer_token = reply.access_token;
+//             console.log('bearer token');
+//             console.log(bearer_token);
+//             cb.setBearerToken(bearer_token);
+//         }
+//     }
+// );
 
-var all_tweets = [];
-for (var i = keywords.length - 1; i >= 0; i--) {
+// var all_tweets = [];
+// for (var i = keywords.length - 1; i >= 0; i--) {
 
-	var params = {
-    	q: keywords[i],
-    	result_type: "recent",
-    	count: 100
-	};
+// 	var params = {
+//     	q: keywords[i],
+//     	result_type: "recent",
+//     	count: 100
+// 	};
 
-	cb.__call(
-	    "search_tweets",
-	    params,
-	    function (reply,err) {
-	    	if (err) {
-	    		// console.log('error with searching for tweets');
-	    		// console.log(err);
-	    	}
-	    	if (reply){
-	    		// console.log(reply.statuses);
-	    		var tweets = reply.statuses;
-	    		for (var j = tweets.length - 1; j >= 0; j--) {
-	    			all_tweets.push(tweets[j].text);
-	    		};
-	    	}
-	    },
-	    true
-	);
-};
+// 	cb.__call(
+// 	    "search_tweets",
+// 	    params,
+// 	    function (reply,err) {
+// 	    	if (err) {
+// 	    		// console.log('error with searching for tweets');
+// 	    		// console.log(err);
+// 	    	}
+// 	    	if (reply){
+// 	    		// console.log(reply.statuses);
+// 	    		var tweets = reply.statuses;
+// 	    		for (var j = tweets.length - 1; j >= 0; j--) {
+// 	    			all_tweets.push(tweets[j].text);
+// 	    		};
+// 	    	}
+// 	    },
+// 	    true
+// 	);
+// };
 
-setTimeout(function(){
-	console.log('all tweets');
-	console.log(all_tweets);}, 10000);
+// setTimeout(function(){
+// 	console.log('all tweets');
+// 	console.log(all_tweets);}, 10000);
