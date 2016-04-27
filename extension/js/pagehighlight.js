@@ -1,5 +1,134 @@
 var jsonScore;
 
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************** TD-IDF in-article functions *****************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+
+var tf = {};
+var df = {};
+var totalNumberOfSentences = 0;
+var tfidf = {};
+
+function getTF_DF() {
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+	var allSentences = [];
+
+	//go through each paragraph to get 'docs' - sentences
+	for (var i = 0; i < paras.length; i++) {
+		
+		//get all docs (sentences) in paragraph
+		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]\s+(?=[A-Z"“])/);
+		totalNumberOfSentences+=sentences.length;
+		//strip last sentence of period
+		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
+
+		//add current docs to all docs
+		for (var k = 0; k < sentences.length; k++) {
+			//strip all sentences of links
+			sentences[k] = sentences[k].replace(/<a.+">/g, '');
+			sentences[k] = sentences[k].replace(/<\/a>/g, '');
+			//strip all sentences of quotation marks, commas, semicolons, colons
+			sentences[k] = sentences[k].replace(/["“”,:;]/g, '');
+			//strip of --- clauses
+			sentences[k] = sentences[k].replace(/(?=\s*)-+(?=\s+)/g,'')
+			//lowercase all
+			sentences[k] = sentences[k].toLowerCase();
+			allSentences.push(sentences[k]);
+		}
+	}
+
+	//get term frequency and list of docs which term appears in for each term
+	for (var j = 0; j < allSentences.length; j++){
+		var words = allSentences[j].split(' ');
+			
+			for (var w = 0; w < words.length; w++) {
+				var word = words[w];
+				//increase term frequency by 1
+				if (!tf[word]) {
+					tf[word] = 1;
+				}
+				else {
+					tf[word] += 1;
+				}
+				//if no doc list for term yet, create one
+				if (!df[word]) {
+					df[word] = [j];
+				}
+				else {
+					//if current doc number not in term doc list, add it
+					if (df[word].indexOf(j) == -1) {
+						df[word].push(j);
+					}
+				}
+			}
+	}
+	//console.log(tf);
+	//console.log(df);
+}
+
+/*TODO: bump up TF of keywords*/
+function bumpKeywords() {
+	
+}
+
+function calculateTFIDF() {
+	var keys = Object.keys(tf);
+	for (var i = 0; i < keys.length; i++) {
+		var term = keys[i];
+		tfidf[term] = (tf[term]/keys.length) * (df[term].length/totalNumberOfSentences); 
+	}
+}
+
+/*makes TF-IDF vector for document - taken from class demo04  */
+function toVec(doc) {
+	var v = {};
+	var terms = doc.split(' ');
+	for (var i = 0; i < terms.length; i++) {
+		var t = terms[i];
+		v[t] = tfidf[t];
+	}
+	return v;
+}
+
+function cosSim(dvec) {
+	var docterms = Object.keys(dvec);
+	var a2 = 0;
+	var b2 = 0;
+	var ab = 0;
+	for (var i = 0; i < docterms.length; i++) {
+		var term = docterms[i];
+		ascore = dvec[term];
+		if (jsonScore[term] != undefined) {
+			bscore = jsonScore[term];
+			a2 += Math.power(ascore,2);
+			b2 += Math.power(bscore,2);
+			ab += (ascore * bscore);
+		}
+	}
+
+	a2 = Math.sqrt(a2);
+	b2 = Math.sqrt(b2);
+	var a2b2 = a2 * b2;
+	var cossim = ab/a2b2;
+	return cossim;
+}
+
+/*TODO: get cos sim of docs, highlight if above threshold */
+function hiliteTFIDF(){
+	var threshold = 0.6			//this is super arbitrary idk
+}
+
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+
+
+
 function getKeywords() {
 	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
 	keywords.filter(function(item, pos) { 
@@ -144,66 +273,6 @@ function httpGet(theUrl,body,callback) {
     xmlHttp.onload = callback;
     return xmlHttp.responseText;
 }
-
-/***************************************************************************************************************************/
-/***************************************************************************************************************************/
-/***************************************** TD-IDF in-article functions *****************************************************/
-/***************************************************************************************************************************/
-/***************************************************************************************************************************/
-
-var tf = {};
-var df = {};
-
-function getTFIDF() {
-	var paras = document.querySelectorAll('p.story-body-text.story-content');
-	var totalNumberOfSentences = 0;
-	var allSentences = [];
-
-	//go through each paragraph to get 'docs' - sentences
-	for (var i = 0; i < paras.length; i++) {
-		
-		//get all docs (sentences) in paragraph
-		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
-		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]\s+(?=[A-Z"“])/);
-		totalNumberOfSentences+=sentences.length;
-		//strip last sentence of period
-		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
-
-		//add current docs to all docs
-		for (var k = 0; k < sentences.length; k++) {
-			allSentences.push(sentences[k]);
-		}
-	}
-
-	//get term frequency and list of docs which term appears in for each term
-	for (var j = 0; j < allSentences.length; j++){
-		var words = allSentences[j].split(' ');
-			
-			for (var w in words) {
-				//increase term frequency by 1
-				if (!tf[w]) {
-					tf[w] = 1;
-				}
-				else {
-					tf[w] += 1;
-				}
-				//if no doc list for term yet, create one
-				if (!df[w]) {
-					df[w] = [j];
-				}
-				else {
-					//if current doc number not in term doc list, add it
-					if (df[w].indexOf(j) == -1) {
-						df[w].push(j);
-					}
-				}
-			}
-	}
-
-	console.log(tf);
-	console.log(df);
-}
-
 
 "use strict";
 
