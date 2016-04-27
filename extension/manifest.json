@@ -2,11 +2,11 @@
   "manifest_version": 2,
 
   "name": "WebSkim",
-  "description": "This extension shows a Google Image search result for the current page",
+  "description": "WebSkim highlights pages for you automatically using Information Retrieval and Machine Learning",
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
+    "default_icon": "ws.png",
     "default_title": "WebSkim for Chrome",
     "default_popup": "popup.html"
   },
@@ -35,6 +35,7 @@
   "permissions": [
     "tabs",
     "activeTab",
+    "storage",
     "https://ajax.googleapis.com/",
     "https://www.twitter.com/",
     "https://api.twitter.com/oauth/request_token",
