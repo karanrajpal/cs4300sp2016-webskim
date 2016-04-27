@@ -1,4 +1,5 @@
 var jsonScore;
+
 function getKeywords() {
 	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
 	keywords.filter(function(item, pos) { 
@@ -110,8 +111,8 @@ function highlight() {
 var weightUrl = "http://karanrajpal.in/webskim/sports.php";
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
-  jsonScore = JSON.parse(response);
-  highlight();
+	jsonScore = JSON.parse(response);
+	highlight();
 	// setSavedData('sports',response);
 });
 
@@ -142,6 +143,65 @@ function httpGet(theUrl,body,callback) {
     xmlHttp.send();
     xmlHttp.onload = callback;
     return xmlHttp.responseText;
+}
+
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************** TD-IDF in-article functions *****************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+
+var tf = {};
+var df = {};
+
+function getTFIDF() {
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+	var totalNumberOfSentences = 0;
+	var allSentences = [];
+
+	//go through each paragraph to get 'docs' - sentences
+	for (var i = 0; i < paras.length; i++) {
+		
+		//get all docs (sentences) in paragraph
+		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]\s+(?=[A-Z"“])/);
+		totalNumberOfSentences+=sentences.length;
+		//strip last sentence of period
+		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
+
+		//add current docs to all docs
+		for (var k = 0; k < sentences.length; k++) {
+			allSentences.push(sentences[k]);
+		}
+	}
+
+	//get term frequency and list of docs which term appears in for each term
+	for (var j = 0; j < allSentences.length; j++){
+		var words = allSentences[j].split(' ');
+			
+			for (var w in words) {
+				//increase term frequency by 1
+				if (!tf[w]) {
+					tf[w] = 1;
+				}
+				else {
+					tf[w] += 1;
+				}
+				//if no doc list for term yet, create one
+				if (!df[w]) {
+					df[w] = [j];
+				}
+				else {
+					//if current doc number not in term doc list, add it
+					if (df[w].indexOf(j) == -1) {
+						df[w].push(j);
+					}
+				}
+			}
+	}
+
+	console.log(tf);
+	console.log(df);
 }
 
 
@@ -1727,7 +1787,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
     }
   }
-<<<<<<< HEAD
+
 })();
 
 var cb = new Codebird();
@@ -1829,58 +1889,3 @@ setTimeout(function(){
 	console.log(all_tweets);
 	
 }, 15000);
-=======
-});
-
-// var cb = new Codebird();
-// console.log('created codebird');
-// cb.__call(
-//     "oauth2_token",
-//     {},
-//     function (reply, err) {
-//         var bearer_token;
-//         if (err) {
-//             console.log("error response or timeout exceeded" + err.error);
-//         }
-//         if (reply) {
-//             bearer_token = reply.access_token;
-//             console.log('bearer token');
-//             console.log(bearer_token);
-//             cb.setBearerToken(bearer_token);
-//         }
-//     }
-// );
-
-// var all_tweets = [];
-// for (var i = keywords.length - 1; i >= 0; i--) {
-
-// 	var params = {
-//     	q: keywords[i],
-//     	result_type: "recent",
-//     	count: 100
-// 	};
-
-// 	cb.__call(
-// 	    "search_tweets",
-// 	    params,
-// 	    function (reply,err) {
-// 	    	if (err) {
-// 	    		// console.log('error with searching for tweets');
-// 	    		// console.log(err);
-// 	    	}
-// 	    	if (reply){
-// 	    		// console.log(reply.statuses);
-// 	    		var tweets = reply.statuses;
-// 	    		for (var j = tweets.length - 1; j >= 0; j--) {
-// 	    			all_tweets.push(tweets[j].text);
-// 	    		};
-// 	    	}
-// 	    },
-// 	    true
-// 	);
-// };
-
-// setTimeout(function(){
-// 	console.log('all tweets');
-// 	console.log(all_tweets);}, 10000);
->>>>>>> origin/master
