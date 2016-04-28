@@ -1,26 +1,31 @@
 var jsonScore;
 
+var tf = {};
+var df = {};
+var totalNumberOfSentences = 0;
+var tfidf = {};
+
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 /***************************************** TD-IDF in-article functions *****************************************************/
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 
-var tf = {};
-var df = {};
-var totalNumberOfSentences = 0;
-var tfidf = {};
-
+/***
+	comb all sentences for terms, get number of times a term occurs in whole doc (all sentences) 
+	list of doc numbers (sentence index) where term occurs                                      
+***/
 function getTF_DF() {
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
 	var allSentences = [];
+
 
 	//go through each paragraph to get 'docs' - sentences
 	for (var i = 0; i < paras.length; i++) {
 		
 		//get all docs (sentences) in paragraph
 		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
-		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]\s+(?=[A-Z"“])/);
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
 		totalNumberOfSentences+=sentences.length;
 		//strip last sentence of period
 		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
@@ -30,8 +35,8 @@ function getTF_DF() {
 			//strip all sentences of links
 			sentences[k] = sentences[k].replace(/<a.+">/g, '');
 			sentences[k] = sentences[k].replace(/<\/a>/g, '');
-			//strip all sentences of quotation marks, commas, semicolons, colons
-			sentences[k] = sentences[k].replace(/["“”,:;]/g, '');
+			//strip all sentences of quotation marks, commas, semicolons, colons, parentheses
+			sentences[k] = sentences[k].replace(/["“”,:;()]/g, '');
 			//strip of --- clauses
 			sentences[k] = sentences[k].replace(/(?=\s*)-+(?=\s+)/g,'')
 			//lowercase all
@@ -65,24 +70,32 @@ function getTF_DF() {
 				}
 			}
 	}
-	//console.log(tf);
-	//console.log(df);
+	//console.log(Object.keys(tf).length);
+	//console.log(Object.keys(df).length);
 }
 
-/*TODO: bump up TF of keywords*/
-function bumpKeywords() {
-	
+/*bump up TF of keywords by 5 - idk this is also random*/
+function bumpKeywords(keywords) {
+	for (var i = 0; i < keywords.length; i++) {
+		var keyword = keywords[i];
+		if (tf[keyword] != undefined) {
+			tf[keyword] += 5;
+		}
+	}
 }
 
+/*calculate the TF-IDF of each word in the article*/
 function calculateTFIDF() {
+	//console.log(df);
 	var keys = Object.keys(tf);
 	for (var i = 0; i < keys.length; i++) {
 		var term = keys[i];
+
 		tfidf[term] = (tf[term]/keys.length) * (df[term].length/totalNumberOfSentences); 
 	}
 }
 
-/*makes TF-IDF vector for document - taken from class demo04  */
+/*makes TF-IDF vector for document - taken from class demo04 */
 function toVec(doc) {
 	var v = {};
 	var terms = doc.split(' ');
@@ -93,6 +106,7 @@ function toVec(doc) {
 	return v;
 }
 
+/*calculate the cosine similarity between a sentence and the training corpus of articles for the article's category*/
 function cosSim(dvec) {
 	var docterms = Object.keys(dvec);
 	var a2 = 0;
@@ -103,8 +117,8 @@ function cosSim(dvec) {
 		ascore = dvec[term];
 		if (jsonScore[term] != undefined) {
 			bscore = jsonScore[term];
-			a2 += Math.power(ascore,2);
-			b2 += Math.power(bscore,2);
+			a2 += Math.pow(ascore,2);
+			b2 += Math.pow(bscore,2);
 			ab += (ascore * bscore);
 		}
 	}
@@ -116,18 +130,53 @@ function cosSim(dvec) {
 	return cossim;
 }
 
-/*TODO: get cos sim of docs, highlight if above threshold */
+/*get cos sim of docs, highlight if above threshold */
 function hiliteTFIDF(){
+
+	getTF_DF();
+	bumpKeywords(keywords);
+	calculateTFIDF();
+
+	//console.log(tf);
+	//console.log(tfidf);
+
 	var threshold = 0.6			//this is super arbitrary idk
+
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+	for (var i = 0; i < paras.length; i++) {
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		paras[i].innerHTML = '';
+		console.log(sentences);
+		for (var k = 0; k < sentences.length; k++) {
+			var sentence = sentences[k];
+			//strip all sentences of links
+			sentence = sentence.replace(/<a.+">/g, '');
+			sentence = sentence.replace(/<\/a>/g, '');
+			//strip all sentences of quotation marks, commas, semicolons, colons
+			sentence = sentence.replace(/["“”,:;()]/g, '');
+			//strip of --- clauses
+			sentence = sentence.replace(/(?=\s*)-+(?=\s+)/g,'')
+			//lowercase all
+			sentence = sentence.toLowerCase();
+
+			svec = toVec(sentence);
+			var sentScore = cosSim(svec);
+			if (sentScore > threshold) {
+				sentences[k]='<mark tfidf-score="'+ sentScore +'" onmouseover="\
+				var sentscore = document.getElementById(\'sent\');\
+				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
+				">'+sentences[k]+'</mark>';
+			}
+		}
+		paras[i].innerHTML+=sentences.join('. ');
+	}
 }
 
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
+/******************************************ONLOAD ARTICLE PROCESSING FUNCTIONS**********************************************/
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
-/***************************************************************************************************************************/
-
-
 
 function getKeywords() {
 	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
@@ -172,12 +221,6 @@ showScoreTooltip = function() {
     <div>Score : <span id="sent"></span></div>\
     ';
 }();
-
-var keywords = getKeywords();
-console.log(keywords);
-var articleCategory = getArticleCategory();
-// console.log(getJSONFile(articleCategory)["inning"]);
-// console.log("The article category is: "+ articleCategory);
 
 function highlight() {
   // sentencesScore
@@ -237,15 +280,33 @@ function highlight() {
 	}
 }
 
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+/*************************************************ACTUAL CODE TO RUN***************************************************************/
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
 var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+var keywords = getKeywords();
+//console.log(keywords);
+var articleCategory = getArticleCategory();
+// console.log(getJSONFile(articleCategory)["inning"]);
+// console.log("The article category is: "+ articleCategory);
+
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
 	jsonScore = JSON.parse(response);
-	highlight();
+	//highlight();
+	hiliteTFIDF();
 	// setSavedData('sports',response);
 });
 
-/* Helper functions */
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+/**************************************************HELPER FUNCTIONS****************************************************************/
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
 function setSavedData(key, value) {
     var jsonfile = {};
     jsonfile[key] = value;
@@ -1871,8 +1932,8 @@ cb.__call(
         }
         if (reply) {
             bearer_token = reply.access_token;
-            console.log('bearer token');
-            console.log(bearer_token);
+            //console.log('bearer token');
+            //console.log(bearer_token);
             cb.setBearerToken(bearer_token);
         }
     }
@@ -1941,7 +2002,7 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 	    				console.log(w);
 	    			}
 	    		}
-	    		console.log(tweetDict);
+	    		//console.log(tweetDict);
 	    	}
 	    },
 	    true
@@ -1954,7 +2015,7 @@ setTimeout(function(){
 		
 		all_tweets[j] = t;
 	};*/
-	console.log('all tweets');
-	console.log(all_tweets);
+	//console.log('all tweets');
+	//console.log(all_tweets);
 	
 }, 15000);
