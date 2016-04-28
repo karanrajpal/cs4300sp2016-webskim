@@ -5,6 +5,37 @@ var df = {};
 var totalNumberOfSentences = 0;
 var tfidf = {};
 
+/*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
+/*some words removed:
+	against
+	best
+	big
+	different
+	face
+	faces
+	first
+	greatest
+	highest
+	last
+	latest
+	longest
+	most
+	needs
+	newest
+	oldest
+	opening
+	problem
+	problems
+	smallest
+	state
+	states
+	without
+	work
+	working
+	youngest
+*/
+var stopwords = ['a','about','above','across','after','again','all','almost','alone','along','already','also','although','always','among','an','and','another','any','anybody','anyone','anything','anywhere','are','area','areas','around','as','ask','asked','asking','asks','at','away','b','back','backed','backing','backs','be','became','because','become','becomes','been','before','began','behind','being','beings','better','between','both','but','by','c','came','can','cannot','case','cases','certain','certainly','clear','clearly','come','could','d','did','differ','differently','do','does','done','down','down','downed','downing','downs','during','e','each','early','either','end','ended','ending','ends','enough','even','evenly','ever','every','everybody','everyone','everything','everywhere','f','fact','facts','far','felt','few','find','finds','for','four','from','full','fully','further','furthered','furthering','furthers','g','gave','general','generally','get','gets','give','given','gives','go','going','good','goods','got','great','greater','group','grouped','grouping','groups','h','had','has','have','having','he','her','here','herself','high','higher','him','himself','his','how','however','i','if','important','in','interest','interested','interesting','interests','into','is','it','its','itself','j','just','k','keep','keeps','kind','knew','know','known','knows','l','large','largely','later','least','less','let','lets','like','likely','long','longer','m','made','make','making','man','many','may','me','member','members','men','might','more','mostly','mr','mrs','much','must','my','myself','n','necessary','need','needed','needing','never','new','newer','next','no','nobody','non','noone','not','nothing','now','nowhere','number','numbers','o','of','off','often','old','older','on','once','one','only','open','opened','opens','or','order','ordered','ordering','orders','other','others','our','out','over','p','part','parted','parting','parts','per','perhaps','place','places','point','pointed','pointing','points','possible','present','presented','presenting','presents','put','puts','q','quite','r','rather','really','right','right','room','rooms','s','said','same','saw','say','says','second','seconds','see','seem','seemed','seeming','seems','sees','several','shall','she','should','show','showed','showing','shows','side','sides','since','small','smaller','so','some','somebody','someone','something','somewhere','still','still','such','sure','t','take','taken','than','that','the','their','them','then','there','therefore','these','they','thing','things','think','thinks','this','those','though','thought','thoughts','three','through','thus','to','today','together','too','took','toward','turn','turned','turning','turns','two','u','under','until','up','upon','us','use','used','uses','v','very','w','want','wanted','wanting','wants','was','way','ways','we','well','wells','went','were','what','when','where','whether','which','while','who','whole','whose','why','will','with','within','worked','works','would','x','y','year','years','yet','you','young','younger','your','yours','z']
+
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 /***************************************** TD-IDF in-article functions *****************************************************/
@@ -179,9 +210,11 @@ function hiliteTFIDF(){
 /***************************************************************************************************************************/
 
 function getKeywords() {
-	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
-	keywords.filter(function(item, pos) { 
-		if(keywords.indexOf(item)==pos && item.length>2 && item!=='and') {
+	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase();
+	keywords = keywords.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]*/g, '');
+	keywords = keywords.split(' ')
+	keywords = keywords.filter(function(item, pos) { 
+		if(keywords.indexOf(item)==pos && item.length>2 && (stopwords.indexOf(item) == -1)) {
 			return true;
 		}
 		return false;
@@ -1946,13 +1979,33 @@ cb.__call(
 /*****************************************************************************************************************************************/
 
 var all_tweets = [];
-var tweetWindow = window.open('');
-for (var i = keywords.length - 1; i >= 0; i--) {
+var articleTitle;
+//var tweetWindow = window.open('');
+
+function getTitle() {
+	title = document.getElementById('headline').textContent;
+	title = title.toLowerCase();
+	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
+	title_words = title.split(' ');
+	for (var i = 0; i < title_words.length; i++) {
+		var w = title_words[i];
+		if (stopwords.indexOf(w) != -1){
+			title_words.splice(i, 1);
+		}
+	}
+	return title_words;
+}
+
+function getTweets(keywords, title, top3) {
+
+	var search_words = keywords.concat(title).concat(top3);
+	
+	for (var i = search_words.length - 1; i >= 0; i--) {
 
 	var params = {
-    	q: keywords[i],
-    	result_type: "recent",
-    	count: 100,
+    	q: search_words[i],
+    	result_type: "mixed",
+    	count: 10,
     	lang: 'en'
 	};
 
@@ -1977,8 +2030,8 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 					t = t.toLowerCase();
 	    			all_tweets.push(t);
 	    			
-	    			tweetWindow.document.write(t);
-					tweetWindow.document.write('<br/>');
+	    			//tweetWindow.document.write(t);
+					//tweetWindow.document.write('<br/>');
 	    			
 	    			//frequency of words in tweets
 	    			var words = t.split(' ');
@@ -2008,14 +2061,4 @@ for (var i = keywords.length - 1; i >= 0; i--) {
 	    true
 	);
 };
-
-setTimeout(function(){
-	/*for (var j = all_tweets.length - 1; j >= 0; j--) {
-		var t = all_tweets[j];
-		
-		all_tweets[j] = t;
-	};*/
-	//console.log('all tweets');
-	//console.log(all_tweets);
-	
-}, 15000);
+}
