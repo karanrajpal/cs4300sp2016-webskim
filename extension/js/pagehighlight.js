@@ -1,8 +1,220 @@
 var jsonScore;
+
+var tf = {};
+var df = {};
+var totalNumberOfSentences = 0;
+var tfidf = {};
+
+/*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
+/*some words removed:
+	against
+	best
+	big
+	different
+	face
+	faces
+	first
+	greatest
+	highest
+	last
+	latest
+	longest
+	most
+	needs
+	newest
+	oldest
+	opening
+	problem
+	problems
+	smallest
+	state
+	states
+	without
+	work
+	working
+	youngest
+*/
+var stopwords = ['a','about','above','across','after','again','all','almost','alone','along','already','also','although','always','among','an','and','another','any','anybody','anyone','anything','anywhere','are','area','areas','around','as','ask','asked','asking','asks','at','away','b','back','backed','backing','backs','be','became','because','become','becomes','been','before','began','behind','being','beings','better','between','both','but','by','c','came','can','cannot','case','cases','certain','certainly','clear','clearly','come','could','d','did','differ','differently','do','does','done','down','down','downed','downing','downs','during','e','each','early','either','end','ended','ending','ends','enough','even','evenly','ever','every','everybody','everyone','everything','everywhere','f','fact','facts','far','felt','few','find','finds','for','four','from','full','fully','further','furthered','furthering','furthers','g','gave','general','generally','get','gets','give','given','gives','go','going','good','goods','got','great','greater','group','grouped','grouping','groups','h','had','has','have','having','he','her','here','herself','high','higher','him','himself','his','how','however','i','if','important','in','interest','interested','interesting','interests','into','is','it','its','itself','j','just','k','keep','keeps','kind','knew','know','known','knows','l','large','largely','later','least','less','let','lets','like','likely','long','longer','m','made','make','making','man','many','may','me','member','members','men','might','more','mostly','mr','mrs','much','must','my','myself','n','necessary','need','needed','needing','never','new','newer','next','no','nobody','non','noone','not','nothing','now','nowhere','number','numbers','o','of','off','often','old','older','on','once','one','only','open','opened','opens','or','order','ordered','ordering','orders','other','others','our','out','over','p','part','parted','parting','parts','per','perhaps','place','places','point','pointed','pointing','points','possible','present','presented','presenting','presents','put','puts','q','quite','r','rather','really','right','right','room','rooms','s','said','same','saw','say','says','second','seconds','see','seem','seemed','seeming','seems','sees','several','shall','she','should','show','showed','showing','shows','side','sides','since','small','smaller','so','some','somebody','someone','something','somewhere','still','still','such','sure','t','take','taken','than','that','the','their','them','then','there','therefore','these','they','thing','things','think','thinks','this','those','though','thought','thoughts','three','through','thus','to','today','together','too','took','toward','turn','turned','turning','turns','two','u','under','until','up','upon','us','use','used','uses','v','very','w','want','wanted','wanting','wants','was','way','ways','we','well','wells','went','were','what','when','where','whether','which','while','who','whole','whose','why','will','with','within','worked','works','would','x','y','year','years','yet','you','young','younger','your','yours','z']
+
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/***************************************** TD-IDF in-article functions *****************************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+
+/***
+	comb all sentences for terms, get number of times a term occurs in whole doc (all sentences) 
+	list of doc numbers (sentence index) where term occurs                                      
+***/
+function getTF_DF() {
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+	var allSentences = [];
+
+
+	//go through each paragraph to get 'docs' - sentences
+	for (var i = 0; i < paras.length; i++) {
+		
+		//get all docs (sentences) in paragraph
+		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		totalNumberOfSentences+=sentences.length;
+		//strip last sentence of period
+		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
+
+		//add current docs to all docs
+		for (var k = 0; k < sentences.length; k++) {
+			//strip all sentences of links
+			sentences[k] = sentences[k].replace(/<a.+">/g, '');
+			sentences[k] = sentences[k].replace(/<\/a>/g, '');
+			//strip all sentences of quotation marks, commas, semicolons, colons, parentheses
+			sentences[k] = sentences[k].replace(/["“”,:;()]/g, '');
+			//strip of --- clauses
+			sentences[k] = sentences[k].replace(/(?=\s*)-+(?=\s+)/g,'')
+			//lowercase all
+			sentences[k] = sentences[k].toLowerCase();
+			allSentences.push(sentences[k]);
+		}
+	}
+
+	//get term frequency and list of docs which term appears in for each term
+	for (var j = 0; j < allSentences.length; j++){
+		var words = allSentences[j].split(' ');
+			
+			for (var w = 0; w < words.length; w++) {
+				var word = words[w];
+				//increase term frequency by 1
+				if (!tf[word]) {
+					tf[word] = 1;
+				}
+				else {
+					tf[word] += 1;
+				}
+				//if no doc list for term yet, create one
+				if (!df[word]) {
+					df[word] = [j];
+				}
+				else {
+					//if current doc number not in term doc list, add it
+					if (df[word].indexOf(j) == -1) {
+						df[word].push(j);
+					}
+				}
+			}
+	}
+	//console.log(Object.keys(tf).length);
+	//console.log(Object.keys(df).length);
+}
+
+/*bump up TF of keywords by 5 - idk this is also random*/
+function bumpKeywords(keywords) {
+	for (var i = 0; i < keywords.length; i++) {
+		var keyword = keywords[i];
+		if (tf[keyword] != undefined) {
+			tf[keyword] += 5;
+		}
+	}
+}
+
+/*calculate the TF-IDF of each word in the article*/
+function calculateTFIDF() {
+	//console.log(df);
+	var keys = Object.keys(tf);
+	for (var i = 0; i < keys.length; i++) {
+		var term = keys[i];
+
+		tfidf[term] = (tf[term]/keys.length) * (df[term].length/totalNumberOfSentences); 
+	}
+}
+
+/*makes TF-IDF vector for document - taken from class demo04 */
+function toVec(doc) {
+	var v = {};
+	var terms = doc.split(' ');
+	for (var i = 0; i < terms.length; i++) {
+		var t = terms[i];
+		v[t] = tfidf[t];
+	}
+	return v;
+}
+
+/*calculate the cosine similarity between a sentence and the training corpus of articles for the article's category*/
+function cosSim(dvec) {
+	var docterms = Object.keys(dvec);
+	var a2 = 0;
+	var b2 = 0;
+	var ab = 0;
+	for (var i = 0; i < docterms.length; i++) {
+		var term = docterms[i];
+		ascore = dvec[term];
+		if (jsonScore[term] != undefined) {
+			bscore = jsonScore[term];
+			a2 += Math.pow(ascore,2);
+			b2 += Math.pow(bscore,2);
+			ab += (ascore * bscore);
+		}
+	}
+
+	a2 = Math.sqrt(a2);
+	b2 = Math.sqrt(b2);
+	var a2b2 = a2 * b2;
+	var cossim = ab/a2b2;
+	return cossim;
+}
+
+/*get cos sim of docs, highlight if above threshold */
+function hiliteTFIDF(){
+
+	getTF_DF();
+	bumpKeywords(keywords);
+	calculateTFIDF();
+
+	//console.log(tf);
+	//console.log(tfidf);
+
+	var threshold = 0.6			//this is super arbitrary idk
+
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+	for (var i = 0; i < paras.length; i++) {
+		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		paras[i].innerHTML = '';
+		console.log(sentences);
+		for (var k = 0; k < sentences.length; k++) {
+			var sentence = sentences[k];
+			//strip all sentences of links
+			sentence = sentence.replace(/<a.+">/g, '');
+			sentence = sentence.replace(/<\/a>/g, '');
+			//strip all sentences of quotation marks, commas, semicolons, colons
+			sentence = sentence.replace(/["“”,:;()]/g, '');
+			//strip of --- clauses
+			sentence = sentence.replace(/(?=\s*)-+(?=\s+)/g,'')
+			//lowercase all
+			sentence = sentence.toLowerCase();
+
+			svec = toVec(sentence);
+			var sentScore = cosSim(svec);
+			if (sentScore > threshold) {
+				sentences[k]='<mark tfidf-score="'+ sentScore +'" onmouseover="\
+				var sentscore = document.getElementById(\'sent\');\
+				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
+				">'+sentences[k]+'</mark>';
+			}
+		}
+		paras[i].innerHTML+=sentences.join('. ');
+	}
+}
+
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+/******************************************ONLOAD ARTICLE PROCESSING FUNCTIONS**********************************************/
+/***************************************************************************************************************************/
+/***************************************************************************************************************************/
+
 function getKeywords() {
-	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase().split(' ');
-	keywords.filter(function(item, pos) { 
-		if(keywords.indexOf(item)==pos && item.length>2 && item!=='and') {
+	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',').join(' ').toLowerCase();
+	keywords = keywords.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]*/g, '');
+	keywords = keywords.split(' ')
+	keywords = keywords.filter(function(item, pos) { 
+		if(keywords.indexOf(item)==pos && item.length>2 && (stopwords.indexOf(item) == -1)) {
 			return true;
 		}
 		return false;
@@ -42,12 +254,6 @@ showScoreTooltip = function() {
     <div>Score : <span id="sent"></span></div>\
     ';
 }();
-
-var keywords = getKeywords();
-console.log(keywords);
-var articleCategory = getArticleCategory();
-// console.log(getJSONFile(articleCategory)["inning"]);
-// console.log("The article category is: "+ articleCategory);
 
 function highlight() {
   // sentencesScore
@@ -107,15 +313,33 @@ function highlight() {
 	}
 }
 
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+/*************************************************ACTUAL CODE TO RUN***************************************************************/
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
 var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+var keywords = getKeywords();
+//console.log(keywords);
+var articleCategory = getArticleCategory();
+// console.log(getJSONFile(articleCategory)["inning"]);
+// console.log("The article category is: "+ articleCategory);
+
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
-  jsonScore = JSON.parse(response);
-  highlight();
+	jsonScore = JSON.parse(response);
+	//highlight();
+	hiliteTFIDF();
 	// setSavedData('sports',response);
 });
 
-/* Helper functions */
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+/**************************************************HELPER FUNCTIONS****************************************************************/
+/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
+
 function setSavedData(key, value) {
     var jsonfile = {};
     jsonfile[key] = value;
@@ -143,7 +367,6 @@ function httpGet(theUrl,body,callback) {
     xmlHttp.onload = callback;
     return xmlHttp.responseText;
 }
-
 
 "use strict";
 
@@ -1727,56 +1950,115 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       });
     }
   }
-});
 
-// var cb = new Codebird();
-// console.log('created codebird');
-// cb.__call(
-//     "oauth2_token",
-//     {},
-//     function (reply, err) {
-//         var bearer_token;
-//         if (err) {
-//             console.log("error response or timeout exceeded" + err.error);
-//         }
-//         if (reply) {
-//             bearer_token = reply.access_token;
-//             console.log('bearer token');
-//             console.log(bearer_token);
-//             cb.setBearerToken(bearer_token);
-//         }
-//     }
-// );
+})();
 
-// var all_tweets = [];
-// for (var i = keywords.length - 1; i >= 0; i--) {
+var cb = new Codebird();
+console.log('created codebird');
+cb.__call(
+    "oauth2_token",
+    {},
+    function (reply, err) {
+        var bearer_token;
+        if (err) {
+            console.log("error response or timeout exceeded" + err.error);
+        }
+        if (reply) {
+            bearer_token = reply.access_token;
+            //console.log('bearer token');
+            //console.log(bearer_token);
+            cb.setBearerToken(bearer_token);
+        }
+    }
+);
 
-// 	var params = {
-//     	q: keywords[i],
-//     	result_type: "recent",
-//     	count: 100
-// 	};
+/*****************************************************************************************************************************************/
+/*****************************************************************************************************************************************/
+/********************************************GET RELEVANT TWEETS FROM TWITTER SEARCH API *************************************************/
+/*****************************************************************************************************************************************/
+/*****************************************************************************************************************************************/
 
-// 	cb.__call(
-// 	    "search_tweets",
-// 	    params,
-// 	    function (reply,err) {
-// 	    	if (err) {
-// 	    		// console.log('error with searching for tweets');
-// 	    		// console.log(err);
-// 	    	}
-// 	    	if (reply){
-// 	    		// console.log(reply.statuses);
-// 	    		var tweets = reply.statuses;
-// 	    		for (var j = tweets.length - 1; j >= 0; j--) {
-// 	    			all_tweets.push(tweets[j].text);
-// 	    		};
-// 	    	}
-// 	    },
-// 	    true
-// 	);
-// };
+var all_tweets = [];
+var articleTitle;
+//var tweetWindow = window.open('');
 
-// setTimeout(function(){
-// 	console.log('all tweets');
-// 	console.log(all_tweets);}, 10000);
+function getTitle() {
+	title = document.getElementById('headline').textContent;
+	title = title.toLowerCase();
+	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
+	title_words = title.split(' ');
+	for (var i = 0; i < title_words.length; i++) {
+		var w = title_words[i];
+		if (stopwords.indexOf(w) != -1){
+			title_words.splice(i, 1);
+		}
+	}
+	return title_words;
+}
+
+function getTweets(keywords, title, top3) {
+
+	var search_words = keywords.concat(title).concat(top3);
+	
+	for (var i = search_words.length - 1; i >= 0; i--) {
+
+	var params = {
+    	q: search_words[i],
+    	result_type: "mixed",
+    	count: 10,
+    	lang: 'en'
+	};
+
+	cb.__call(
+	    "search_tweets",
+	    params,
+	    function (reply,err) {
+	    	if (err) {
+	    		console.log('error with searching for tweets');
+	    		console.log(err);
+	    	}
+	    	if (reply){
+	    		var tweets = reply.statuses;
+	    		var tweetDict = {};
+	    		for (var j = tweets.length - 1; j >= 0; j--) {
+	    			var t = tweets[j].text;
+	    			
+	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
+	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
+					t = t.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~]/gi, '');
+					t = t.replace(/[\s+]/gi, ' ');
+					t = t.toLowerCase();
+	    			all_tweets.push(t);
+	    			
+	    			//tweetWindow.document.write(t);
+					//tweetWindow.document.write('<br/>');
+	    			
+	    			//frequency of words in tweets
+	    			var words = t.split(' ');
+					for (var k = 0; k < words.length; k++) {
+						var word = words[k];
+						if (!tweetDict[word]){
+							tweetDict[word] = 1;
+						}
+						else {
+							tweetDict[word]++;
+						}
+					}
+	    		}
+
+	    		//all tweets have been processed, see if any words are above threshold
+	    		var threshold = 0.5;
+	    		for (var w in tweetDict) {
+	    			if (tweetDict[w]/tweets.length > threshold && (keywords.indexOf(w) == -1) && w != 'the') {
+	    				keywords.push(w);
+	    				console.log('added keyword');
+	    				console.log(w);
+	    			}
+	    		}
+	    		//console.log(tweetDict);
+	    	}
+	    },
+	    true
+	);
+};
+}
