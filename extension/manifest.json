@@ -3,7 +3,7 @@
 
   "name": "WebSkim",
   "description": "WebSkim highlights pages for you automatically using Information Retrieval and Machine Learning",
-  "version": "1.0",
+  "version": "1.0.1",
 
   "browser_action": {
     "default_icon": "ws.png",
@@ -13,35 +13,14 @@
   "content_scripts": [
     {
       "matches": ["*://*.nytimes.com/*"],
-      "run_at": "document_end",
-      // "css": ["minified/pagehighlight.css"],
-      "js": ["js/jquery-1.11.1.min.js", "js/codebird.js", "js/pagehighlight.js"]
+      "js": ["js/pagehighlight.js"]
     }
   ],
-
-  "background": {
-    "scripts": [
-      "js/lib/jquery-1.10.1.min.js",
-      "js/lib/bootstrap.js",
-      "js/lib/async.js",
-      "js/lib/codebird.js",
-      "js/common.js",
-      "js/store.js",
-      "js/background.js"
-    ],
-    "persistent": true
-  },
 
   "permissions": [
     "tabs",
     "activeTab",
     "storage",
-    "https://ajax.googleapis.com/",
-    "https://www.twitter.com/",
-    "https://api.twitter.com/oauth/request_token",
-    "https://api.twitter.com/oauth/authorize",
-    "https://api.twitter.com/oauth/access_token",
-    "https://api.twitter.com/"
-    ],
-  "web_accessible_resources": ["js/tweets.js", "get_tweets.php"]
+    "https://ajax.googleapis.com/"
+  ]
 }
