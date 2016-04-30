@@ -263,18 +263,20 @@ showScoreTooltip = function() {
     tooltip.id="tooltip";
     tooltip.style.position='fixed';
     tooltip.style.width="220px";
-    tooltip.style.height="150px";
+    tooltip.style.height="170px";
     tooltip.style.right="10px";
-    tooltip.style.top="50px";
+    tooltip.style.top="150px";
     tooltip.style.padding = "10px";
     tooltip.style.backgroundColor="black";
     tooltip.style.opacity = '0.8';
     tooltip.style.fontFamily = 'sans-serif';
-    tooltip.style.fontSize = '15px';
+    tooltip.style.fontSize = '14px';
     tooltip.style.zIndex = '1000000';
     tooltip.style.color = 'white';
     document.body.appendChild(tooltip);
     tooltip.innerHTML = '<h2 style="font-family:\'sans-serif\';">Sentence score stats</h2>\
+    <br>\
+    <div>Hover over a sentence to see it\'s score</div>\
     <br>\
     <div id="averagescore">Reading the article...</div>\
     <br>\
@@ -356,8 +358,13 @@ var articleCategory = getArticleCategory();
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
 	jsonScore = JSON.parse(response);
-	//highlight();
-	hiliteTFIDF();
+	getSavedData('METHOD', function(items,key) {
+		if(items[key]=='tfidf') {
+			highlight();
+		} else if(items[key]=='tfidf2') {
+			hiliteTFIDF();
+		}
+	});
 	// setSavedData('sports',response);
 });
 
@@ -378,7 +385,6 @@ function setSavedData(key, value) {
 function getSavedData(key,callback) {
     var key = key || '';
     chrome.storage.sync.get(key, function(items) {
-        config[key] = items[key];
         if(callback!=null) {
             callback(items,key);
         }

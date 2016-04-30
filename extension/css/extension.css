@@ -1,0 +1,30 @@
+body {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+	width: 400px;
+	height: 200px;
+	font-size: 15px;
+}
+
+.options {
+}
+
+.save{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	color: white;
+	height: 30px;
+	position: relative;
+	text-align: center;
+}
+.save-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-block;
+	background: #4A90E2;
+	padding: 15px;
+	-webkit-transition: all 0.2s;
+	font-size: 14px;
+	cursor: pointer;
+}
