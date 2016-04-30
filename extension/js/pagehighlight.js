@@ -4,6 +4,7 @@ var tf = {};
 var df = {};
 var totalNumberOfSentences = 0;
 var tfidf = {};
+var allSentences = [];
 
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
 /*some words removed:
@@ -34,7 +35,7 @@ var tfidf = {};
 	working
 	youngest
 */
-var stopwords = ['a','about','above','across','after','again','all','almost','alone','along','already','also','although','always','among','an','and','another','any','anybody','anyone','anything','anywhere','are','area','areas','around','as','ask','asked','asking','asks','at','away','b','back','backed','backing','backs','be','became','because','become','becomes','been','before','began','behind','being','beings','better','between','both','but','by','c','came','can','cannot','case','cases','certain','certainly','clear','clearly','come','could','d','did','differ','differently','do','does','done','down','down','downed','downing','downs','during','e','each','early','either','end','ended','ending','ends','enough','even','evenly','ever','every','everybody','everyone','everything','everywhere','f','fact','facts','far','felt','few','find','finds','for','four','from','full','fully','further','furthered','furthering','furthers','g','gave','general','generally','get','gets','give','given','gives','go','going','good','goods','got','great','greater','group','grouped','grouping','groups','h','had','has','have','having','he','her','here','herself','high','higher','him','himself','his','how','however','i','if','important','in','interest','interested','interesting','interests','into','is','it','its','itself','j','just','k','keep','keeps','kind','knew','know','known','knows','l','large','largely','later','least','less','let','lets','like','likely','long','longer','m','made','make','making','man','many','may','me','member','members','men','might','more','mostly','mr','mrs','much','must','my','myself','n','necessary','need','needed','needing','never','new','newer','next','no','nobody','non','noone','not','nothing','now','nowhere','number','numbers','o','of','off','often','old','older','on','once','one','only','open','opened','opens','or','order','ordered','ordering','orders','other','others','our','out','over','p','part','parted','parting','parts','per','perhaps','place','places','point','pointed','pointing','points','possible','present','presented','presenting','presents','put','puts','q','quite','r','rather','really','right','right','room','rooms','s','said','same','saw','say','says','second','seconds','see','seem','seemed','seeming','seems','sees','several','shall','she','should','show','showed','showing','shows','side','sides','since','small','smaller','so','some','somebody','someone','something','somewhere','still','still','such','sure','t','take','taken','than','that','the','their','them','then','there','therefore','these','they','thing','things','think','thinks','this','those','though','thought','thoughts','three','through','thus','to','today','together','too','took','toward','turn','turned','turning','turns','two','u','under','until','up','upon','us','use','used','uses','v','very','w','want','wanted','wanting','wants','was','way','ways','we','well','wells','went','were','what','when','where','whether','which','while','who','whole','whose','why','will','with','within','worked','works','would','x','y','year','years','yet','you','young','younger','your','yours','z']
+var stopwords = ['a','about','above','across','after','again','all','almost','alone','along','already','also','although','always','among','an','and','another','any','anybody','anyone','anything','anywhere','are','area','areas','around','as','ask','asked','asking','asks','at','away','b','back','backed','backing','backs','be','became','because','become','becomes','been','before','began','behind','being','beings','better','between','both','but','by','c','came','can','cannot','case','cases','certain','certainly','clear','clearly','come','could','d','did','differ','differently','do','does','done','down','down','downed','downing','downs','during','e','each','early','either','end','ended','ending','ends','enough','even','evenly','ever','every','everybody','everyone','everything','everywhere','f','fact','facts','far','felt','few','find','finds','for','four','from','full','fully','further','furthered','furthering','furthers','g','gave','general','generally','get','gets','give','given','gives','go','going','good','goods','got','great','greater','group','grouped','grouping','groups','h','had','has','have','having','he','her','here','herself','high','higher','him','himself','his','how','however','i','if','important','in','interest','interested','interesting','interests','into','is','it','its','itself','j','just','k','keep','keeps','kind','knew','know','known','knows','l','large','largely','later','least','less','let','lets','like','likely','long','longer','m','made','make','making','man','many','may','me','member','members','men','might','more','mostly','mr','mrs','much','must','my','myself','n','necessary','need','needed','needing','never','new','newer','next','no','nobody','non','noone','not','nothing','now','nowhere','number','numbers','o','of','off','often','old','older','on','once','one','only','open','opened','opens','or','order','ordered','ordering','orders','other','others','our','out','over','p','part','parted','parting','parts','per','perhaps','place','places','point','pointed','pointing','points','possible','present','presented','presenting','presents','put','puts','q','quite','r','rather','really','right','right','room','rooms','s','said','same','saw','say','says','second','seconds','see','seem','seemed','seeming','seems','sees','several','shall','she','should','show','showed','showing','shows','side','sides','since','small','smaller','so','some','somebody','someone','something','somewhere','still','still','such','sure','t','take','taken','than','that','the','their','them','then','there','therefore','these','they','thing','things','think','thinks','this','those','though','thought','thoughts','three','through','thus','to','today','together','too','took','toward','turn','turned','turning','turns','two','u','under','until','up','upon','us','use','used','uses','v','very','w','want','wanted','wanting','wants','was','way','ways','we','well','wells','went','were','what','when','where','whether','which','while','who','whole','whose','why','will','with','within','worked','works','would','x','y','year','years','yet','you','young','younger','your','yours','z'];
 
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
@@ -48,24 +49,40 @@ var stopwords = ['a','about','above','across','after','again','all','almost','al
 ***/
 function getTF_DF() {
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
-	var allSentences = [];
 
 
 	//go through each paragraph to get 'docs' - sentences
 	for (var i = 0; i < paras.length; i++) {
 		
 		//get all docs (sentences) in paragraph
+		var sentences = paras[i].innerHTML;
+		
+		//strip paragraph of links
+		sentences = sentences.replace(/<a.+">(?![\<])/g, '');
+		sentences = sentences.replace(/<\/a>/g, '');
+
+		sentences = sentences.split('').reverse().join('');
+		
 		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
-		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		//var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		sentences = sentences.split(/[”]*\s[.!?](?![A-Z]|[a-z][\sA-Z])/);
+		sentences = sentences.reverse();
+
+		for (var m = 0; m < sentences.length; m++) {
+			var s = sentences[m];
+			s = s.split('').reverse().join('');
+			if (s[0] == ' ') {s = s.substring(1,s.length);}
+			sentences[m] = s;
+		}
+		console.log(sentences);
 		totalNumberOfSentences+=sentences.length;
 		//strip last sentence of period
-		sentences[sentences.length-1] = sentences[sentences.length-1].replace('.','');
+		sentences[0] = sentences[0].replace('.','');
 
 		//add current docs to all docs
 		for (var k = 0; k < sentences.length; k++) {
-			//strip all sentences of links
-			sentences[k] = sentences[k].replace(/<a.+">/g, '');
-			sentences[k] = sentences[k].replace(/<\/a>/g, '');
+			
+			
 			//strip all sentences of quotation marks, commas, semicolons, colons, parentheses
 			sentences[k] = sentences[k].replace(/["“”,:;()]/g, '');
 			//strip of --- clauses
@@ -127,7 +144,7 @@ function calculateTFIDF() {
 }
 
 /*makes TF-IDF vector for document - taken from class demo04 */
-function toVec(doc) {
+function doc2vec(doc) {
 	var v = {};
 	var terms = doc.split(' ');
 	for (var i = 0; i < terms.length; i++) {
@@ -1996,15 +2013,15 @@ function getTitle() {
 	return title_words;
 }
 
+/*get top 10 tweets (most popular) based on keywords, title, and top 3 TF-IDF words*/
 function getTweets(keywords, title, top3) {
 
 	var search_words = keywords.concat(title).concat(top3);
-	
-	for (var i = search_words.length - 1; i >= 0; i--) {
+	var query = search_words.join(' OR ');
 
 	var params = {
-    	q: search_words[i],
-    	result_type: "mixed",
+    	q: query,
+    	result_type: "popular",
     	count: 10,
     	lang: 'en'
 	};
@@ -2029,36 +2046,130 @@ function getTweets(keywords, title, top3) {
 					t = t.replace(/[\s+]/gi, ' ');
 					t = t.toLowerCase();
 	    			all_tweets.push(t);
-	    			
-	    			//tweetWindow.document.write(t);
-					//tweetWindow.document.write('<br/>');
-	    			
-	    			//frequency of words in tweets
-	    			var words = t.split(' ');
-					for (var k = 0; k < words.length; k++) {
-						var word = words[k];
-						if (!tweetDict[word]){
-							tweetDict[word] = 1;
-						}
-						else {
-							tweetDict[word]++;
-						}
-					}
 	    		}
-
-	    		//all tweets have been processed, see if any words are above threshold
-	    		var threshold = 0.5;
-	    		for (var w in tweetDict) {
-	    			if (tweetDict[w]/tweets.length > threshold && (keywords.indexOf(w) == -1) && w != 'the') {
-	    				keywords.push(w);
-	    				console.log('added keyword');
-	    				console.log(w);
-	    			}
-	    		}
-	    		//console.log(tweetDict);
 	    	}
 	    },
 	    true
 	);
-};
+
+	return search_words;
+}
+
+/*get the top 3 words with max values in a JS dictionary */
+function getTop3(dict) {
+	var sortable=[];
+	for (var word in dict) {
+		sortable.push([word, dict[word]]);
+	}
+	sortable = sortable.sort(function(a,b) {return b[1] - a[1]});
+	var topWords = [];
+	for (var k = 0; k < 3; k++) {
+		var topWord = sortable[k][0];
+		topWords.push(topWord); 
+	}
+	return topWords;
+}
+
+/*form query from title, keywords, and top 3 tf-idf words in doc*/
+function getQuery(title_words) {
+	var top3 = getTop3(tfidf);
+	var filtered_keywords = keywords.filter(function(item){
+			return (stopwords.indexOf(item) < 0 && (title_words.indexOf(item) < 0));
+		});
+	var filtered_top = top3.filter(function(item){
+			return (stopwords.indexOf(item) < 0 && (title_words.indexOf(item) < 0) && (filtered_keywords.indexOf(item) < 0));
+		});
+	var q0 = title_words.concat(filtered_keywords).concat(filtered_top);
+	return q0;
+
+}
+
+/*update query keywords with most relevant words in tweets*/
+function tweetsUpdate(q0){
+
+	var tweetWords={};
+	for (var i = 0; i < all_tweets.length; i++) {
+		var tweet = all_tweets[i];
+		var twords = tweet.split(' ');
+		// remove all stop words and words currently in keyword array from tweets
+		twords = twords.filter(function(item){
+			return (stopwords.indexOf(item) < 0 && (q0.indexOf(item) < 0));
+		});
+		for (var j=0; j<twords.length; j++) {
+			var t = twords[j];
+			if (!tweetWords[t]) {
+				tweetWords[t] = 1;
+			}
+			else {
+				tweetWords[t] += 1;
+			}
+		}
+	}
+
+	/*adds the top 3 most frequent words to the query*/
+	var topTweetWords = top3(tweetWords);
+
+	var q1 = q0.concat(topTweetWords);
+	return q1;
+}
+
+/*get vector for twitter-updated query*/
+function query2vec(q1) {
+	var v = {};
+	var terms = q1.split(' ');
+	for (var i = 0; i < terms.length; i++) {
+		var t = terms[i];
+		if(tfidf[t] != undefined) {
+			v[t] = tfidf[t];
+		}
+		else {
+			v[t] = 0;
+		}
+	}
+	return v;
+}
+
+/*create relevance score for a sentence based on Twitter-updated array of keywords as query*/
+function tqueryToSents(qvec,dvec){
+	var query_terms = Object.keys(qvec);
+	var a2 = 0;
+	var b2 = 0;
+	var ab = 0;
+	for (var i = 0; i < query_terms.length; i++) {
+		var term = qvec[i];
+		ascore = qvec[term];
+		if (dvec[term] != undefined) {
+			bscore = dvec[term];
+			a2 += Math.pow(ascore,2);
+			b2 += Math.pow(bscore,2);
+			ab += (ascore * bscore);
+		}
+	}
+
+	a2 = Math.sqrt(a2);
+	b2 = Math.sqrt(b2);
+	var a2b2 = a2 * b2;
+	var cossim = ab/a2b2;
+	return cossim;
+}
+
+/*create ranking of relevant sentences based on tweet query*/
+function rankByTweets() {
+	var title_words = getTitle();
+	var search_words = getTweets();
+	var q0 = getQuery(title_words);
+	var q1 = tweetsUpdate(q0);
+	var qvec = query2vec(q1);
+
+	var ranked = [];
+
+	for (var i = 0; i < allSentences.length; i++) {
+		var dvec = doc2vec(sentence);
+		var dscore = tqueryToSents(qvec, dvec);
+		ranked.push([i, dscore]);
+	}
+
+	ranked = ranked.sort(function(a,b) {return b[1] - a[1]});
+
+	return ranked;
 }
