@@ -43,6 +43,53 @@ var stopwords = ['a','about','above','across','after','again','all','almost','al
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 
+function stripSent(sentence) {
+	//strip all sentences of all punctuation
+	sentence = sentence.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~“”:;—‘]|’(?![a-z])/gi, '');
+	//strip of --- clauses
+	sentence = sentence.replace(/(?=\s*)-+(?=\s+)/g,'');
+	//lowercase all
+	sentence = sentence.toLowerCase();
+	//squish multiple spaces into one
+	sentence = sentence.replace(/\s+/g,' ');
+	return sentence;
+}
+
+function toSentences(sentences, doctype, toDocArray) {
+
+	//strip paragraph of links
+	sentences = sentences.replace(/<a href[^<]+">/g, '');
+	sentences = sentences.replace(/<\/a>/g, '');
+
+	sentences = sentences.split('').reverse().join('');
+		
+	//does OK for a sentence splitter, misses Mr., Mrs., Ms.
+	//var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+	sentences = sentences.split(/\s[”]*[.!?](?![A-Z]|[a-z][\sA-Z]|sr[A-Z])/);
+	sentences = sentences.reverse();
+
+	for (var m = 0; m < sentences.length; m++) {
+		var s = sentences[m];
+		s = s.split('').reverse().join('');
+		if (s[0] == ' ') {s = s.substring(1,s.length);}
+		sentences[m] = s;
+	}
+
+	if (doctype=='sents') {
+		totalNumberOfSentences+=sentences.length;
+	}
+	//strip sentences and add to sentence array if calculating TF-IDF (not if prcoessing sentences to highlight)
+	if (toDocArray) {
+		for (var k = 0; k < sentences.length; k++) {
+			var sentence = sentences[k];
+			sentence = stripSent(sentence);
+			allSentences.push(sentence);
+		}
+	}
+	
+	return sentences;
+}
+
 /***
 	comb all sentences for terms, get number of times a term occurs in whole doc (all sentences) 
 	list of doc numbers (sentence index) where term occurs                                      
@@ -56,41 +103,8 @@ function getTF_DF() {
 		
 		//get all docs (sentences) in paragraph
 		var sentences = paras[i].innerHTML;
+		sentences = toSentences(sentences, 'sents', true);
 		
-		//strip paragraph of links
-		sentences = sentences.replace(/<a.+">(?![\<])/g, '');
-		sentences = sentences.replace(/<\/a>/g, '');
-
-		sentences = sentences.split('').reverse().join('');
-		
-		//does OK for a sentence splitter, misses Mr., Mrs., Ms.
-		//var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
-		sentences = sentences.split(/[”]*\s[.!?](?![A-Z]|[a-z][\sA-Z])/);
-		sentences = sentences.reverse();
-
-		for (var m = 0; m < sentences.length; m++) {
-			var s = sentences[m];
-			s = s.split('').reverse().join('');
-			if (s[0] == ' ') {s = s.substring(1,s.length);}
-			sentences[m] = s;
-		}
-		console.log(sentences);
-		totalNumberOfSentences+=sentences.length;
-		//strip last sentence of period
-		sentences[0] = sentences[0].replace('.','');
-
-		//add current docs to all docs
-		for (var k = 0; k < sentences.length; k++) {
-			
-			
-			//strip all sentences of quotation marks, commas, semicolons, colons, parentheses
-			sentences[k] = sentences[k].replace(/["“”,:;()]/g, '');
-			//strip of --- clauses
-			sentences[k] = sentences[k].replace(/(?=\s*)-+(?=\s+)/g,'')
-			//lowercase all
-			sentences[k] = sentences[k].toLowerCase();
-			allSentences.push(sentences[k]);
-		}
 	}
 
 	//get term frequency and list of docs which term appears in for each term
@@ -118,8 +132,6 @@ function getTF_DF() {
 				}
 			}
 	}
-	//console.log(Object.keys(tf).length);
-	//console.log(Object.keys(df).length);
 }
 
 /*bump up TF of keywords by 5 - idk this is also random*/
@@ -134,7 +146,7 @@ function bumpKeywords(keywords) {
 
 /*calculate the TF-IDF of each word in the article*/
 function calculateTFIDF() {
-	//console.log(df);
+	
 	var keys = Object.keys(tf);
 	for (var i = 0; i < keys.length; i++) {
 		var term = keys[i];
@@ -192,22 +204,13 @@ function hiliteTFIDF(){
 
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
 	for (var i = 0; i < paras.length; i++) {
-		var sentences = paras[i].innerHTML.split(/(?![A-Z"])[.!?]”*\s+(?=[A-Z"“])/);
+		var sentences = paras[i].innerHTML;
+		sentences = toSentences(sentences, null, false);
 		paras[i].innerHTML = '';
-		console.log(sentences);
+
 		for (var k = 0; k < sentences.length; k++) {
 			var sentence = sentences[k];
-			//strip all sentences of links
-			sentence = sentence.replace(/<a.+">/g, '');
-			sentence = sentence.replace(/<\/a>/g, '');
-			//strip all sentences of quotation marks, commas, semicolons, colons
-			sentence = sentence.replace(/["“”,:;()]/g, '');
-			//strip of --- clauses
-			sentence = sentence.replace(/(?=\s*)-+(?=\s+)/g,'')
-			//lowercase all
-			sentence = sentence.toLowerCase();
-
-			svec = toVec(sentence);
+			var svec = doc2vec(stripSent(sentence));
 			var sentScore = cosSim(svec);
 			if (sentScore > threshold) {
 				sentences[k]='<mark tfidf-score="'+ sentScore +'" onmouseover="\
@@ -216,6 +219,8 @@ function hiliteTFIDF(){
 				">'+sentences[k]+'</mark>';
 			}
 		}
+		//console.log(tf);
+		//console.log(df);
 		paras[i].innerHTML+=sentences.join('. ');
 	}
 }
