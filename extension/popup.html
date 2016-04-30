@@ -2,31 +2,22 @@
 <html>
   <head>
     <title>WebSkim</title>
-    <!-- <script src="js/lib/jquery-1.10.1.min.js"></script> -->
-    <!-- <script src="js/lib/bootstrap.js"></script> -->
-    <!-- <script src="js/lib/async.js"></script> -->
-    <!-- <script src="js/lib/codebird.js"></script> -->
-    <!-- <script src="js/common.js"></script> -->
-    <!-- <script src="js/store.js"></script> -->
-    <!-- <script src="js/menu.js"></script> -->
-    <!-- <script src="jsons/sports.json"></script> -->
-    <!-- <script src="js/background.js"></script> -->
-    
-    <style>
-      body {
-        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
-        width: 400px;
-        height: 200px;
-        font-size: 15px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/extension.css">
     <script src="popup.js"></script>
   </head>
   <body>
-  <h1>Web<b>Skim</b></h1>
+  <h1>Web<mark>Skim</mark></h1>
   <br>
-  Open any <a href="http://nytimes.com/">NyTimes article</a> to see WebSkim in action.
-    <div id="status"></div>
+  Open any <a href="http://www.nytimes.com/2016/04/26/sports/tennis/rafael-nadal-sues-french-official-for-defamation-over-doping-allegation.html?rref=collection%2Ftimestopic%2FNadal%2C%20Rafael&action=click&contentCollection=timestopics&region=stream&module=stream_unit&version=latest&contentPlacement=2&pgtype=collection&_r=0">NyTimes article</a> to see WebSkim in action.
+  <br><br>
+  <div class="options-content">
+    <!-- <label><input type="radio" id ="keywords" name="method" value="keywords"><span>Use only Page keywords</span> </label> <br /> -->
+    <label><input type="radio" id ="tfidf" name="method" value="tfidf"><span>Use training data TF-IDF Vector</span> </label> <br />
+    <label><input type="radio" id ="tfidf2" name="method" value="tfidf2"><span>Use training data TF-IDF Vector and Page TF-IDF</span> </label> <br />
+    <div class="save">
+      <div class="save-button">Save</div>
+    </div>
+  </div>
   </body>
 </html>
 
