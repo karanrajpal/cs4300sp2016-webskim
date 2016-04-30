@@ -171,7 +171,7 @@ function hiliteTFIDF(){
 	//console.log(tf);
 	//console.log(tfidf);
 
-	var threshold = 0.6			//this is super arbitrary idk
+	var threshold = 0.4;			//this is super arbitrary idk
 
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
 	for (var i = 0; i < paras.length; i++) {
@@ -197,6 +197,11 @@ function hiliteTFIDF(){
 				var sentscore = document.getElementById(\'sent\');\
 				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
 				">'+sentences[k]+'</mark>';
+			} else {
+				sentences[k] = '<span tfidf-score="'+ sentScore +'" onmouseover="\
+				var sentscore = document.getElementById(\'sent\');\
+				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
+				">'+sentences[k]+'</span>';
 			}
 		}
 		paras[i].innerHTML+=sentences.join('. ');
