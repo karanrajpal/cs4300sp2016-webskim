@@ -1,0 +1,20 @@
+coca-cola company
+banking and financial institutions,interest rates,savings,personal finances
+trump  donald j,new york state,presidential election of 2016,elections,voting and voters,race and ethnicity,primaries and caucuses
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+android (operating system),wireless communications,google inc,cellular telephones,nexus
+computers and the internet,artificial intelligence,facebook inc
+automobiles,executive compensation,volkswagen ag
+amazon.com inc,amazon kindle,e-books and readers,bezos  jeffrey p
+appointments and executive changes,banking and financial institutions,regulation and deregulation of industry,financial conduct authority (great britain)
+jpmorgan chase & company,banking and financial institutions,company reports,dimon  james
+dodd-frank wall street reform and consumer protection act (2010),jpmorgan chase & company,bank of america corporation,wells fargo & company,bank of new york mellon corporation,federal deposit insurance corp,federal reserve system
+privacy,regulation and deregulation of industry,european union,computers and the internet
+commerce department,shopping and retail,prices (fares  fees and rates)
+kelly  megyn,trump  donald j,presidential election of 2016,fox news channel,msnbc
+mobile applications,drones (pilotless planes),london (england)
+banking and financial institutions,regulation and deregulation of industry,federal deposit insurance corp,federal reserve system
+caspersen  andrew,pjt partners inc,securities and exchange commission,moore capital management
+shopping and retail,prices (fares  fees and rates),discount selling,e-commerce,advertising and marketing,amazon.com inc
+car services and livery cabs,start-ups,small business,hopskipdrive inc,shuddle inc,zum
+dodd-frank wall street reform and consumer protection act (2010),bankruptcies,citigroup inc,federal deposit insurance corp,federal reserve system

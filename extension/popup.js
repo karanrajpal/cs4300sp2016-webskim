@@ -1,6 +1,6 @@
 function setupChoiceController() {
 	getSavedData('METHOD',function(items,key) {
-		if(items!==null) {
+		if(items!==null && typeof items[key]!=='undefined') {
 			document.getElementById(items[key]).checked = true;
 		} else {
 			document.getElementById('tfidf2').checked = true;
