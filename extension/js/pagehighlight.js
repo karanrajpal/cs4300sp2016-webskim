@@ -228,6 +228,9 @@ function hiliteTFIDF(){
 		//console.log(df);
 		paras[i].innerHTML+=sentences.join('. ');
 	}
+
+	//probably change where this is called?
+	getTweets(keywords, articleTitle);
 }
 
 /***************************************************************************************************************************/
@@ -2012,7 +2015,7 @@ cb.__call(
 /*****************************************************************************************************************************************/
 
 var all_tweets = [];
-var articleTitle;
+var articleTitle = getTitle();
 //var tweetWindow = window.open('');
 
 function getTitle() {
@@ -2032,9 +2035,12 @@ function getTitle() {
 /*get top 10 tweets (most popular) based on keywords, title, and top 3 TF-IDF words*/
 function getTweets(keywords, title, top3) {
 
-	var search_words = keywords.concat(title).concat(top3);
-	var query = search_words.join(' OR ');
-
+	//uncommented the next line - ignoring  top3, just for now
+	// var search_words = keywords.concat(title).concat(top3);
+	var search_words = keywords;
+	console.log("search words is: " +search_words);
+	search_words = search_words.splice(0,3);
+	var query = search_words.join(' ');
 	var params = {
     	q: query,
     	result_type: "popular",
@@ -2063,6 +2069,8 @@ function getTweets(keywords, title, top3) {
 					t = t.toLowerCase();
 	    			all_tweets.push(t);
 	    		}
+	    		console.log("fethed the tweets, they are: ");
+	    		console.log(all_tweets);
 	    	}
 	    },
 	    true
