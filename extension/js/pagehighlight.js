@@ -202,6 +202,8 @@ function hiliteTFIDF(){
 
 	var threshold = 0.4;			//this is super arbitrary idk
 
+	document.getElementById('averagescore').innerHTML="Threshold: "+threshold;
+
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
 	for (var i = 0; i < paras.length; i++) {
 		var sentences = paras[i].innerHTML;
