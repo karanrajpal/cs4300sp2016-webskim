@@ -43,7 +43,14 @@ var stopwords = ['a','about','above','across','after','again','all','almost','al
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 
-function stripSent(sentence) {
+function stripSent(sentence, removeLinks) {
+
+	if (removeLinks) {
+		//strip paragraph of links
+		sentence = sentence.replace(/<a [^<]+">/g, '');
+		sentence = sentence.replace(/<\/a>/g, '');
+	}
+
 	//strip all sentences of all punctuation
 	sentence = sentence.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~“”:;—‘]|’(?![a-z])/gi, '');
 	//strip of --- clauses
@@ -56,10 +63,6 @@ function stripSent(sentence) {
 }
 
 function toSentences(sentences, doctype, toDocArray) {
-
-	//strip paragraph of links
-	sentences = sentences.replace(/<a href[^<]+">/g, '');
-	sentences = sentences.replace(/<\/a>/g, '');
 
 	sentences = sentences.split('').reverse().join('');
 		
@@ -82,11 +85,11 @@ function toSentences(sentences, doctype, toDocArray) {
 	if (toDocArray) {
 		for (var k = 0; k < sentences.length; k++) {
 			var sentence = sentences[k];
-			sentence = stripSent(sentence);
+			sentence = stripSent(sentence,true);
 			allSentences.push(sentence);
 		}
+		console.log(allSentences);
 	}
-	
 	return sentences;
 }
 
@@ -212,7 +215,7 @@ function hiliteTFIDF(){
 
 		for (var k = 0; k < sentences.length; k++) {
 			var sentence = sentences[k];
-			var svec = doc2vec(stripSent(sentence));
+			var svec = doc2vec(stripSent(sentence, true));
 			var sentScore = cosSim(svec);
 			if (sentScore > threshold) {
 				sentences[k]='<mark tfidf-score="'+ sentScore +'" onmouseover="\
@@ -365,16 +368,18 @@ httpGet(weightUrl,null,function() {
 	jsonScore = JSON.parse(response);
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
+			console.log('highlighting on original');
 			highlight();
 		} else if(items[key]=='tfidf2') {
+			console.log('highlighting on TF-IDF');
 			hiliteTFIDF();
 		}
 	});
 	// setSavedData('sports',response);
-});
+});/**********************************************************************************************************************************/
+/**********************************************************************************************************************************/
 
-/**********************************************************************************************************************************/
-/**********************************************************************************************************************************/
+
 /**************************************************HELPER FUNCTIONS****************************************************************/
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
@@ -2018,7 +2023,6 @@ cb.__call(
 
 var all_tweets = [];
 var articleTitle = getTitle();
-//var tweetWindow = window.open('');
 
 function getTitle() {
 	title = document.getElementById('headline').textContent;
@@ -2031,6 +2035,7 @@ function getTitle() {
 			title_words.splice(i, 1);
 		}
 	}
+	console.log(title_words);
 	return title_words;
 }
 
