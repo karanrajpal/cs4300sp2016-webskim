@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js page-interactive section-health page-theme-standard tone-feature page-interactive-default  limit-small layout-xlarge app-interactive" itemid="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html" itemtype="http://schema.org/NewsArticle" itemscope xmlns:og="http://opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 page-interactive section-health page-theme-standard tone-feature page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 page-interactive section-health page-theme-standard tone-feature page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 page-interactive section-health page-theme-standard tone-feature page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+    <title>Diary of a Food Tracker - The New York Times</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://static01.nyt.com/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="144×144" href="https://static01.nyt.com/images/icons/ios-ipad-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114×114" href="https://static01.nyt.com/images/icons/ios-iphone-114x144.png" />
+<link rel="apple-touch-icon-precomposed" href="https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png" />
+<meta name="sourceApp" content="nyt-v5" />
+<meta id="applicationName" name="applicationName" content="interactive" />
+<meta id="foundation-build-id" name="foundation-build-id" content="" />
+<meta name="robots" content="noarchive" />
+<link rel="canonical" href="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html" />
+<meta name="hdl" content="Diary of a Food Tracker" />
+<meta name="slug" content="wiredwell-food-diary-super-tracker" />
+<meta name="channels" content="" />
+<meta itemprop="description" name="description" content="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple." />
+<meta itemprop="identifier" name="articleid" content="100000004040817" />
+<meta itemprop="inLanguage" content="en-US" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/health/index.jsonp" />
+<meta property="article:section" itemprop="articleSection" content="Health" />
+<meta name="PT" content="Multimedia" />
+<meta name="PST" content="Interactive" />
+<meta name="CG" content="health" />
+<meta name="SCG" content="" />
+<meta name="tom" content="interactive_feature" />
+<meta name="pdate" content="20151116" />
+<meta name="utime" content="20151117182252" />
+<meta name="ptime" content="20151116204446" />
+<meta name="DISPLAYDATE" content="Nov. 16, 2015" />
+<meta name="dat" content="Nov. 16, 2015" />
+<meta name="lp" content="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple." />
+<meta name="byl" content="By ALBERT SUN" />
+<meta property="og:url" content="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Diary of a Food Tracker" />
+<meta property="og:description" content="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple." />
+<meta property="fb:app_id" content="9869919170" />
+<meta name="twitter:card" value="summary_large_image" />
+<meta name="twitter:site" value="@nytimes" />
+<meta property="twitter:url" content="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html" />
+<meta property="twitter:title" content="Diary of a Food Tracker" />
+<meta property="twitter:description" content="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple." />
+<meta name="author" content="Albert Sun" />
+<meta name="col" content="Wired Well" id="column-name" />
+<meta name="og:image" content="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-facebookJumbo.jpg" />
+<meta property="article:author" content="" />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-articleLarge-v2.jpg" />
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-thumbLarge.jpg" />
+<meta name="thumbnail_150_height" content="150" />
+<meta name="thumbnail_150_width" content="150" />
+<meta name="thumbnail_75" content="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-thumbStandard.jpg" />
+<meta name="thumbnail_75_height" content="75" />
+<meta name="thumbnail_75_width" content="75" />
+<meta name="nyt-collection:display-name" content="" />
+<meta name="nyt-collection:identifier" content="wired-well" />
+<meta name="nyt-collection:url" content="http://www.nytimes.com/spotlight/wired-well" />
+<meta name="nyt-collection:tone" content="" />
+<meta name="nyt-collection:tagline" content="" />
+<meta name="nyt-collection:type" content="spotlight" />
+<meta name="CN" content="wired-well" />
+<meta name="CT" content="spotlight" />
+<meta property="article:tag" content="Obesity" />
+<meta name="des" content="Obesity" />
+<meta property="article:tag" content="Weight" />
+<meta name="des" content="Weight" />
+<meta name="keywords" content="Obesity,Weight" />
+<meta name="news_keywords" content="Obesity,Weight" />
+<meta name="dfp-ad-unit-path" content="health" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2015%2F11%2F17%2Fhealth%2Fwiredwell-food-diary-super-tracker.html" title="Diary of a Food Tracker" />
+    
+                <!--[if (gt IE 9)|!(IE)]> <!-->
+        <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/interactive/20160420-141859/css/interactive/styles.css" />
+    <!--<![endif]-->
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/interactive/20160420-141859/css/interactive/styles-ie.css" />
+    <![endif]-->
+        <script id="display_overrides">
+    []</script>
+
+
+<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(t,o)}();</script>
+
+<script id="abtestconfig" type="application/json">
+[
+    {
+        "testId": "0012",
+        "throttle": "1.0",
+        "allocation": "0.9",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "tallWatchingModule",
+        "isEnabled": true
+    },
+    {
+        "testId": "0033",
+        "throttle": "1",
+        "allocation": "0.833",
+        "variants": "5",
+        "applications": [
+            "article"
+        ],
+        "testName": "recommendedLabelTest",
+        "isEnabled": true
+    },
+    {
+        "testId": "0036",
+        "throttle": "0.1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article",
+            "homepage"
+        ],
+        "testName": "velcroSocialFollow",
+        "isEnabled": true
+    },
+    {
+        "testId": "0051",
+        "throttle": "1.0",
+        "allocation": "0.667",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "shuffleRecommendations",
+        "isEnabled": true
+    },
+    {
+        "testId": "0052",
+        "throttle": "1.0",
+        "allocation": "0.875",
+        "variants": "7",
+        "applications": [
+            "article"
+        ],
+        "testName": "paidPostDriver",
+        "isEnabled": true
+    },
+    {
+        "testId": "0061",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "paidPostFivePackMock",
+        "isEnabled": true
+    },
+    {
+        "testId": "0063",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "paidPostFivePack",
+        "isEnabled": true
+    },
+    {
+        "testId": "0064",
+        "throttle": "1",
+        "allocation": "1",
+        "variants": "1",
+        "applications": [
+            "realestate",
+            "article"
+        ],
+        "testName": "realEstateSearch",
+        "isEnabled": true
+    },
+    {
+        "testId": "0066",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "ribbonChartbeatMostEmailed",
+        "isEnabled": true
+    },
+    {
+        "testId": "0067",
+        "throttle": "0.02",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "pinnedMasthead",
+        "isEnabled": true
+    },
+    {
+        "testId": "0069",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "slideshow"
+        ],
+        "testName": "coloredSharetools",
+        "isEnabled": true
+    },
+    {
+        "testId": "0074",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "simpleExtendedByline",
+        "isEnabled": false
+    },
+    {
+        "testId": "0081",
+        "throttle": "1",
+        "allocation": "0.8",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "EOArelated",
+        "isEnabled": false
+    },
+    {
+        "testId": "0082",
+        "throttle": "0.6",
+        "allocation": "0.66",
+        "variants": "2",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "homepageTrending",
+        "isEnabled": true
+    },
+    {
+        "testId": "0085",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "1",
+        "applications": [
+            "article",
+            "collection",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "subscriberWhitelist",
+        "isEnabled": true
+    },
+    {
+        "testId": "0086",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "2",
+        "applications": [
+            "article",
+            "collection",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "nonsubscriberWhitelist",
+        "isEnabled": true
+    },
+    {
+        "testId": "0087",
+        "throttle": "0",
+        "variants": "2",
+        "allocation": "0",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "subscriberWhitelistTwo",
+        "isEnabled": true
+    },
+    {
+        "testId": "0088",
+        "throttle": "0",
+        "variants": "4",
+        "allocation": "0",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "nonsubscriberWhitelistTwo",
+        "isEnabled": true
+    },
+    {
+        "testId": "0089",
+        "throttle": "0.02",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "hpPrototype",
+        "isEnabled": true
+    },
+    {
+        "testId": "0090",
+        "throttle": "1",
+        "variants": "1",
+        "allocation": "0.5",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "photospotVHSCover",
+        "isEnabled": true
+    },
+    {
+        "testId": "0091",
+        "testName": "subscriberSurvey",
+        "throttle": "1",
+        "variants": "0",
+        "allocation": "1",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "isEnabled": false
+    },
+    {
+        "testId": "0092",
+        "testName": "nonsubscriberSurvey",
+        "throttle": "0.22",
+        "variants": "0",
+        "allocation": "1",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "isEnabled": false
+    }
+]
+</script>
+
+
+<script id="user-info-data" type="application/json">
+{ "meta": {},
+  "data": {
+    "id": "0",
+    "name": "",
+    "subscription": ["","_RPV"],
+    "demographics": {}
+  }
+}
+</script>
+
+<script>
+var require = {
+    baseUrl: 'https://a1.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'interactive/20160420-141859/js/foundation',
+        'shared': 'interactive/20160420-141859/js/shared',
+        'interactive': 'interactive/20160420-141859/js/interactive',
+        'application': 'interactive/20160420-141859/js/interactive/',
+        'videoFactory': 'https://static01.nyt.com/js2/build/video/2.0/videofactoryrequire',
+        'videoPlaylist': 'https://static01.nyt.com/js2/build/video/players/extended/2.0/appRequire',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://a1.nyt.com/assets/interactive/20160420-141859/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+    require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://a1.nyt.com/assets/interactive/20160420-141859/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+window.magnum.processFlags(["limitFabrikSave","moreFollowSuggestions","relatedCoverage","videoVHSCover","videoVHSLive","videoVHSNewControls","videoVHSShareTools","videoVHSEmbeddedOnly","mobileMediaViewer","whitelistInterstitial","seriesIssueMarginalia","serverSideCollectionUrls"]);
+</script>
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+</head>
+<body>
+    
+    <style>
+    .lt-ie10 .messenger.suggestions {
+        display: block !important;
+        height: 50px;
+    }
+
+    .lt-ie10 .messenger.suggestions .message-bed {
+        background-color: #f8e9d2;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .lt-ie10 .messenger.suggestions .message-container {
+        padding: 11px 18px 11px 30px;
+    }
+
+    .lt-ie10 .messenger.suggestions .action-link {
+        font-family: "nyt-franklin", arial, helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        color: #a81817;
+        text-transform: uppercase;
+    }
+
+    .lt-ie10 .messenger.suggestions .alert-icon {
+        background: url('https://static01.nyt.com/images/icons/icon-alert-12x12-a81817.png') no-repeat;
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        margin-top: -2px;
+        float: none;
+    }
+
+    .lt-ie10 .masthead,
+    .lt-ie10 .navigation,
+    .lt-ie10 .comments-panel {
+        margin-top: 50px !important;
+    }
+
+    .lt-ie10 .ribbon {
+        margin-top: 97px !important;
+    }
+</style>
+<div id="suggestions" class="suggestions messenger nocontent robots-nocontent" style="display:none;">
+    <div class="message-bed">
+        <div class="message-container last-message-container">
+            <div class="message">
+                <span class="message-content">
+                    <i class="icon alert-icon"></i><span class="message-title">NYTimes.com no longer supports Internet Explorer 9 or earlier. Please upgrade your browser.</span>
+                    <a href="http://www.nytimes.com/content/help/site/ie9-support.html" class="action-link">LEARN MORE »</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="shell" class="shell">
+    <header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="http://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="http://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://a1.nyt.com/assets/interactive/20160420-141859/images/foundation/logos/', 'health', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'interactive');</script>
+        </div><!-- close branding -->
+                <div class="story-meta">
+            <h6 class="kicker"><span class="kicker-label"><a href="http://www.nytimes.com/pages/health/index.html">Health</a></span><span class="pipe">|</span>Diary of a Food Tracker</h6>
+        </div><!-- close story-meta -->
+        <div id="TopNavAd" class="ad top-nav-ad nocontent robots-nocontent">
+    <div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+</div>
+        <div class="user-tools">
+            <div id="sharetools-masthead" aria-label="tools" role="group" class="sharetools theme-classic  sharetools-masthead  "
+data-shares="facebook,twitter,pinterest,email,show-all,save,More"
+data-url="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html"
+data-title="Diary of a Food Tracker"
+data-author="By ALBERT SUN"
+data-media="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-jumbo-v2.jpg"
+data-description="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple."
+	data-publish-date="November 16, 2015"
+>
+<div class="ad sharetools-inline-article-ad hidden nocontent robots-nocontent">
+</div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="http://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <div class="ad">
+        <div id="SponsorAd" class="sponsor-ad">
+            <small class="ad-sponsor">search sponsored by</small>
+        </div>
+    </div>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+<span class="story-short-url"><a href="http://nyti.ms/1kB4aNT">http://nyti.ms/1kB4aNT</a></span></header>
+            <nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+        <nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+    <div id="page" class="page">
+        <main id="main" class="main" role="main">
+                <div id="TopAd" class="ad top-ad nocontent robots-nocontent">
+    <div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+</div>
+
+<article id="story" class="story theme-interactive
+    theme-main    ">
+                
+    <header class="story-header interactive-header">
+        
+        
+                <div class="story-meta">
+                                                                <div class="kicker-container">
+                <h2 class="kicker interactive-kicker">
+                                        <span class="kicker-label">
+                        <a href="http://www.nytimes.com/pages/health/index.html">
+                            Health                        </a>
+                    </span>
+                                                            <span class="pipe">|</span>
+                                        Wired Well                </h2>
+                                    <div id="sharetools-interactive" aria-label="tools" role="group" class="sharetools theme-classic  sharetools-interactive  "
+data-shares="show-all|Share"
+data-url="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html"
+data-title="Diary of a Food Tracker"
+data-author="By ALBERT SUN"
+data-media="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-jumbo-v2.jpg"
+data-description="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple."
+	data-publish-date="November 16, 2015"
+>
+<div class="ad sharetools-inline-article-ad hidden nocontent robots-nocontent">
+</div>
+</div><!-- close shareTools -->
+                            </div>
+                                    <h1 class="story-heading interactive-headline" itemprop="headline">Diary of a Food Tracker</h1>
+            
+            <div class="story-meta-footer interactive-meta-footer">
+                <div class="interactive-byline">
+    <p class="byline-dateline"><span class="byline last-byline" itemprop="author creator" itemscope itemtype="http://schema.org/Person" >By <span class="byline-author" data-byline-name="ALBERT SUN" itemprop="name">ALBERT SUN</span></span>	<time class="dateline dateline-with-divider" datetime="2015-11-16" itemprop="datePublished" content="2015-11-16">NOV. 16, 2015</time>
+<a class="related-link" href="http://well.blogs.nytimes.com/2015/11/16/special-section-wired-well/">Related Article</a>
+    </p>
+</div>
+                 <p class="interactive-leadin summary">
+    
+        		            </p>
+            </div><!-- close story-meta-footer -->
+
+        </div><!-- close story-meta -->
+        </header>
+    <div id="wiredwell-food-diary-super-tracker" class="interactive-graphic">
+        <!--
+
+======================================================
+
+THIS IS A GENERATED TEMPLATE FILE. DO NOT EDIT.
+
+======================================================
+
+-->
+<!-- this is generated from src/style.css -->
+<style>/* Center headlines for standalone and embedded interactives */
+/*
+  Interactive Centered Headline
+  ===================== */
+
+.story.theme-interactive .story-meta .interactive-headline,
+.story.theme-interactive .story-meta .story-meta-footer {
+  text-align: center;
+  /* optional max width container */
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.story.theme-interactive .story-meta .byline-dateline {
+  margin-right: 0;
+}
+
+.story.theme-interactive .story-header .story-meta .byline+.dateline {
+  display: inline-block;
+}
+
+
+/*
+  Embedded Interactive Centered Headline
+  Insert scoop slug in place of scoop-slug-here to center
+  ===================== */
+
+/*
+#scoop-slug-here .interactive-caption {
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+*/
+/* Fullbleed interactive-graphic container */
+/* @import url("nyt5/fullbleed.css"); */
+/* Fix spacing at top of story */
+.has-top-ad .story.theme-interactive,
+.has-ribbon .story.theme-interactive {
+  margin-top: 10px;
+}
+
+/* Get rid of border under intro and share tools on mobile */
+.page-interactive-default .story.theme-main .story-header {
+  border-bottom: none;
+}
+
+/* Pad out the kicker/sharetool space */
+.story.theme-interactive .story-meta .kicker {
+  margin-bottom: 22px;
+}
+
+.viewport-medium-10 .story.theme-interactive .story-meta .kicker {
+  margin-bottom: 24px;
+}
+
+/* Override the moving sharetools on mobile */
+.story.theme-interactive .story-header .story-meta .kicker-container .sharetools {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  width: auto;
+  margin-top: -6px;
+  float: right;
+  clear: none;
+}
+
+/* Maintain the proper space with the section name and kicker next to share tools */
+.story.theme-interactive .story-header .story-meta .interactive-kicker {
+  float: left;
+  width: 65%;
+  display: inline-block;
+}
+
+/* Gets rid of the extra space under the intro that puts too much space there in mobile and desktop */
+.page-interactive-default .story.theme-main .story-header {
+  margin-bottom: 0;
+}
+
+.page-interactive-default .story.theme-main .story-header .story-meta {
+  margin-bottom: 10px;
+}
+
+/*Fixes styling on share tools at bottom of minimal interactives*/
+.story.theme-minimal .sharetools.layout-horizontal{
+  width:auto;
+  margin-top:11px;
+}
+.story.theme-minimal .sharetools.layout-horizontal .sharetool {
+  display: inline-block;
+  border-top: 0;
+}
+.story.theme-minimal .sharetools.layout-horizontal .sharetool:first-child a {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: none;
+}
+.story.theme-minimal .sharetools.layout-horizontal .sharetool a {
+  padding-left: 15px;
+  padding-right: 5px;
+  height: 20px;
+  border-left: 1px solid #e2e2e2;
+}
+.story.theme-minimal .sharetools.layout-horizontal .sharetool a:hover {
+  background-color: transparent;  
+}
+
+/* uncomment to fix related content and footer layout on max_width: 720 pages */
+/*
+.related-coverage {
+  max-width: 720px;
+}
+
+.viewport-medium-30 .page-footer nav ul,
+.viewport-medium-50 .page-footer nav ul {
+  margin-left: 28px;
+}
+
+.viewport-medium-30 .page-footer nav.last-nav {
+  float: none;
+}
+
+.viewport-medium-30 .page-footer nav.last-nav ul {
+  margin-left: 239px;
+}
+*/
+.page-interactive-default .story.theme-main .story-header p.interactive-leadin {
+  display: none;
+}
+#g-graphic {
+  position: relative;
+  z-index: 0;
+  clear: both;
+  min-height: 5000px;
+}
+#g-weight-chart-wrapper {
+  display: none;
+}
+.viewport-medium-10 #g-weight-chart-wrapper {
+  display: block;
+  background: #FFFFFF;
+  position: relative;
+  z-index: 2;
+}
+.viewport-medium-10 #g-weight-chart {
+  position: relative;
+}
+#g-inline .g-mobile-chart-wrapper,
+#g-weight-chart {
+  font-family: "nyt-franklin", arial, sans-serif;
+  width: 100%;
+  background: #FFFFFF;
+}
+#g-inline .g-mobile-chart-wrapper .g-pos,
+#g-weight-chart .g-pos {
+  color: #d62728;
+}
+#g-inline .g-mobile-chart-wrapper .g-neg,
+#g-weight-chart .g-neg {
+  color: #2ca02c;
+}
+#g-inline .g-mobile-chart-wrapper svg,
+#g-weight-chart svg {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-area,
+#g-weight-chart svg path.g-weight-area {
+  stroke-width: none;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-area.g-pos,
+#g-weight-chart svg path.g-weight-area.g-pos {
+  fill: rgba(0, 200, 0, 0.2);
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-area.g-neg,
+#g-weight-chart svg path.g-weight-area.g-neg {
+  fill: rgba(200, 0, 0, 0.2);
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line,
+#g-weight-chart svg path.g-weight-line {
+  fill: none;
+  stroke: black;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line.masked,
+#g-weight-chart svg path.g-weight-line.masked {
+  fill: green;
+  stroke: none;
+  opacity: 0.1;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line.masked.faded,
+#g-weight-chart svg path.g-weight-line.masked.faded {
+  fill: none;
+  stroke: black;
+  stroke-width: 1px;
+  opacity: 0.3;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line.initial,
+#g-weight-chart svg path.g-weight-line.initial {
+  stroke-opacity: 0.5;
+  stroke: #fcba58;
+  fill: none;
+  stroke-width: 1px;
+}
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line.flash-active,
+#g-weight-chart svg path.g-weight-line.flash-active,
+#g-inline .g-mobile-chart-wrapper svg path.g-weight-line.active,
+#g-weight-chart svg path.g-weight-line.active {
+  stroke: #000000;
+  stroke-opacity: 1;
+  fill: none;
+  stroke-width: 1.5px;
+}
+#g-inline .g-mobile-chart-wrapper svg circle.g-weight-dot,
+#g-weight-chart svg circle.g-weight-dot,
+#g-inline .g-mobile-chart-wrapper svg circle.weighins,
+#g-weight-chart svg circle.weighins {
+  fill: green;
+  stroke-width: 0px;
+}
+#g-inline .g-mobile-chart-wrapper svg circle.g-weight-dot,
+#g-weight-chart svg circle.g-weight-dot {
+  fill: green;
+  stroke: black;
+  stroke-width: 0.25px;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid text.label,
+#g-weight-chart svg .grid text.label {
+  fill: #999999;
+  font-size: 11px;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid text.label.x,
+#g-weight-chart svg .grid text.label.x {
+  fill: #000000;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid line,
+#g-weight-chart svg .grid line {
+  fill: none;
+  stroke: #bbb;
+  stroke-dasharray: 2,2;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid line.goal,
+#g-weight-chart svg .grid line.goal {
+  stroke: #000;
+  stroke-dasharray: none;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid .axis path,
+#g-weight-chart svg .grid .axis path,
+#g-inline .g-mobile-chart-wrapper svg .grid .axis line,
+#g-weight-chart svg .grid .axis line {
+  fill: none;
+  stroke: #aaa;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+#g-inline .g-mobile-chart-wrapper svg .grid .axis text,
+#g-weight-chart svg .grid .axis text {
+  font-size: 0.75rem;
+}
+#g-inline .g-mobile-chart-wrapper svg .labels g.chart-label circle,
+#g-weight-chart svg .labels g.chart-label circle {
+  fill: #fcba58;
+  opacity: 1;
+  stroke: black;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+#g-inline .g-mobile-chart-wrapper svg .labels g.chart-label.active circle,
+#g-weight-chart svg .labels g.chart-label.active circle {
+  fill: #fcba58;
+  fill-opacity: 1;
+}
+#g-inline .g-mobile-chart-wrapper svg text.label.strong-label,
+#g-weight-chart svg text.label.strong-label {
+  fill: #000;
+  font-size: 0.875rem;
+}
+#g-inline .g-mobile-chart-wrapper svg line.g-chart-marker,
+#g-weight-chart svg line.g-chart-marker {
+  fill: none;
+  stroke: red;
+  opacity: 0.5;
+  stroke-width: 1px;
+}
+#g-inline .g-mobile-chart-wrapper div.chart-label,
+#g-weight-chart div.chart-label {
+  position: absolute;
+  text-align: center;
+}
+#g-inline .g-mobile-chart-wrapper div.chart-label span,
+#g-weight-chart div.chart-label span {
+  display: block;
+  cursor: pointer;
+}
+#g-inline .g-mobile-chart-wrapper div.chart-label span.g-label,
+#g-weight-chart div.chart-label span.g-label {
+  font-style: italic;
+}
+#g-inline .g-mobile-chart-wrapper div.chart-label span.g-weight,
+#g-weight-chart div.chart-label span.g-weight {
+  font-weight: bold;
+}
+#g-inline .g-mobile-chart-wrapper {
+  position: relative;
+  height: 240px;
+}
+#g-fixed-inline {
+  width: 300px;
+  min-height: 300px;
+  padding: 0;
+  z-index: 3;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+#g-fixed-infobox {
+  width: 200px;
+  height: 100px;
+  -webkit-transition: visibility 0s, opacity 1s ease-in-out;
+  transition: visibility 0s, opacity 1s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+#g-fixed-infobox.visible {
+  visibility: visible;
+  opacity: 1;
+}
+#g-fixed-infobox {
+  padding: 24px 15px;
+  text-align: center;
+}
+#g-fixed-infobox .g-date {
+  font-size: 0.875rem;
+  font-style: italic;
+  font-family: "nyt-franklin", arial, sans-serif;
+}
+#g-fixed-infobox .g-weight {
+  font-size: 1.5rem;
+  font-family: "nyt-cheltenham", georgia, "times new roman", times, serif;
+  margin: 0.5em 0 0 0;
+}
+#g-fixed-infobox .g-weight-lost {
+  font-size: 0.875rem;
+  font-family: "nyt-cheltenham", georgia, "times new roman", times, serif;
+  font-style: italic;
+  line-height: 1rem;
+  color: #3ca858;
+}
+#g-inline {
+  font-family: "nyt-franklin", arial, sans-serif;
+}
+#g-inline p {
+  font-family: "nyt-franklin", arial, sans-serif;
+  margin: 0 0 0.5rem;
+}
+#g-inline .g-data-summary {
+  margin: 8px 0;
+}
+#g-inline .g-data-summary table th,
+#g-inline .g-data-summary table td {
+  font-family: "nyt-franklin", arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  padding: 0 0 8px 0;
+  font-weight: normal;
+}
+#g-inline .g-data-summary table th {
+  width: 70px;
+  text-align: right;
+}
+#g-inline .g-data-summary table th::after {
+  content: ": ";
+}
+#g-inline .g-data-summary table td {
+  font-style: italic;
+  padding-left: 6px;
+}
+#g-inline .g-description {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.7);
+}
+#g-inline a.g-show-sampleday {
+  font-size: 0.875rem;
+}
+#g-inline .g-sampleday-wrapper {
+  overflow-y: auto;
+  padding: 20px;
+  border: 1px solid black;
+  background: #FFFFFF;
+  z-index: 5;
+  -webkit-transition: visibility 0s, opacity 0.5s ease-in-out;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+#g-inline .g-sampleday-wrapper.visible {
+  visibility: visible;
+  opacity: 1;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header h4 {
+  font-family: "nyt-franklin", arial, sans-serif;
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-day-prev,
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-day-next {
+  font-size: 0.875em;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-sampleday-goalline {
+  text-align: center;
+  margin: 0 auto;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-sampleday-goalline div {
+  margin-top: 0.25em;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-sampleday-goalline span.g-calorie-label {
+  width: 50px;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header .g-sampleday-goalline span.g-calorie-label.g-right {
+  text-align: left;
+}
+#g-inline .g-sampleday-wrapper span.g-calorie-label {
+  font-size: 0.75rem;
+  color: #999999;
+  font-style: italic;
+  text-align: right;
+  display: inline-block;
+  margin-right: 2px;
+}
+#g-inline .g-sampleday-wrapper span.g-quantity-label {
+  font-size: 0.75rem;
+  display: block;
+  font-style: italic;
+}
+#g-inline .g-sampleday-wrapper span.g-exercise-time-label {
+  font-size: 0.75rem;
+  color: #999999;
+  font-style: italic;
+  display: block;
+}
+#g-inline .g-sampleday-wrapper .g-pos {
+  color: #d62728;
+}
+#g-inline .g-sampleday-wrapper .g-neg {
+  color: #2ca02c;
+}
+#g-inline .g-sampleday-wrapper .g-day-table {
+  font-family: "nyt-franklin", arial, sans-serif;
+}
+#g-inline .g-sampleday-wrapper .g-day-table .g-day-table-section {
+  float: left;
+  min-height: 100px;
+  min-width: 120px;
+  max-width: 200px;
+  margin: 10px 0 10px 0px;
+  padding: 10px;
+}
+#g-inline .g-sampleday-wrapper .g-day-table div.g-day-dt,
+#g-inline .g-sampleday-wrapper .g-day-table div.g-activity-list,
+#g-inline .g-sampleday-wrapper .g-day-table li {
+  font-family: "nyt-franklin", arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+#g-inline .g-sampleday-wrapper .g-day-table div.g-day-dt span.g-calorie-label.g-binge,
+#g-inline .g-sampleday-wrapper .g-day-table div.g-activity-list span.g-calorie-label.g-binge,
+#g-inline .g-sampleday-wrapper .g-day-table li span.g-calorie-label.g-binge {
+  color: #d62728;
+  font-weight: bold;
+}
+#g-inline .g-sampleday-wrapper .g-day-table div.g-day-dt span.g-exercise-time-label.g-intense,
+#g-inline .g-sampleday-wrapper .g-day-table div.g-activity-list span.g-exercise-time-label.g-intense,
+#g-inline .g-sampleday-wrapper .g-day-table li span.g-exercise-time-label.g-intense {
+  color: #2ca02c;
+  font-weight: bold;
+}
+#g-inline .g-sampleday-wrapper .g-day-table div.g-day-dt {
+  display: block;
+  font-weight: bold;
+  padding: 0 0 6px 0;
+  border-bottom: 1px solid black;
+  margin: 0 0 6px 0;
+  text-align: center;
+}
+#g-inline .g-sampleday-wrapper .g-day-table .g-activity-list li {
+  padding-left: 33px;
+  position: relative;
+  text-indent: 0;
+}
+#g-inline .g-sampleday-wrapper .g-day-table .g-activity-list li span.g-calorie-label {
+  left: 0;
+  min-width: 29px;
+  position: absolute;
+  top: 0;
+}
+#g-inline .g-sampleday-wrapper .g-day-table .g-activity-list li.g-none {
+  text-align: center;
+  padding: 0;
+  text-indent: 0;
+}
+.has-flexbox #g-inline .g-sampleday-wrapper .g-day-table {
+  -ms-display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-justify-content: center;
+  -webkit-display: -webkit-box;
+  -webkit-display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.has-flexbox #g-inline .g-sampleday-wrapper .g-day-table .g-day-table-section {
+  float: none;
+}
+.promo-footer .w350 {
+  margin-top: 1em;
+  float: left;
+}
+.promo-footer .w350 img {
+  width: 100%;
+}
+.promo-footer .w350 h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+.viewport-medium-10 .promo-footer {
+  display: none;
+}
+.viewport-small #g-leadin {
+  max-width: 720px;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 auto 2em auto;
+}
+.viewport-small #g-leadin > p {
+  clear: both;
+  max-width: 600px;
+  margin-bottom: 1em;
+}
+.viewport-small #g-leadin img {
+  width: 49%;
+  display: inline;
+}
+.viewport-small-20 #g-leadin > p {
+  clear: none;
+  margin: 0 178px 1em 178px;
+  max-width: 600px;
+}
+.viewport-small-20 #g-leadin img {
+  width: auto;
+}
+.viewport-small-20 #g-leadin .g-before {
+  float: left;
+}
+.viewport-small-20 #g-leadin .g-after {
+  float: right;
+}
+.viewport-medium-10 #g-leadin {
+  padding-bottom: 12px;
+  margin: 0 auto 12px auto;
+}
+#g-inline {
+  position: relative;
+}
+#g-inline .story {
+  margin-bottom: 2em;
+  border-bottom: 1px solid #CCC;
+  padding-bottom: 2em;
+  position: relative;
+}
+#g-inline .story.g-outro {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+#g-inline #g-fixed-inline,
+#g-inline #g-fixed-infobox {
+  display: none;
+}
+.viewport-small #g-inline .g-data-summary {
+  margin: 8px 0;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 170px;
+}
+.viewport-medium-10 #g-inline .g-data-summary {
+  position: inherit;
+  top: auto;
+  right: auto;
+  width: auto;
+}
+.viewport-medium-10 #g-inline .g-data-summary .g-hide-desktop {
+  display: none;
+}
+.viewport-medium-10 #g-inline p {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.viewport-medium-10 #g-weight-chart.nytint-fixed {
+  position: fixed;
+  top: 48px;
+  left: auto;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.viewport-medium-10 #g-graphic.has-fixie #g-fixed-inline {
+  position: fixed;
+  right: auto;
+  top: 48px;
+}
+.viewport-medium-10 #g-inline {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+  padding-bottom: 1050px;
+}
+.viewport-medium-10 #g-inline .story.scrollStoryItem {
+  height: 230px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.viewport-medium-10 #g-inline .story.scrollStoryItem.g-outro {
+  margin-top: 250px;
+}
+.viewport-medium-10 #g-inline #g-fixed-inline,
+.viewport-medium-10 #g-inline #g-fixed-infobox {
+  display: block;
+}
+.viewport-medium-10 #g-weight-chart div.chart-label {
+  font-size: 0.75rem;
+}
+.viewport-medium-10 #g-weight-chart div.chart-label.prime-label {
+  display: block;
+}
+.viewport-medium-10 #g-weight-chart div.chart-label.active span {
+  font-weight: bold;
+  font-style: normal;
+}
+#g-inline .g-sampleday-wrapper {
+  position: fixed;
+  top: 30px;
+  bottom: 30px;
+  left: 25px;
+  right: 25px;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header h4 {
+  clear: both;
+  padding: 1em 0 0 0;
+  max-width: 500px;
+}
+#g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-prev,
+#g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-next {
+  float: none;
+  display: block;
+  margin: 0.5em auto;
+  text-align: center;
+}
+.viewport-small-10 #g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-prev,
+.viewport-small-10 #g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-next {
+  display: inline;
+  margin: 0;
+}
+.viewport-small-10 #g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-prev {
+  float: left;
+  text-align: left;
+}
+.viewport-small-10 #g-inline .g-sampleday-wrapper .g-sampleday-header a.g-day-next {
+  float: right;
+  text-align: right;
+}
+.viewport-medium-10 #g-inline .g-sampleday-wrapper {
+  position: fixed;
+  top: 140px;
+  left: 75px;
+  right: 75px;
+  max-height: 480px;
+}
+.viewport-medium-10 #g-inline .g-sampleday-wrapper .g-sampleday-header h4 {
+  clear: none;
+  padding: 0;
+}
+.viewport-medium-10 #g-inline .g-mobile-chart-wrapper {
+  display: none;
+}
+.has-fixie.viewport-medium-10 .ribbon {
+  display: none !important;
+}
+.has-fixie.viewport-medium-10 .main {
+  padding-top: 47px;
+}
+.has-fixie.viewport-medium-10 #related-coverage {
+  display: none !important;
+}
+</style>
+<div id="g-leadin" class="clearfix">
+  <img class="g-before" src="http://graphics8.nytimes.com/newsgraphics/2015/10/19/food-tracking/8cfaadac2973378b6eb8a14be431c92cf7f0d159/before.jpg" />
+  <img class="g-after" src="http://graphics8.nytimes.com/newsgraphics/2015/10/19/food-tracking/8cfaadac2973378b6eb8a14be431c92cf7f0d159/after.jpg" />
+  
+    <p>Research shows that <a href="http://well.blogs.nytimes.com/2015/11/17/diary-of-a-supertracker/">people who keep track</a> of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple.</p>
+  
+    <p>In February of 2012, he weighed a high of 337 pounds. But then he started tracking his eating habits using the Lose It food tracking app. Soon he became a "Super Tracker," detailing virtually every bite of food — good and bad — that he ate over a three-year period, losing more than 100 pounds. Here's how he did it.</p>
+  
+
+</div>
+
+<div id="g-graphic" data-preview-slug="NYTG_SLUG">
+  <div id="g-weight-chart-wrapper">
+    <div id="g-weight-chart">
+    </div>
+  </div>
+  <div id="g-inline" class="clearfix" style="display:none">
+    <div id="g-fixed-inline" class="clearfix">
+      <div class="g-inner"></div>
+      <div id="g-fixed-infobox">
+        <div class="g-date"></div>
+        <div class="g-weight"></div>
+        <div class="g-weight-lost"></div>
+      </div>
+    </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-02-05","date_display":"Feb. 5, 2012","weight":"337","label":"Start","left":"33","top":"5","r":"6","show_mobile":"true"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>A Rocky Start</h2>
+          
+          
+          <p>Mr. Lochner, 38, learns about the Lose It app on Facebook and decides to begin tracking calories. Weighing in at 337 pounds and with the goal of losing two pounds a week, the app sets a target of 2,500 calories for him. He tries to stay under, but can’t entirely stay away from some favorite high-calorie foods.</p>
+          
+          <p>Still he’s no longer eating them every day, cuts out soda and energy drinks, and loses six pounds in the first week.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-02-05"></td></tr>
+            <tr><th>Weight</th> <td>337 lbs</td></tr>
+            <tr><th>Binge</th> <td>4 slices of pizza, 2 dark chocolate bars</td></tr>
+            
+            <tr><th>Exercise</th> <td>Elliptical, Walking</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-02-06'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-03-24","html":"\n<span class=\"g-label\">First Tattoo</span>\n\n<span class=\"g-neg g-weight\">-25 lbs</span>","dx":"5","dy":"-18","show_mobile":"true"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Early Success</h2>
+          
+          
+          <p>Mr. Lochner decides to weigh himself every Saturday morning, and after two months of disciplined eating he hits his first milestone, a 25-pound weight loss. He rewards himself with a tattoo of four characters from a favorite album cover. This would be the first of six tattoo rewards, one for every 25 pounds lost.</p>
+          
+          <p>At home he researches portion sizes and calorie counts for his meals and creates entries for them in the app to more easily track them.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-03-24"></td></tr>
+            <tr><th>Weight</th> <td>309.9 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Quinoa and Salmon</td></tr>
+            <tr><th>Exercise</th> <td>Elliptical, Walking</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-03-20'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-05-26","html":"\n<span class=\"g-label\">Second Tattoo</span>\n\n<span class=\"g-neg g-weight\">-50 lbs</span>","dx":"5","dy":"-22","show_mobile":"true"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>“Never Look Back”</h2>
+          
+          
+          <p>Mr. Lochner is still learning to track quantities accurately, especially for home cooked meals. His wife and relatives are supportive, but he feels awkward asking for measuring cups at his mother-in-law’s Sunday dinners.</p>
+          
+          <p>Someone at work notices he’s losing weight and Mr. Lochner starts recommending the Lose It app to others. </p>
+          
+          <p>After losing 50 pounds, Mr. Lochner rewards himself with an arm tattoo of the number “50” surrounded by 5/26/12 and the words “Never Look Back.”</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-05-26"></td></tr>
+            <tr><th>Weight</th> <td>285.6 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Homemade chicken pot pie, broccoli</td></tr>
+            <tr><th>Exercise</th> <td>Football, Walking</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-05-19'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-08-18","html":"\n<span class=\"g-label\">Summer Trouble</span>","dx":"9","dy":"-8"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Summer Trouble</h2>
+          
+          
+          <p>Mr. Lochner drops to 276 pounds, but is tempted by summer cookouts, ice cream and other treats. His weight loss slows and then reverses, and he gains back five pounds by his birthday, Aug. 18.</p>
+          
+          <p>His weight loss has stalled but he’s determined to keep going, so he starts exercising more regularly.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-08-18"></td></tr>
+            <tr><th>Weight</th> <td>281.8 lbs</td></tr>
+            <tr><th>Binge</th> <td>Hot dog and ice cream goodies</td></tr>
+            
+            <tr><th>Exercise</th> <td>Outdoors fun, stationary bicycle</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-06-23'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-10-20","html":"\n<span class=\"g-label\">Third Tattoo</span>\n\n<span class=\"g-neg g-weight\">-75 lbs</span>","dx":"-50","dy":"10","show_mobile":"true","mobile_left":"70","mobile_top":"70"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Third Tattoo</h2>
+          
+          
+          <p>Mr. Lochner makes a rule to combat exercise boredom: He will only watch favorite shows, like “Breaking Bad,” while on an exercise machine. This helps him do more cardio.</p>
+          
+          <p>After losing 75 pounds, Mr. Lochner tattoos “Today is the first day of the rest of my life” on his chest and celebrates with 10 slices of pizza.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-10-20"></td></tr>
+            <tr><th>Weight</th> <td>261.5 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Grilled chicken breast, mixed vegetables</td></tr>
+            <tr><th>Exercise</th> <td>Elliptical</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-10-09'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2012-11-18","html":"\n<span class=\"g-label\">First Holiday Season</span>","dx":"-12","dy":"-30","width":"80"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Holiday Nerves</h2>
+          
+          
+          <p>Mr. Lochner manages to stay mostly on track through the holiday season. He has been tracking for nine months and is now keenly aware of calorie counts and which foods are “worth it” to stay under budget. He goes easy on mashed potatoes and rice and loads up on turkey, mixed vegetables and his mother-in-law’s dessert breads and cookies.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2012-11-18"></td></tr>
+            <tr><th>Weight</th> <td>281.8 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Turkey, Mixed vegetables</td></tr>
+            <tr><th>Exercise</th> <td>Elliptical</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2012-11-22'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2013-02-24","html":"\n<span class=\"g-label\">Fourth Tattoo</span>\n\n<span class=\"g-neg g-weight\">-100 lbs</span>","dx":"-20","dy":"-40","show_mobile":"true","mobile_left":"96","mobile_top":"90"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>“Walk On”</h2>
+          
+          
+          <p>Mr. Lochner tries the Paleo diet in the New Year, eating foods high in protein and healthy fat and with very few carbs, and sees it work well for him. By the end of February he loses another 24 pounds and passes 100 pounds lost.</p>
+          
+          <p>To celebrate, he gets two wrist tattoos: the number “100” and the Bruce Lee quote “Walk On,” as a reminder to keep going.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2013-02-24"></td></tr>
+            <tr><th>Weight</th> <td>236.5 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Chicken breast, almonds, more chicken breast</td></tr>
+            <tr><th>Exercise</th> <td>Elliptical</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2013-02-25'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2013-03-23","html":"\n<span class=\"g-label\">Paleo</span>","dx":"-20","dy":"8"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>On and Off the Paleo diet</h2>
+          
+          
+          <p>Mr. Lochner continues the Paleo diet. On weekdays at work he brings and eats a very limited diet, but on weekends he eats a broader variety of foods so he can eat with others.</p>
+          
+          <p>Still, his new diet is expensive to maintain. After abstaining from pizza entirely for two months, he indulges a craving in mid-March.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2013-03-23"></td></tr>
+            <tr><th>Weight</th> <td>231 lbs</td></tr>
+            <tr><th>Binge</th> <td>Four slices of Little Caesars Hot & Ready Pizza</td></tr>
+            
+            <tr><th>Exercise</th> <td>Walking, running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2013-03-10'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2013-06-01","html":"\n<span class=\"g-label\">Weight Loss Slows</span>","width":"70","dx":"-38","dy":"8"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Weight Loss Slows</h2>
+          
+          
+          <p>Mr. Lochner continues to lose weight and the Lose It app automatically adjusts his daily calorie target lower. He’s now aiming for just 1,700 calories a day. Social occasions strain his commitment to a low-carb diet as it feels rude to turn down others’ cooking. Like the previous summer, his weight loss slows and he gains eight pounds in late June.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2013-06-01"></td></tr>
+            <tr><th>Weight</th> <td>217.9 lbs</td></tr>
+            <tr><th>Binge</th> <td>6 cups of peanut butter frozen yogurt, 6 ounces chocolate cake</td></tr>
+            
+            <tr><th>Exercise</th> <td>Elliptical</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2013-06-20'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2013-08-17","html":"\n<span class=\"g-label\">Fifth Tattoo</span>\n\n<span class=\"g-neg g-weight\">-125 lbs</span>","dx":"-28","dy":"8","show_mobile":"true","mobile_left":"111","mobile_top":"111"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Fifth Tattoo</h2>
+          
+          
+          <p>Whenever his weight loss slowed, Mr. Lochner started trying new things. Now he adds strength circuit training to his exercise routine: push ups, sit ups, pull ups and weights.</p>
+          
+          <p>That helps get him to his 125-pound goal and he celebrates with a fifth tattoo. He puts the words “Veni Vidi Vici” and a branching tree on his chest.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2013-08-17"></td></tr>
+            <tr><th>Weight</th> <td>210.1 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Kale, Coconut Oil</td></tr>
+            <tr><th>Exercise</th> <td>Circuit training</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2013-08-17'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2013-08-24","html":"\n<span class=\"g-label\">August<br>Highs and Lows</span>","dx":"-8","dy":"-37"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>August Highs and Lows</h2>
+          
+          
+          <p>August brings highs and lows. After dropping 14 pounds to his 125-pound milestone, Mr. Lochner experiments with not logging his food to see if he can stay on track. It doesn’t go well. After a week on vacation without tracking he gains back seven pounds. Mr. Lochner starts tracking again and the following week has lost eight pounds, bringing him to 209.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2013-08-24"></td></tr>
+            <tr><th>Weight</th> <td>217.5 lbs</td></tr>
+            <tr><th>Binge</th> <td>Skipped seven days of food logging</td></tr>
+            
+            <tr><th>Exercise</th> <td>Circuit training</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2013-08-25'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2014-01-04","html":"\n<span class=\"g-label\">Breaking a Plateau in the New Year</span>","width":"100","dx":"1","dy":"-30"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Breaking a Plateau in the New Year</h2>
+          
+          
+          <p>Mr. Lochner’s weight loss slows in the second half of 2013, but around Christmas he schedules his final tattoo appointment for June 10, 2014 — more than five months and 20 pounds in the future. With that goal set, he starts an intermittent fasting diet, limiting his eating to an eight-hour window each day. By Feb. 18 he’s under 200 pounds for the first time.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2014-01-04"></td></tr>
+            <tr><th>Weight</th> <td>211.6 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Protein powder, Eggs, Tuna</td></tr>
+            <tr><th>Exercise</th> <td>Stairmaster, Circuit training, Running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2014-01-02'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2014-06-10","label":"Lowest weigh-in","date_display":"June 10, 2014","weight":"185.3","dx":"-95","dy":"-4","r":"6"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Getting to 150</h2>
+          
+          
+          <p>Mr. Lochner redoubles his exercise routine and puts posters with “150” around his home and office. On June 10 he reaches his goal of losing 150 pounds, weighing in at 185.3 pounds. For his final tattoo he has a painful four-hour session to ink a dark champion figure rising out of sludge on the side of his chest. Then he celebrates with pizza.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2014-06-10"></td></tr>
+            <tr><th>Weight</th> <td>185.3 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Chia Wraps, Coconut Oil, Almond Butter</td></tr>
+            <tr><th>Exercise</th> <td>Stairmaster, Circuit training, Running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2014-06-05'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2014-07-03","html":"\n<span class=\"g-label\">Stops Weighing</span>","width":"50","dx":"-18","dy":"-40"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Stops Weighing</h2>
+          
+          
+          <p>After hitting his goal, Mr. Lochner stops weighing himself for three weeks. He knows he will likely gain weight, but needs the break. He continues to log food and eat healthfully, but occasionally binges on the desserts and sweets he had been avoiding.</p>
+          
+          <p>When his clothes start to fit tighter, he gets back on the scale on July 3 and discovers he’s gained back 17 pounds. He starts weighing himself regularly again.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2014-07-03"></td></tr>
+            <tr><th>Weight</th> <td>202.4 lbs</td></tr>
+            <tr><th>Binge</th> <td>11 slices of chocolate marble cake, 5 slices cookie cake</td></tr>
+            
+            <tr><th>Exercise</th> <td>Running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2014-06-20'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2014-12-26","html":"\n<span class=\"g-label\">Rebounding</span>","dx":"-25","dy":"-21"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Rebounding</h2>
+          
+          
+          <p>By the day after Christmas, Mr. Lochner has gained back nearly 30 pounds from his lowest weight. He has alternated healthy eating with days of bingeing on thousands of calories of ice cream, cookies and other sweets. He tracks food inconsistently and his weight swings up and down. In two missed weeks he gains 10 pounds.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2014-12-26"></td></tr>
+            <tr><th>Weight</th> <td>214 lbs</td></tr>
+            <tr><th>Binge</th> <td>Cookies and Cream ice cream, 5 cups</td></tr>
+            
+            <tr><th>Exercise</th> <td>Running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2014-11-18'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2015-02-03","html":"\n<span class=\"g-label\">Maintaining</span>","dx":"0","dy":"-22"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>A Goal of Maintaining</h2>
+          
+          
+          <p>Mr. Lochner buys a Fitbit Charge heart rate tracker to record the calories he burns and starts participating in step challenges to stay motivated.</p>
+          
+          <p>Through his weight loss journey he has learned many new habits — like cooking batches of healthy food for several days in advance — but worries he will be worrying about maintaining his weight for the rest of his life.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2015-02-03"></td></tr>
+            <tr><th>Weight</th> <td>203.8 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>Chicken breast, eggs, coconut oil</td></tr>
+            <tr><th>Exercise</th> <td>Running</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2015-03-26'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2015-05-16","html":"\n<span class=\"g-label\">Quits Job</span>","dx":"-10","dy":"-25"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Quits Job</h2>
+          
+          
+          <p>Stress at his job causes Mr. Lochner to overeat and many of his tracking habits start to slip. He switches to a new job without supervisor responsibilities and also starts a new lawn business.</p>
+          
+          <p>The disrupted routine and using lawn work to justify eating more leads to his weight creeping up back over 200.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2015-05-16"></td></tr>
+            <tr><th>Weight</th> <td>200.9 lbs</td></tr>
+            <tr><th>Binge</th> <td>Whole pizza and crazy bread, stress eating at work</td></tr>
+            
+            <tr><th>Exercise</th> <td>Lawn work</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2015-05-16'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2015-07-07","html":"\n<span class=\"g-label\">Largest Binge</span>","dx":"-23","dy":"8"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Largest Binge</h2>
+          
+          
+          <p>Mr. Lochner struggles to get back to his low weight and still has bad days when he can’t control his eating. But when he does overeat he commits to logging his food honestly.</p>
+          
+          <p>On July 7 he records his biggest binge day since he began tracking — 6,420 calories from a hamburger, fries, crispy chicken sandwich and a box of chocolate chip cookies.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2015-07-07"></td></tr>
+            <tr><th>Weight</th> <td>202.6 lbs</td></tr>
+            <tr><th>Binge</th> <td>Family-size box of chocolate chip cookies and more</td></tr>
+            
+            <tr><th>Exercise</th> <td>Lawn work</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2015-07-07'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+      <div class="story g-inline-period-wrapper"
+        
+        
+        data-period-label='{"date":"2015-10-31","html":"\n<span class=\"g-label\">Keeps on Tracking</span>","width":"50","dx":"-50","dy":"-65"}'
+        >
+        <div class="g-mobile-chart-wrapper"></div>
+        <div class="g-description">
+          <h2>Keeps on Tracking</h2>
+          
+          
+          <p>Today Mr. Lochner’s weight hovers around 200 pounds and he worries about regaining lost weight. He wants to keep tracking his progress, but without specific goals, motivation is harder.</p>
+          
+          <p>“I don't like the fact that I can easily let myself go, and I'm trying to get past that,” he said.</p>
+          
+          
+          <div class="g-data-summary">
+            <table class="clearfix">
+            <tr class="g-hide-desktop"><th>Date</th> <td data-date="2015-10-31"></td></tr>
+            <tr><th>Weight</th> <td>202.7 lbs</td></tr>
+            
+            <tr><th>Healthy choice</th> <td>High protein bread</td></tr>
+            <tr><th>Exercise</th> <td>Lawn work</td></tr>
+            </table>
+          </div>
+        </div>
+        
+        <a href="#"
+          data-period-sampleday='2015-10-11'
+          class="g-show-sampleday">Show Daily Log</a>
+        
+        <div class="g-sampleday-wrapper"></div>
+      </div>
+    
+
+    <div class="story g-outro"
+      data-chart="loseit"
+      data-period-label='{"html":"\n<span class=\"g-label\">Everyone Else</span>","width":"50","bottom":"20","right":"43"}'
+      >
+      <div class="g-mobile-chart-wrapper"></div>
+      <div class="g-description">
+        <h2>Everyone Else</h2>
+        
+        
+        <p>Tracking calories, exercise and weight worked well for Steve Lochner, and he managed to lose more weight than many other people using the Lose It app.</p>
+        
+        <p>The chart shows how Mr. Lochner compares with other people who used the Lose It app for a year and were trying to lose at least 50 pounds.</p>
+        
+        <p>Some people lost over 100 pounds but others had fluctuating weights and at least one person gained 50 pounds. </p>
+        
+        <p>The more regularly someone tracks their weight the better they seem to do. But no one can say in advance who has what it takes to succeed as a “Super Tracker.”</p>
+        
+        <p>Read more about <a href="http://well.blogs.nytimes.com/2015/11/17/diary-of-a-supertracker/">tracking food</a> and more in the rest of our <a href="http://well.blogs.nytimes.com/2015/11/16/special-section-wired-well/">Wired Well Special Section</a>.</p>
+        
+        
+      </div>
+    </div>
+    <!-- <div>
+      <a href="#" id="g-switch-multichart">Show all people</a>
+      <a href="#" id="g-switch-wtchange">Switch to wtchange</a>
+    </div> -->
+
+  </div>
+</div>
+
+<footer class="promo-footer clearfix">
+<div class="w350 module">
+<div class=""><a href="http://well.blogs.nytimes.com/2015/11/16/special-section-wired-well/"><img alt="Special Section: Wired Well" src="http://graphics8.nytimes.com/images/2015/11/17/science/wellcover/wellcover-master315.jpg"/></a></div>
+<div class="entry">
+<h6 class="kicker">Wired Well</h6>
+<h5><a title="The Well Guide to Activity Trackers" href="http://well.blogs.nytimes.com/2015/11/16/special-section-wired-well/">Special Section: Wired Well</a></h5>
+<p class="summary">We explore the lives of newly wired consumers and the consequences, good and bad, that arise from our increasing reliance on trackers, monitors, guides and a vast array of other devices to better our health.</p>
+</div>
+</div>
+
+<!-- <div class="w350 module">
+<div class=""><a href="http://well.blogs.nytimes.com/2015/11/17/diary-of-a-supertracker/"><img alt='Diary of a "Supertracker"' src="http://graphics8.nytimes.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-articleInline.jpg"/></a></div>
+<div class="entry">
+<h6 class="kicker">Wired Well</h6>
+<h5><a title="The Monitored Man" href="http://well.blogs.nytimes.com/2015/11/17/diary-of-a-supertracker/">Diary of a "Supertracker"</a></h5>
+<p class="summary">Tracking your food and weight can be an important tool for long-term weight loss.</p>
+</div>
+</div> -->
+</footer>
+
+<script>
+  var _gaq = _gaq || [];
+  define('_nytg/NYTG_SLUG/assets', function() { return 'http://graphics8.nytimes.com/newsgraphics/2015/10/19/food-tracking/8cfaadac2973378b6eb8a14be431c92cf7f0d159/'; });
+  define('_nytg/NYTG_SLUG/big-assets', function() { return 'http://graphics8.nytimes.com/newsgraphics/2015/10/19/food-tracking/assets/'; });
+
+  require(['foundation/main'], function() {
+    require(['http://graphics8.nytimes.com/newsgraphics/2015/10/19/food-tracking/8cfaadac2973378b6eb8a14be431c92cf7f0d159/buildinline.js']); // generated from src/script.js
+  });
+</script>
+<!-- Pipeline: 2015-10-19-food-tracking | November 17, 2015, 11:13PM | 8cfaadac2973378b6eb8a14be431c92cf7f0d159 -->
+    </div>
+
+        <footer class="story-footer">
+
+        
+                <div class="story-info interactive-source">
+            <p>Sources: Steve Lochner, Lose It </p>
+        </div>
+        
+        
+        
+        
+                    <div id="sharetools-footer" aria-label="tools" role="group" class="sharetools theme-classic  sharetools-footer   layout-horizontal"
+data-shares="email|,facebook|,twitter|,show-all|More"
+data-url="http://www.nytimes.com/interactive/2015/11/17/health/wiredwell-food-diary-super-tracker.html"
+data-title="Diary of a Food Tracker"
+data-author="By ALBERT SUN"
+data-media="https://static01.nyt.com/images/2015/11/17/health/wiredwell-food-diary-super-tracker-1447725828636/wiredwell-food-diary-super-tracker-1447725828636-jumbo-v2.jpg"
+data-description="Research shows that people who keep track of what they eat and weigh on a regular basis are more likely to succeed at losing weight and keeping it off. But as the food diary of Steve Lochner shows, food tracking and weight loss is far from simple."
+	data-publish-date="November 16, 2015"
+>
+<div class="ad sharetools-inline-article-ad hidden nocontent robots-nocontent">
+</div>
+</div><!-- close shareTools -->
+            </footer>
+    
+    <section id="related-coverage" class="related-coverage nocontent robots-nocontent">
+    <div class="nocontent robots-nocontent">
+        <header>
+            <h2 class="section-heading">
+                                    More on NYTimes.com                            </h2>
+        </header>
+        <ul class="menu layout-horizontal theme-story">
+                    </ul><!-- end menu -->
+    </div>
+</section><!-- end main section -->
+
+</article>
+                    <div class="search-overlay"></div>
+            </main><!-- close main -->
+            
+            <footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+        <h2 class="visually-hidden">Site Information Navigation</h2>
+         <ul>
+             <li>
+                <a href="http://www.nytimes.com/content/help/rights/copyright/copyright-notice.html" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2016</span><span itemprop="copyrightHolder provider sourceOrganization" itemscope itemtype="http://schema.org/Organization" itemid="http://www.nytimes.com"><span itemprop="name"> The New York Times Company</span><meta itemprop="tickerSymbol" content="NYSE NYT"/></span>
+                </a>
+            </li>
+            <li class="visually-hidden"><a href="http://www.nytimes.com">Home</a></li>
+            <li class="visually-hidden"><a href="http://query.nytimes.com/search/sitesearch/#/">Search</a></li>
+            <li class="visually-hidden">Accessibility concerns? Email us at <a href="mailto:accessibility@nytimes.com">accessibility@nytimes.com</a>. We would love to hear from you.</li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytco.com/careers">Work With Us</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.whsites.net/mediakit">Advertise</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="http://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="http://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="wide-viewport-item last-item"><a href="http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <h2 class="visually-hidden">Site Information Navigation</h2>
+        <ul>
+            <li><a href="http://spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="http://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="wide-viewport-item last-item"><a href="http://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>
+        </div><!-- close page -->
+    </div><!-- close shell -->
+    <script>
+require(['foundation/main'], function () {
+    require(['interactive/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/tagx-simple.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+    <div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"4492120","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRhCXUA=","queueTime":0,"applicationTime":234,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

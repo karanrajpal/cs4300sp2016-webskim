@@ -6,6 +6,8 @@ var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
 
+var wordWeights = {};
+
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
 /*some words removed:
 	against
@@ -115,7 +117,7 @@ function getTF_DF() {
 		var words = allSentences[j].split(' ');
 			
 			for (var w = 0; w < words.length; w++) {
-				var word = words[w];
+				var word = stemmer(words[w]);
 				//increase term frequency by 1
 				if (!tf[word]) {
 					tf[word] = 1;
@@ -163,7 +165,7 @@ function doc2vec(doc) {
 	var v = {};
 	var terms = doc.split(' ');
 	for (var i = 0; i < terms.length; i++) {
-		var t = terms[i];
+		var t = stemmer(terms[i]);
 		v[t] = tfidf[t];
 	}
 	return v;
@@ -259,7 +261,6 @@ function getKeywords() {
 
 function getArticleCategory() {
   return document.querySelector('[name="CG"]').getAttribute('content');
-
 }
 
 function getJSONFile(articleCategory) {
@@ -292,11 +293,11 @@ showScoreTooltip = function() {
     ';
 }();
 
+
 function highlight() {
   // sentencesScore
   var scores = [];
   var scoreTotal = 0;
-  var wordLengthTotal= 0;
   var totalNumberOfWords = 0;
   var totalNumberOfSentences = 0;
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
@@ -308,9 +309,8 @@ function highlight() {
         var words = sentences[k].split(" ");
         var scoreOfThisSentence = 0;
         for(var m=0; m<words.length; m++) {
-          var word = words[m];
+          var word = stemmer(words[m]);
           totalNumberOfWords++;
-          wordLengthTotal+=word.length;
           if(jsonScore[word]!= undefined) {
             scoreOfThisSentence+=jsonScore[word];
           }
@@ -322,28 +322,34 @@ function highlight() {
   }
   var avgScoreOfASentence = scoreTotal/scores.length;
   var avgNumberOfWords = totalNumberOfWords/totalNumberOfSentences;
-  document.getElementById('averagescore').innerHTML="Threshold: "+avgScoreOfASentence/avgNumberOfWords;
+  var threshold = avgScoreOfASentence/avgNumberOfWords;
+  document.getElementById('averagescore').innerHTML="Threshold: "+threshold;
 
 	for (var i = 0; i < paras.length; i++) {
 		for (var j = 0; j < keywords.length; j++) {
 			var sentences = paras[i].innerHTML.split('. ');
 			paras[i].innerHTML = '';
 			for (var k = 0; k < sentences.length; k++) {
-        var words = sentences[k].split(" ");
-        var scoreOfThisSentence = 0;
-        for(var m=0; m<words.length; m++) {
-          var word = words[m];
-          if(jsonScore[word]!= undefined) {
-            scoreOfThisSentence+=jsonScore[word];
-          }
-        }
-        // console.log(scoreOfThisSentence);
-        if(scoreOfThisSentence/words.length>avgScoreOfASentence/avgNumberOfWords) {
-          sentences[k]='<mark data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
-          var sentscore = document.getElementById(\'sent\');\
-        sentscore.innerHTML = this.getAttribute(\'data-score\');\
-  ">'+sentences[k]+'</mark>';
-        }
+		        var words = sentences[k].split(" ");
+		        var scoreOfThisSentence = 0;
+		        for(var m=0; m<words.length; m++) {
+		          var word = stemmer(words[m]);
+		          if(jsonScore[word]!= undefined) {
+		            scoreOfThisSentence+=jsonScore[word];
+		          }
+		        }
+		        // console.log(scoreOfThisSentence);
+		        if((scoreOfThisSentence/words.length)>threshold) {
+		        	sentences[k]='<mark data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
+		        	var sentscore = document.getElementById(\'sent\');\
+					sentscore.innerHTML = this.getAttribute(\'data-score\');\
+					">'+sentences[k]+'</mark>';
+		        } else {
+		        	sentences[k]='<span data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
+		        	var sentscore = document.getElementById(\'sent\');\
+					sentscore.innerHTML = this.getAttribute(\'data-score\');\
+					">'+sentences[k]+'</span>';
+		        }
 			}
 			paras[i].innerHTML+=sentences.join('. ');
 		}
@@ -356,8 +362,15 @@ function highlight() {
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
 
-var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+
+/* 1) Get category from Machine Learning API */
+/* 2) Choose appropriate tfidf vector */
+/* 3) Get highlighting method */
+/* 4) Call appropriate highlight function */
+
+var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
+<<<<<<< HEAD
 //console.log(keywords);
 var articleCategory = getArticleCategory();
 var all_tweets = [];
@@ -368,20 +381,29 @@ var articleTitle = getTitle();
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
 	jsonScore = JSON.parse(response);
+=======
+var categoryUrl = machineLearningAPI+keywords;
+var articleCategory;
+
+httpGet(categoryUrl,null,function() {
+	articleCategory = event.target.responseText;
+	console.log(articleCategory);
+	jsonScore = wordWeights[articleCategory];
+	console.log(jsonScore);
+>>>>>>> 37753b144c20aafeee68e571eab2bd4929fa1b1e
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
-			console.log('highlighting on original');
 			highlight();
 		} else if(items[key]=='tfidf2') {
-			console.log('highlighting on TF-IDF');
+			hiliteTFIDF();
+		} else {
 			hiliteTFIDF();
 		}
 	});
-	// setSavedData('sports',response);
-});/**********************************************************************************************************************************/
+});
+
 /**********************************************************************************************************************************/
-
-
+/**********************************************************************************************************************************/
 /**************************************************HELPER FUNCTIONS****************************************************************/
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
@@ -412,6 +434,8 @@ function httpGet(theUrl,body,callback) {
     xmlHttp.onload = callback;
     return xmlHttp.responseText;
 }
+
+
 
 "use strict";
 
@@ -2024,17 +2048,19 @@ cb.__call(
 /*****************************************************************************************************************************************/
 
 function getTitle() {
-	title = document.getElementById('headline').textContent;
-	title = title.toLowerCase();
-	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
-	title_words = title.split(' ');
-	for (var i = 0; i < title_words.length; i++) {
-		var w = title_words[i];
-		if (stopwords.indexOf(w) != -1){
-			title_words.splice(i, 1);
-		}
-	}
-	console.log(title_words);
+	// title = document.getElementById('headline').textContent;
+	// title = title.toLowerCase();
+	// title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
+	// title_words = title.split(' ');
+	// for (var i = 0; i < title_words.length; i++) {
+	// 	var w = title_words[i];
+	// 	if (stopwords.indexOf(w) != -1){
+	// 		title_words.splice(i, 1);
+	// 	}
+	// }
+	// console.log(title_words);
+	title = document.querySelector('meta[property="twitter:title"]');
+	title_words = title.getAttribute('content').split(' ');
 	return title_words;
 }
 
@@ -2045,9 +2071,14 @@ function getTweets(keywords, title, top3) {
 	// var search_words = keywords.concat(title).concat(top3);
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
+<<<<<<< HEAD
 	//search_words = search_words.splice(0,3);
 	//var query = search_words.join(' ');
 	var query = search_words.join(' OR ');
+=======
+	search_words = search_words.splice(0,2);
+	var query = search_words.join(' AND ');
+>>>>>>> 37753b144c20aafeee68e571eab2bd4929fa1b1e
 	var params = {
     	q: query,
     	result_type: "popular",
@@ -2076,8 +2107,32 @@ function getTweets(keywords, title, top3) {
 					t = t.toLowerCase();
 	    			all_tweets.push(t);
 	    		}
-	    		console.log("fethed the tweets, they are: ");
+	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
+	    		if(all_tweets.length > 0) {
+	    			var tweets = document.createElement('div');
+				    tweets.id="tweets";
+				    tweets.style.position='fixed';
+				    tweets.style["overflow"]='scroll';
+				    tweets.style.width="220px";
+				    tweets.style.height="150px";
+				    tweets.style.right="10px";
+				    tweets.style.top="350px";
+				    tweets.style.padding = "10px";
+				    tweets.style.backgroundColor="black";
+				    tweets.style.opacity = '0.8';
+				    tweets.style.fontFamily = 'sans-serif';
+				    tweets.style.fontSize = '14px';
+				    tweets.style.zIndex = '1000000';
+				    tweets.style.color = 'white';
+				    document.body.appendChild(tweets);
+				    tweets.innerHTML += '<h2 style="font-family:\'sans-serif\';">Twitter Feed</h2>\
+				    <br />'
+				    for(var i=0;i<all_tweets.length;i++) {
+				    	tweets.innerHTML+='<div class="alltweets">'+all_tweets[i]+'</div><br /><br />';
+					}
+
+	    		}
 	    	}
 	    },
 	    true
