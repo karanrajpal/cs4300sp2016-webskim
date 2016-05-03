@@ -293,6 +293,7 @@ showScoreTooltip = function() {
     ';
 }();
 
+
 function highlight() {
   // sentencesScore
   var scores = [];
@@ -371,7 +372,6 @@ var articleCategory;
 
 httpGet(categoryUrl,null,function() {
 	articleCategory = event.target.responseText;
-	alert(articleCategory);
 	jsonScore = wordWeights[articleCategory];
 	console.log(jsonScore);
 	getSavedData('METHOD', function(items,key) {
@@ -2034,17 +2034,19 @@ var all_tweets = [];
 var articleTitle = getTitle();
 
 function getTitle() {
-	title = document.getElementById('headline').textContent;
-	title = title.toLowerCase();
-	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
-	title_words = title.split(' ');
-	for (var i = 0; i < title_words.length; i++) {
-		var w = title_words[i];
-		if (stopwords.indexOf(w) != -1){
-			title_words.splice(i, 1);
-		}
-	}
-	console.log(title_words);
+	// title = document.getElementById('headline').textContent;
+	// title = title.toLowerCase();
+	// title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
+	// title_words = title.split(' ');
+	// for (var i = 0; i < title_words.length; i++) {
+	// 	var w = title_words[i];
+	// 	if (stopwords.indexOf(w) != -1){
+	// 		title_words.splice(i, 1);
+	// 	}
+	// }
+	// console.log(title_words);
+	title = document.querySelector('meta[property="twitter:title"]');
+	title_words = title.getAttribute('content').split(' ');
 	return title_words;
 }
 
@@ -2055,8 +2057,8 @@ function getTweets(keywords, title, top3) {
 	// var search_words = keywords.concat(title).concat(top3);
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
-	search_words = search_words.splice(0,3);
-	var query = search_words.join(' ');
+	search_words = search_words.splice(0,2);
+	var query = search_words.join(' AND ');
 	var params = {
     	q: query,
     	result_type: "popular",
@@ -2085,8 +2087,32 @@ function getTweets(keywords, title, top3) {
 					t = t.toLowerCase();
 	    			all_tweets.push(t);
 	    		}
-	    		console.log("fethed the tweets, they are: ");
+	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
+	    		if(all_tweets.length > 0) {
+	    			var tweets = document.createElement('div');
+				    tweets.id="tweets";
+				    tweets.style.position='fixed';
+				    tweets.style["overflow"]='scroll';
+				    tweets.style.width="220px";
+				    tweets.style.height="150px";
+				    tweets.style.right="10px";
+				    tweets.style.top="350px";
+				    tweets.style.padding = "10px";
+				    tweets.style.backgroundColor="black";
+				    tweets.style.opacity = '0.8';
+				    tweets.style.fontFamily = 'sans-serif';
+				    tweets.style.fontSize = '14px';
+				    tweets.style.zIndex = '1000000';
+				    tweets.style.color = 'white';
+				    document.body.appendChild(tweets);
+				    tweets.innerHTML += '<h2 style="font-family:\'sans-serif\';">Twitter Feed</h2>\
+				    <br />'
+				    for(var i=0;i<all_tweets.length;i++) {
+				    	tweets.innerHTML+='<div class="alltweets">'+all_tweets[i]+'</div><br /><br />';
+					}
+
+	    		}
 	    	}
 	    },
 	    true
