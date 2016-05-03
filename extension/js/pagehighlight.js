@@ -6,6 +6,8 @@ var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
 
+var wordWeights = {};
+
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
 /*some words removed:
 	against
@@ -355,20 +357,23 @@ function highlight() {
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
 
-var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+
+/* 1) Get category from Machine Learning API */
+/* 2) Choose appropriate tfidf vector */
+/* 3) Get highlighting method */
+/* 4) Call appropriate highlight function */
+
+
 var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
 var categoryUrl = machineLearningAPI+keywords;
 var articleCategory;
-// console.log(getJSONFile(articleCategory)["inning"]);
-// console.log("The article category is: "+ articleCategory);
+
 httpGet(categoryUrl,null,function() {
 	articleCategory = event.target.responseText;
-});
-
-httpGet(weightUrl,null,function() {
-	var response = event.target.responseText;
-	jsonScore = JSON.parse(response);
+	alert(articleCategory);
+	jsonScore = wordWeights[articleCategory];
+	console.log(jsonScore);
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
 			highlight();
@@ -378,7 +383,6 @@ httpGet(weightUrl,null,function() {
 			hiliteTFIDF();
 		}
 	});
-	// setSavedData('sports',response);
 });
 
 /**********************************************************************************************************************************/
@@ -414,7 +418,7 @@ function httpGet(theUrl,body,callback) {
     return xmlHttp.responseText;
 }
 
-func
+
 
 "use strict";
 
