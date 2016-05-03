@@ -24,7 +24,7 @@ def makeTfIdf(raw_html,index):
 	bsoup = bs4.BeautifulSoup(raw_html)
 	content_for_this_article = ""
 	for hit in bsoup.findAll(attrs={'class' : 'story-body-text story-content'}):
-		content_for_this_article += hit.text.rstrip()
+		content_for_this_article += tokenize(hit.text.rstrip())
 	final_content.append(content_for_this_article.encode('ascii', 'ignore'))
 
 for folder, subs, files in os.walk("business"):
