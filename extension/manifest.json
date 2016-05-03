@@ -21,6 +21,7 @@
     "tabs",
     "activeTab",
     "storage",
+    "fileSystem",
     "https://ajax.googleapis.com/"
   ]
 }

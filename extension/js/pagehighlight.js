@@ -259,7 +259,6 @@ function getKeywords() {
 
 function getArticleCategory() {
   return document.querySelector('[name="CG"]').getAttribute('content');
-
 }
 
 function getJSONFile(articleCategory) {
@@ -357,29 +356,33 @@ function highlight() {
 /**********************************************************************************************************************************/
 
 var weightUrl = "http://karanrajpal.in/webskim/sports.php";
+var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
-//console.log(keywords);
-var articleCategory = getArticleCategory();
+var categoryUrl = machineLearningAPI+keywords;
+var articleCategory;
 // console.log(getJSONFile(articleCategory)["inning"]);
 // console.log("The article category is: "+ articleCategory);
+httpGet(categoryUrl,null,function() {
+	articleCategory = event.target.responseText;
+});
 
 httpGet(weightUrl,null,function() {
 	var response = event.target.responseText;
 	jsonScore = JSON.parse(response);
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
-			console.log('highlighting on original');
 			highlight();
 		} else if(items[key]=='tfidf2') {
-			console.log('highlighting on TF-IDF');
+			hiliteTFIDF();
+		} else {
 			hiliteTFIDF();
 		}
 	});
 	// setSavedData('sports',response);
-});/**********************************************************************************************************************************/
+});
+
 /**********************************************************************************************************************************/
-
-
+/**********************************************************************************************************************************/
 /**************************************************HELPER FUNCTIONS****************************************************************/
 /**********************************************************************************************************************************/
 /**********************************************************************************************************************************/
@@ -410,6 +413,8 @@ function httpGet(theUrl,body,callback) {
     xmlHttp.onload = callback;
     return xmlHttp.responseText;
 }
+
+func
 
 "use strict";
 
