@@ -1,7 +1,7 @@
-hockey  ice,new york islanders,cronin  greg
-meldonium (drug),world anti-doping agency
-baseball,new york mets,miami marlins,bonds  barry,syndergaard  noah
-soccer,terrorism,iraq,iskandariya (iraq),kasim  yaser (1991- )
+soccer,chelsea (soccer team),leicester city (soccer team),tottenham hotspur (soccer team),english premier league,ranieri  claudio
+soccer,uefa champions league (soccer),atletico madrid (soccer team),simeone  diego (1970- )
+baseball,eovaldi  nathan,rodriguez  alex,new york yankees,boston red sox
+basketball,playoff games,wade  dwyane (1982- ),officiating (sports),atlanta hawks,boston celtics
 soccer,new york city football club (soccer team),chicago fire (soccer team)
 basketball (college),indiana university,university of maryland
 basketball (college),university of connecticut,syracuse university
@@ -12,16 +12,16 @@ hockey  ice,new york rangers,new york islanders
 scott  adam (1980- ),mcilroy  rory,doral (fla),pga tour inc,trump  donald j
 basketball,los angeles lakers,bryant  kobe,curry  stephen
 basketball
-rugby,european rugby champions cup,wasps (rugby team),toulon (rugby team),saracens (rugby team),leicester tigers (rugby team),exeter (rugby team),northampton (rugby team),racing 92 (rugby team),stade francais (rugby team)
-hockey  ice,new jersey devils,elias  patrik
-cycling  road,tour of basque country (race),henao  sergio (1987- ),rosa  diego (1989- ),bicycles and bicycling
+baseball,arrieta  jake,chicago cubs,milwaukee brewers
+football,apple  eli (1995- ),draft and recruitment (sports),ohio state university,new york giants
+baseball,new york mets,new york yankees
 football,new york jets,marshall  brandon (1984- ),suits and litigation (civil),assaults
 horse racing,aintree racecourse,liverpool (england),deaths (fatalities),animal abuse  rights and welfare
 college athletics,hockey  ice,vesey  jimmy (1993- ),basketball (college)
 boxing,troyanovsky  eduard (1980- )
 soccer,lyonnais (soccer team)
 basketball,new york knicks,philadelphia 76ers,charlotte hornets,brooklyn nets,boston celtics,milwaukee bucks,orlando magic,miami heat,detroit pistons,washington wizards
-baseball,new york yankees,toronto blue jays,mccann  brian (1984- )
+hockey  ice,playoff games,san jose sharks,nashville predators,dallas stars,st louis blues
 tennis,kerber  angelique,begu  irina-camelia,querrey  sam (1987- ),monaco  juan
 golf,dechambeau  bryson,masters golf tournament
 golf,els  ernie,augusta (ga),masters golf tournament
@@ -32,7 +32,7 @@ golf,masters golf tournament,spieth  jordan,mcilroy  rory
 baseball,detroit tigers,new york yankees
 baseball,new york mets,philadelphia phillies
 basketball,records and achievements,chicago bulls,golden state warriors
-golf,stricker  steve,price  nick,presidents cup (golf)
+basketball,playoff games,toronto raptors,indiana pacers
 russia,doping (sports),meldonium (drug),tests (drug use),world anti-doping agency
 boxing,bradley  timothy (1983- ),pacquiao  manny
 football,ferguson  d'brickashaw,concussions,new york jets
@@ -43,7 +43,7 @@ basketball,san antonio spurs,golden state warriors
 lacrosse,bates  christopher a (1968- ),coaches and managers,princeton university
 basketball,houston rockets,chicago bulls,atlanta hawks,toronto raptors
 soccer,klopp  jurgen norbert (1967- ),uefa europa league,liverpool (soccer team),borussia dortmund (soccer team),uefa european football championship
-football (college),coaches and managers,national collegiate athletic assn,laptop computers,basketball (college),college athletics
+bicycles and bicycling,quintana  nairo,geneva (switzerland),cycling  road
 tennis,volvo car corp,williams  venus,charleston (sc),volvo car open (tennis)
 basketball (college),engels  jim (1968- ),coaches and managers,columbia university
 football,marshall  brandon (1984- ),suits and litigation (civil),bars and nightclubs,new york jets
@@ -54,7 +54,7 @@ baseball,cincinnati reds,philadelphia phillies,los angeles dodgers,san francisco
 baseball,teixeira  mark,new york yankees,houston astros
 football (college),draft and recruitment (sports),ohio state university,meyer  urban
 basketball,hinkie  sam,jackson  phil (1945- ),colangelo  jerry,new york knicks,philadelphia 76ers
-basketball,new york knicks,indiana pacers,rambis  kurt,jackson  phil (1945- ),anthony  carmelo
+golf,vegas  jhonattan,stuard  brian,zurich classic (golf),zurich classic
 golf,spieth  jordan,olazabal  jose maria (all caps),dechambeau  bryson,watson  tom,els  ernie,olazabal  jose maria,masters golf tournament
 golf,els  ernie,palmer  arnold,nicklaus  jack,masters golf tournament
 baseball,wright  david,kansas city royals,new york mets
@@ -65,7 +65,7 @@ soccer,uefa champions league (soccer),wolfsburg (soccer team),real madrid (socce
 hockey  ice,gretzky  wayne
 watson  bubba,masters golf tournament,augusta (ga),golf,spieth  jordan,fowler  rickie,mickelson  phil
 golf,masters golf tournament,augusta (ga)
-basketball,golden state warriors,los angeles lakers,bryant  kobe,curry  stephen,chicago bulls,records and achievements
+tennis,kerber  angelique,strycova  barbora zahlavova,radwanska  agnieszka,cibulkova  dominika
 soccer,uefa champions league (soccer),bayern munich (soccer team),benfica,guardiola  josep,vitoria  rui ,vidal  arturo
 basketball (college),prostitution,university of louisville
 basketball,hinkie  sam,philadelphia 76ers
@@ -75,7 +75,7 @@ horse racing,shagaf
 football,suits and litigation (civil),marshall  brandon (1984- ),griffin  robert iii
 cycling  road
 baseball,story  trevor (1992- ),arizona diamondbacks,colorado rockies
-soccer,uefa champions league (soccer),real madrid (soccer team),ronaldo  cristiano,vfl wolfsburg (soccer team)
+football,draft and recruitment (sports),jacksonville jaguars
 baseball,new york yankees,houston astros
 soccer,united states women's national soccer team,colombia,equal employment opportunity commission,discrimination,collective bargaining
 basketball,rambis  kurt,jackson  phil (1945- ),coaches and managers,new york knicks,charlotte hornets
@@ -86,7 +86,7 @@ russia,doping (sports),athletics and sports,meldonium (drug),hockey  ice,curling
 baseball,officiating (sports),new york yankees,houston astros,girardi  joe,tampa bay rays,toronto blue jays,barbato  johnny (1992- ),eovaldi  nathan
 basketball (college),university of connecticut,auriemma  geno,ncaa basketball championships (women),university of notre dame,baylor university,university of texas
 soccer,uefa champions league (soccer),wolfsburg (soccer team),real madrid (soccer team),paris st-germain fc (soccer team),manchester city (soccer team)
-baseball,detroit tigers,pittsburgh pirates,upton  justin (1987- )
+football,rolle  antrel,slauson  matt,chicago bears
 golf,masters golf tournament,augusta national golf club,woods  tiger,palmer  arnold,watson  tom
 soccer,international federation of association football (fifa),union of european football assns (uefa),infantino  gianni,switzerland,ethics and official misconduct,corruption (institutional),jinkis  hugo,jinkis  mariano,figueredo  eugenio (1932- ),television
 football,national football league,new england patriots,suits and litigation (civil)
@@ -97,7 +97,7 @@ golf,day  jason,alcohol abuse,child abuse and neglect,masters golf tournament
 soccer,maldini  cesare,chelsea (soccer team),conte  antonio,coaches and managers,english premier league,milan (soccer team),mourinho  jose,abramovich  roman a
 basketball,golden state warriors,minnesota timberwolves,curry  stephen,green  draymond,towns  karl-anthony
 football,marshall  brandon (1984- ),assaults,suits and litigation (civil),new york jets
-baseball,los angeles dodgers,scully  vin
+automobile racing,formula one,sochi (russia),rosberg  nico
 basketball,philadelphia 76ers,new orleans pelicans (basketball),new orleans pelicans
 soccer,rangers (soccer team),bayern munich (soccer team),benfica,benfica (soccer team)
 baseball,price  david taylor,boston red sox,cleveland indians
@@ -108,7 +108,7 @@ basketball (college),yori  connie,coaches and managers,bullies,university of neb
 olympic games (2016),ticket scalping,rio de janeiro (brazil)
 basketball (college),records and achievements,auriemma  geno,stewart  breanna (1994- ),coaches and managers,ncaa basketball championships (women),syracuse university,university of connecticut
 baseball,walker  neil (1985- ),kansas city royals,new york mets
-soccer,manchester city (soccer team),paris st-germain fc (soccer team),uefa champions league (soccer)
+baseball,sale  chris,chicago white sox,baltimore orioles
 golf,masters golf tournament
 baseball,new york yankees,stubhub
 golf,spieth  jordan,masters golf tournament
@@ -119,8 +119,8 @@ deaths (obituaries),baseball,sandlock  mike (1915-2016),sandlock  mike
 baseball,syndergaard  noah,new york mets,kansas city royals
 soccer,suarez  luis (1987- ),torres  fernando,barcelona (soccer team),atletico madrid (soccer team)
 hockey  ice,montreal canadiens,florida panthers
-soccer,uefa champions league (soccer),real madrid (soccer team),ronaldo  cristiano,zidane  zinedine,wolfsburg (soccer team)
-hockey  ice,playoff games,stanley cup
+pittsburgh penguins,washington capitals,national hockey league,new york rangers,maatta  olli,orpik  brooks,raanta  antti (1989- ),hockey  ice
+automobile racing,talladega superspeedway,keselowski  brad
 baseball,houston astros,new york yankees
 basketball (college),auriemma  geno,ncaa basketball championships (women),university of connecticut,stewart  breanna (1994- )
 basketball (college),university of north carolina,paige  marcus (1993- ),carter  joe (1960- ),morgan  alex (1989- ),sinclair  christine (1983- )
@@ -131,7 +131,7 @@ deaths (obituaries),soccer,world cup (soccer),maldini  cesare,milan (soccer team
 cricket (game),west indies,stokes  ben (1991- )
 carter  bruce (1988- ),football,free agents (sports),mccoy  lesean,oakland raiders,new england patriots,new york jets,carter  bruce
 tennis,voegele  stefanie (1990- ),tsurenko  lesia,katowice open (tennis),katowice open
-ncaa basketball championships (men),television,basketball (college),cbs sports,turner network television,national collegiate athletic assn
+basketball,movies,davis  baron,blacks,documentary films and programs,los angeles (calif),the drew (movie),drew  the (movie)
 bicycles and bicycling,snchez  luis len,cycling  road,tour of the basque country (bicycle race)
 soccer,manchester city (soccer team),toure  yaya
 baseball,washington nationals,atlanta braves
@@ -142,7 +142,7 @@ soccer,conte  antonio,mourinho  jose,coaches and managers,chelsea (soccer team)
 hockey  ice,capuano  jack,new york islanders,tampa bay lightning
 golf,herman  jim (1977- ),masters golf tournament,trump  donald j,day  jason
 basketball (college),big east conference,wright  jay (1961- ),ncaa basketball championships (men),villanova university
-cricket (game),taylor  james (1990- )
+baseball,new york yankees,rodriguez  alex
 general mills inc,louganis  greg,movies,evans  janet,moses  edwin c,cereals,diving (sports event),back on board: greg louganis (movie)
 basketball,san antonio spurs,golden state warriors,records and achievements
 basketball (college),stewart  breanna (1994- ),sykes  brittney (1994- ),samuelson  katie lou (1997- ),ncaa basketball championships (women),university of connecticut,syracuse university
@@ -152,7 +152,7 @@ hockey  ice,scott  john (1982- ),all star games,st john's icecaps,arizona coyote
 baseball,keuchel  dallas,hicks  aaron (1989- ),gardner  brett,new york yankees,houston astros
 baseball,cespedes  yoenis,gordon  alex (1984- ),kansas city royals,new york mets
 golf,dechambeau  bryson,sporting goods and equipment,schy  mike,masters golf tournament
-hockey  ice,washington capitals,williams  justin (1981- ),oshie  t j,playoff games
+baseball,bumgarner  madison,syndergaard  noah,walker  neil (1985- ),san francisco giants,new york mets
 formula one,mercedes gp petronas formula one team,automobile racing,rosberg  nico,bahrain grand prix
 soccer,real madrid (soccer team),barcelona (soccer team),ronaldo  cristiano,benzema  karim,zidane  zinedine,cruyff  johan
 baseball,harvey  matt,new york mets,kansas city royals
@@ -163,7 +163,7 @@ automobiles,busch  kyle,nascar sprint cup series
 basketball (college),hield  buddy (1993- ),oklahoma,university of oklahoma,ncaa basketball championships (men)
 soccer,leicester city (soccer team),southampton (soccer team)
 basketball,brooklyn nets,new orleans pelicans (basketball)
-tennis,wages and salaries,women and girls,assn of tennis professionals,women's tennis assn,discrimination
+hockey  ice,orpik  brooks,maatta  olli,pittsburgh penguins,washington capitals
 golf,ko  lydia,ladies professional golf assn,ana inspiration (golf),ana inspiration
 basketball,houston rockets,oklahoma city thunder,new york knicks,indiana pacers
 baseball,pittsburgh pirates,st louis cardinals
@@ -174,7 +174,7 @@ basketball (college),ncaa basketball championships (women),syracuse university,u
 television,basketball (college),tbs network,espn,villanova university,university of north carolina,ncaa basketball championships (men)
 basketball (college),ncaa basketball championships (men),villanova university,university of north carolina,paige  marcus (1993- ),brunson  jalen (1996- )
 baseball,cashman  brian,girardi  joe,coaches and managers,new york yankees
-soccer,rooney  wayne,van gaal  louis,manchester united (soccer team)
+basketball,playoff games,golden state warriors,portland trail blazers
 basketball (college),arcidiacono  ryan (1994- ),university of north carolina,villanova university,ncaa basketball championships (men),ryan arcidiacono
 basketball (college),britt  nate (1994- ),jenkins  kris (1993- ),ncaa basketball championships (men),villanova university,university of north carolina,kris jenkins,nate britt
 basketball (college),arcidiacono  ryan (1994- ),hart  josh (1995- ),north carolina state university,ochefu  daniel (1993- ),ncaa basketball championships (men),villanova university
@@ -185,7 +185,7 @@ hockey  ice,coaches and managers,boston bruins,national hockey league
 baseball,syndergaard  noah,escobar  alcides (1986- ),world series,kansas city royals,new york mets
 basketball (college),university of connecticut,oregon state university,ncaa basketball championships (women),stewart  breanna (1994- )
 basketball,kerr  steve,curry  stephen,green  draymond,boston celtics,golden state warriors
-football (college),college athletics,georgia
+dipietro  rick,espn,radio,hockey  ice,new york islanders
 horse racing,nyquist,kentucky derby
 baseball,coaches and managers,new york mets,warthen  dan
 hockey  ice,playoff games,new york rangers,buffalo sabres
@@ -196,7 +196,7 @@ basketball (college),villanova university,university of oklahoma,ncaa basketball
 horse racing,florida derby (horse race),kentucky derby
 ncaa basketball championships (women),basketball (college),university of connecticut
 basketball (college),ncaa basketball championships (men),university of oklahoma,hield  buddy (1993- )
-tennis,gasquet  richard,monte carlo open (tennis),monte carlo masters
+tennis,nadal  rafael,djokovic  novak,french open (tennis)
 hockey  ice,new york islanders,pittsburgh penguins
 tennis,azarenka  victoria,kuznetsova  svetlana
 soccer,arsenal (soccer team),watford (soccer team),manchester city (soccer team),bournemouth (soccer team),real madrid (soccer team),barcelona (soccer team)
@@ -207,7 +207,7 @@ golf,women and girls,gender
 track and field,doping (sports),symmonds  nick
 basketball,chicago bulls,golden state warriors
 hockey  ice,playoff games,canada,montreal canadiens,toronto maple leafs,vancouver canucks
-hockey  ice,maloney  don,coaches and managers,appointments and executive changes,arizona coyotes
+baseball,bumgarner  madison,syndergaard  noah,san francisco giants,new york mets
 basketball (college),ncaa basketball championships (men),basketball,villanova university,philadelphia 76ers
 baseball,chicago cubs
 baseball,american league,kansas city royals,minnesota twins
@@ -218,7 +218,7 @@ cricket (game),west indies,england,australia
 basketball,boston celtics,golden state warriors,curry  stephen,green  draymond
 hockey  ice,keith  duncan,chicago blackhawks
 tennis,djokovic  novak,key biscayne (fla),miami open (tennis)
-football,gordon  josh (1991- ),drug abuse and traffic,kansas city chiefs,devito  mike (1984- ),new york giants,cleveland browns
+soccer,english premier league,leicester city (soccer team),manchester united (soccer team)
 basketball (college),murray  jamal,draft and recruitment (sports),university of kentucky,national basketball assn,basketball
 automobile racing,chronic traumatic encephalopathy,earnhardt  dale jr,brain,concussions,concussion legacy foundation
 figure skating,fernandez  javier (1991- ),hanyu  yuzuru
@@ -229,8 +229,8 @@ baseball,verrett  logan (1990- ),new york mets,chicago cubs
 sailboats and sailing,young  sarah (d 2016),maritime accidents and safety,deaths (fatalities),ashman  andrew (d 2015),ichorcoal 
 hockey  ice,ice,barclays center (brooklyn  ny),new york islanders
 basketball (college),hopkins  mike (1970- ),boeheim  jim,coaches and managers,syracuse university,ncaa basketball championships (men)
-soccer,world cup (soccer),china,world cup 2018 (soccer),national development and reform commission (china)
-basketball,cleveland cavaliers,atlanta hawks
+free diving,records and achievements,trubridge  william
+deaths (obituaries),texas,newspapers,athletics and sports,writing and writers,sherrod  blackie (1919-2016),sherrod  blackie
 baseball,sabathia  c c,nova  ivan,new york yankees
 horse racing,florida derby (horse race),triple crown (horse racing),mohaymen (race horse),nyquist (race horse)
 basketball,los angeles lakers,miami heat,cleveland cavaliers,atlanta hawks
@@ -241,7 +241,7 @@ soccer,women and girls,discrimination,united states soccer federation,wages and 
 basketball (college),ochefu  daniel (1993- ),wright  jay (1961- ),ncaa basketball championships (men),villanova university
 television,baseball,scully  vin,espn,comcast corporation,yes network,sportsnet la,los angeles dodgers,new york yankees
 skiing,snowsports industries america
-baseball,verlander  justin,detroit tigers,pittsburgh pirates
+basketball,san antonio spurs,oklahoma city thunder,aldridge  lamarcus
 horse racing,kentucky derby,florida derby (horse race)
 golf,houston open (golf),hoffman  charley
 hockey  ice,college athletics,boston college,university of michigan,vesey  jimmy,demko  thatcher,connor  kyle
@@ -252,7 +252,7 @@ figure skating,cizeron  guillaume,papadakis  gabriella,ice dancing
 soccer,stadiums and arenas,st petersburg (russia),world cup (soccer)
 basketball,james  lebron,brooklyn nets,cleveland cavaliers
 basketball (college),national invitation tournament,george washington university,valparaiso university
-baseball,bonds  barry,stanton  giancarlo,matz  steven (1991- ),collins  terry l,miami marlins,new york mets
+automobile racing,rosberg  nico
 hockey  ice,columbus blue jackets,new york islanders
 hockey  ice,new york rangers,carolina hurricanes
 hockey  ice,new jersey devils,florida panthers
@@ -263,7 +263,7 @@ games,interscholastic athletics,cup stacking,speed stacks inc,boys and girls clu
 golf,henderson  brooke (1997- ),ana inspiration,ana inspiration
 soccer,howard  tim,women and girls,women's rights,major league soccer,colorado rapids (soccer team),everton (soccer team)
 college athletics,draftkings inc,fanduel.com,national collegiate athletic assn,fantasy sports,ncaa basketball championships (men)
-baseball,stadiums and arenas,florida,tampa (fla),new york yankees
+hockey  ice,national hockey league,barkov  aleksander (1995- ),eriksson   loui (1985- ),kopitar  anze
 football,journal of neurotrauma,mental health and disorders,brain,concussions,football (college),boston university,research
 baseball,miller  andrew (1985- ),mitchell  bryan b (1991- ),sports injuries,new york yankees
 hockey  ice,canada,playoff games,stanley cup,new york rangers,montreal canadiens,chicago blackhawks
@@ -274,7 +274,7 @@ baseball,coors field (denver  colo),darren holmes,steve foster,coors field (denv
 doping (sports),russia,athletics and sports,meldonium (drug),bicycles and bicycling
 tennis,azarenka  victoria,miami (fla),miami open (tennis)
 basketball (college),smith  kyle a (1969- ),university of san francisco,columbia university,coaches and managers
-lehtonen  kari,niemi  antti,hockey  ice,st louis blues,anaheim ducks,dallas stars
+froome  christopher,quintana  nairo,bicycles and bicycling
 golf,sorenstam  annika,solheim cup (golf)
 baseball (college),blankmeyer  ed (1954- ),coaches and managers,st john's university,wagner college
 hockey  ice,ottawa senators,washington capitals
@@ -285,7 +285,7 @@ basketball (college),stewart  breanna (1994- ),university of connecticut,ncaa ba
 basketball (college),oakland university,vegas 16 basketball tournament,ncaa basketball championships (men)
 hockey  ice,clutterbuck  cal,tavares  john (1990- ),new york islanders
 golf,kang  danielle,jenner  caitlyn (1949- ),transgender and transsexuals,sherwood country club
-lundqvist  henrik,hockey  ice,new york rangers
+track and field,richards-ross  sanya
 basketball,video recordings  downloads and streaming,los angeles lakers,nick young,azalea  iggy,dallas mavericks,new york knicks
 baseball,reyes  jose,ramirez  katherine ,domestic violence,colorado rockies
 baseball,washington nationals,new york mets
@@ -296,7 +296,7 @@ olympic games (2016),soccer
 soccer,united states men's national soccer team,world cup 2018 (soccer),united states soccer federation,klinsmann  jurgen
 soccer,pochettino  mauricio,english premier league,tottenham hotspur (soccer team),southampton (soccer team),alli  dele (1996- ),kane  harry (1993- )
 cricket (game),new zealand,england,india,west indies
-soccer,hawit  alfredo (1951- ),international federation of association football (fifa),bribery and kickbacks,confederation of north  central american and caribbean association football (concacaf),frauds and swindling,racketeering and racketeers,justice department
+tennis,safarova  lucie,stosur  samantha,djokovic  novak,almagro  nicolas,thiem  dominic,prague open
 cycling  road,corsica
 track and field,fines (penalties),martin  talia
 football,brinkley  jasper (1985- ),new york giants
@@ -307,7 +307,7 @@ football (college),title ix (gender discrimination legislation),manning  peyton,
 hockey  ice,united states,finland
 basketball,houston rockets,cleveland cavaliers,brooklyn nets,orlando magic
 tennis,halep  simona,bacsinszky  timea,miami open (tennis)
-basketball,curry  stephen,mcadoo  james michael,ezeli  festus (1989- ),bogut  andrew,livingston  shaun,varejao  anderson (1982- ),golden state warriors
+golf,stuard  brian
 olympic games (2016),brazil,olympic games
 hockey  ice,new jersey devils,boston bruins
 basketball (college),columbia university,university of california  irvine,collegeinsider.com tournament,brigham young university,valparaiso university,national invitation tournament
@@ -318,7 +318,7 @@ baseball,sabathia  c c,tanaka  masahiro,new york yankees
 basketball (college),koenig  bronson,coaches and managers,ncaa basketball championships (men),university of wisconsin-madison
 soccer,paris attacks (november 2015),france,russia,stade de france (paris  france)
 deaths (obituaries),basketball,new york knicks,denver nuggets,boryla  vince (1927-2016),boryla  vince
-baseball,records and achievements,colorado rockies,story  trevor (1992- )
+baseball,philadelphia phillies,cleveland indians,galvis  freddy (1989- )
 biletnikoff  fred,biletnikoff foundation,biletnikoff  tracey,golf,murders  attempted murders and homicides,drug abuse and traffic,football,philanthropy
 books and literature,athletics and sports
 biathlon,doping (sports),athletics and sports,world anti-doping agency,cross-country skiing,skiing,tests (drug use)
@@ -329,7 +329,7 @@ demoitie  antoine (1990-2016),cycling  road,deaths (fatalities)
 athletics and sports,kansas city (mo),constitutional amendments,religion and belief,freedom of religion
 basketball (college),stewart  breanna (1994- ),awards  decorations and honors,columbia university,university of connecticut,griffith  megan (1985- )
 hockey  ice,detroit red wings,colorado avalanche,tampa bay lightning,columbus blue jackets,washington capitals
-deaths (obituaries),philadelphia flyers,national hockey league,hockey  ice,snider  edward m,snider  ed
+baseball,new york yankees,pineda  michael
 football,abdullah  husain (1985- ),concussions,kansas city chiefs,minnesota vikings,abdullah  husain
 baseball,swisher  nick,montero  jesus,toronto blue jays,atlanta braves
 wrestling,college athletics,dieringer  alex (1993- ),oklahoma state university,dieringer  alex,colleges and universities
@@ -340,8 +340,8 @@ boxing,taylor  anthony (boxer),aljahmi  hamzah (d 2015)
 soccer,united states men's national soccer team,guatemala,klinsmann  jurgen,world cup 2018 (soccer)
 hockey  ice,college athletics,clifton  connor (1995- ),clifton  tim (1992- ),ncaa ice hockey championships,clifton  tim,clifton  connor,colleges and universities,quinnipiac university
 basketball (college),ncaa basketball championships (women),stewart  breanna (1994- ),oregon state university,baylor university,university of connecticut,university of texas at austin
-soccer,leicester city (soccer team),northampton town fc (soccer team)
-golf,spieth  jordan,willett  daniel j (1987- ),masters golf tournament
+soccer,court of arbitration for sport,international federation of association football (fifa),gibraltar
+baseball,new york yankees,boston red sox
 hockey  ice,national hockey league,concussions,bettman  gary,suits and litigation (civil),depression (mental),drug abuse and traffic
 basketball (college),television,espn,university of kentucky,texas western college
 basketball (college),valparaiso university,boeheim  jim,ncaa basketball championships (men),syracuse university
@@ -352,7 +352,7 @@ soccer,plaku  sebino (1985- ),europe,court of arbitration for sport,internationa
 baseball,women and girls,draft and recruitment (sports),hopkins  amanda,major league baseball,houghton  edith (1912-2013),seattle mariners
 soccer,cruyff  johan,ajax amsterdam (soccer team),barcelona (soccer team),total football,netherlands
 world cup 2018 (soccer),brazil,uruguay,england,germany,suarez  luis (1987- ),alli  dele (1996- ),kane  harry (1993- ),vardy  jamie (1987- ),neymar,costa  douglas (1990- )
-basketball,jackson  phil (1945- ),coaches and managers,walsh  donnie,rambis  kurt,new york knicks
+hockey  ice,draft and recruitment (sports),national hockey league,toronto maple leafs
 basketball (college),university of oklahoma,university of north carolina,villanova university,syracuse university,ncaa basketball championships (men)
 basketball (college),blacks,ncaa basketball championships (men),university of kentucky,university of texas at el paso
 golf,day  jason,mcilroy  rory,world golf championships 
@@ -363,7 +363,7 @@ hockey  ice,college athletics,university of north dakota,quinnipiac university,b
 football,baltimore ravens,walker  tray (1992-2016)
 boats and boating,cambridge (england)
 hockey  ice,staal  eric,new york rangers,pittsburgh penguins
-soccer,west ham united (soccer team),arsenal (soccer team),english premier league,wenger  arsene,tottenham hotspur (soccer team),carroll  andy (1989- )
+football,draft and recruitment (sports),fantasy sports,wentz  carson (1992- ),elliott  ezekiel (1995- ),goff  jared t (1994- ),hackenberg  christian,coleman  corey (1994- ),lynch  paxton (1994- )
 basketball (college),ncaa basketball championships (men),university of north carolina,university of notre dame
 basketball
 hockey  ice,new jersey devils,carolina hurricanes
@@ -374,7 +374,7 @@ baseball,lagares  juan,new york mets
 basketball (college),atlantic coast conference,syracuse university,ncaa basketball championships (men)
 basketball (college),boeheim  jim,university of virginia,syracuse university
 baseball,stadiums and arenas,palm beach (fla),taxation,atlanta braves,florida,washington nationals,houston astros
-bicycles and bicycling,hayman  matthew (1978- ),queen of classics
+soccer,new york city football club (soccer team),vancouver whitecaps,steven mendoza
 soccer,pulisic  christian (1998- ),zusi  graham,world cup 2018 (soccer),united states men's national soccer team
 basketball,playoff games,national basketball assn
 boxing,mancini  ray,taylor  anthony (boxer),aljahmi  hamzah (d 2015)
@@ -385,7 +385,7 @@ hockey  ice,college athletics,university of north dakota,university of michigan
 tennis,nadal  rafael,dzumhur  damir ,miami (fla),key biscayne (fla),miami open (tennis),miami open
 basketball (college),augustana university,lincoln memorial university
 golf,day  jason,spieth  jordan,world golf championships
-swimming,kitajima  kosuke,japan
+football,draft and recruitment (sports),new york jets,lee  darron (1994- ),hackenberg  christian,jenkins  jordan (1994- ),burris  juston,edwards  lachlan (1992- ),shell  brandon (1992- ),peake  charone (1992- )
 horse racing,california chrome (race horse),dubai world,dubai (united arab emirates)
 hockey  ice,new york islanders,carolina hurricanes
 brooklyn nets,indiana pacers,basketball
@@ -396,7 +396,7 @@ soccer
 hockey  ice,detroit red wings,pittsburgh penguins
 basketball (college)
 basketball (college),ncaa basketball championships (men),syracuse university,university of north carolina
-automobile racing,busch  kyle,nascar sprint cup series
+baseball,new york mets,conforto  michael,san francisco giants
 basketball (college),ncaa basketball championships (men),university of oregon,university of oklahoma
 basketball,golden state warriors,curry  stephen,san antonio spurs,kerr  steve
 ncaa basketball championships (women),basketball (college),university of texas,university of california  los angeles,university of connecticut,stanford university
@@ -407,7 +407,7 @@ pound  richard w,doping (sports),world anti-doping agency,russia
 boxing,transgender and transsexuals,toronto newsgirls boxing club
 concussions,national football league,garagiola  joe,tennis,ncaa wrestling championships
 basketball (college),ncaa basketball championships (women),university of connecticut
-tennis,stephens  sloane,vesnina  elena,women's tennis assn,volvo car open
+draft and recruitment (sports),football,new york giants,apple  eli (1995- ),shepard  sterling (1994- ),goodson  b j (1993- ),perkins  paul (1994- ),thompson  darian (1993- ),adams  jerell (1992- )
 uniforms,ncaa basketball championships (men),basketball (college),slogans and mottoes,t-shirts (apparel),sporting goods and equipment,advertising and marketing,university of oklahoma,university of oregon,adidas ag
 baseball,arizona diamondbacks,peralta  david (1987- )
 rugby,england,australia,world cup 2015 (rugby),jones  eddie (1960- )
@@ -418,7 +418,7 @@ basketball (college),indiana university,university of north carolina,ncaa basket
 bicycles and bicycling,tour of catalonia,tour of catalonia (bicycle race)
 international federation of association football (fifa),callejas  rafael (1943- ),honduras,bribery and kickbacks,soccer
 racewalking,doping (sports),chegin  viktor,russia
-basketball (college),thornton  derryck (1997- ),duke university,derryck thornton
+hockey  ice,new york islanders,tampa bay lightning,playoff games
 basketball (college),coaches and managers,georgia institute of technology
 football,hernandez  aaron (1989- ),new england patriots
 skiing,domestic violence,street  picabo
@@ -429,7 +429,7 @@ basketball (college),iowa state university,university of virginia,ncaa basketbal
 basketball (college),ncaa basketball championships (men),university of notre dame,university of wisconsin-madison
 soccer,guatemala,international federation of association football (fifa),bribery and kickbacks,major league soccer,corruption (institutional)
 tennis,federer  roger,miami (fla),miami open (tennis),miami open
-hockey  ice,new york islanders,philadelphia flyers
+football,soccer
 baseball,nova  ivan,new york yankees,sabathia  c c
 tennis,women's tennis assn,pensions and retirement plans,women and girls,casals  rosie,king  billie jean,simon  steve (1955- )
 hockey  ice,scott  john (1982- ),st john's icecaps
@@ -440,7 +440,7 @@ soccer,united states men's national soccer team,guatemala
 basketball (college),mcclellan  eric (1993- ),wojcik  doug ,ncaa basketball championships (men),gonzaga university
 basketball,anthony  carmelo,porzingis  kristaps (1995- ),new york knicks
 basketball (college),louisville (ky),university of louisville,ncaa basketball championships (men)
-golf,willett  daniel j (1987- ),spieth  jordan,masters golf tournament
+hockey  ice,playoff games,nashville predators,josi  roman (1990- ),weber  shea
 golf,spieth  jordan,day  jason,austin (tex),world golf championships
 tennis,williams  serena,mchale  christina,miami open
 johnson  adam,soccer,sex crimes,great britain,manchester city (soccer team)
@@ -451,8 +451,8 @@ basketball,cleveland cavaliers,brooklyn nets
 hockey  ice,new jersey devils,pittsburgh penguins
 basketball,chicago bulls,new york knicks,anthony  carmelo
 basketball (college),ncaa basketball championships (men),texas a&m university,university of oklahoma
-basketball,san antonio spurs,oklahoma city thunder
-basketball,new york knicks,toronto raptors
+soccer,manchester united (soccer team),van gaal  louis
+football,draft and recruitment (sports)
 basketball (college),hockey  ice,murders  attempted murders and homicides,suicides and suicide attempts,annese  kelsey (d 2016),hutchinson  matthew (d 2016),ncaa ice hockey championships,state university of new york at geneseo,geneseo (ny)
 basketball (college),villanova university,ncaa basketball championships (men),university of miami,university of kansas,university of maryland
 ncaa ice hockey championships,hockey  ice,university of michigan
@@ -463,7 +463,7 @@ tennis,knees,sports injuries,federer  roger,miami (fla)
 hockey  ice,new york islanders
 football,national football league,concussions
 football,turner  kevin (1969-2016),amyotrophic lateral sclerosis,concussions,deaths (obituaries),suits and litigation (civil),national football league
-basketball,playoff games,golden state warriors,indiana pacers,chicago bulls
+soccer,newcastle united (soccer team)
 football,griffin  robert iii,cleveland browns
 cruyff  johan,deaths (obituaries),soccer,ajax (soccer team),barcelona (soccer team),netherlands
 concussions,national football league,football,academic and scientific journals,tobacco institute,tagliabue  paul,sports injuries,smoking and tobacco
@@ -474,7 +474,7 @@ soccer,brussels attacks (march 2016),portugal,belgium,brussels (belgium)
 baseball,major league baseball,forbes magazine,new york yankees,new york mets
 soccer,france,valls  manuel,brussels attacks (march 2016),paris attacks (november 2015),uefa european football championship
 golf,day  jason,spieth  jordan,world golf championships
-soccer,new york city football club (soccer team),chicago fire (soccer team)
+baseball,boston red sox,new york yankees,price  david taylor
 swimming,doping (sports),russia,fina,times of london
 tennis,williams  serena,miami (fla)
 tennis,del potro  juan martin,federer  roger,pella  guido (1990- ),miami open
@@ -485,7 +485,7 @@ basketball (college),philadelphia (pa),mid-atlantic states (us),villanova univer
 basketball (college),height (stature),ncaa basketball championships (men)
 basketball (college),university of northern iowa,university of oklahoma,ncaa basketball championships (men),texas a&m university
 tennis,women and girls,djokovic  novak,apologies,awards  decorations and honors,bnp paribas open (tennis),moore  raymond
-baseball,kansas city royals,minnesota twins,story  trevor (1992- ),colorado rockies,san diego padres
+basketball,playoff games,los angeles clippers,portland trail blazers
 baseball,rodriguez  alex,doping (sports),records and achievements,new york yankees
 baseball,garagiola  joe,television,national broadcasting co
 basketball (college),university of notre dame,university of oregon,stephen f austin state university,ncaa basketball championships (men)
@@ -496,7 +496,7 @@ deaths (obituaries),baseball,television,national broadcasting co,today (tv progr
 hockey  ice,stempniak  lee (1983- ),new york rangers,boston bruins
 baseball,new york yankees,rodriguez  alex
 football,chronic traumatic encephalopathy,goodell  roger,national football league,miller  jeffrey a (1970- )
-baseball,new york mets
+social media,hockey  ice,espn,buccigross  john (1966- )
 basketball,hoiberg  fred,coaches and managers,chicago bulls,thibodeau  tom
 soccer,barcelona (soccer team),messi  lionel,neymar,suarez  luis (1987- ),world cup 2018 (soccer),copa america (soccer)
 basketball,new york liberty,wiggins  candice
@@ -507,7 +507,7 @@ doping (sports),wrestling,russia,olympic games (2016)
 yahoo! inc,fantasy sports,new york state
 baseball,new york mets,new york yankees,severino  luis (1994- ),matz  steven (1991- )
 baseball,television,united states international relations,espn,tampa bay rays,cuba
-basketball,utah jazz,houston rockets,indiana pacers,brooklyn nets
+baseball,san diego padres,coaches and managers,green  andrew m (1977- )
 hockey  ice,washington capitals,ottawa senators
 basketball,brooklyn nets,charlotte hornets
 golf,brussels attacks (march 2016),pieters  thomas (1992- ),terrorism,islamic state in iraq and syria (isis)
@@ -518,7 +518,7 @@ baseball,smoking and tobacco,new york city,law and legislation,stadiums and aren
 spieth  jordan,golf,world golf championships
 football,las vegas (nev),gambling,oakland raiders
 hockey  ice,national hockey league,spacey  kevin,florida panthers,new jersey devils,wedgewood  scott (1992- )
-soccer,uefa champions league (soccer),leicester city (soccer team),sunderland (soccer team)
+davender  ed (1966-2016),basketball (college),deaths (obituaries),university of kentucky
 soccer,international federation of association football (fifa),germany,ethics and official misconduct,niersbach  wolfgang,world cup (soccer),world cup 2006 (soccer),world cup 2006 (soccer)
 tennis,miami (fla),miami open (tennis),miami open
 college athletics,national collegiate athletic assn,suits and litigation (civil),basketball (college),o'bannon  ed,computer and video games
@@ -529,7 +529,7 @@ efimova  yulia (1994- ),swimming,doping (sports),olympic games (2016)
 hockey  ice,florida panthers,new york rangers
 hockey  ice,new york islanders,philadelphia flyers
 basketball,james  lebron,cleveland cavaliers,denver nuggets
-baseball,mantle  mickey,commerce (okla),museums
+tennis,tilden  bill,sex crimes,child abuse and neglect,sandusky  jerry
 basketball (college),indiana university,university of notre dame,ncaa basketball championships (women),university of maryland,university of washington
 robinson  jackie,cuba,baseball,race and ethnicity,brooklyn dodgers
 baseball,samardzija  jeff,cueto  johnny,san francisco giants
@@ -540,7 +540,7 @@ football,china,national football league
 tennis,women and girls,moore  raymond,navratilova  martina,williams  serena,appointments and executive changes,bnp paribas open (tennis)
 basketball (college),ncaa basketball championships (men),middle tennessee state university,gonzaga university,villanova university,yale university,university of northern iowa
 draftkings inc,fanduel.com,fantasy sports,gambling,new york state,football,schneiderman  eric t
-basketball,records and achievements,san antonio spurs,chicago bulls,golden state warriors
+basketball,officiating (sports),o'neal  shaquille,rodman  dennis,nelson  don
 manchester united (soccer team),newcastle-on-tyne (england),english premier league
 soccer,leicester city (soccer team),arsenal (soccer team),kante  n'golo (1991- ),mahrez  riyad (1991- ),iwobi  alex (1996- ),english premier league,schmeichel  kasper (1986- )
 automobile racing,formula one,mercedes gp petronas formula one team,rosberg  nico,hamilton  lewis,alonso  fernando (1981- ),melbourne (australia)
@@ -551,7 +551,7 @@ automobile racing,johnson  jimmie,national assn of stock car auto racing
 baseball,laroche  adam (1979- ),chicago white sox
 hockey  ice,pittsburgh penguins,washington capitals,new jersey devils,columbus blue jackets
 soccer,manchester city (soccer team),liverpool (soccer team),southampton (soccer team)
-golf,masters golf tournament
+sports injuries,athletics and sports,interscholastic athletics
 basketball,toronto raptors,orlando magic
 basketball (college),ncaa basketball championships (men),xavier university of ohio,university of wisconsin-madison
 basketball,new york knicks,sacramento kings
@@ -562,8 +562,8 @@ basketball (college),ncaa basketball championships (men),university of maryland,
 baseball,cuba,major league baseball,baltimore orioles,tampa bay rays
 golf,day  jason,pga tour inc,arnold palmer invitational (golf),orlando (fla)
 hockey  ice,potvin  denis,potvin  jean (1949- ),new york islanders
-tennis,federer  roger,monaco,monaco masters (tennis)
-baseball,weather,new york yankees,detroit tigers
+tennis,federer  roger,sports injuries,madrid open (tennis)
+united states defense and military forces,names  personal,football,arizona state university,arizona cardinals,tillman  pat
 basketball (college),hield  buddy (1993- ),virginia commonwealth university,university of oklahoma,ncaa basketball championships (men),university of oregon,st joseph's university,saint joseph's university
 ncaa basketball championships (men),basketball (college),middle tennessee state university,syracuse university
 basketball (college),big east conference,ncaa basketball championships (men),football (college),wright  jay (1961- ),gonzaga university
@@ -574,7 +574,7 @@ basketball (college),ncaa basketball championships (men),university of notre dam
 tennis,azarenka  victoria,williams  serena,moore  raymond,women and girls,women's tennis assn,bnp paribas open (tennis),bnp paribas open
 basketball (college),ncaa basketball championships (men),stephen f austin state university,university of notre dame
 basketball,kerr  steve,green  draymond,san antonio spurs,golden state warriors
-horse racing,kentucky derby,baffert  bob,nyquist
+baseball,officiating (sports),instant replay (sports),major league baseball,brooklyn dodgers,computers and the internet
 ncaa basketball championships (men),villanova university,university of iowa
 basketball (college),murray  jamal (1997- ),ferrell  yogi (1993- ),indiana university,university of kentucky,ncaa basketball championships (men)
 basketball,washington wizards,new york knicks
@@ -585,7 +585,7 @@ basketball,brooklyn nets,kilpatrick  sean (1990- )
 basketball (college),donlon  billy,ncaa basketball championships (men),coaches and managers,wright state college
 automobile racing,dillon  austin,busch  kyle,nascar sprint cup series
 wrestling,ncaa wrestling championships,pennsylvania state university
-golf,willett  daniel j (1987- ),spieth  jordan,masters golf tournament
+soccer,leicester city (soccer team),ranieri  claudio,vardy  jamie (1987- )
 swimming,college athletics,university of georgia
 skiing,shiffrin  mikaela,alpine skiing,world cup (skiing)
 basketball,wade  dwyane (1982- ),james  lebron,cleveland cavaliers,miami heat
@@ -596,7 +596,7 @@ ncaa basketball championships (men),university of wisconsin-madison,xavier unive
 hockey  ice,pittsburgh penguins,philadelphia flyers
 ncaa basketball championships (men),university of hawaii,university of california,basketball (college)
 ncaa basketball championships (men),syracuse university
-soccer,discrimination,women and girls,wages and salaries,united states soccer federation,lloyd  carli (1982- ),united states women's national soccer team
+automobile racing,formula one,ecclestone  bernie,international automobile federation,rosberg  nico
 golf,day  jason,orlando (fla),arnold palmer invitational (golf)
 hockey  ice,new york rangers,san jose sharks
 basketball (college),indiana university,ncaa basketball championships (men),university of kentucky
@@ -607,7 +607,7 @@ english premier league,leicester city (soccer team),crystal palace (soccer team)
 new york mets,baseball,gold  marc n (1947- )
 baseball,free agents (sports),st louis cardinals,laroche  adam (1979- ),detroit tigers,chicago white sox
 golf,work-life balance,woods  tiger,day  jason,watson  bubba,scott  adam (1980- ),mcilroy  rory,parenting
-boxing,pacquiao  manny,mayweather  floyd jr,bradley  timothy (1983- )
+basketball,portland trail blazers,los angeles clippers,playoff games
 hockey  ice,holtby  braden,korn  mitch (1957- ),coaches and managers,washington capitals
 ncaa basketball championships (women),basketball (college),university of connecticut,robert morris university,duquesne university,seton hall university,university of maryland,purdue university,university of oklahoma,iona college,texas a&m university
 baseball,chamberlain  joba,hughes  philip joseph (1986- ),kennedy  ian,new york yankees,cleveland indians,kansas city royals,minnesota twins
@@ -618,7 +618,7 @@ sharapova  maria,doping (sports),tennis,meldonium (drug),cilic  marin,gasquet  r
 basketball,television,csn bay area,curry  stephen,golden state warriors
 basketball,jordan  michael,records and achievements,charlotte hornets
 basketball (college),ncaa basketball championships (men),university of north carolina,university of virginia,language and languages
-baseball,harvey  matt,new york mets,philadelphia phillies
+basketball,coaches and managers,los angeles lakers,walton  luke
 basketball (college),university of connecticut,university of tennessee,dangerfield  crystal (1998- )
 football,national football league,concussions,basketball
 lowe  rebecca (1980- ),nbc sports network,english premier league,soccer
@@ -628,7 +628,7 @@ renault sa,formula one,automobile racing,automobiles,australia,melbourne (austra
 melbourne (australia),formula one,australia,automobile racing
 formula one,automobile racing,australia,adelaide (australia)
 formula one,automobile racing,australia,melbourne (australia)
-smith  william (1981-2016),hayes  cardell (1987- ),murders  attempted murders and homicides,new orleans saints,football,traffic accidents and safety,new orleans (la),smith  will (new orleans saints),hayes  cardell
+track and field,penn relays (track and field)
 soccer,united arab emirates,qatar,china,al ahli (soccer team),shanghai sipg (soccer team),gyan  asamoah (1985- )
 cricket (game),india,pakistan,amir  mohammad (1992- ),gayle  chris (1979- )
 tennis,bnp paribas open (tennis),boycotts,williams  serena,radwanska  agnieszka
@@ -639,7 +639,7 @@ tennis,nadal  rafael,djokovic  novak,indian wells (calif),bnp paribas open (tenn
 wrestling,ncaa wrestling championships,college athletics,pennsylvania state university
 boxing,pavlik  kelly,assaults,bb and airsoft guns,ohio
 doping (sports),world anti-doping agency,meldonium (drug)
-soccer,dunn  crystal (1992- ),united states women's national soccer team,dunn  crystal
+soccer,paris st-germain fc (soccer team),ibrahimovic  zlatan,rennes (soccer team),paris st-germain fc (soccer team),rennes (soccer team)
 hockey  ice,nashville predators,washington capitals
 baseball,new york mets,wright  david
 ncaa basketball championships (men),college athletics
@@ -650,7 +650,7 @@ ncaa basketball championships (men),basketball (college),middle tennessee state 
 basketball,ncaa basketball championships (men),temple university,university of iowa
 basketball,ncaa basketball championships (men),virginia commonwealth university,oregon state university
 basketball (college),ncaa basketball championships (men),university of hawaii,university of california  berkeley
-boxing,mgm grand garden arena (las vegas  nev),bradley  timothy (1983- ),pacquiao  manny
+football (college),sandusky  jerry,child abuse and neglect,sex crimes,spanier  graham b,pennsylvania state university
 golf,arnold palmer invitational (golf),day  jason,orlando (fla)
 ncaa basketball championships (women),basketball (college),syracuse university,united states military academy
 football,new york jets,fitzpatrick  ryan,griffin  robert iii,maccagnan  mike
@@ -661,7 +661,7 @@ baltimore ravens,walker  tray (1992-2016),deaths (obituaries),football
 ncaa basketball championships (men),basketball (college),michigan state university,middle tennessee state university
 horse racing,st patrick's day,cheltenham festival,cheltenham racecourse (england),england
 ncaa basketball championships (men),basketball (college),university of arkansas at little rock,hagins  josh (1994- )
-ncaa ice hockey championships,college athletics,hockey  ice,university of north dakota,quinnipiac university
+tennis,safarova  lucie,stosur  samantha,prague (czech republic),prague open (tennis)
 basketball (college),yale university,duke university,ncaa basketball championships (men)
 uefa champions league (soccer),soccer,atletico madrid (soccer team),barcelona (soccer team),real madrid (soccer team)
 ncaa basketball championships (men),basketball (college),yale university,sherrod  brandon,dean  howard,bacon  perry jr
@@ -672,8 +672,8 @@ ncaa basketball championships (men),basketball (college),university of kansas,un
 soccer,liverpool (soccer team),manchester united (soccer team)
 skiing,gut  lara,vonn  lindsey,alpine skiing
 basketball (college),nunn  kendrick (1995- ),assaults,university of illinois,nunn  kendrick
-football,gordon  josh (1991- ),doping (sports),cleveland browns
-horse racing,grand national (horse race),mullins  david,jockeys  drivers and trainers
+soccer,english premier league,leicester (england),manchester united (soccer team)
+golf,lovemark  jamie (1988- ),zurich classic (golf)
 golf,pak  se ri,jtbc founders cup (golf)
 football,sex crimes,hazing,vogan  john,education (k-12),interscholastic athletics,coaches and managers
 football,national football league
@@ -684,7 +684,7 @@ hockey  ice,nashville predators,new york islanders
 basketball,brooklyn nets,chicago bulls
 basketball (college),university of north carolina,florida gulf coast university,university of southern california,providence college ,ncaa basketball championships (men),providence college
 hockey  ice,brenden morrow,dallas stars,new jersey devils,minnesota wild
-boxing,international boxing federation,joshua  anthony (1989- )
+hockey  ice,playoff games,st louis blues,dallas stars
 basketball (college),colleges and universities,yale university,duke university,ncaa basketball championships (men)
 basketball (college),ncaa basketball championships (men),university of virginia,hampton university
 basketball (college),university of connecticut,university of colorado,ncaa basketball championships (men)
@@ -694,7 +694,7 @@ golf,day  jason,marc leishman,orlando (fla),mcilroy  rory,arnold palmer invitati
 baseball,dunnington  tyler (1992- ),homosexuality and bisexuality,discrimination,st louis cardinals
 soccer,international federation of association football (fifa),bribery and kickbacks,company reports,blatter  sepp,hayatou  issa (1946- ),infantino  gianni,valcke  jerome,ethics and official misconduct
 basketball (college),basketball,stewart  breanna (1994- ),university of connecticut,espn,women's national basketball assn,ncaa basketball championships (women)
-football,ferguson  d'brickashaw,new york jets
+basketball,playoff games,indiana pacers,toronto raptors
 basketball (college),christmas  rakeem (1991- ),boeheim  jim,syracuse university,ncaa basketball championships (men)
 baseball,harvey  matt,degrom  jacob,new york mets
 tennis,bnp paribas open (tennis),nadal  rafael,zverev  alexander
@@ -705,7 +705,7 @@ ncaa basketball championships (men),television,television sets and media devices
 soccer,uefa champions league (soccer),manchester city (soccer team),atletico madrid (soccer team),dynamo kiev (soccer team),psv eindhoven (soccer team),kompany  vincent,luciano narsingh,juanfran
 hockey  ice,new york rangers,anaheim ducks,klein  kevin r (1984- )
 new york knicks
-doping (sports),world anti-doping agency,belarus,devyatovskiy  vadim (1977- ),track and field
+baseball,new york yankees,boston red sox
 basketball (college),university of michigan,hockey  ice
 awards  decorations and honors,biles  simone,henry  derrick,reynolds  keenan,stewart  breanna (1994- )
 sex crimes,basketball (college),michigan state university
@@ -716,7 +716,7 @@ basketball,cleveland cavaliers,dallas mavericks
 tennis,bnp paribas open (tennis),goffin  david,wawrinka  stanislas,indian wells (calif)
 tennis,nadal  rafael,indian wells (calif),bnp paribas open (tennis)
 basketball (college),ncaa basketball championships (men)
-tennis,kerber  angelique,stephens  sloane,volvo car open
+baseball,new york mets,san francisco giants,cespedes  yoenis
 soccer,barcelona (soccer team),arsenal (soccer team),bayern munich (soccer team),juventus (soccer team)
 basketball (college),names  personal,national basketball assn,coaches and managers,orlando smith,dayshon smith,ncaa basketball championships (men),kevin farrell,michael joseph albrecht
 basketball (college),montague  jack,hufnagel  yann (1982- ),sexual harassment,sex crimes,coaches and managers,yale university,ncaa basketball championships (men),university of california  berkeley
@@ -727,7 +727,7 @@ golf,palmer  arnold,dechambeau  bryson,watson  bubba,snedeker  brandt,fowler  ri
 football,mclendon  steve (1986- ),jenkins  jarvis (1988- ),free agents (sports),new york jets,harrison  damon
 basketball,carlisle  randall c (1956- ),interscholastic athletics,louisiana,summerfield high school (summerfield  la),coaches and managers,summerfield (la)
 cricket (game),south africa
-tour de france (bicycle race),contador  alberto,bicycles and bicycling
+football,draft and recruitment (sports),new york giants
 soccer,international federation of association football (fifa),justice department,bribery and kickbacks,confederation of north  central american and caribbean association football (concacaf)
 basketball (college),football (college),national collegiate athletic assn,big east conference,ncaa basketball championships (men)
 soccer,west ham united (soccer team),leicester city (soccer team),mahrez  riyad (1991- ),vardy  jamie (1987- ),payet  dimitri (1987- ),kante  n'golo (1991- )
@@ -738,7 +738,7 @@ graduation rates,blacks,football (college),basketball (college),colleges and uni
 soccer,uefa champions league (soccer),manchester city (soccer team),atletico madrid (soccer team),dynamo kiev (soccer team),psv eindhoven (soccer team)
 basketball,cleaves  mateen,sex crimes
 hockey  ice,washington capitals,new york islanders,pittsburgh penguins
-golf,masters golf tournament,mcilroy  rory
+football,draft and recruitment (sports),new york jets
 basketball,bogdanovic  bojan,brooklyn nets,philadelphia 76ers
 hockey  ice,kreider  chris,colleges and universities,boston college,new york rangers
 baseball,tejada  ruben,new york mets
@@ -749,7 +749,7 @@ basketball (college),whitehead  isaiah,rambert  ericka,ncaa basketball champions
 national football league,chronic traumatic encephalopathy,football,miller  jeffrey a (1970- ),concussions,house committee on energy and commerce,goodell  roger
 hockey  ice,national hockey league,toronto maple leafs
 football,anderson  c j (1991- ),discrimination,atlanta falcons,national football league,schneiderman  eric t,baltimore ravens,arizona cardinals,jones  chandler (1990- ),cincinnati bengals,jones  adam,wallace  mike (1986- ),denver broncos
-horse racing,kentucky derby,santa anita derby,exaggerator (race horse)
+soccer,new york red bulls (soccer team),dallas (soccer team)
 cricket (game),india,new zealand
 volleyball,thompson  courtney lynn (1984- ),olympic games (2016),brazil,superliga
 iditarod trail sled dog race (alaska),seavey  dallas,dog sledding,seavey  mitch (1959- ),snow and snowstorms
@@ -760,7 +760,7 @@ new york times,news,breaking news,video news
 hockey  ice,new jersey devils,anaheim ducks,schneider  cory,hynes  john (1975- ),silfverberg  jakob
 tennis,suits and litigation (civil),nadal  rafael,doping (sports)
 doping (sports),world anti-doping agency,russia
-basketball,playoff games,phoenix suns,new orleans pelicans (basketball)
+kono  tommy (1930-2016),deaths (obituaries),weight lifting,olympic games
 baseball,weaver  jered,wilson  c j,los angeles angels of anaheim
 soccer,english premier league,leicester city (soccer team),newcastle united (soccer team)
 tennis,murray  andy (1987- ),bnp paribas open (tennis)
@@ -771,7 +771,7 @@ football,chronic traumatic encephalopathy,national football league,brain
 bicycles and bicycling,van den driessche  femke,cheating,cycling  road,van den driessche  femke
 fantasy sports,draftkings inc,fanduel.com,new jersey,corporate taxes,regulation and deregulation of industry
 basketball,anthony  carmelo,jackson  phil (1945- ),new york knicks
-hockey  ice,barclays center (brooklyn  ny),new york islanders,buffalo sabres
+sailboats and sailing,transat
 basketball (college),ncaa basketball championships (women),iona college
 basketball,davis  baron,new york knicks,national basketball assn development league,sports injuries,delaware 87ers
 bryant  martavis (1991- ),football,pittsburgh steelers,national football league,bryant  martavis
@@ -782,8 +782,8 @@ baseball,wright  david,spine (body part),new york mets
 hazing,conestoga high school (tredyffrin township  pa),sex crimes,interscholastic athletics,education (k-12),football
 basketball (college),simmons  benjamin (1996- ),louisiana state university
 basketball (college),montague  jack,sex crimes,yale university
-doping (sports),tennis,olympic games,sharapova  maria,russia
-baseball,new york mets,philadelphia phillies,colon  bartolo
+formula one
+baseball,chicago cubs,atlanta braves
 soccer,football association cup (soccer),chelsea (soccer team),everton (soccer team),costa  diego da silva,mourinho  jose,lukaku  romelu (1993- )
 rugby,six nations 2016 (rugby),england,wales,jones  eddie (1960- ),gatland  warren (1963- ),biggar  daniel (1989- ),farrell  owen (1991- )
 ncaa basketball championships (men),national collegiate athletic assn,basketball (college)
@@ -793,7 +793,7 @@ hield  buddy (1993- ),basketball (college),bahama islands,sunrise christian acad
 automobile racing,montoya  juan pablo,indy racing league,st petersburg (fla)
 bicycles and bicycling,thomas  geraint (1986- )
 soccer,toronto (soccer team),new york city football club (soccer team)
-marathon running,fort washington avenue armory (manhattan  ny),running
+football,draft and recruitment (sports),jacksonville jaguars,jack  myles (1995- )
 basketball (college),basketball,fordham university
 skiing,gut  lara,alpine skiing,world cup (skiing)
 baseball,judge  aaron (1992- ),kaprielian  james (1994- ),new york yankees
@@ -804,7 +804,7 @@ golf,schwartzel  charl,haas  bill,valspar championship
 ncaa basketball championships (men),basketball (college),yale university,baylor university,sexual harassment
 baseball,seager  corey,los angeles dodgers
 basketball (college),valentine  denzel (1993- ),ncaa basketball championships (men),michigan state university
-wimbledon tennis tournament,golf,tennis,masters golf tournament,blackman  martin (1970- )
+football,football (college),draft and recruitment (sports),ohio state university,meyer  urban
 basketball (college),cbs corporation,national collegiate athletic assn,ncaa basketball championships (men),twitter
 basketball (college),ingram  brandon (1997- ),ncaa basketball championships (men),duke university
 basketball (college),ncaa basketball championships (women),university of connecticut,american athletic conference,university of memphis
@@ -815,7 +815,7 @@ baseball (college),ellis  perry (1993- ),ncaa baseball championships,university 
 basketball (college),ulis  tyler,southeastern conference,university of kentucky
 basketball (college),football (college),university of connecticut,american athletic conference
 basketball,cleveland cavaliers,los angeles clippers
-golf,masters golf tournament,spieth  jordan,mcilroy  rory
+football,television,draft and recruitment (sports),new york jets,lee  darron (1994- )
 basketball (college),ncaa basketball championships (men),university of kansas,university of north carolina,university of arizona,university of virginia,university of oregon
 basketball,boston celtics,toronto raptors
 hockey  ice,crosby  sidney,mcdonagh  ryan,cullen  matt (1976- ),new york rangers,pittsburgh penguins
@@ -826,7 +826,7 @@ football,bryant  martavis (1991- ),national football league,drug abuse and traff
 horse racing,arcadia (calif)
 baseball,seager  corey,los angeles dodgers
 automobile racing,busch  kyle
-marathon running,manhattan (nyc),armory nyc indoor marathon
+baseball,company reports,stadiums and arenas,new york mets,citi field (queens  ny)
 bicycles and bicycling,nice (france),paris (france),thomas  geraint (1986- ),zakarin  ilnur (1989- )
 track and field,centrowitz  matt,bracy  marvin (1993- ),bromell  trayvon (1995- ),suhr  jenn,portland (ore)
 drones (pilotless planes),dubai (united arab emirates)
@@ -837,7 +837,7 @@ hockey  ice,detroit red wings,new york rangers,lundqvist  henrik,richards  brad
 alpine skiing,gut  lara,world cup (skiing)
 deaths (obituaries),chicago bears,los angeles rams,football,wade  bill (1930-2016),wade  bill
 soccer,manchester city (soccer team),english premier league
-baseball,cincinnati reds,pittsburgh pirates
+horse racing,american pharoah (race horse),kentucky derby,nyquist
 basketball (college),texas a&m university,louisiana state university,simmons  benjamin (1996- ),purdue university,university of michigan,state university of new york at stony brook,university of vermont
 basketball,los angeles lakers,russell  d'angelo (1996- )
 hockey  ice,college athletics,arizona state university
@@ -848,7 +848,7 @@ basketball,miami heat,bosh  chris
 basketball (college),coaches and managers
 basketball (college),barton college,flemmings  christopher alexander (1994- ),university of north carolina-wilmington,draft and recruitment (sports)
 baseball,espn,mendoza  jessica (1980- )
-hockey  ice,philadelphia flyers,pittsburgh penguins
+horse racing,kentucky derby,keeneland race course
 baseball,stadiums and arenas,toronto blue jays,rogers centre
 baseball,new york yankees,rodriguez  alex,berra  yogi
 baseball,doolittle  sean (1986- ),philanthropy,oakland athletics,refugees and displaced persons,homosexuality and bisexuality,operation finally home
@@ -859,7 +859,7 @@ basketball (college),davidson college,gibbs  jack (1995- ),atlantic 10 conferenc
 basketball (college),ncaa basketball championships (men),wichita state university,missouri valley conference,statistics
 automobile racing,indianapolis 500 (auto race),indianapolis motor speedway,miles  mark d (1953- )
 basketball,mashour  karam (1991- ),israel,arabs,israel basketball assn,soccer,palestinians,jews and judaism
-baseball,alcohol abuse,detroit tigers,new york yankees,sabathia  c c
+hockey  ice,draft and recruitment (sports),national hockey league,matthews  auston (1997- )
 track and field,russia,doping (sports),olympic games (2016),world anti-doping agency,international assn of athletics federations
 golf,valspar championship (golf)
 soccer,crystal palace (soccer team),english premier league,reading (soccer team)
@@ -870,7 +870,7 @@ deaths (obituaries),los angeles rams,new york giants,football,jeter  gary (1955-
 basketball (college),university of connecticut,university of cincinnati
 football,denver broncos,manning  peyton,sanchez  mark
 basketball,philadelphia 76ers
-hockey  ice,detroit red wings,new york rangers
+baseball,arrieta  jake,doping (sports),chicago cubs
 carpenter  alexandra (1994- ),hockey  ice,boston college
 baseball,new york mets,cabrera  asdrubal,sports injuries
 baseball,gossage  richard (goose) (1951- ),new york yankees
@@ -881,7 +881,7 @@ hockey  ice,calgary flames,wideman  dennis (1983- ),henderson  don (1968- )
 baseball,seattle mariners,dipoto  jerry (1968- ),servais  scott (1967- )
 football,cleveland browns,manziel  johnny
 football,st louis rams,stadiums and arenas,los angeles memorial coliseum,university of southern california,kroenke  stan
-soccer,west ham united (soccer team)
+football,tunsil  laremy (1994- ),draft and recruitment (sports),national football league,miami dolphins,university of mississippi,social media
 rugby,english premiership,london irish (rugby team),saracens (rugby team)
 basketball,cleveland cavaliers,golden state warriors,james  lebron
 deaths (obituaries),coaches and managers,campus magnet high school (queens  ny),basketball,granby  charles (1934-2016),granby  charles
@@ -892,8 +892,8 @@ soccer,new york red bulls (soccer team),toronto (soccer team)
 basketball,san antonio spurs,chicago bulls
 golf,spieth  jordan,florida,valspar championship
 baseball,syndergaard  noah,new york mets,st louis cardinals
-international federation of association football (fifa),del nero  marco polo,soccer,brazil
-women and girls,soccer,golf
+soccer,la liga,barcelona (soccer team),real madrid (soccer team),atletico madrid (soccer team),griezmann  antoine (1991- ),simeone  diego (1970- ),zidane  zinedine
+baseball,gordon  dee (1988- ),doping (sports),miami marlins
 hockey  ice,florida panthers,ottawa senators
 football,anderson  c j (1991- ),denver broncos,miami dolphins
 baseball,chapman  aroldis (1988- ),domestic violence,new york yankees
@@ -904,7 +904,7 @@ deaths (obituaries),basketball,minneapolis lakers,boston celtics,university of k
 football,forte  matthew g,powell  bilal,robinson  khiry (1989- ),fitzpatrick  ryan,free agents (sports),new york jets
 tennis,doping (sports),sharapova  maria,world anti-doping agency,tests (drug use),nadal  rafael,kvitova  petra,wawrinka  stanislas,radwanska  agnieszka
 tennis,doping (sports),sharapova  maria,russia,alzheimer's disease
-baseball,milwaukee brewers,new york mets,rodriguez  francisco,henderson  jim (1982- )
+soccer,uefa champions league (soccer),atletico madrid (soccer team),bayern munich (soccer team),leicester city (soccer team),mahrez  riyad (1991- ),simeone  diego (1970- ),niguez  saul (1994- )
 deaths (obituaries),hockey hall of fame,new york rangers,calgary (alberta),detroit red wings,gadsby  bill
 basketball (college),ivy league,playoff games,ncaa basketball championships (men),ncaa basketball championships (women)
 tennis,sharapova  maria,doping (sports),world anti-doping agency,meldonium (drug)
@@ -915,7 +915,7 @@ baseball,avila  alex (1987- ),avila  al (1958- ),free agents (sports),chicago wh
 soccer,roma (soccer team),real madrid (soccer team),uefa champions league (soccer),francesco totti (1976- ),ronaldo  cristiano
 hockey  ice,quinnipiac university,college athletics
 hockey  ice,toronto maple leafs,new york islanders
-basketball,stadiums and arenas
+hockey  ice,playoff games,oshie  t j,pittsburgh penguins,washington capitals
 basketball (college),duke university,atlantic coast conference
 hockey  ice,st louis blues,chicago blackhawks
 basketball,boston celtics,memphis grizzlies
@@ -926,7 +926,7 @@ basketball (college),north carolina state university,duke university
 basketball,anthony  carmelo,new york knicks,phoenix suns
 tennis,doping (sports),sharapova  maria,russia,alzheimer's disease
 baseball,new york mets,new york yankees
-horse racing,phipps  ogden mills
+boxing,gradovich  evgeny,carl frampton
 soccer,uefa champions league (soccer),english premier league,paris st-germain fc (soccer team),chelsea (soccer team)
 football,reese  jerry,new york giants
 baseball,granderson  curtis,new york yankees,new york mets
@@ -937,7 +937,7 @@ football,forte  matthew g,free agents (sports),new york jets
 football,pop warner little scholars,chronic traumatic encephalopathy,children and childhood,chernach  joseph (1986-2012),concussions,interscholastic athletics
 doping (sports),russia,tennis,world anti-doping agency,sharapova  maria,tests (drug use),short-track speedskating,olympic games,kulizhnikov  pavel,elistratov  semion (1990- ),athletics and sports
 basketball,jackson  phil (1945- ),dolan  james l,new york knicks
-baseball,new york mets,seattle mariners,hampton  mike (1972- )
+tennis,kuznetsova  svetlana,goffin  david,tomic  bernard,prague open (tennis)
 international federation of association football (fifa),blatter  sepp,soccer,france,switzerland,platini  michel
 stalking (crime),women and girls,athletics and sports,andrews  erin (1978- ),barrett  michael david,television,espn,fox sports,mendoza  jessica (1980- ),kremer  andrea,little  jamie (1978- )
 football,miller  von,osweiler  brock (1990- ),jackson  malik (1990- ),trevathan  danny (1990- ),free agents (sports),denver broncos,manning  peyton
@@ -948,7 +948,7 @@ tennis,international tennis hall of fame,henin  justine,safin  marat
 bicycles and bicycling,matthews  michael (1990- ),cycling  road,france
 baseball,capps  carter,sports injuries,miami marlins,capps  carter (1990- )
 doping (sports),speedskating,volleyball,russia,kulizhnikov  pavel,markov  alexander
-hockey  ice,nylander  michael,nylander  william (1996- ),nylander  alexander (1998- )
+horse racing,breeders' cup (horse races),awesome again stakes,pacific classic
 football (college),instant replay (sports)
 virginia,fantasy sports,gambling
 basketball (college),fairleigh dickinson university,gonzaga university,st mary's college of california,saint mary's college
@@ -959,7 +959,7 @@ baseball,comcast corporation,yes network,cable television,prices (fares  fees an
 basketball (college),garrett  jarvis (1995- ),protective clothing and gear,sports injuries,university of rhode island
 tennis,doping (sports),sharapova  maria
 golf,grace  branden,south africa
-hockey  ice,coaches and managers,new york islanders,arbour  al
+soccer,playoff games,liverpool (soccer team),villarreal (soccer team),uefa europa league
 baseball,harvey  matt,new york mets
 football,pierre-paul  jason,sports injuries,free agents (sports),new york giants
 horse racing,jockeys  drivers and trainers,dickinson  michael (1950- )
@@ -970,7 +970,7 @@ baseball,accidents and safety,cunningham  shaun,photography,sports injuries,stad
 baseball,mattingly  don,bonds  barry,miami marlins,coaches and managers
 williams  serena,doping (sports),sharapova  maria,tennis
 football,johnson  calvin (1985- ),public relations and publicity,detroit lions
-baseball,chicago cubs,maddon  joe
+bicycles and bicycling,postal service (us),armstrong  lance,suits and litigation (civil),tour de france (bicycle race),quintana  nairo
 football (college),hoffman  ryan (1974- ),chronic traumatic encephalopathy,university of north carolina,homeless persons
 doping (sports),tests (drug use),tennis,world anti-doping agency,sharapova  maria
 basketball,golden state warriors,orlando magic,curry  stephen
@@ -981,7 +981,7 @@ soccer,women and girls,international federation of association football (fifa),i
 basketball,popovich  gregg,indiana pacers,san antonio spurs
 basketball (college),iona college,monmouth university
 baseball,peralta  jhonny,st louis cardinals,sports injuries,stanton  giancarlo,miami marlins,milwaukee brewers,braun  ryan
-golf,masters golf tournament,scott  adam (1980- ),snedeker  brandt
+lee  darron (1994- ),football,lee  darron,draft and recruitment (sports),ohio state university,new york jets
 football,manning  peyton,denver broncos,elway  john
 basketball (college),signs and signage,fathead llc,marquette university,small business,buildahead llc
 hockey  ice,lundqvist  henrik,nash  rick,sports injuries,new york rangers
@@ -992,7 +992,7 @@ tennis,sharapova  maria,doping (sports),international tennis federation,world an
 hockey  ice,crosby  sidney,sullivan  mike (1968- ),hagelin  carl,malkin  evgeni,pittsburgh penguins
 football,manning  peyton,national football league,denver broncos
 baseball,trading cards,cobb  ty,collectors and collections
-triathlon,cheating,miller  julie (triathlete)
+golf,zurich classic,hur  mi jung (1989- ),stuard  brian,zurich classic (golf)
 king  billie jean,soccer,women's rights,tennis,international federation of association football (fifa)
 soccer,english premier league,arsenal (soccer team),manchester united (soccer team),leicester (england)
 basketball,washington wizards,portland trail blazers

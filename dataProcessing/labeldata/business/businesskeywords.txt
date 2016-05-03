@@ -1,20 +1,940 @@
-coca-cola company
-banking and financial institutions,interest rates,savings,personal finances
-trump  donald j,new york state,presidential election of 2016,elections,voting and voters,race and ethnicity,primaries and caucuses
+suits and litigation (civil),redstone  sumner m,herzer  manuela (1963- ),viacom inc,cbs corporation,los angeles (calif),mental health and disorders
+suits and litigation (civil),hogan  hulk,gawker.com,race and ethnicity,daulerio  a j,denton  nick,world wrestling entertainment inc
+spain,unemployment,labor and jobs,europe,temporary employment
+mergers  acquisitions and divestitures,sanofi sa,medivation inc,drugs (pharmaceuticals)
+anbang insurance group co,starwood hotels & resorts worldwide inc,china,renminbi (currency),hotels and travel lodgings,mergers  acquisitions and divestitures
+credit cards,debit cards,shopping and retail,frauds and swindling,mastercard inc,visa inc,american express company,vantiv llc,first data corporation
+marriages,poverty,united states politics and government,children and childhood,single mothers,families and family life,united states economy
+supreme court (us),tyson foods inc,overtime,suits and litigation (civil),decisions and verdicts,labor and jobs
+cit group inc,thain  john a,executive compensation,onewest bank na,mergers  acquisitions and divestitures
+gun control,shareholder rights and activism,sturm ruger & company inc,james  letitia,public advocate's office
+fuel efficiency,fuel emissions (transportation),automobiles,electric and hybrid vehicles,environmental protection agency
+real estate (commercial),renting and leasing (real estate),midtown area (manhattan  ny),prices (fares  fees and rates),new york city
+stocks and bonds,nasdaq composite index,dow jones stock average,standard & poor's 500-stock index
+google inc,computer security,android (operating system),samsung group
+deutsche bank ag,company reports,banking and financial institutions
+rattner  steven l,guggenheim securities llc,securities and exchange commission,banking and financial institutions,quadrangle group
+target corporation,bathrooms and toilets,transgender and transsexuals,discrimination,boycotts,american family assn
+hedge funds,ackman  william a,valeant pharmaceuticals international inc,pershing square capital management,drugs (pharmaceuticals),bankruptcies
+driverless and semiautonomous vehicles,ford motor co,google inc,traffic accidents and safety,automobile safety features and defects,national highway traffic safety administration
+btg pactual,esteves  andre santos (1969- ),brazil,bribery and kickbacks
+deaths (obituaries),waas  les (1921-2016),mister softee,advertising and marketing,food trucks and vendors,ice cream and frozen desserts,waas  les
+dreamworks animation skg inc,comcast corporation,mergers  acquisitions and divestitures,company reports,roberts  brian l
+hulu.com,video recordings  downloads and streaming,cable television,television
+electronics,laptop computers,smartphones,sustainable living,shopping and retail,product tests,computer and video games,amazon.com inc,gamestop corporation,gazelle.com
+tax preparers and preparation,income tax,federal taxes (us),internal revenue service,american institute of certified public accountants,personal finances
+facebook inc,zuckerberg  mark e,company reports,stocks and bonds
+federal reserve system,interest rates,united states economy,banking and financial institutions,inflation (economics)
+boards of directors,starboard value lp,yahoo! inc,marvell technologies,darden restaurants inc
+surfing,slyde handboards llc,advertising and marketing,start-ups,family business,social media
+european sovereign debt crisis (2010- ),greece,europe,credit and debt
+dubsmash (mobile motion gmbh),mobile applications
+apple inc,federal bureau of investigation,privacy,surveillance of citizens by government,computer security
+valeant pharmaceuticals international inc,pearson  john michael (1959- ),drugs (pharmaceuticals),united states politics and government,prices (fares  fees and rates),philidor rx services llc,senate special committee on aging,schiller  howard b
+instagram inc,mobile applications,social media
+comcast corporation,walt disney company,dreamworks animation skg inc,mergers  acquisitions and divestitures,roberts  brian l
+apple inc,china,iphone,electronics,telephones and telecommunications
 stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+google inc,antitrust laws and competition issues,europe,smartphones,regulation and deregulation of industry,google phone,android (operating system),european commission,facebook inc
+company reports,social media,facebook inc
+apple inc,el capitan,mac os (operating system)
+yahoo! inc,starboard value lp,boards of directors,mergers  acquisitions and divestitures,smith  jeffrey c
+presidential election of 2016,trump  donald j,northeastern states (us),primaries and caucuses,polls and public opinion
+gross domestic product,economic conditions and trends,great britain
+company reports,banco santander s a
+new york city,silicon valley (calif),computers and the internet,science and technology
+mergers  acquisitions and divestitures,conforama sa,darty plc,groupe fnac
+barclays plc,company reports,banking and financial institutions
+drugs (pharmaceuticals),valeant pharmaceuticals international inc,turing pharmaceuticals ag,express scripts inc,health insurance and managed care
+allergies,peanuts,children and childhood,pregnancy and childbirth,breastfeeding,nuts,american academy of pediatrics
+riggio  leonard,barnes & noble inc,book trade and publishing
+dreamworks animation skg inc,comcast corporation,katzenberg  jeffrey,mergers  acquisitions and divestitures,movies,animated films
+danone sa,agriculture and farming,yogurt,milk,dairy farmers of america,conservation of resources,genetic engineering,animal abuse  rights and welfare,cattle
+schneiderman  eric t,ticket scalping,new york state,attorneys general
+newspapers,news and news media,las vegas review-journal,adelson  sheldon g,moyer  j keith (1952- ),smith  john l,wynn  stephen a
+halliburton company,baker hughes inc,mergers  acquisitions and divestitures,justice department,antitrust laws and competition issues
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+esteves  andre santos (1969- ),btg pactual,brazil,petroleo brasileiro sa petrobras,amaral  delcidio do (1955- ),bribery and kickbacks,rousseff  dilma
+exxon mobil corp,credit ratings and credit rating agencies,standard & poor's corp,oil (petroleum) and gasoline,prices (fares  fees and rates)
+twitter,company reports,social media
+apple inc,iphone,cook  timothy d,company reports,computers and the internet
+volkswagen ag,diesel power,air pollution,automobile safety features and defects,greenhouse gas emissions,fuel emissions (transportation),fines (penalties),automobiles,environmental protection agency,frauds and swindling
+drugs (pharmaceuticals),johnson & johnson,health insurance and managed care,pearson  john michael (1959- ),ims health,discount selling,research,valeant pharmaceuticals international inc
+durable goods (economic indicator),factories and manufacturing,real estate and housing (residential)
+ant financial services group,alipay,alibaba group holding ltd,banking and financial institutions,venture capital
+data centers,texas,real estate (commercial),tax credits  deductions and exemptions,property taxes
+airports,airport security,transportation security administration,airlines and airplanes
+international trade and world market,agriculture and farming,factories and manufacturing,labor and jobs,presidential election of 2016,clinton  hillary rodham,trump  donald j
+ripa  kelly,strahan  michael,live with kelly and michael (tv program),abc inc,television
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+new york times,layoffs and job reductions,newspapers,international new york times,new york times company,paris (france)
+chobani inc,ulukaya  hamdi,employee fringe benefits,stocks and bonds,tpg capital,wages and salaries
+twitter,computers and the internet,cyberharassment
+mergers  acquisitions and divestitures,cable television,charter communications inc,bright house networks llc,time warner cable inc
+mitsubishi motor corp,fuel efficiency,japan,automobiles,cheating
+new york (magazine),wasserstein  pamela,new york media llc,magazines,wasserstein & co,online advertising,appointments and executive changes,moss  adam,new york media
+company reports,banking and financial institutions,standard chartered bank plc,winters  william t
+bitcoin (currency),wright  craig steven (1970- ),british broadcasting corp,economist  the,gq
+defense contracts,japan,australia,mitsubishi heavy industries limited,arms trade,thales sa,france
+alibaba group holding ltd,ant financial services group,alipay,ma  jack,china
+mergers  acquisitions and divestitures,atlas mara co-nvest ltd,barclays plc,diamond  robert e jr,banking and financial institutions,atlas merchant capital llc,carlyle group lp
+oil (petroleum) and gasoline,company reports,bp plc,organization of the petroleum exporting countries
+weill  sanford i,weill  joan h,philanthropy,colleges and universities,research,weill cornell medical college,california,university of california  san francisco
+volkswagen ag,united automobile workers,chattanooga (tenn),organized labor,factories and manufacturing
+international trade and world market,united states politics and government,southern states (us),layoffs and job reductions,unemployment,factories and manufacturing,presidential election of 2016,china,world trade organization,alabama,sanders  bernard,trump  donald j,north american free trade agreement,labor and jobs,mexico,autor  david,hanson  gordon (1964- )
+gross  william h,pimco (pacific investment management company),janus capital group inc,el-erian  mohamed a,soros  george,stocks and bonds,mutual funds
+tribune publishing company,gannett company inc,ferro  michael w jr,newspapers,mergers  acquisitions and divestitures
+venture capital,start-ups,labor and jobs,relocation of business,new york city
+copyrights and copyright violations,supreme court (us),kirtsaeng  supap,john wiley & sons,suits and litigation (civil)
+china,coal,electric light and power,greenhouse gas emissions,national development and reform commission (china),national energy administration (china)
+muscular dystrophy,food and drug administration,drugs (pharmaceuticals),sarepta therapeutics inc.,clinical trials,eteplirsen,duchenne muscular dystrophy
+charter communications inc,time warner cable inc,bright house networks llc,federal communications commission,justice department,television,cable television,mergers  acquisitions and divestitures,video recordings  downloads and streaming,computers and the internet
+europe,privacy,obama  barack,terrorism,computers and the internet,european union,germany,surveillance of citizens by government
+mergers  acquisitions and divestitures,gannett company inc,tribune publishing company,dearborn  justin c
+volkswagen ag,justice department,fuel emissions (transportation),federal trade commission
+airlines and airplanes,california pacific airlines (cp air),vallas  ted,entrepreneurship,federal aviation administration,california
+budgets and budgeting,personal finances
+mergers  acquisitions and divestitures,groupe fnac,darty plc,steinhoff international holdings
+belli  remo (1927-2016),deaths (obituaries),musical instruments,pop and rock music,drums
+stocks and bonds,oil (petroleum) and gasoline,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+computers and the internet,facebook inc,apple inc,company reports
+windows (operating system),software,computers and the internet,computer security,apple inc,microsoft corp
+valeant pharmaceuticals international inc,papa  joseph c,pearson  john michael (1959- ),appointments and executive changes,perrigo company,drugs (pharmaceuticals)
+tribune publishing company,gannett company inc,newspapers,mergers  acquisitions and divestitures,los angeles times
+mergers  acquisitions and divestitures,initial public offerings,koninklijke philips electronics nv
+initial public offerings,banking and financial institutions,ge capital corp,ge money bank
+mergers  acquisitions and divestitures,ball corporation
+soft drinks,sales and excise taxes,presidential election of 2016,clinton  hillary rodham,sanders  bernard,philadelphia (pa),taxation,sugar
+privacy,regulation and deregulation of industry,european union,computers and the internet
+executives and management (theory),engineering and engineers
+argentina,credit and debt,government bonds,pollack  daniel a,elliott management corp,caputo  luis,aurelius capital management,macri  mauricio,hedge funds
+deaths (obituaries),wlir,radio,pop and rock music,spitzer  elton (1932-2016),spitzer  elton
+advertising and marketing,new york city,factories and manufacturing,slogans and mottoes
+presidential election of 2016,snapchat inc,news and news media,mobile applications
+facebook inc,computers and the internet,zuckerberg  mark e,open-source software,virtual reality (computers),social media,telephones and telecommunications,schroepfer  mike
+facebook inc,twitter,apple inc,amazon.com inc
+theranos inc,holmes  elizabeth (1984- ),tests (medical),blood,boies  david,centers for medicare and medicaid services,securities and exchange commission
+deutsche bank ag,appointments and executive changes,pjt partners inc
+credit and debt,government development bank for puerto rico,garcia padilla  alejandro,puerto rico,united states politics and government
+municipal bonds,auctions,government bonds
+circuit breaker (blog),vox media inc,sb nation,facebook inc,theverge.com,science and technology
+maps,mobile applications,delivery services,global positioning system,uber technologies inc,comcast corporation,car services and livery cabs,smartphones
+politico  the,brussels (belgium),europe,news and news media,brussels attacks (march 2016),paris attacks (november 2015),newspapers
+aluminum,international trade and world market,united steelworkers of america,customs (tariff),china
+hagiu  andrei (1977- ),social media,news and news media,computers and the internet,advertising and marketing,harvard business school
+labor and jobs,company reports,apple inc,international business machines corporation,federal bureau of investigation,yahoo! inc
+high net worth individuals,luxury goods and services,income inequality,cruises,norwegian cruise line,royal caribbean cruises ltd
+pesticides,pepsico inc,oatmeal,food contamination and poisoning,quaker oats co,advertising and marketing,suits and litigation (civil),monsanto company,genetic engineering,defoliants and herbicides
+surveillance of citizens by government,apple inc,justice department,privacy,iphone,computer security,brooklyn (nyc)
+ripa  kelly,television,strahan  michael,good morning america (tv program),live with kelly and michael (tv program),abc news
+hayden  michael v,chertoff  michael,apple inc,privacy,surveillance of citizens by government,computer security,federal bureau of investigation,national security agency,allen  thad w,iphone,cyberwarfare and defense
+automobile safety features and defects,recalls and bans of products,fiat chrysler automobiles nv,united states
+google inc,microsoft corp,regulation and deregulation of industry,alphabet inc,antitrust laws and competition issues,inventions and patents
+al jazeera,gupta  anand,discrimination,suits and litigation (civil),layoffs and job reductions,shutdowns (institutional)
+mcdonald's corporation,restaurants,fast food industry,company reports,breakfast
+diet and nutrition,food,advertising and marketing,oils and fats,sugar,salt,research
+marijuana,advertising and marketing,high times,sparks & honey
+music,video recordings  downloads and streaming,audio recordings  downloads and streaming,prince (1958- )
+athletics and sports,television,futterman  matthew,players: the story of sports and money  and the visionaries who fought to create a revolution (book),books and literature
+toys,cra-z-art,lead,new york state,recalls and bans of products,hazardous and toxic substances,consumer protection,toys 'r' us inc,walmart stores inc,target corporation,kmart corp,larose industries llc,consumer product safety commission,schneiderman  eric t
+funerals and memorials,crowdfunding (internet),cremation,cemeteries,funeral and memorial information council,united states
+volkswagen ag,automobile safety features and defects,air pollution,diesel power,fuel emissions (transportation),company reports,automobiles,frauds and swindling
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+municipal bonds,personal finances,national public finance guarantee corp,municipal securities rulemaking board,puerto rico
+computers and the internet,computer security,windows (operating system)
+computers and the internet,company reports,alphabet inc,google inc,intel corporation,international business machines corporation,microsoft corp,yahoo! inc
+mergers  acquisitions and divestitures,darty plc,groupe fnac,steinhoff international holdings
+bonnie  shelby,ipad,lost and found property,bonnie  shelby w,apple inc,mobile applications
+credit and debt,real estate and housing (residential),detroit (mich),personal finances,haimerl  amy d (1975- ),kaebnick  karl r (1971- ),detroit hustle: a memoir of life  love and home (book)
+retirement,personal finances,financial planners
+earthquakes,philanthropy,ecuador,japan
+initial public offerings,secureworks,dell inc,computers and the internet
+real estate and housing (residential),shanghai (china)
+sydney (australia),real estate and housing (residential)
+daimler ag,diesel power,justice department,automobiles,mercedes-benz,fuel emissions (transportation),greenhouse gas emissions,air pollution,automobile safety features and defects
+uber technologies inc,freelancing  self-employment and independent contracting,car services and livery cabs,massachusetts,california,labor and jobs,suits and litigation (civil)
+general motors,electric and hybrid vehicles,driverless and semiautonomous vehicles,automobiles,company reports,mergers  acquisitions and divestitures
+movies,cannes international film festival,mackenzie  david,diners (eating places),bridges  jeff,hell or high water (movie),heall or high water (movie)
+menstruation,entrepreneurship,women and girls,state legislatures
+music,pop and rock music,audio recordings  downloads and streaming,prince (1958- ),prince
+china,apple inc,iphone,industrial espionage,state administration of press  publication  radio  film and television (china),alibaba group holding ltd,xi jinping
+apple inc,federal bureau of investigation,cyberattacks and hackers,san bernardino  calif  shooting (2015),privacy,iphone,comey  james b,surveillance of citizens by government,computer security,ios (operating system)
+fusion (tv network),univision,walt disney company,television
+alphabet inc,google inc,cloud computing,company reports
+microsoft corp,software,company reports
+unemployment insurance,united states economy,labor and jobs,factories and manufacturing
+banking and financial institutions,executive compensation,dodd-frank wall street reform and consumer protection act (2010),bonuses,regulation and deregulation of industry,national credit union administration
+sports utility vehicles and light trucks,automobiles,washington (state),mudfest
+colbert  stephen,television,moonves  leslie,cbs corporation,licht  christopher a (1971- ),presidential election of 2016,comedy and humor,late show with stephen colbert (tv program)
+viacom inc,dish network,ergen  charles w,dauman  philippe p,television
+volkswagen ag,diesel power,automobile safety features and defects,air pollution,recalls and bans of products,fuel emissions (transportation),fines (penalties),consumer protection,automobiles,frauds and swindling
+saudi arabia,jpmorgan chase & company,hsbc holdings plc.,bank of tokyo-mitsubishi
+theranos inc,tests (medical),blood,walgreen co.,drugstores,suits and litigation (civil),holmes  elizabeth (1984- ),wasson  gregory d
+sunedison inc,bankruptcies,solar energy,alternative and renewable energy,terraform global inc.,terraform power inc
+private equity,bankruptcies,sun capital partners inc,woodlock  douglas p,pensions and retirement plans
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+mobile applications,computers and the internet,ipad,apple inc
+social media,computers and the internet
+lazard llc,mergers  acquisitions and divestitures,company reports,jacobs  kenneth m
+china,eggs,futures and options trading,commodities,economic conditions and trends,prices (fares  fees and rates)
+the blackstone group,private equity,schwarzman  stephen a,company reports
+darty plc,steinhoff international holdings,groupe fnac,mergers  acquisitions and divestitures,shopping and retail
+online dating,cyberattacks and hackers,suits and litigation (civil),ashley madison (web site),avid dating life inc
+mitsubishi corporation,fuel efficiency,japan,automobiles,automobile safety features and defects,cheating
+quantitative easing,banking and financial institutions,interest rates,deflation (economics),european central bank,draghi  mario
+volkswagen ag,air pollution,automobile safety features and defects,diesel power,automobiles,fuel emissions (transportation),suits and litigation (civil),regulation and deregulation of industry,fines (penalties),frauds and swindling
+bowery presents  the,anschutz entertainment group (aeg) live,mergers  acquisitions and divestitures,music,new york metropolitan area
+television,abc inc,ripa  kelly,strahan  michael,live: kelly and michael (tv program),good morning america (tv program),live with kelly and michael (tv program)
+dish network,viacom inc,television,cable television,prices (fares  fees and rates),ergen  charles w,redstone  sumner m
+advertising and marketing,women and girls,discrimination,hiring and promotion
+hearing aids,ears and hearing,regulation and deregulation of industry,food and drug administration,electronics
+pulitzer prizes,gleason  brian (1964- ),sun newspapers,newspapers
+down to lunch (mobile app),mobile applications,viswanathan  nikil,lau  joseph,start-ups
+theranos inc,justice department,securities and exchange commission,holmes  elizabeth (1984- ),boies  david
+pew charitable trusts,personal finances,debit cards,checks and checking accounts,consumer financial protection bureau,education department (us)
+supreme court (us),terrorism,iran,banking and financial institutions,law and legislation,suits and litigation (civil)
+mergers  acquisitions and divestitures,computers and the internet,yahoo! inc,verizon communications inc,mayer  marissa
+mobile applications,earth day,sustainable living,photography,environment,space and astronomy
+redstone  sumner m,redstone  keryn l (1982- ),herzer  manuela (1963- ),cbs corporation,viacom inc,suits and litigation (civil)
+smartphones,electronics,computers and the internet,repairs,cellular telephones
+halliburton company,baker hughes inc,mergers  acquisitions and divestitures,justice department,antitrust laws and competition issues
+search engines,privacy,android (operating system),antitrust laws and competition issues,regulation and deregulation of industry,google inc,europe
+windows (operating system),microsoft corp
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+entrepreneurship,local food,cowgirl creamery,whole foods market inc,small business,supermarkets and grocery stores,organic foods and products
+credit suisse group ag,appointments and executive changes,aslaksen  henrik
+boards of directors,united continental holdings inc,par capital management,altimeter capital management,airlines and airplanes,milton  robert
+china,drones (pilotless planes),dji innovations,surveillance of citizens by government,hong kong,united states
+mitsubishi motor corp,fuel efficiency,japan,automobile safety features and defects,air pollution,frauds and swindling,automobiles
+appointments and executive changes,banking and financial institutions,barclays plc,staley  james e,compton  paul h,venkatakrishnan  c s
+europe,google inc,antitrust laws and competition issues,smartphones,android (operating system),european commission
+labor and jobs,automobiles,company reports,banking and financial institutions,steel and iron,wills and estates
+oil (petroleum) and gasoline,yukos,russia,arbitration  conciliation and mediation
+lexmark international inc,apex technologies inc,pag asia capital,computer printers,mergers  acquisitions and divestitures
+presidential election of 2016,new york state,sanders  bernard,clinton  hillary rodham,democratic party
+presidential election of 2016,indiana,trump  donald j,primaries and caucuses,cruz  ted,kasich  john r,republican party
+marijuana,phylos bioscience llc,genetics and heredity,american museum of natural history
+credit and debt,banking and financial institutions,consumer financial protection bureau,payday loans,cordray  richard
+saudi arabia,september 11 (2001),foreign investments,united states economy,oil (petroleum) and gasoline,treasury department,united states international relations
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+oxycontin (drug),doctors,deaths (fatalities),pain-relieving drugs,drugs (pharmaceuticals),pain,medicine and health,malpractice,food and drug administration,american medical assn
+municipal bonds,auctions,government bonds
+securities and exchange commission,fairfax  lisa m,peirce  hester,schumer  charles e,appointments and executive changes,warren  elizabeth
+visa inc,shopping and retail,credit cards,debit cards
+yahoo! inc,company reports,mayer  marissa,verizon communications inc,starboard value lp
+intel corporation,layoffs and job reductions,krzanich  brian m,computer chips,cloud computing,company reports
+area planning and renewal,real estate (commercial),real estate and housing (residential),relocation of business,smith  charles e,arlington (va)
+airbnb,travel and vacations,mobile applications,computers and the internet
+federal bureau of investigation,cyberattacks and hackers,privacy,apple inc,law and legislation
+banking and financial institutions,regulation and deregulation of industry,bank for international settlements,world economic forum
+google inc,european union,antitrust laws and competition issues,android (operating system),smartphones,search engines,european commission,pichai  sundar,software,google maps
+unitedhealth group inc,patient protection and affordable care act (2010),health insurance and managed care,hemsley  stephen j
+comedy and humor,white house correspondents assn,wilmore  larry,news and news media,obama  barack
+strahan  michael,good morning america (tv program),live: kelly and michael (tv program),television,abc news
+breyer  charles r,volkswagen ag,diesel power,air pollution,automobile safety features and defects,automobiles,fuel emissions (transportation),suits and litigation (civil)
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+computers and the internet,privacy,google inc,european union
+computers and the internet,android (operating system),cloud computing,data storage,google inc
+goldman sachs group inc,banking and financial institutions,blankfein  lloyd c,company reports
+virtual reality (computers),advertising and marketing,home box office,otoy inc,media
+global warming,nuclear energy,polls and public opinion,liberalism (us politics),pew research center,conservatism (us politics),science and technology
+initial public offerings,banking and financial institutions
+mergers  acquisitions and divestitures,anheuser-busch inbev nv,sabmiller,asahi group holdings ltd,beer
+swift(society for worldwide interbank financial telecommunication),banking and financial institutions,cyberattacks and hackers,robberies and thefts,federal reserve bank of new york,bangladesh,computer security
+shopping and retail,luxury goods and services,net-a-porter,dubai (united arab emirates)
+mergers  acquisitions and divestitures,williams companies inc,latham & watkins llp,energy transfer equity lp
+campbell  bill (1940-2016),deaths (obituaries),apple inc,google inc,silicon valley (calif),campbell  bill
+theranos inc,tests (medical),blood,securities and exchange commission,justice department,holmes  elizabeth (1984- )
+netflix inc,company reports,hastings  reed
+advertising and marketing,youth,hiring and promotion,employee fringe benefits,careers and professions
+international business machines corporation,company reports,cloud computing,artificial intelligence
+rubin  alissa johannsen,news and news media,pulitzer prizes
+government bonds,macri  mauricio,singer  paul e,argentina
+company reports,amazon.com inc,zynga inc,huffington post,facebook inc,apple inc
+europe,google inc,privacy,search engines,computers and the internet
+venture capital,general mills inc,7-eleven,entrepreneurship,intel corporation,computers and the internet,salesforce.com inc
+banking and financial institutions,morgan stanley,gorman  james p,company reports
+financial planners,personal finances
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+google inc,supreme court (us),authors guild,copyrights and copyright violations,books and literature
+lying,securities and commodities violations,anchorbank,litvak  jesse c
+iphone,mobile applications
+computers and the internet,stocks and bonds,company reports,linkedin corporation,salesforce.com inc
+twitter,china,chen  kathy,censorship,appointments and executive changes,communist party of china
+kives  philip (1929-2016),deaths (obituaries),advertising and marketing,k-tel international
+real estate and housing (residential),real estate (commercial),urban areas,economic conditions and trends,china
+hiring and promotion,presidential election of 2016,presidential elections (us)
+aluminum,united steelworkers of america,international trade and world market,china,united states international trade commission,organized labor
+airlines and airplanes,business travel,american airlines,delta air lines  inc,united airlines
+oil (petroleum) and gasoline,organization of the petroleum exporting countries,saudi arabia,international trade and world market,production,prices (fares  fees and rates)
+video recordings  downloads and streaming,amazon.com inc,netflix inc,delivery services
+seventh generation,advertising and marketing,rudolph  maya,cleansers  detergents and soaps,sustainable living,72andsunny,consumer behavior,labeling and labels (product)
+greece,international monetary fund,europe,european union,european sovereign debt crisis (2010- ),lagarde  christine,pensions and retirement plans
+yahoo! inc,mayer  marissa,executive compensation,mergers  acquisitions and divestitures
+news and news media,computers and the internet,vandehei  jim,allen  michael (1964- ),politico  the,newspapers,buzzfeed inc,mashable inc
+news and news media,computers and the internet,layoffs and job reductions,social media,mobile applications,facebook inc,advertising and marketing,online advertising
+banking and financial institutions,automobiles,fuel emissions (transportation),european sovereign debt crisis (2010- ),commerce department,european central bank,federal bureau of investigation,apple inc,european union,eurozone,house of representatives,unitedhealth group inc,volkswagen ag,morgan stanley
+real estate and housing (residential),credit and debt,shelter growth capital partners llc,sparks  daniel,mortgages,sparks  daniel l,harbour portfolio advisors llc,new york mortgage trust  incorporated,contract for deed
+municipal bonds,tax credits  deductions and exemptions,treasury department
+linkedin corporation,stock options and purchase plans,wages and salaries,stocks and bonds,company reports,computers and the internet
+oil (petroleum) and gasoline,organization of the petroleum exporting countries,russia
+advertising and marketing,movies,favreau  jon (1966- ),walt disney company,jungle book (movie)
+deaths (obituaries),hickory farms inc,family business,ransom  richard k (1919-2016),ransom  richard k
+zuckerberg  mark e,facebook inc,virtual reality (computers),computers and the internet
+airlines and airplanes,european union,iran,embargoes and sanctions
+apple inc,federal bureau of investigation,iphone,privacy,surveillance of citizens by government,drug abuse and traffic,brooklyn (nyc)
+mergers  acquisitions and divestitures,j d power & associates,mcgraw hill financial inc,xio group
+citigroup inc,banking and financial institutions,dodd-frank wall street reform and consumer protection act (2010),company reports
+redstone  sumner m,cbs corporation,viacom inc,executive compensation,bonuses,moonves  leslie
+television,music,amazon.com inc,netflix inc,lions gate entertainment corporation,beat bugs (tv program),time out of mind (tv program),dylan  bob,web-original programming,sony/atv music publishing,beat bugs (web-original program),time out of mind (web-original program)
+television,news and news media,kelly  megyn,trump  donald j
+airlines and airplanes,norwegian air shuttle asa,transportation department (us)
+citigroup inc,corbat  michael l,banking and financial institutions,company reports
+initial public offerings,tequila cuervo sa,family business,tequila,jpmorgan chase & company
+solar energy,bankruptcies,sunedison inc,vivint solar holdings inc.,alternative and renewable energy
+graduate schools and students,retirement,labor and jobs
+initial public offerings,bats global markets
+china,credit and debt,banking and financial institutions,economic conditions and trends
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+banking and financial institutions,citigroup inc,corbat  michael l,company reports
+mobile applications,smartphones,wireless communications,cellular telephones
+microsoft corp,justice department,privacy
+mergers  acquisitions and divestitures,elliott management corp,polycom inc,mitel networks corporation
+families and family life,wills and estates,personal finances,high net worth individuals
+airlines and airplanes,luggage and packing,personal finances,delta air lines  inc,prices (fares  fees and rates),travel and vacations,federal aviation administration,airlines for america,law and legislation
+income tax,tax preparers and preparation,federal taxes (us),personal finances,internal revenue service
+television sets and media devices,obama  barack,federal communications commission,cable television,regulation and deregulation of industry
+patient protection and affordable care act (2010),health insurance and managed care,medicare,united states
+china,gross domestic product,economic conditions and trends,production
+deaths (obituaries),rodeo drive (beverly hills  calif),luxury goods and services,fashion and apparel,perfumes and fragrances,shopping and retail,hayman  fred (1925-2016),hayman  fred
+yahoo! inc,mayer  marissa,computers and the internet,mergers  acquisitions and divestitures
+allan  col,new york post,news corporation,newspapers,appointments and executive changes
+arbitration  conciliation and mediation,law and legislation,house of representatives,johnson  henry c
+subprime mortgage crisis,bear stearns cos,moody's corporation,financial crisis inquiry commission
+initial public offerings,bats global markets,new york stock exchange,stocks and bonds,nasdaq stock market
+cbs corporation,viacom inc,herzer  manuela (1963- ),redstone  sumner m,suits and litigation (civil)
+mortgages,federal housing finance agency,federal home loan mortgage corp (freddie mac),federal national mortgage assn (fannie mae),real estate and housing (residential),foreclosures,watt  melvin l
+mergers  acquisitions and divestitures,treasury department,justice department,allergan inc,pfizer inc
+fishing  commercial,great britain,international trade and world market,european union,scotland
+wearable computing,fitbit,apple inc,exercise
+company reports,drugs (pharmaceuticals),addyi (drug),valeant pharmaceuticals international inc,philidor rx services llc
+television,licht  christopher a (1971- ),colbert  stephen,cbs corporation,ratings (audience measurement) ,late show with stephen colbert (tv program)
+sports utility vehicles and light trucks,porsche ag,automobiles
+consumer price index,united states economy,unemployment insurance,labor and jobs,prices (fares  fees and rates),inflation (economics),labor department (us)
+china,peltz  nelson,mergers  acquisitions and divestitures,legg mason inc
+sports utility vehicles and light trucks,new york international auto show,luxury goods and services,general motors,jaguar land rover,maserati spa,ford motor co,fiat chrysler automobiles nv,aston martin,bentley motors ltd,cadillac division of general motors corp,automobiles,mercedes-benz
+banking and financial institutions,dodd-frank wall street reform and consumer protection act (2010),regulation and deregulation of industry,minsky  hyman p,financial stability oversight council
+executive compensation,bp plc,dudley  robert w,shareholder rights and activism,oil (petroleum) and gasoline
+microsoft corp,privacy,surveillance of citizens by government,justice department,e-mail,computers and the internet,suits and litigation (civil),electronic communications privacy act,cloud computing
+consumer price index,data-mining and database marketing,e-commerce,adobe systems inc,prices (fares  fees and rates),shopping and retail,bureau of labor statistics,adobe digital price index
+automobiles,automobile renting and leasing,edmunds.com,used cars,autonation inc,automobile financing,alixpartners
+automobile safety features and defects,nissan motor co,recalls and bans of products,national highway traffic safety administration
+computers and the internet,facebook inc,united states
+company reports,unilever nv
+computers and the internet,chrome (browser),computer programs and systems inc
+verizon communications inc,strikes
+new york times company,company reports
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+blackrock inc,exchange traded funds,company reports
+banking and financial institutions,bank of america corporation,wells fargo & company,jpmorgan chase & company,company reports
+libor (london interbank offered rate),hussein  arif,ubs ag,great britain,banking and financial institutions,financial conduct authority (great britain)
+dole food company inc,food and drug administration,food contamination and poisoning,listeriosis
+global warming,air pollution,exxon mobil corp,insideclimate news,center for international environmental law
+federal bureau of investigation,privacy,apple inc,computer security,cyberattacks and hackers,justice department,operation trail mix
+movies,beatty  warren,collins  lily,ehrenreich  alden,hughes  howard (1905-76)
+puerto rico,government bonds,united states politics and government,house natural resources committee,treasury department,weiss  antonio f,bishop  robert william (1951- )
+automobile safety features and defects,bugatti motors,recalls and bans of products
+keys  matthew,cyberattacks and hackers,los angeles times,anonymous (internet group)
+automobile safety features and defects,takata corp,recalls and bans of products,traffic accidents and safety
+centers for medicare and medicaid services,theranos inc,holmes  elizabeth (1984- ),blood,tests (medical),laboratories and scientific equipment
+mobile applications,writing and writers,android (operating system),ios (operating system),word processing,computer keyboards
+argentina,hedge funds,government bonds,credit and debt,appeals courts (us),stocks and bonds,griesa  thomas p
+radio spectrum,wireless communications,federal communications commission,television
+banking and financial institutions,interest rates,savings,personal finances
+shopping and retail,united states economy,prices (fares  fees and rates),commerce department
+drones (pilotless planes),dji innovations,regulation and deregulation of industry,mobile applications
+banking and financial institutions,regulation and deregulation of industry,federal deposit insurance corp,federal reserve system
+caspersen  andrew,pjt partners inc,moore capital management,securities and commodities violations,securities and exchange commission,frauds and swindling
+advertising and marketing,e-commerce,prices (fares  fees and rates),shopping and retail,discount selling,amazon.com inc
+car services and livery cabs,children and childhood,hopskipdrive inc,lyft inc,uber technologies inc,start-ups,shuddle inc,zum services inc
+dodd-frank wall street reform and consumer protection act (2010),bankruptcies,citigroup inc,federal deposit insurance corp,federal reserve system
+trump  donald j,new york state,presidential election of 2016,primaries and caucuses
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+shareholder rights and activism,banking and financial institutions,plants  j daniel (1967- ),voce capital management llc,fbr & company
 android (operating system),wireless communications,google inc,cellular telephones,nexus
 computers and the internet,artificial intelligence,facebook inc
 automobiles,executive compensation,volkswagen ag
-amazon.com inc,amazon kindle,e-books and readers,bezos  jeffrey p
+amazon kindle,e-books and readers,amazon.com inc,batteries,bezos  jeffrey p
 appointments and executive changes,banking and financial institutions,regulation and deregulation of industry,financial conduct authority (great britain)
 jpmorgan chase & company,banking and financial institutions,company reports,dimon  james
-dodd-frank wall street reform and consumer protection act (2010),jpmorgan chase & company,bank of america corporation,wells fargo & company,bank of new york mellon corporation,federal deposit insurance corp,federal reserve system
-privacy,regulation and deregulation of industry,european union,computers and the internet
-commerce department,shopping and retail,prices (fares  fees and rates)
-kelly  megyn,trump  donald j,presidential election of 2016,fox news channel,msnbc
-mobile applications,drones (pilotless planes),london (england)
-banking and financial institutions,regulation and deregulation of industry,federal deposit insurance corp,federal reserve system
-caspersen  andrew,pjt partners inc,securities and exchange commission,moore capital management
-shopping and retail,prices (fares  fees and rates),discount selling,e-commerce,advertising and marketing,amazon.com inc
-car services and livery cabs,start-ups,small business,hopskipdrive inc,shuddle inc,zum
-dodd-frank wall street reform and consumer protection act (2010),bankruptcies,citigroup inc,federal deposit insurance corp,federal reserve system
+banking and financial institutions,federal deposit insurance corp,federal reserve system,presidential election of 2016,dodd-frank wall street reform and consumer protection act (2010),jpmorgan chase & company,bank of america corporation,wells fargo & company,bank of new york mellon corporation,state street corporation
+europe,privacy,computers and the internet,european union,regulation and deregulation of industry
+verizon communications inc,strikes,organized labor,telephones and telecommunications,computers and the internet
+strikes,organized labor,verizon communications inc,telephones and telecommunications,communications workers of america
+antitrust laws and competition issues,regulation and deregulation of industry,obama  barack
+supermarkets and grocery stores,company reports,tesco plc
+initial public offerings,banking and financial institutions,financial conduct authority (great britain),london stock exchange,great britain
+peabody energy corporation,bankruptcies,coal,commodities
+health insurance and managed care,doctors,health affairs (journal),emergency medical treatment,drugstores,hospitals
+genetic engineering,agriculture and farming,biotechnology and bioengineering,seeds
+calendars,google inc,computers and the internet,artificial intelligence,exercise,leisure,e-mail
+immune system,cancer,parker  sean (1979- ),parker institute for cancer immunotherapy,research,university of california  san francisco,clinical trials,memorial sloan-kettering cancer center,stanford university,university of texas m d anderson cancer center,university of pennsylvania,university of california  los angeles
+affirm inc,venture capital,start-ups
+puerto rico,government bonds,law and legislation,credit and debt,bankruptcies,house natural resources committee,house of representatives
+company reports,oil (petroleum) and gasoline,exxon mobil corp,chevron corporation,conocophillips
+international monetary fund,world bank,economic conditions and trends,taxation,united states international relations,united states economy,international trade and world market,lagarde  christine
+deaths (obituaries),antitrust laws and competition issues,federal trade commission,rosch  j thomas
+ford motor co,restoration and renovation,dearborn (mich),automobiles
+international trade and world market,united states economy
+international trade and world market,united states economy,prices (fares  fees and rates)
+bees,pesticides,scotts miracle-gro co llc,center for biological diversity
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+movies,motion picture assn of america,youth
+copyrights and copyright violations,music,we shall overcome foundation,richmond organization,ludlow music,civil rights movement (1954-68),ludlow music inc,we shall overcome (song),suits and litigation (civil)
+real estate (commercial),aj muste memorial institute,noho (manhattan  ny),rosen  aby j,war resisters league,socialist party usa,gentrification,new york city
+deferred prosecution agreements,gleeson  john,leon  richard j
+redstone  sumner m,herzer  manuela (1963- ),cbs corporation,viacom inc,redstone  shari,media,health insurance and managed care
+inventions and patents,drugs (pharmaceuticals),global warming,malaria,vaccination and immunization,alternative and renewable energy,glaxosmithkline plc,intergovernmental panel on climate change,intellectual property
+puerto rico,pierluisi  pedro r,carrion  maria elena,conflicts of interest,och-ziff capital management group llc,fundamental advisors lp,multicultural capital llc,house of representatives
+banking and financial institutions,antitrust laws and competition issues,blackrock inc,airlines and airplanes,justice department,stocks and bonds,baer  william j,prices (fares  fees and rates),cra international inc
+colleges and universities,endowments,global warming,swensen  david f,stocks and bonds,greenhouse gas emissions,yale university
+facebook inc,customer relations,instant messaging,mobile applications,kik messenger,shopping and retail,spring (jello labs inc)
+television,news and news media,cable television,al jazeera,luke  matthew (1966- ),mahmud  osman,shihabi  ehab al,united states
+banking and financial institutions,goldman sachs group inc,blankfein  lloyd c,cohn  gary d,sherwood  michael s
+international monetary fund,economic conditions and trends,renminbi (currency),third world and developing countries
+stocks and bonds,dow jones stock average,nasdaq composite index,standard & poor's 500-stock index
+oil (petroleum) and gasoline,company reports,chevron corporation,exxon mobil corp
+mobile applications,ipad,apple inc,itunes
+silicon valley (calif),facebook inc,computers and the internet,social media,zuckerberg  mark e
+federal national mortgage assn (fannie mae),federal home loan mortgage corp (freddie mac),suits and litigation (civil),subprime mortgage crisis,federal housing finance agency,treasury department,justice department,mcfarland  susan,sweeney  margaret m
+nomura holdings inc,layoffs and job reductions,nomura group,banking and financial institutions,lehman brothers holdings inc
+deutsche bank ag,north carolina,transgender and transsexuals,homosexuality and bisexuality,discrimination,labor and jobs,cryan  john (1960- ),mccrory  pat,law and legislation,bathrooms and toilets
+mossack fonseca & co,european commission,tax shelters,corporate taxes
+clendening  john s,betterment llc,appointments and executive changes,charles schwab corporation,exchange traded funds
+royal bank of scotland plc,white  paul (1968/69- ),libor (london interbank offered rate),financial conduct authority (great britain),frauds and swindling,banking and financial institutions
+pop and rock music,copyrights and copyright violations,families and family life,zappa  frank,zappa  gail (1945-2015),zappa  dweezil
+dershowitz  alan m,edwards  bradley j,cassell  paul g,libel and slander,suits and litigation (civil)
+prisons and prisoners,presidential election of 2016,states (us),sentences (criminal),law and legislation
+metlife inc (all caps),collyer  rosemary m,banking and financial institutions,regulation and deregulation of industry,law and legislation,metlife inc,subprime mortgage crisis
+india,venture capital,entrepreneurship,driveu (humble mobile solutions pvt ltd),unitus seed fund,start-ups,car services and livery cabs,mobile applications
+verizon communications inc,communications workers of america,organized labor,strikes,telephones and telecommunications,labor and jobs
+puerto rico,government bonds,credit and debt,government development bank for puerto rico,municipal bonds
+cardno chemrisk,foytlin  cherri (1973- ),savage  karen (1966- ),libel and slander,suits and litigation (civil),huffington post,frauds and swindling
+automobile safety features and defects,tesla motors inc,electric and hybrid vehicles,recalls and bans of products
+robots and robotics,arms control and limitation and disarmament,united states defense and military forces,international relations,united nations
+gawker media,suits and litigation (civil),news and news media,hogan  hulk
+mergers  acquisitions and divestitures,baker hughes inc,halliburton company,lesar  david j
+mergers  acquisitions and divestitures,medivation inc,sanofi sa
+spain,conde  mario,banesto banco espanol de credito sa,embezzlement
+mergers  acquisitions and divestitures,canadian pacific railway ltd,norfolk southern corporation,ackman  william a
+legal profession,ethics and official misconduct,mossack fonseca & co,global witness,banking and financial institutions
+goldman sachs group inc,subprime mortgage crisis,tax credits  deductions and exemptions,justice department,banking and financial institutions,mortgages
+canadian pacific railway ltd,norfolk southern corporation,antitrust laws and competition issues,ackman  william a,mergers  acquisitions and divestitures,baer  william j,harrison  e hunter
+virgin america,alaska airlines,airlines and airplanes,mergers  acquisitions and divestitures,branson  richard
+oil (petroleum) and gasoline,saudi arabia,russia,organization of the petroleum exporting countries,prices (fares  fees and rates),production
+stocks and bonds,dow jones stock average,nasdaq composite index,standard & poor's 500-stock index
+entrepreneurship,work-life balance
+windows (operating system),computers and the internet,web browsers,microsoft corp
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+trump  donald j,new york daily news,new york post,new york state,presidential election of 2016,newspapers,new york city,news and news media,gossip
+tata steel,greybull capital llp,great britain,port talbot steelworks,mergers  acquisitions and divestitures,cameron  david,scunthorpe (england)
+mergers  acquisitions and divestitures,daily mail,yahoo! inc
+mergers  acquisitions and divestitures,banco portugues de investimento sa (bpi),dos santos  isabel
+ge money bank,initial public offerings,stocks and bonds,ge capital corp,banking and financial institutions
+gategroup holding,hna group co ltd,mergers  acquisitions and divestitures,airlines and airplanes
+presidential election of 2016,trump  donald j,cruz  ted,states (us),primaries and caucuses,republican party,california,polls and public opinion,kasich  john r,kasich  john r (all caps),wisconsin
+executives and management (theory)
+student loans,slm corporation,colleges and universities,personal finances
+intuit inc,computers and the internet,cloud computing,software,mergers  acquisitions and divestitures
+live nation entertainment inc,founders entertainment llc,governors ball music festival,mergers  acquisitions and divestitures,strokes  the (music group)
+new york city,longevity,poverty,income inequality,jama (journal of american medical assn) (all caps),medicine and health,smoking and tobacco,journal of the american medical assn,obesity
+advertising and marketing,how funworks llc,comedy and humor,creativity
+economic conditions and trends,banking and financial institutions,oil (petroleum) and gasoline
+intuit inc (all caps),smith  brad d,accounting and accountants,tax preparers and preparation,quicken loans inc,quickbooks,cloud computing,software,intuit inc,xero ltd
+boston globe,trump  donald j,presidential election of 2016,republican party,cruz  ted,newspapers
+news and news media,mossack fonseca & co,tax shelters,cyberattacks and hackers,computer security,classified information and state secrets,freedom of the press
+general motors,automobile safety features and defects,recalls and bans of products,traffic accidents and safety,suits and litigation (civil)
+television,nudism and nudity,discovery channel,reality television,naked and afraid (tv program)
+high net worth individuals,oil (petroleum) and gasoline,prices (fares  fees and rates),income,personal finances
+municipal bonds,tax credits  deductions and exemptions,treasury department
+cloud computing,amazon.com inc,google inc,microsoft corp
+reddit inc,presidential election of 2016,trump  donald j,social media (no caps),social media
+football,facebook inc,reddit inc,twitter,national football league,video recordings  downloads and streaming
+general motors,automobile safety features and defects,suits and litigation (civil)
+puerto rico,government bonds,credit and debt,law and legislation,bankruptcies,house natural resources committee
+united states economy,commerce department,united states,economic conditions and trends
+mergers  acquisitions and divestitures,rovi corp,tivo inc,rogers  thomas s
+production,economic conditions and trends,osborne  george,great britain
+colleges and universities,student loans,financial aid (education),income,purdue university
+marriott international inc,starwood hotels & resorts worldwide inc,mergers  acquisitions and divestitures,hotels and travel lodgings,anbang insurance group co
+sears holdings corporation,shopping and retail,lampert  edward s
+springsteen  bruce,homosexuality and bisexuality,transgender and transsexuals,human rights and human rights violations,north carolina
+afghanistan,cellular telephones,taliban,taxation,computers and the internet,telephones and telecommunications,economic conditions and trends
+mergers  acquisitions and divestitures,web-original programming,vivendi,universal music group,mediaset spa,netflix inc
+fox broadcasting co,television,ratings (audience measurement) ,american idol (tv program)
+health insurance and managed care,regulation and deregulation of industry,antitrust laws and competition issues,hospitals,federal trade commission
+privacy,iphone,apple inc,justice department,brooklyn (nyc),federal bureau of investigation,computer security,drug abuse and traffic
+financial planners,retirement,artificial intelligence
+prudential regulation authority (great britain),bank of england,woods  sam,great britain
+trump  donald j,hollywood (calif),polls and public opinion
+frauds and swindling,debit cards,fair isaac corp
+families and family life,baby boomers,elderly,retirement,lennar corporation,toll brothers inc
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+twitter,dorsey  jack,boards of directors,chernin  peter a,currie  peter,johnston  hugh f,lane fox  martha (1973- ),computers and the internet
+blogs and blogging (internet),android (operating system),mobile applications
+india,amazon.com inc
+entrepreneurship,high net worth individuals,lending club,prosper marketplace inc,small business,personal finances
+financial brokers,ethics and official misconduct,stocks and bonds,personal finances,oppenheimer & co inc,brokercheck,egan  mark m (1973- ),matvos  gregor,seru  amit
+computers and the internet,music,software,apple inc,itunes,windows
+banking and financial institutions,financial conduct authority (great britain),great britain,tax evasion
+shopping and retail,uniqlo,company reports,japan
+federal reserve system,yellen  janet l,bernanke  ben s,volcker  paul a,greenspan  alan,united states economy,interest rates
+lew  jacob j,treasury department,budgets and budgeting,united states economy,corporate taxes,united states international relations,cuba
+shareholder rights and activism,depomed inc,starboard value lp,mergers  acquisitions and divestitures
+uber technologies inc,san francisco (calif),los angeles (calif),lyft inc,suits and litigation (civil),district attorneys
+india,amazon.com inc,e-commerce,regulation and deregulation of industry
+international trade and world market,world trade organization
+metllife inc (all caps),treasury department,dodd-frank wall street reform and consumer protection act (2010),collyer  rosemary m,regulation and deregulation of industry,metlife inc
+payday loans,personal finances,credit and debt,nerdwallet llc,zhang  james
+television,silverman  ben,appointments and executive changes,propagate content
+tesla motors inc,electric and hybrid vehicles,automobiles,musk  elon,model 3
+general motors,automobile safety features and defects,suits and litigation (civil),deaths (fatalities)
+energy efficiency,automobiles,bosch  robert  gmbh,mercedes-benz,chevrolet division of general motors corp,fiat chrysler automobiles nv,ford motor co
+antitrust laws and competition issues,mergers  acquisitions and divestitures,allergan inc,pfizer inc,halliburton company,baker hughes inc
+credit and debt,consumer behavior,personal finances,united states economy
+european central bank,europe,eurozone,helicopter money,economic conditions and trends,deflation (economics),inflation (economics)
+walt disney company,staggs  thomas o,iger  robert a,appointments and executive changes
+deaths (obituaries),united states economy,international relations,kurtzman  joel (1947-2016),kurtzman  joel
+insider trading,supreme court (us),law and legislation,scalia  antonin,bharara  preet,chiasson  anthony,morvillo  gregory,ingoglia  eugene,morvillo llp
+cloud computing,company reports,amazon.com inc
+redstone  sumner m,herzer  manuela (1963- ),cbs corporation,viacom inc,redstone  shari,suits and litigation (civil)
+mashable inc,layoffs and job reductions,roberts  jim,cashmore  pete,rogin  seth a (1973- )
+dimon  james,banking and financial institutions,jpmorgan chase & company,sanders  bernard,kashkari  neel t
+music,movies,haggard  merle
+financial brokers,banking and financial institutions,stocks and bonds,computers and the internet,sigfig wealth management llc
+chevrolet division of general motors corp,automobiles,consumer reviews,malibu (calif)
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+pacific sunwear of california inc,golden gate capital,shopping and retail,bankruptcies
+computers and the internet,bluetooth wireless technology,mac os (operating system)
+computers and the internet,cyberharassment,reddit inc
+brussels attacks (march 2016),airlines and airplanes,international airlines group,company reports
+suzuki  toshifumi (1932- ),7-eleven,third point llc,seven & i holdings,loeb  daniel s,japan
+china,censorship,international trade and world market,computers and the internet,computer security
+china,renminbi (currency),people's bank of china,zhou xiaochuan
+appointments and executive changes,iac/interactivecorp,lehman brothers holdings inc
+income tax,tax credits  deductions and exemptions,personal finances,tax preparers and preparation
+barclays plc,bank of singapore ltd,oversea-chinese banking corp,mergers  acquisitions and divestitures,banking and financial institutions,bank of singapore
+home repairs and improvements,real estate and housing (residential),home equity loans
+personal finances
+european union,economic conditions and trends,eurozone,recession and depression
+samsung group,smartphones,electronics,apple inc
+yahoo! inc,computers and the internet,mergers  acquisitions and divestitures,shareholder rights and activism,mayer  marissa
+united airlines,newark liberty international airport (nj),federal aviation administration,delta air lines  inc,antitrust laws and competition issues,airports,justice department
+mergers  acquisitions and divestitures,antitrust laws and competition issues,allergan inc (all caps),pfizer inc,halliburton company,baker hughes inc,obama  barack,allergan inc,corporate taxes
+deaths (obituaries),legal profession,hollywood (calif),los angeles (calif),lazar  seymour m
+volkswagen ag,diesel power,air pollution,automobile safety features and defects,frauds and swindling,fuel emissions (transportation),suits and litigation (civil)
+automobile safety features and defects,takata corp,deaths (fatalities),honda motor co ltd,recalls and bans of products,hanif  huma,traffic accidents and safety
+venture capital,hedge funds,start-ups,fintech
+puerto rico,government bonds,credit and debt,municipal bonds,government development bank for puerto rico,garcia padilla  alejandro
+banking and financial institutions,regulation and deregulation of industry,mergers  acquisitions and divestitures,computers and the internet
+united states politics and government,law and legislation,government development bank for puerto rico,garcia padilla  alejandro,ryan  paul d jr
+stocks and bonds,greenhouse gas emissions,cracker barrel old country store,arabesque partners
+start-ups,bitcoin (currency),regulation and deregulation of industry,banking and financial institutions,united states,office of the comptroller of the currency,innovation
+banking and financial institutions,venture capital,initial public offerings,elevate credit inc.,lendingclub corp,square inc,on deck capital
+goldman sachs group inc,blooom inc,smith  greg,401(k)  403(b) and 457 plans
+mobile commerce and payments,shopping and retail,mobile applications,computers and the internet,apple pay,google inc,samsung group,starbucks corporation,jpmorgan chase & company
+banking and financial institutions,start-ups,pandit  vikram s,mack  john j,winkelried  jon,flowers  j christopher,saunders  joseph w
+apple inc,mobile applications,watches and clocks,wearable computing,android (operating system),playstation (video game system)
+pfizer inc,allergan inc,treasury department,read  ian c,mergers  acquisitions and divestitures,taxation
+banking and financial institutions,mergers  acquisitions and divestitures,antitrust laws and competition issues,regulation and deregulation of industry,allergan inc,pfizer inc,halliburton company,baker hughes inc
+federal reserve system,united states economy,interest rates,yellen  janet l
+mergers  acquisitions and divestitures,anheuser-busch inbev nv,sabmiller,european commission
+pershing square capital management,valeant pharmaceuticals international inc,ackman  william a,hedge funds,pearson  john michael (1959- )
+iphone,apple inc,smartphones,mobile applications,android (operating system),ios (operating system),google inc
+banking and financial institutions,computers and the internet,personal finances,mobile commerce and payments,e-commerce
+bitcoin (currency),banking and financial institutions,computers and the internet,seagate technology plc,financial crimes enforcement network (treasury department),ripple labs inc
+propel inc,banking and financial institutions,mobile applications,start-ups,philanthropy,chen  jimmy,financial solutions lab,center for financial services innovation
+insurance,adt corp,american insurance association,climate corporation service,google inc,progressive auto insurance,zestfinance
+reddit inc,cyberharassment,huffman  steve (1983- )
+retirement,personal finances,financial brokers,pensions and retirement plans,securities and exchange commission,labor department (us),united states,regulation and deregulation of industry
+williams companies inc,energy transfer equity lp,warren  kelcy (1955- ),suits and litigation (civil),mergers  acquisitions and divestitures,warren  kelcy
+alcoholic beverages,popshots llc,cocktails,small business,liqs
+company reports,banking and financial institutions,royal bank of scotland plc,williams & glyn bank ltd
+verizon communications inc,awesomeness tv,video recordings  downloads and streaming,dreamworks animation skg inc,mergers  acquisitions and divestitures,youth,web-original programming
+baker hughes inc,halliburton company,mergers  acquisitions and divestitures,antitrust laws and competition issues,lynch  loretta e
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+android (operating system),mobile applications,google inc
+instant messaging,privacy,apple inc,facebook inc,federal bureau of investigation,whatsapp inc
+presidential election of 2016,cruz  ted,wisconsin,primaries and caucuses,republican party,trump  donald j
+pfizer inc,allergan inc (all caps),allergan inc,corporate taxes,mergers  acquisitions and divestitures,drugs (pharmaceuticals)
+glencore international ag,canada pension plan investment board,commodities,mergers  acquisitions and divestitures,viterra,switzerland
+retirement,financial brokers,financial planners,labor department (us),individual retirement accounts,401(k)  403(b) and 457 plans,consumer protection,pensions and retirement plans,stocks and bonds,regulation and deregulation of industry
+appointments and executive changes,air france-klm
+banking and financial institutions,mallya  vijay,india,credit and debt,united breweries group
+greenhouse gas emissions,global warming,economic conditions and trends,gross domestic product,factories and manufacturing,united nations framework convention on climate change,international energy agency,world resources institute
+virtual reality (computers),htc corp,oculus vr inc,headphones and headsets,sony corporation,computer and video games
+germany,europe,international trade and world market,china,factories and manufacturing,economic conditions and trends
+bitcoin (currency),barclays plc,london (england),circle internet financial inc,great britain,financial conduct authority (great britain),banking and financial institutions,mobile commerce and payments,circle internet financial limited 
+international trade and world market,united states economy,commerce department,automobiles
+service industries,united states economy,institute for supply management
+labor and jobs,united states economy,labor department (us),yellen  janet l
+pfizer inc,celltrion inc,drugs (pharmaceuticals),johnson & johnson,food and drug administration,biotechnology and bioengineering,generic brands and products,remicade (drug)
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+cooper  robert j (1976-2016),deaths (obituaries),alcoholic beverages,st-germain
+caspersen  andrew,securities and commodities violations,pjt partners inc,moore charitable foundation,frauds and swindling
+walt disney company,iger  robert a,staggs  thomas o,sandberg  sheryl k,appointments and executive changes
+federal bureau of investigation,apple inc,san bernardino  calif  shooting (2015),privacy,iphone,computer security,justice department
+ford motor co,mexico,factories and manufacturing,labor and jobs,trump  donald j,international trade and world market,north american free trade agreement
+smoking and tobacco,california public employees retirement system,stocks and bonds,pensions and retirement plans
+suits and litigation (civil),sex crimes,rolling stone,university of virginia,erdely  sabrina rubin,conrad  glen e
+shareholder rights and activism,blackrock inc,g-resources group,hong kong,gold,mines and mining,mergers  acquisitions and divestitures
+libor (london interbank offered rate),barclays plc,great britain,banking and financial institutions,serious fraud office (united kingdom),frauds and swindling,merchant  jay vijay,reich  ryan michael,hayes  thomas alexander william,citigroup inc,deutsche bank ag,ubs ag,royal bank of scotland plc,diamond  robert e jr
+presidential election of 2016,trump  donald j,religion and belief,republican party
+whatsapp inc,computer security,mobile applications,instant messaging
+real estate and housing (residential),rome (italy)
+puerto rico,credit and debt,government bonds,government development bank for puerto rico,law and legislation
+allergan inc,pfizer inc,corporate taxes,tax shelters,mergers  acquisitions and divestitures,obama  barack,law and legislation
+louisiana,movies,television,nungesser  billy
+redstone  sumner m,herzer  manuela (1963- ),redstone  shari
+corporate taxes,tax shelters,treasury department,mergers  acquisitions and divestitures,allergan inc,pfizer inc
+apple inc,television
+htc corp,virtual reality (computers)
+real estate and housing (residential),area planning and renewal,real estate (commercial),edison  thomas a,edison village,west orange (nj)
+china,news and news media,the paper,wei xing,communist party of china
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+bali (indonesia),real estate and housing (residential)
+income inequality,international monetary fund,lagarde  christine,international trade and world market,presidential election of 2016,refugees and displaced persons,protectionism (trade)
+accor sa,onefinestay,mergers  acquisitions and divestitures,hotels and travel lodgings,luxury goods and services,europe
+starz,video recordings  downloads and streaming,television,cable television,mobile applications,prices (fares  fees and rates),home box office,showtime,netflix inc,amazon.com inc
+mergers  acquisitions and divestitures,antitrust laws and competition issues,stocks and bonds,regulation and deregulation of industry
+mergers  acquisitions and divestitures,corporate taxes,tax shelters,internal revenue service,treasury department,united states politics and government,allergan inc,pfizer inc,dublin (ireland)
+puerto rico,government bonds,assets  frozen,government development bank for puerto rico,hedge funds,law and legislation
+gulf of mexico oil spill (2010),bp plc,barbier  carl j,new orleans (la),oil spills,gulf of mexico
+health insurance and managed care,patient protection and affordable care act (2010),employee fringe benefits,labor and jobs
+cruises,public speaking,travel and vacations
+health insurance and managed care,medivation inc,sanofi sa,st jude medical inc,abbott laboratories,mergers  acquisitions and divestitures,abbvie inc
+appointments and executive changes,justice department,miller  marshall l,wachtell lipton rosen & katz,legal profession
+walt disney company,staggs  thomas o,iger  robert a,appointments and executive changes
+nielsen media research,dish network,ratings (audience measurement) ,television sets and media devices
+united states economy,factories and manufacturing,commerce department,aviation accidents  safety and disasters
+virgin america,airlines and airplanes,mergers  acquisitions and divestitures,alaska air group inc
+presidential election of 2016,trump  donald j,wisconsin,primaries and caucuses,cruz  ted
+mortgages,stocks and bonds,mathematics
+sixth amendment (us constitution),assets  frozen,supreme court (us),caspersen  andrew
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+e-commerce,michael c fina inc,amazon.com inc,weddings and engagements,family business,shopping and retail,baccarat inc,luxury goods and services
+windows (operating system),microsoft corp
+driverless and semiautonomous vehicles,start-ups,china,wu  gansha
+valeant pharmaceuticals international inc,pearson  john michael (1959- ),executive compensation,mergers  acquisitions and divestitures,income inequality,boards of directors,stock options and purchase plans,drugs (pharmaceuticals)
+bats global markets,initial public offerings,knight capital group inc,bank of america corporation,banking and financial institutions
+data-mining and database marketing,colleges and universities,archives and records,computers and the internet,deloitte touche tohmatsu ltd,mit media lab,census,united states,massachusetts institute of technology
+drones (pilotless planes),zipline inc,rwanda,delivery services,kigali (rwanda),venture capital,start-ups,medicine and health,blood
+alaska air group inc,virgin america,mergers  acquisitions and divestitures,alaska airlines,airlines and airplanes
+yves saint laurent,vaccarello  anthony,fashion and apparel,versace  gianni  spa
+presidential election of 2016,anger (emotion),happiness,polls and public opinion,race and ethnicity,united states economy,united states politics and government
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+ford motor co,company reports,automobiles,sports utility vehicles and light trucks
+advertising and marketing,instant messaging,online advertising,mobile applications,mobile commerce and payments
+gawker media,hogan  hulk,news and news media,privacy,suits and litigation (civil),denton  nick
+driverless and semiautonomous vehicles,china,wu  gansha,uisee technology ltd
+barclays plc,commerce department,labor department (us),obama  barack,international trade and world market,yellen  janet l,federal reserve system,puerto rico,european central bank,bernanke  ben s,greenspan  alan
+moore charitable foundation,caspersen  andrew,mcintyre  james,securities and commodities violations,frauds and swindling,pjt partners inc,princeton university
+hewlett-packard company,laptop computers,weisler  dion j,spectre 13
+television,cartoon network,cartoons and cartoonists,toys,spin master,lego group,the powerpuff girls (tv program),powerpuff girls  the (tv program)
+municipal bonds,treasury department,tax credits  deductions and exemptions
+barshay  scott a,cravath swaine & moore,paul weiss rifkind wharton & garrison,legal profession,appointments and executive changes
+television,bankruptcies,core media group inc,american idol (tv program)
+new day  the (british newspaper),newspapers,great britain,trinity mirror,phillips  alison
+facebook inc,video recordings  downloads and streaming,computers and the internet,social media
+managed by q services llc,venture capital,start-ups,google ventures,kapor capital
+mergers  acquisitions and divestitures,virgin america,alaska airlines,airlines and airplanes
+greece,international monetary fund,wikileaks,tsipras  alexis,european union,referendums,great britain
+new york times,discrimination,grant  ernestine (1953- ),walker  marjorie v (1954- ),thompson  mark john (1957- ),levien  meredith,suits and litigation (civil),age  chronological,women and girls,blacks,advertising and marketing
+deaths (obituaries),washington post,green  bill (1924-2016),green  bill
+computers and the internet,video recordings  downloads and streaming,facebook inc,amazon.com inc
+deaths (obituaries),cbs news,engberg  eric (1941-2016),television,engberg  eric
+hyundai motor co,automobiles,elantra
+banking and financial institutions,work-life balance,moelis & co,hughes  thomas james (1985-2015),suicides and suicide attempts
+electric and hybrid vehicles,tesla motors inc,musk  elon,fuel efficiency
+real estate and housing (residential),renting and leasing (real estate),personal finances,prices (fares  fees and rates)
+beer,kashper  eugene,pabst brewing co,tsg consumer partners llc
+new york (magazine),sullivan  andrew,presidential election of 2016,blogs and blogging (internet)
+bouygues telecom,orange sa,telephones and telecommunications,mergers  acquisitions and divestitures,europe
+cage  julia ,computers and the internet,news and news media,saving the media: capitalism  crowdfunding  and democracy (book)
+slack technologies inc,venture capital,start-ups,butterfield  stewart,computers and the internet,entrepreneurship
+k&l gates llp,cyberharassment,elam  david k ii,sexual harassment,suits and litigation (civil),legal profession
+initial public offerings,computers and the internet,entrepreneurship,start-ups
+fiat chrysler automobiles nv,automobiles,layoffs and job reductions
+workplace hazards and violations,rock and stone,lungs,silica,silicosis,occupational safety and health administration,engineered stone
+bair  sheila c,regulation and deregulation of industry,banking and financial institutions,avant inc
+united states economy,factories and manufacturing,economic conditions and trends,commerce department,institute for supply management,consumer behavior
+foreign investments,anbang insurance group co,starwood hotels & resorts worldwide inc,china,mergers  acquisitions and divestitures
+student loans,consumer protection,consumer financial protection bureau,student aid institute inc,prices (fares  fees and rates)
+legal profession,labor and jobs,law schools,hiring and promotion
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+page  alan,retirement,minnesota,supreme courts (state),football,minnesota vikings,legal profession,blacks,philanthropy
+e-mail,hoaxes and pranks,april fool's day,google inc
+music,audio recordings  downloads and streaming,mobile applications,ios (operating system),data storage,amazon.com inc,apple inc,google music,google play,itunes
+gilead sciences inc,company reports,drugs (pharmaceuticals),hepatitis,harvoni (drug)
+textiles,labor and jobs,fashion and apparel,robots and robotics,factories and manufacturing,defense department
+fashion and apparel,yves saint laurent,slimane  hedi,luxury goods and services
+blackberry,smartphones,android (operating system),blackberry (handheld device),company reports,chen  john s
+consultants,high net worth individuals,drug abuse and traffic,therapy and rehabilitation,addiction (psychology),mental health and disorders,families and family life,alcohol abuse
+home retail group,sainsbury  j  plc,supermarkets and grocery stores,mergers  acquisitions and divestitures
+united states economy,labor department (us),unemployment,wages and salaries,hiring and promotion
+tesla motors inc,musk  elon,automobiles,electric and hybrid vehicles
+slimane  hedi,fashion and apparel,yves saint laurent,kering sa
+helsinki (finland),real estate and housing (residential)
+linton  robert e (1925-2016),deaths (obituaries),drexel burnham lambert inc,banking and financial institutions,glass-steagall act (1933),linton  robert e.
+real estate and housing (residential),singapore,sustainable living
+dodd-frank wall street reform and consumer protection act (2010),metlife inc,general electric company,regulation and deregulation of industry,banking and financial institutions,american international group inc
+kkr & co lp,mergers  acquisitions and divestitures,fashion and apparel,china,shandong ruyi science & technology group ltd,smcp group
+fashion and apparel,textiles,massachusetts institute of technology,sensors,innovation,defense department,vf corporation
+tests (medical),theranos inc,blood,centers for medicare and medicaid services,laboratories and scientific equipment,holmes  elizabeth (1984- )
+automobiles,advertising and marketing,fiat chrysler automobiles nv,ford motor co,general motors,honda motor co ltd,kia motors corp,nissan motor co,toyota motor corp
+oil (petroleum) and gasoline,production,energy information administration
+sunedison inc,solar energy,justice department,subpoenas,vivint solar holdings inc.,terraform global inc.,terraform power inc
+restaurants,china,hong kong,far east  south and southeast asia and pacific areas,fast food industry,south korea,mcdonald's corporation
+mergers  acquisitions and divestitures,barclays plc,china national chemical corp,syngenta ag,transcanada corporation,columbia pipeline group inc.
+internal revenue service,income tax,tax evasion,federal taxes (us),taxation,united states politics and government,republican party
+kleiner perkins caufield & byers,doerr  john,venture capital
+computers and the internet,federal communications commission,poverty,income inequality,prices (fares  fees and rates)
+movies,heller  gerald e (1940- ),libel and slander,suits and litigation (civil),n w a (music group),straight outta compton (movie)
+anbang insurance group co,starwood hotels & resorts worldwide inc,marriott international inc,hotels and travel lodgings,mergers  acquisitions and divestitures
+denver (colo),urban areas,united states economy,labor and jobs,unemployment,sierra nevada corp,economic conditions and trends,relocation of business,colleges and universities
+discrimination,homosexuality and bisexuality,transgender and transsexuals,north carolina,corporations,mccrory  pat,deal  nathan,state legislatures,states (us)
+race and ethnicity,news and news media,pittsburgh (pa)
+institute for supply management,unemployment insurance,labor and jobs
+for-profit schools,student loans,corinthian colleges inc,suits and litigation (civil),thomas jefferson school of law
+argentina,government bonds,hedge funds,macri  mauricio,griesa  thomas p
+amazon.com inc,cloud computing,company reports,e-commerce
+holbourn  oliver,appointments and executive changes,mergers  acquisitions and divestitures,banking and financial institutions,bank of america merrill lynch,osborne  george,lloyds banking group plc,royal bank of scotland plc,great britain,uk financial investments
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+wireless communications,cellular telephones,at&t inc,sprint nextel corporation,t-mobile us inc,verizon communications inc
+social media,facebook inc,twitter,youtube.com
+general electric company,financial stability oversight council,ge capital corp,regulation and deregulation of industry
+marijuana,celebrities,goldberg  whoopi
+volvo car corp,electric and hybrid vehicles,automobiles
+amazon.com inc,e-commerce,shopping and retail,inventions and patents,dash button
+dalian wanda group,real estate (commercial),dalian wanda commercial properties,china,stocks and bonds,initial public offerings,legendary entertainment,hong kong
+icahn  carl c,apple inc,china,stocks and bonds
+germany,inflation (economics),european central bank,economic conditions and trends
+mergers  acquisitions and divestitures,anbang insurance group co,starwood hotels & resorts worldwide inc,china,arbitration  conciliation and mediation
+organization for economic cooperation and development,economic conditions and trends,pensions and retirement plans
+frauds and swindling,cancer fund of america inc,cancer support services inc,reynolds  james t sr,federal trade commission,fines (penalties),philanthropy,tennessee
+automobile safety features and defects,general motors,suits and litigation (civil),new orleans (la),manhattan (nyc)
+banking and financial institutions,computers and the internet,citigroup inc,layoffs and job reductions,regulation and deregulation of industry,start-ups,mobile commerce and payments
+health insurance and managed care,tax preparers and preparation,patient protection and affordable care act (2010),personal finances,federal taxes (us)
+dodd-frank wall street reform and consumer protection act (2010),metlife inc,financial stability oversight council,regulation and deregulation of industry
+news and news media,world war ii (1939-45),holocaust and the nazi era,propaganda,pulitzer prizes,associated press,guardian (british newspaper),germany,hitler  adolf,scharnberg  harriet
+cravath swaine & moore,federal bureau of investigation,cyberattacks and hackers,legal profession
+securities and exchange commission,justice department,goldman sachs group inc,mortgage-backed securities,subprime mortgage crisis
+productivity,labor and jobs,gross national product (gnp),united states economy,hiring and promotion
+mobile applications,ipad,iphone,apple inc,android (operating system),shazam entertainment,feedmesh (mobile app)
+facebook inc,video recordings  downloads and streaming,mobile applications,social media,news and news media
+microsoft corp,windows (operating system),artificial intelligence,software,computers and the internet
+metlife inc,dodd-frank wall street reform and consumer protection act (2010),regulation and deregulation of industry,financial stability oversight council
+expa,entrepreneurship,venture capital,silicon valley (calif),start-ups
+mergers  acquisitions and divestitures,foxconn technology,sharp corporation,japan
+labor and jobs,adp employer services,economic conditions and trends
+chernin  peter a,fullscreen inc,at&t inc,video recordings  downloads and streaming,web-original programming,television,chernin group llc
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+windows (operating system),software
+european union,google inc,microsoft corp,antitrust laws and competition issues,search engines,alphabet inc,mobile applications,android (operating system)
+car services and livery cabs,mobile applications,smartphones,airbnb,uber technologies inc,lyft inc
+mergers  acquisitions and divestitures,general electric company,state street corporation,state street global advisors,immelt  jeffrey r
+diabetes,medicare,research,burwell  sylvia mathews,young men's christian assn (ymca),exercise,health insurance and managed care,patient protection and affordable care act (2010)
+uber technologies inc,car-pooling and ride-sharing,car services and livery cabs,lyft inc,san francisco (calif)
+pop-up stores and restaurants,shopping and retail
+instagram inc,social media,facebook inc
+appointments and executive changes,swedbank ab,boards of directors,wolf  michael nils johann (1963- )
+mergers  acquisitions and divestitures,metro ag
+apple inc,foxconn technology,sharp corporation,mergers  acquisitions and divestitures,electronics,gou  terry (1950- ),china,taiwan
+soundcloud,audio recordings  downloads and streaming,music
+abbott laboratories,st jude medical inc,mergers  acquisitions and divestitures,medical devices
+virtual reality (computers),oculus vr inc,computer and video games
+china,computers and the internet,censorship,law and legislation,regulation and deregulation of industry
+spotify,venture capital,tpg capital,goldman sachs group inc,audio recordings  downloads and streaming
+san bernardino  calif  shooting (2015),apple inc,computer security,privacy,iphone,federal bureau of investigation,cook  timothy d,farook  syed rizwan
+sunedison inc,solar energy,bankruptcies,terraform power inc
+lew  jacob j,iran,embargoes and sanctions,obama  barack,united states international relations
+bankruptcies,puerto rico,united states politics and government,garcia padilla  alejandro
+international trade and world market,presidential election of 2016,trump  donald j,sanders  bernard,china,labor and jobs,trans-pacific partnership,united states economy,polls and public opinion,factories and manufacturing
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+banking and financial institutions,royal bank of scotland plc,williams & glyn bank ltd,european sovereign debt crisis (2010- )
+movies,books and literature,haggis  paul,cook  richard w,flanagan  john (author),haggis  alissa sullivan,dick cook studios,china international trust & investment corp,film carnival,cook  dick,ranger's apprentice (movie),ranger's apprentice (book),rangers apprentice (book)
+valeant pharmaceuticals international inc,mckinsey & co,stocks and bonds,drugs (pharmaceuticals)
+deaths (obituaries),economics (theory and philosophy),thurow  lester c,thurow  lester
+comic-con (conventions),trademarks and trade names,san diego (calif),suits and litigation (civil),salt lake city (utah)
+caspersen  andrew,pjt partners inc,moore charitable foundation,securities and commodities violations,frauds and swindling,philanthropy,bacon  louis moore
+global warming,exxon mobil corp,schneiderman  eric t,attorneys general,gore  al,massachusetts,virgin islands (us)
+united states economy,real estate and housing (residential),conference board,prices (fares  fees and rates),consumer confidence (economic indicator),standard & poor's case-shiller home price index,national assn of realtors
+hotels and travel lodgings,anbang insurance group co,starwood hotels & resorts worldwide inc,marriott international inc,mergers  acquisitions and divestitures
+volkswagen ag,advertising and marketing,air pollution,diesel power,federal trade commission,automobiles,greenhouse gas emissions,suits and litigation (civil)
+edison international,edison energy group,energy efficiency
+stocks and bonds,nasdaq composite index,standard & poor's 500-stock index,dow jones stock average
+banking and financial institutions,great britain,bank of england,regulation and deregulation of industry,prudential regulation authority (great britain)
+federal reserve system,yellen  janet l,united states economy
+carbon capture and sequestration,coal,saskatchewan (canada),greenhouse gas emissions,saskpower,shell canada limited,electric light and power
+anbang insurance group co,starwood hotels & resorts worldwide inc,wu xiaohui,deng xiaoping,chen xiaolu
+real estate (commercial),amazon.com inc,area planning and renewal,correia  jasiel ii,real estate and housing (residential),fall river (mass)
+stocks and bonds,nasdaq composite index,dow jones stock average,standard & poor's 500-stock index
+apple inc,e-books and readers,ibooks,mobile applications
+iphone,apple inc,justice department,suits and litigation (civil)
+venture capital,pensions and retirement plans,bessemer venture partners,menlo ventures ix lp,francisco partners
+automobiles,north american free trade agreement,presidential election of 2016,labor and jobs,sanders  bernard,trump  donald j,international trade and world market,united states economy,factories and manufacturing,mexico,customs (tariff)
+bombardier inc,delta air lines  inc,airlines and airplanes
+mcgovern  james g,hogan lovells,united states attorneys,legal profession,brooklyn (nyc),appointments and executive changes
+great britain,soft drinks,sales and excise taxes,sugar
+presidential election of 2016,clinton  hillary rodham,sanders  bernard,democratic party,primaries and caucuses,states (us)
+justice department,apple inc,privacy,san bernardino  calif  shooting (2015),iphone,surveillance of citizens by government
+california,minimum wage,unemployment,economic conditions and trends,labor and jobs,brown  edmund g jr
+valeant pharmaceuticals international inc,executive compensation,valueact capital partners,ubben  jeffrey w,pearson  john michael (1959- ),ackman  william a,accounting and accountants,drugs (pharmaceuticals)
+puerto rico,corporate taxes,walmart stores inc
+pandora media inc,westergren  tim,mcandrews  brian p,music,audio recordings  downloads and streaming,appointments and executive changes
+avon products inc,barington capital group,boards of directors,shareholder rights and activism,appointments and executive changes
+dreamworks animation skg inc,katzenberg  jeffrey,comcast corporation,animated films,movies,amusement and theme parks,nbcuniversal,mergers  acquisitions and divestitures
+valeant pharmaceuticals international inc,drugs (pharmaceuticals),pearson  john michael (1959- ),senate
+san bernardino  calif  shooting (2015),apple inc,justice department,privacy,surveillance of citizens by government,iphone
+gregory  david,cnn,television,news and news media,presidential election of 2016,meet the press (tv program),new day (tv program)
+affymetrix inc,thermo fisher scientific inc,origin technologies corp llc,mergers  acquisitions and divestitures,witney  frank
+valeant pharmaceuticals international inc,accounting and accountants,mergers  acquisitions and divestitures,philidor rx services llc,bausch & lomb incorporated,pearson  john michael (1959- ),drugs (pharmaceuticals)
+valeant pharmaceuticals international inc,senate,elderly,drugs (pharmaceuticals),prices (fares  fees and rates),turing pharmaceuticals ag,pearson  john michael (1959- )
+theranos inc,tests (medical),journal of clinical investigation,blood,mount sinai medical center,laboratory corporation of america holdings,quest diagnostics inc
+china,automobiles,factories and manufacturing,general motors,volkswagen ag,economic conditions and trends,consumer behavior,international trade and world market,small cars (compact  subcompact and microcars)
+android (operating system),tablet computers,computer keyboards,bluetooth wireless technology
+audio recordings  downloads and streaming,pandora media inc
+amazon kindle,e-books and readers,amazon.com inc,computers and the internet
+united states economy,consumer behavior,inflation (economics),commerce department
+airlines and airplanes,airports,mobile applications,american airlines,travel and vacations
+personal finances
+caspersen  andrew,pjt partners inc,securities and commodities violations,frauds and swindling
+valeant pharmaceuticals international inc,suits and litigation (civil),ackman  william a,schiller  howard b,pearson  john michael (1959- )
+newspapers,abramson  jill
+stocks and bonds,dow jones stock average,nasdaq composite index,standard & poor's 500-stock index
+starwood hotels & resorts worldwide inc,anbang insurance group co,marriott international inc,mergers  acquisitions and divestitures
+artificial intelligence,virtual reality (computers)
+abbvie inc,stemcentrx inc,mergers  acquisitions and divestitures,stem cells,cancer
+executives and management (theory)
+australia,tpg capital,private equity,appointments and executive changes
+al jazeera,layoffs and job reductions,qatar,news and news media
+charter communications inc,time warner cable inc,bright house networks llc,mergers  acquisitions and divestitures,federal communications commission,television,computers and the internet,regulation and deregulation of industry,comcast corporation
+cloud computing,artificial intelligence,google inc,microsoft corp,amazon.com inc,greene  diane b,silicon valley (calif)
+virtual currency,ethereum,bitcoin (currency)
+news and news media,castro  raul,obama  barack,cuba,freedom of the press,united states international relations
+labor and jobs,united states economy,wages and salaries,commerce department,federal reserve system,china
+advertising and marketing,hilton worldwide holdings inc,customer loyalty programs,hotels and travel lodgings,marriott international inc,expedia inc
+company reports,amazon.com inc
+municipal bonds,tax credits  deductions and exemptions,treasury department
+natural gas,israel,noble energy inc,offshore drilling and exploration,international trade and world market,delek group ltd
+europe,surveillance of citizens by government,espionage and intelligence services,privacy,brussels attacks (march 2016),computer security,apple inc,computers and the internet,law and legislation
+international trade and world market,united states economy,trump  donald j,presidential election of 2016,united states international relations
+icivics inc,o'connor  sandra day,computer and video games,presidential election of 2016,presidents and presidency (us),education (k-12),united states politics and government,e-learning
+book trade and publishing,parnassus books (nashville  tenn),hayes  karen,patchett  ann
+apple inc,iphone,smartphones,privacy,federal bureau of investigation,nest labs inc,tivo inc,twitter
+life insurance,advertising and marketing,consumer behavior
+smartphones,mobile applications,personal finances
+gnc holdings inc,vitamins,mergers  acquisitions and divestitures,dietary supplements and herbal remedies
+music,advertising and marketing,ticketfly,ticketmaster,bowery ballroom,mercury lounge
+prices (fares  fees and rates),budgets and budgeting,personal finances,consumer behavior
+stocks and bonds,personal finances
+long-term care insurance,health insurance and managed care,elderly,elder care,personal finances
+economics (theory and philosophy),stocks and bonds,psychology and psychologists,optimism,memory
+mobile applications,stocks and bonds,personal finances
+retirement,savings,personal finances,pensions and retirement plans
+labor and jobs,careers and professions
+credit cards,mobile commerce and payments,consumer behavior
+health insurance and managed care,tax credits  deductions and exemptions,personal finances,aarp,health savings accounts
+mergers  acquisitions and divestitures,st jude medical inc,abbott laboratories
+japan,inflation (economics),nikko (japan),economic conditions and trends
+stocks and bonds,easter and holy week,far east  south and southeast asia and pacific areas,china
+labor and jobs,recession and depression,states (us),new jersey,missouri,alabama,wyoming,nevada,maine,west virginia,connecticut,mississippi,new mexico
+clean line energy partners,alternative and renewable energy,wind power,texas,oklahoma,energy department,obama  barack
+gross domestic product,united states economy,interest rates,commerce department
+television,liguori  peter,tribune media company,wgn america,media
+artificial intelligence,google inc,microsoft corp,amazon.com inc,international business machines corporation,facebook inc,software,computers and the internet
+fashion and apparel,yoga smoga inc,shopping and retail,bali  rishi,gap inc,lululemon athletica inc,activewear,exercise,yoga
+united states economy,gross domestic product,productivity,gross national product (gnp),labor and jobs,commerce department
+ponto  steven,baby boomers,retirement,brookfield (wis),local government,careers and professions,politics and government,wisconsin
+mattel inc,toys,television,race and ethnicity,hit entertainment ltd,thomas & friends (tv program)
+student loans,fidelity investments,employee fringe benefits,credit and debt,labor and jobs
+philanthropy,high net worth individuals,grants (corporate and foundation),personal finances
+windows (operating system),linux (operating system),microsoft corp
+audio recordings  downloads and streaming,music,madonna,billboard (magazine)
+mauritius,real estate and housing (residential)
+bali (indonesia),real estate and housing (residential)
+viacom inc,company reports,television,movies,advertising and marketing
+hepatitis,gilead sciences inc,merck & company inc,drugs (pharmaceuticals),inventions and patents,harvoni (drug),sovaldi (drug)
+oil (petroleum) and gasoline,easter and holy week,energy department,prices (fares  fees and rates),summer (season),exxon mobil corp
+coca-cola company
+united automobile workers,organized labor,automobiles,detroit (mich)
+boards of directors,yahoo! inc,mergers  acquisitions and divestitures,starboard value lp
+law schools,alaburda  anna,colleges and universities,decisions and verdicts,labor and jobs,legal profession,thomas jefferson school of law
+playboy enterprises,trademarks and trade names,mergers  acquisitions and divestitures
+garland  merrick b,supreme court (us),corporations,senate,regulation and deregulation of industry,united states politics and government
+apple inc,mobile applications,television,will.i.am (1975- )
+puerto rico,government bonds,bankruptcies,credit and debt,united states politics and government,ryan  paul d jr,pelosi  nancy
+wallace  chris (1947- ),fox news channel,trump  donald j,television,presidential election of 2016,ailes  roger e
+united states economy,factories and manufacturing,commerce department,airlines and airplanes
+yahoo! inc,starboard value lp,mergers  acquisitions and divestitures,darden restaurants inc
+privacy,google inc,france,computers and the internet,europe,commission nationale de l'informatique et des libertes (cnil),fines (penalties)
+microsoft corp,artificial intelligence,discrimination,twitter
+argentina,hedge funds,government bonds,justice department,credit and debt,suits and litigation (civil)
+music,recording industry assn of america,royalties,audio recordings  downloads and streaming,compact discs
+volkswagen ag,diesel power,air pollution,automobile safety features and defects,fuel emissions (transportation),automobiles,regulation and deregulation of industry,frauds and swindling
+shareholder rights and activism,springowl asset management llc,baldwin  tammy suzanne green,law and legislation,merkley  jeffrey a (1956- )
+sports utility vehicles and light trucks,luxury goods and services,fiat chrysler automobiles nv,jaguar land rover,maserati spa,aston martin,automobili lamborghini spa
+stocks and bonds,nasdaq composite index,dow jones stock average,standard & poor's 500-stock index
+private equity,mergers  acquisitions and divestitures,canada pension plan investment board,cinven ltd,hotels and travel lodgings
+computers and the internet,software,photography,apple inc,google inc,microsoft corp,adobe systems inc
+venture capital,uber technologies inc,instacart,convoy inc,luxe valet inc,parking garages and lots,car services and livery cabs,delivery services,mobile applications
+rovi corp,tivo inc,television sets and media devices,mergers  acquisitions and divestitures,inventions and patents
+automobiles,honda motor co ltd
+banking and financial institutions,royal bank of scotland plc,mcewan  ross m,edinburgh (scotland)
+banking and financial institutions,executive compensation,thiam  tidjane,credit suisse group ag
+yahoo! inc,boards of directors,starboard value lp,shareholder rights and activism,hedge funds,appointments and executive changes,mayer  marissa
+presidential election of 2016,trump  donald j,youth,polls and public opinion,race and ethnicity,voting and voters,sanders  bernard,clinton  hillary rodham
+memory
+mergers  acquisitions and divestitures,barclays plc,banco popular,credit cards
+labor department (us),hazardous and toxic substances,workplace hazards and violations,hydraulic fracturing,building (construction),silica
+global warming,exxon mobil corp,securities and exchange commission,shareholder rights and activism
+advertising and marketing,thompson  j walter  co,martinez  gustavo,discrimination,sexual harassment,suits and litigation (civil),publicis groupe,johnson  erin v (1973- )
+apple inc,surveillance of citizens by government,cyberattacks and hackers,federal bureau of investigation,privacy,justice department,iphone,san bernardino  calif  shooting (2015)
+automobiles,new york international auto show,sports utility vehicles and light trucks,electric and hybrid vehicles,small cars (compact  subcompact and microcars)
+keurig green mountain inc,pinnacle foods incorporated,gamgort  robert j (1962- ),appointments and executive changes
+american airlines,airlines and airplanes
+pershing square holdings,ackman  william a,paulson  john a,valeant pharmaceuticals international inc,pershing square capital management,paulson & co,hedge funds
+newman  joshua bryce (1979- ),frauds and swindling,health clubs,exercise,federal bureau of investigation,yale university
+commerce department,real estate and housing (residential),western states (us)
+volkswagen ag,muller  matthias (1953- ),air pollution,diesel power,automobile safety features and defects,obama  barack,company reports,fuel emissions (transportation)
+iphone,apple inc
+alternative and renewable energy,wind power,missouri,midwestern states (us),clean line energy partners,energy and power
+boards of directors,securities and commodities violations,schiller  howard b,valeant pharmaceuticals international inc
+credit suisse group ag,thiam  tidjane
+mobile applications,computer security,apple inc,wickr,ios (operating system),android (operating system),signal (open whisper systems),threema gmbh
+google inc,cloud computing,alphabet inc,greene  diane b
+advertising and marketing,facebook inc,square inc,online advertising,computers and the internet
+libor (london interbank offered rate),hayes  thomas alexander william,great britain,serious fraud office (united kingdom),banking and financial institutions,fines (penalties)
+company reports,hermes international sa,luxury goods and services,international trade and world market
+labor department (us),organized labor,consultants,national labor relations board,workplace environment
+corruption (institutional),national bureau of statistics (china),li keqiang,beijing (china),production
+stocks and bonds,nasdaq composite index,dow jones stock average,standard & poor's 500-stock index
+iphone,ios (operating system),privacy,apple inc
+computers and the internet,apple inc,cyberattacks and hackers,software
+sarao  navinder singh,high-frequency and flash trading,extradition,securities and commodities violations,great britain
+executives and management (theory),small business,deaths (fatalities),xti aircraft co,pino  jeff,kitchit,aviation accidents  safety and disasters
+hsbc holdings plc.,nish  david (1960- ),appointments and executive changes
+woodside petroleum limited,offshore drilling and exploration,natural gas,australia,bp plc,royal dutch shell plc,oil (petroleum) and gasoline
+mobile applications,luxe valet inc,prices (fares  fees and rates),car services and livery cabs,parking garages and lots,uber technologies inc,instacart,postmates inc
+credit suisse group ag,banking and financial institutions,thiam  tidjane,layoffs and job reductions
+company reports,banking and financial institutions,lloyds banking group plc
+convoy inc,trucks and trucking,venture capital,uber technologies inc,start-ups,amazon.com inc
+panama canal and canal zone,east coast (us),ports,ships and shipping,seaspan corporation,long beach (calif),canals
+lumber liquidators inc,california,floors and flooring,formaldehyde,air pollution,wood and wood products,hazardous and toxic substances,california air resources board,china,consumer protection
+hepatitis,gilead sciences inc,merck & company inc,inventions and patents,drugs (pharmaceuticals),sovaldi (drug),harvoni (drug)
+apple inc,federal bureau of investigation,cyberattacks and hackers,privacy,computer security,surveillance of citizens by government,justice department,san bernardino  calif  shooting (2015)
+puerto rico,supreme court (us),bankruptcies,government bonds,credit and debt,stocks and bonds,suits and litigation (civil)
+federal reserve bank of new york,goldman sachs group inc,bansal  rohit,classified information and state secrets,banking and financial institutions
+real estate and housing (residential),real estate (commercial),renting and leasing (real estate)
+affymetrix inc,thermo fisher scientific inc,origin technologies corp llc,mergers  acquisitions and divestitures
+smoking and tobacco,movies,motion picture assn of america,ratings (parental guidance)
