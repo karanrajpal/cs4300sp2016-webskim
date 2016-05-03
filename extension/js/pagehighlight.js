@@ -360,6 +360,8 @@ var weightUrl = "http://karanrajpal.in/webskim/sports.php";
 var keywords = getKeywords();
 //console.log(keywords);
 var articleCategory = getArticleCategory();
+var all_tweets = [];
+var articleTitle = getTitle();
 // console.log(getJSONFile(articleCategory)["inning"]);
 // console.log("The article category is: "+ articleCategory);
 
@@ -2021,9 +2023,6 @@ cb.__call(
 /*****************************************************************************************************************************************/
 /*****************************************************************************************************************************************/
 
-var all_tweets = [];
-var articleTitle = getTitle();
-
 function getTitle() {
 	title = document.getElementById('headline').textContent;
 	title = title.toLowerCase();
@@ -2046,12 +2045,13 @@ function getTweets(keywords, title, top3) {
 	// var search_words = keywords.concat(title).concat(top3);
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
-	search_words = search_words.splice(0,3);
-	var query = search_words.join(' ');
+	//search_words = search_words.splice(0,3);
+	//var query = search_words.join(' ');
+	var query = search_words.join(' OR ');
 	var params = {
     	q: query,
     	result_type: "popular",
-    	count: 10,
+    	count: 100,
     	lang: 'en'
 	};
 
@@ -2112,7 +2112,6 @@ function getQuery(title_words) {
 		});
 	var q0 = title_words.concat(filtered_keywords).concat(filtered_top);
 	return q0;
-
 }
 
 /*update query keywords with most relevant words in tweets*/
@@ -2186,9 +2185,8 @@ function tqueryToSents(qvec,dvec){
 
 /*create ranking of relevant sentences based on tweet query*/
 function rankByTweets() {
-	var title_words = getTitle();
 	var search_words = getTweets();
-	var q0 = getQuery(title_words);
+	var q0 = getQuery(articleTitle);
 	var q1 = tweetsUpdate(q0);
 	var qvec = query2vec(q1);
 
@@ -2196,8 +2194,8 @@ function rankByTweets() {
 
 	for (var i = 0; i < allSentences.length; i++) {
 		var dvec = doc2vec(sentence);
-		var dscore = tqueryToSents(qvec, dvec);
-		ranked.push([i, dscore]);
+		var score = tqueryToSents(qvec, dvec);
+		ranked.push([i, score]);
 	}
 
 	ranked = ranked.sort(function(a,b) {return b[1] - a[1]});
