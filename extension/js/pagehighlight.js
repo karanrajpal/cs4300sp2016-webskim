@@ -117,7 +117,7 @@ function getTF_DF() {
 		var words = allSentences[j].split(' ');
 			
 			for (var w = 0; w < words.length; w++) {
-				var word = words[w];
+				var word = stemmer(words[w]);
 				//increase term frequency by 1
 				if (!tf[word]) {
 					tf[word] = 1;
@@ -165,7 +165,7 @@ function doc2vec(doc) {
 	var v = {};
 	var terms = doc.split(' ');
 	for (var i = 0; i < terms.length; i++) {
-		var t = terms[i];
+		var t = stemmer(terms[i]);
 		v[t] = tfidf[t];
 	}
 	return v;
@@ -297,7 +297,6 @@ function highlight() {
   // sentencesScore
   var scores = [];
   var scoreTotal = 0;
-  var wordLengthTotal= 0;
   var totalNumberOfWords = 0;
   var totalNumberOfSentences = 0;
 	var paras = document.querySelectorAll('p.story-body-text.story-content');
@@ -309,9 +308,8 @@ function highlight() {
         var words = sentences[k].split(" ");
         var scoreOfThisSentence = 0;
         for(var m=0; m<words.length; m++) {
-          var word = words[m];
+          var word = stemmer(words[m]);
           totalNumberOfWords++;
-          wordLengthTotal+=word.length;
           if(jsonScore[word]!= undefined) {
             scoreOfThisSentence+=jsonScore[word];
           }
@@ -323,28 +321,34 @@ function highlight() {
   }
   var avgScoreOfASentence = scoreTotal/scores.length;
   var avgNumberOfWords = totalNumberOfWords/totalNumberOfSentences;
-  document.getElementById('averagescore').innerHTML="Threshold: "+avgScoreOfASentence/avgNumberOfWords;
+  var threshold = avgScoreOfASentence/avgNumberOfWords;
+  document.getElementById('averagescore').innerHTML="Threshold: "+threshold;
 
 	for (var i = 0; i < paras.length; i++) {
 		for (var j = 0; j < keywords.length; j++) {
 			var sentences = paras[i].innerHTML.split('. ');
 			paras[i].innerHTML = '';
 			for (var k = 0; k < sentences.length; k++) {
-        var words = sentences[k].split(" ");
-        var scoreOfThisSentence = 0;
-        for(var m=0; m<words.length; m++) {
-          var word = words[m];
-          if(jsonScore[word]!= undefined) {
-            scoreOfThisSentence+=jsonScore[word];
-          }
-        }
-        // console.log(scoreOfThisSentence);
-        if(scoreOfThisSentence/words.length>avgScoreOfASentence/avgNumberOfWords) {
-          sentences[k]='<mark data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
-          var sentscore = document.getElementById(\'sent\');\
-        sentscore.innerHTML = this.getAttribute(\'data-score\');\
-  ">'+sentences[k]+'</mark>';
-        }
+		        var words = sentences[k].split(" ");
+		        var scoreOfThisSentence = 0;
+		        for(var m=0; m<words.length; m++) {
+		          var word = stemmer(words[m]);
+		          if(jsonScore[word]!= undefined) {
+		            scoreOfThisSentence+=jsonScore[word];
+		          }
+		        }
+		        // console.log(scoreOfThisSentence);
+		        if((scoreOfThisSentence/words.length)>threshold) {
+		        	sentences[k]='<mark data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
+		        	var sentscore = document.getElementById(\'sent\');\
+					sentscore.innerHTML = this.getAttribute(\'data-score\');\
+					">'+sentences[k]+'</mark>';
+		        } else {
+		        	sentences[k]='<span data-score="'+scoreOfThisSentence/words.length+'" onmouseover="\
+		        	var sentscore = document.getElementById(\'sent\');\
+					sentscore.innerHTML = this.getAttribute(\'data-score\');\
+					">'+sentences[k]+'</span>';
+		        }
 			}
 			paras[i].innerHTML+=sentences.join('. ');
 		}
@@ -363,7 +367,6 @@ function highlight() {
 /* 3) Get highlighting method */
 /* 4) Call appropriate highlight function */
 
-
 var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
 var categoryUrl = machineLearningAPI+keywords;
@@ -371,7 +374,7 @@ var articleCategory;
 
 httpGet(categoryUrl,null,function() {
 	articleCategory = event.target.responseText;
-	alert(articleCategory);
+	console.log(articleCategory);
 	jsonScore = wordWeights[articleCategory];
 	console.log(jsonScore);
 	getSavedData('METHOD', function(items,key) {
