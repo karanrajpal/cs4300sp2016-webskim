@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<!--[if (gt IE 9)|!(IE)]> <!--> <html lang="en" class="no-js page-interactive section-health page-theme-standard page-interactive-default  limit-small layout-xlarge app-interactive" itemid="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html" itemtype="http://schema.org/NewsArticle" itemscope xmlns:og="http://opengraphprotocol.org/schema/"> <!--<![endif]-->
+<!--[if IE 9]> <html lang="en" class="no-js ie9 lt-ie10 page-interactive section-health page-theme-standard page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js ie8 lt-ie10 lt-ie9 page-interactive section-health page-theme-standard page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<!--[if (lt IE 8)]> <html lang="en" class="no-js lt-ie10 lt-ie9 lt-ie8 page-interactive section-health page-theme-standard page-interactive-default  limit-small layout-xlarge app-interactive" xmlns:og="http://opengraphprotocol.org/schema/"> <![endif]-->
+<head>
+    <title>Paying Till It Hurts - The New York Times</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(e,t){return function(){o(e,[(new Date).getTime()].concat(a(arguments)),null,t)}}var o=e("handle"),i=e(2),a=e(3);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var u=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],c=["addPageAction"],f="api-";i(u,function(e,t){newrelic[t]=r(f+t,"api")}),i(c,function(e,t){newrelic[t]=r(f+t)}),t.exports=newrelic,newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),o("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(0>o?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?u(e,a,i):i()}function n(n,r,o){e&&e(n,r,o);for(var i=t(o),a=l(n),u=a.length,c=0;u>c;c++)a[c].apply(i,r);var s=f[g[n]];return s&&s.push([m,n,r,i]),i}function p(e,t){w[e]=l(e).concat(t)}function l(e){return w[e]||[]}function d(e){return s[e]=s[e]||o(n)}function v(e,t){c(e,function(e,n){t=t||"feature",g[n]=t,t in f||(f[t]=[])})}var w={},g={},m={on:p,emit:n,get:d,listeners:l,context:t,buffer:v};return m}function i(){return new r}var a="nr@context",u=e("gos"),c=e(2),f={},s={},p=t.exports=o();p.backlog=f},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!w++){var e=v.info=NREUM.info,t=s.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&t){c(l,function(t,n){e[t]||(e[t]=n)});var n="https"===p.split(":")[0]||e.sslForHttp;v.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=v.proto+e.agent,t.parentNode.insertBefore(r,t)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=window,s=f.document;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:f.XMLHttpRequest,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},e(1);var p=""+location,l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-918.min.js"},d=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),v=t.exports={offset:a(),origin:p,features:{},xhrWrappable:d};s.addEventListener?(s.addEventListener("DOMContentLoaded",i,!1),f.addEventListener("load",r,!1)):(s.attachEvent("onreadystatechange",o),f.attachEvent("onload",r)),u("mark",["firstbyte",a()],null,"api");var w=0},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://static01.nyt.com/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" sizes="144×144" href="https://static01.nyt.com/images/icons/ios-ipad-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114×114" href="https://static01.nyt.com/images/icons/ios-iphone-114x144.png" />
+<link rel="apple-touch-icon-precomposed" href="https://static01.nyt.com/images/icons/ios-default-homescreen-57x57.png" />
+<meta name="sourceApp" content="nyt-v5" />
+<meta id="applicationName" name="applicationName" content="interactive" />
+<meta id="foundation-build-id" name="foundation-build-id" content="" />
+<meta name="robots" content="noarchive" />
+<link rel="canonical" href="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html" />
+<meta name="hdl" content="Paying Till It Hurts" />
+<meta name="slug" content="paying-till-it-hurts" />
+<meta name="channels" content="" />
+<meta itemprop="description" name="description" content="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment." />
+<meta itemprop="identifier" name="articleid" content="100000002831000" />
+<meta itemprop="inLanguage" content="en-US" />
+<meta property="article:collection" content="https://static01.nyt.com/services/json/sectionfronts/health/index.jsonp" />
+<meta property="article:section" itemprop="articleSection" content="Health" />
+<meta name="PT" content="Multimedia" />
+<meta name="PST" content="Interactive" />
+<meta name="CG" content="health" />
+<meta name="SCG" content="" />
+<meta name="tom" content="interactive_feature" />
+<meta name="pdate" content="20140418" />
+<meta name="utime" content="20150720134618" />
+<meta name="ptime" content="20140418124114" />
+<meta name="DISPLAYDATE" content="April 18, 2014" />
+<meta name="dat" content="April 18, 2014" />
+<meta name="lp" content="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment." />
+<meta name="byl" content="" />
+<meta property="og:url" content="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Paying Till It Hurts" />
+<meta property="og:description" content="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment." />
+<meta property="fb:app_id" content="9869919170" />
+<meta name="twitter:card" value="summary_large_image" />
+<meta name="twitter:site" value="@nytimes" />
+<meta property="twitter:url" content="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html" />
+<meta property="twitter:title" content="Paying Till It Hurts" />
+<meta property="twitter:description" content="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment." />
+<meta name="author" content="" />
+<meta name="col" content="" id="column-name" />
+<meta name="og:image" content="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-videoSixteenByNine1050.jpg" />
+<meta name="twitter:image" content="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-articleLarge.jpg" />
+<meta name="thumbnail_150" content="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-thumbLarge.jpg" />
+<meta name="thumbnail_150_height" content="150" />
+<meta name="thumbnail_150_width" content="150" />
+<meta name="thumbnail_75" content="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-thumbStandard.jpg" />
+<meta name="thumbnail_75_height" content="75" />
+<meta name="thumbnail_75_width" content="75" />
+<meta property="article:tag" content="Health Insurance and Managed Care" />
+<meta name="des" content="Health Insurance and Managed Care" />
+<meta property="article:tag" content="New York Times" />
+<meta name="org" content="New York Times" />
+<meta property="article:tag" content="Rosenthal, Elisabeth" />
+<meta name="per" content="Rosenthal, Elisabeth" />
+<meta property="article:tag" content="United States" />
+<meta name="geo" content="United States" />
+<meta property="article:tag" content="Medicine and Health" />
+<meta name="des" content="Medicine and Health" />
+<meta name="keywords" content="Health Insurance and Managed Care,New York Times,Rosenthal  Elisabeth,United States,Medicine and Health" />
+<meta name="dfp-ad-unit-path" content="health" />
+<link rel="alternate" type="application/json+oembed" href="https://www.nytimes.com/svc/oembed/json/?url=http%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2014%2Fhealth%2Fpaying-till-it-hurts.html" title="Paying Till It Hurts" />
+    
+                <!--[if (gt IE 9)|!(IE)]> <!-->
+        <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/interactive/20160420-141859/css/interactive/styles.css" />
+    <!--<![endif]-->
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" media="screen" href="https://a1.nyt.com/assets/interactive/20160420-141859/css/interactive/styles-ie.css" />
+    <![endif]-->
+        <script id="display_overrides">
+    []</script>
+
+
+<script type="text/javascript">var googletag=googletag||{};googletag.cmd=googletag.cmd||[],function(){var t=document.createElement("script");t.async=!0,t.type="text/javascript";var e="https:"==document.location.protocol;t.src=(e?"https:":"http:")+"//www.googletagservices.com/tag/js/gpt.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(t,o)}();</script>
+
+<script id="abtestconfig" type="application/json">
+[
+    {
+        "testId": "0012",
+        "throttle": "1.0",
+        "allocation": "0.9",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "tallWatchingModule",
+        "isEnabled": true
+    },
+    {
+        "testId": "0033",
+        "throttle": "1",
+        "allocation": "0.833",
+        "variants": "5",
+        "applications": [
+            "article"
+        ],
+        "testName": "recommendedLabelTest",
+        "isEnabled": true
+    },
+    {
+        "testId": "0036",
+        "throttle": "0.1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article",
+            "homepage"
+        ],
+        "testName": "velcroSocialFollow",
+        "isEnabled": true
+    },
+    {
+        "testId": "0051",
+        "throttle": "1.0",
+        "allocation": "0.667",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "shuffleRecommendations",
+        "isEnabled": true
+    },
+    {
+        "testId": "0052",
+        "throttle": "1.0",
+        "allocation": "0.875",
+        "variants": "7",
+        "applications": [
+            "article"
+        ],
+        "testName": "paidPostDriver",
+        "isEnabled": true
+    },
+    {
+        "testId": "0061",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "paidPostFivePackMock",
+        "isEnabled": true
+    },
+    {
+        "testId": "0063",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "paidPostFivePack",
+        "isEnabled": true
+    },
+    {
+        "testId": "0064",
+        "throttle": "1",
+        "allocation": "1",
+        "variants": "1",
+        "applications": [
+            "realestate",
+            "article"
+        ],
+        "testName": "realEstateSearch",
+        "isEnabled": true
+    },
+    {
+        "testId": "0066",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "ribbonChartbeatMostEmailed",
+        "isEnabled": true
+    },
+    {
+        "testId": "0067",
+        "throttle": "0.02",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "pinnedMasthead",
+        "isEnabled": true
+    },
+    {
+        "testId": "0069",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "slideshow"
+        ],
+        "testName": "coloredSharetools",
+        "isEnabled": true
+    },
+    {
+        "testId": "0074",
+        "throttle": "1",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "simpleExtendedByline",
+        "isEnabled": false
+    },
+    {
+        "testId": "0081",
+        "throttle": "1",
+        "allocation": "0.8",
+        "variants": "1",
+        "applications": [
+            "article"
+        ],
+        "testName": "EOArelated",
+        "isEnabled": false
+    },
+    {
+        "testId": "0082",
+        "throttle": "0.6",
+        "allocation": "0.66",
+        "variants": "2",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "homepageTrending",
+        "isEnabled": true
+    },
+    {
+        "testId": "0085",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "1",
+        "applications": [
+            "article",
+            "collection",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "subscriberWhitelist",
+        "isEnabled": true
+    },
+    {
+        "testId": "0086",
+        "throttle": "0",
+        "allocation": "0",
+        "variants": "2",
+        "applications": [
+            "article",
+            "collection",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "nonsubscriberWhitelist",
+        "isEnabled": true
+    },
+    {
+        "testId": "0087",
+        "throttle": "0",
+        "variants": "2",
+        "allocation": "0",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "subscriberWhitelistTwo",
+        "isEnabled": true
+    },
+    {
+        "testId": "0088",
+        "throttle": "0",
+        "variants": "4",
+        "allocation": "0",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "testName": "nonsubscriberWhitelistTwo",
+        "isEnabled": true
+    },
+    {
+        "testId": "0089",
+        "throttle": "0.02",
+        "allocation": "0.5",
+        "variants": "1",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "hpPrototype",
+        "isEnabled": true
+    },
+    {
+        "testId": "0090",
+        "throttle": "1",
+        "variants": "1",
+        "allocation": "0.5",
+        "applications": [
+            "homepage"
+        ],
+        "testName": "photospotVHSCover",
+        "isEnabled": true
+    },
+    {
+        "testId": "0091",
+        "testName": "subscriberSurvey",
+        "throttle": "1",
+        "variants": "0",
+        "allocation": "1",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "isEnabled": false
+    },
+    {
+        "testId": "0092",
+        "testName": "nonsubscriberSurvey",
+        "throttle": "0.22",
+        "variants": "0",
+        "allocation": "1",
+        "applications": [
+            "article",
+            "collection",
+            "interactive",
+            "slideshow",
+            "trending"
+        ],
+        "isEnabled": false
+    }
+]
+</script>
+
+
+<script id="user-info-data" type="application/json">
+{ "meta": {},
+  "data": {
+    "id": "0",
+    "name": "",
+    "subscription": ["","_RPV"],
+    "demographics": {}
+  }
+}
+</script>
+
+<script>
+var require = {
+    baseUrl: 'https://a1.nyt.com/assets/',
+    waitSeconds: 20,
+    paths: {
+        'foundation': 'interactive/20160420-141859/js/foundation',
+        'shared': 'interactive/20160420-141859/js/shared',
+        'interactive': 'interactive/20160420-141859/js/interactive',
+        'application': 'interactive/20160420-141859/js/interactive/',
+        'videoFactory': 'https://static01.nyt.com/js2/build/video/2.0/videofactoryrequire',
+        'videoPlaylist': 'https://static01.nyt.com/js2/build/video/players/extended/2.0/appRequire',
+        'auth/mtr': 'https://static01.nyt.com/js/mtr',
+        'auth/growl': 'https://static01.nyt.com/js/auth/growl/default',
+        'vhs': 'https://static01.nyt.com/video/vhs/build/vhs-2.x.min'
+    }
+};
+</script>
+<!--[if (gte IE 9)|!(IE)]> <!-->
+<script data-main="foundation/main" src="https://a1.nyt.com/assets/interactive/20160420-141859/js/foundation/lib/framework.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script>
+    require.map = { '*': { 'foundation/main': 'foundation/legacy_main' } };
+</script>
+<script data-main="foundation/legacy_main" src="https://a1.nyt.com/assets/interactive/20160420-141859/js/foundation/lib/framework.js"></script>
+<![endif]-->
+<script>
+window.magnum.processFlags(["limitFabrikSave","moreFollowSuggestions","relatedCoverage","videoVHSCover","videoVHSLive","videoVHSNewControls","videoVHSShareTools","videoVHSEmbeddedOnly","mobileMediaViewer","whitelistInterstitial","seriesIssueMarginalia","serverSideCollectionUrls"]);
+</script>
+<script>
+require(['foundation/main'], function () {
+    require(['auth/mtr']);
+});
+</script>
+</head>
+<body>
+    
+    <style>
+    .lt-ie10 .messenger.suggestions {
+        display: block !important;
+        height: 50px;
+    }
+
+    .lt-ie10 .messenger.suggestions .message-bed {
+        background-color: #f8e9d2;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .lt-ie10 .messenger.suggestions .message-container {
+        padding: 11px 18px 11px 30px;
+    }
+
+    .lt-ie10 .messenger.suggestions .action-link {
+        font-family: "nyt-franklin", arial, helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        color: #a81817;
+        text-transform: uppercase;
+    }
+
+    .lt-ie10 .messenger.suggestions .alert-icon {
+        background: url('https://static01.nyt.com/images/icons/icon-alert-12x12-a81817.png') no-repeat;
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        margin-top: -2px;
+        float: none;
+    }
+
+    .lt-ie10 .masthead,
+    .lt-ie10 .navigation,
+    .lt-ie10 .comments-panel {
+        margin-top: 50px !important;
+    }
+
+    .lt-ie10 .ribbon {
+        margin-top: 97px !important;
+    }
+</style>
+<div id="suggestions" class="suggestions messenger nocontent robots-nocontent" style="display:none;">
+    <div class="message-bed">
+        <div class="message-container last-message-container">
+            <div class="message">
+                <span class="message-content">
+                    <i class="icon alert-icon"></i><span class="message-title">NYTimes.com no longer supports Internet Explorer 9 or earlier. Please upgrade your browser.</span>
+                    <a href="http://www.nytimes.com/content/help/site/ie9-support.html" class="action-link">LEARN MORE »</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="shell" class="shell">
+    <header id="masthead" class="masthead masthead-theme-standard" role="banner">
+    <div class="container">
+        <div class="quick-navigation button-group">
+            <button class="button sections-button"><i class="icon sprite-icon"></i><span class="button-text">Sections</span></button>
+            <button class="button home-button" data-href="http://www.nytimes.com/" title="Go to the home page to see the latest top stories."><i class="icon sprite-icon"></i>
+                <span class="button-text">Home</span>
+            </button>
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <a class="button skip-button skip-to-content visually-hidden focusable" href="#main">Skip to content</a>
+                                </div><!-- close button-group -->
+        <div class="branding">
+            <h2 class="branding-heading">
+                <a id="branding-heading-link" href="http://www.nytimes.com/">
+                    <span class="visually-hidden">The New York Times</span>
+                </a>
+            </h2>
+            <script>window.magnum.writeLogo('small', 'https://a1.nyt.com/assets/interactive/20160420-141859/images/foundation/logos/', 'health', 'masthead-theme-standard', 'standard', 'branding-heading-link', 'interactive');</script>
+        </div><!-- close branding -->
+                <div class="story-meta">
+            <h6 class="kicker"><span class="kicker-label"><a href="http://www.nytimes.com/pages/health/index.html">Health</a></span><span class="pipe">|</span>Paying Till It Hurts</h6>
+        </div><!-- close story-meta -->
+        <div id="TopNavAd" class="ad top-nav-ad nocontent robots-nocontent">
+    <div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+</div>
+        <div class="user-tools">
+            <div id="sharetools-masthead" aria-label="tools" role="group" class="sharetools theme-classic  sharetools-masthead  "
+data-shares="facebook,twitter,email,show-all,save"
+data-url="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html"
+data-title="Paying Till It Hurts"
+data-author=""
+data-media="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-jumbo.jpg"
+data-description="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment."
+	data-publish-date="April 18, 2014"
+>
+<div class="ad sharetools-inline-article-ad hidden nocontent robots-nocontent">
+</div>
+</div><!-- close shareTools -->
+            <button class="button search-button"><i class="icon sprite-icon"></i><span class="button-text">Search</span></button>
+            <div id="Bar1" class="ad bar1-ad nocontent robots-nocontent"></div>
+            <div class="user-tools-button-group button-group">
+                <button class="button subscribe-button hidden" data-href="http://www.nytimes.com/subscriptions/Multiproduct/lp3004.html?campaignId=4XUYF">Subscribe Now</button>
+                <button class="button login-button login-modal-trigger hidden">Log In</button>
+                                                <button class="button notifications-button hidden"><i class="icon sprite-icon"></i><span class="button-text">0</span></button>
+                <button class="button user-settings-button"><i class="icon sprite-icon"></i><span class="button-text">Settings</span></button>
+            </div><!-- close user-tools-button-group -->
+        </div><!-- close user-tools -->
+    </div><!-- close container -->
+    <div class="search-flyout-panel flyout-panel">
+    <button class="button close-button" type="button"><i class="icon"></i><span class="visually-hidden">Close search</span></button>
+    <div class="ad">
+        <div id="SponsorAd" class="sponsor-ad">
+            <small class="ad-sponsor">search sponsored by</small>
+        </div>
+    </div>
+    <nav class="search-form-control form-control layout-horizontal">
+    <h2 class="visually-hidden">Site Search Navigation</h2>
+    <form class="search-form" role="search">
+        <div class="control">
+            <div class="label-container visually-hidden">
+                                <label for="search-input">Search NYTimes.com</label>
+                            </div>
+            <div class="field-container">
+                                <input id="search-input" name="search-input" type="text" class="search-input text" autocomplete="off" placeholder="Search NYTimes.com" />
+                
+                <button type="button" class="button clear-button" tabindex="-1" aria-describedby="clear-search-input"><i class="icon"></i><span id="clear-search-input" class="visually-hidden">Clear this text input</span></button>
+                <div class="auto-suggest" style="display: none;">
+                    <ol></ol>
+                </div>
+                <button class="button submit-button" type="submit">Go</button>
+            </div>
+        </div><!-- close control -->
+    </form>
+</nav>
+
+
+</div><!-- close flyout-panel -->
+    <div id="notification-modals" class="notification-modals"></div>
+<span class="story-short-url"><a href="http://nyti.ms/1hPI0Dx">http://nyti.ms/1hPI0Dx</a></span></header>
+            <nav id="ribbon" class="ribbon ribbon-start nocontent robots-nocontent" aria-hidden="true">
+    <div class="nocontent robots-nocontent">
+        <ol class="ribbon-menu">
+            <li class="collection ribbon-loader">
+                <div class="loader loader-t-logo-32x32-ecedeb-ffffff"><span class="visually-hidden">Loading...</span></div>
+            </li>
+        </ol>
+        <div class="ribbon-navigation-container">
+            <nav class="ribbon-navigation next">
+                <span class="visually-hidden">See next articles</span>
+                <div class="arrow arrow-right">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+            <nav class="ribbon-navigation previous">
+                <span class="visually-hidden">See previous articles</span>
+                <div class="arrow arrow-left">
+                    <div class="arrow-conceal"></div>
+                </div>
+            </nav>
+        </div>
+    </div><!-- close nocontent -->
+</nav>
+        <nav id="navigation" class="navigation">
+    <h2 class="visually-hidden">Site Navigation</h2>
+</nav><!-- close navigation -->
+
+<nav id="mobile-navigation" class="mobile-navigation hidden">
+    <h2 class="visually-hidden">Site Mobile Navigation</h2>
+</nav><!-- close mobile-navigation -->
+
+    <div id="navigation-edge" class="navigation-edge"></div>
+    <div id="page" class="page">
+        <main id="main" class="main" role="main">
+                <div id="TopAd" class="ad top-ad nocontent robots-nocontent">
+    <div class="accessibility-ad-header visually-hidden">
+    <p>Advertisement</p>
+</div>
+</div>
+
+<article id="story" class="story theme-interactive
+    theme-main    ">
+                
+    <header class="story-header interactive-header">
+        
+        
+                <div class="story-meta">
+                                                                <div class="kicker-container">
+                <h2 class="kicker interactive-kicker">
+                                        <span class="kicker-label">
+                        <a href="http://www.nytimes.com/pages/health/index.html">
+                            Health                        </a>
+                    </span>
+                                                                            </h2>
+                                    <div id="sharetools-interactive" aria-label="tools" role="group" class="sharetools theme-classic  sharetools-interactive  "
+data-shares="show-all|Share"
+data-url="http://www.nytimes.com/interactive/2014/health/paying-till-it-hurts.html"
+data-title="Paying Till It Hurts"
+data-author=""
+data-media="https://static01.nyt.com/images/2013/10/13/science/13asthma_337/13asthma_337-jumbo.jpg"
+data-description="A series of articles by the New York Times correspondent Elisabeth Rosenthal examines the price of medical care in the United States. In each installment, readers were invited to share their perspectives on managing costs and treatment."
+	data-publish-date="April 18, 2014"
+>
+<div class="ad sharetools-inline-article-ad hidden nocontent robots-nocontent">
+</div>
+</div><!-- close shareTools -->
+                            </div>
+                                    <h1 class="story-heading interactive-headline" itemprop="headline">Paying Till It Hurts</h1>
+            
+            <div class="story-meta-footer interactive-meta-footer">
+                                 <p class="interactive-leadin summary">
+            <span class="summary-text">In her series on the costs of health care, <a href="http://topics.nytimes.com/top/reference/timestopics/people/r/elisabeth_rosenthal/index.html">Elisabeth Rosenthal</a> of The New York Times examines the price of medical care in the United States, interviewing patients, physicians, economists, and hospital and industry officials. In each installment, readers were invited to share their perspectives on managing costs and treatment.</span>
+    
+        			        	<time class="dateline" datetime="May 28, 2014"><span class="timestamp">UPDATED </span>May 28, 2014</time>
+	    	                                </p>
+            </div><!-- close story-meta-footer -->
+
+        </div><!-- close story-meta -->
+        </header>
+    <div id="paying-till-it-hurts" class="interactive-graphic">
+        <!-- 
+ 
+======================================================
+ 
+THIS IS A GENERATED TEMPLATE FILE. DO NOT EDIT.
+ 
+======================================================
+ 
+-->
+ <link rel="stylesheet" type="text/css" href="http://graphics8.nytimes.com/newsgraphics/2014/04/09/procedures/b072a5c0d28e3bc9e00a1845668116abb1fc9b10/build.css">
+    <section class="section-01 Colonoscopy clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 1</span>
+                <span class="part-kicker"><i class="icon"></i>Colonoscopy</span>
+                <h2><a href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html">The $2.7 Trillion Medical Bill</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html"><img src="http://graphics8.nytimes.com/packages/images/health/20140417ptih/screen-1-colonscopy.jpg"></a>
+                <figcaption class="credit">Matthew Ryan Williams for The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                While the American medical system is famous for expensive drugs and heroic care at the end of life, a more significant factor in the nation’s annual health care bill may be the high price tag of ordinary services.
+                <a href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2013/06/02/health/colonoscopies-explain-why-us-leads-the-world-in-health-expenditures.html#nytg_map_container"><span data-name="Map: The Cost of a Colonoscopy Varies Across the Country" class="icon"></span>Map: The Cost of a Colonoscopy Varies Across the Country</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2013/12/22/sunday-review/health-cares-road-to-ruin.html">Health Care’s Road to Ruin</a>
+                <a href="http://www.nytimes.com/2013/06/09/opinion/sunday/the-weird-world-of-colonoscopy-costs.html">Editorial: The Weird World of Colonoscopy Costs</a>
+                <a href="http://www.nytimes.com/2013/06/07/opinion/the-continuing-debate-over-health-costs.html">The Continuing Debate Over Health Costs</a>
+        </div>
+    </section>
+    <section class="section-02 Pregnancy clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 2</span>
+                <span class="part-kicker"><i class="icon"></i>Pregnancy</span>
+                <h2><a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html">American Way of Birth, Costliest in the World</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html"><img src="http://graphics8.nytimes.com/images/2013/07/01/health/procedure/procedure-custom1.jpg"></a>
+                <figcaption class="credit">Josh Haner/The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Maternity care and childbirth cost far more in the United States than in other developed countries, but studies show that their citizens do not have less access to care during pregnancy than Americans.
+                <a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="related no-jumps">
+            <b>Follow-up Coverage</b>
+                <a href="http://well.blogs.nytimes.com/2013/10/24/new-years-baby-you-may-pay-more/">New Year’s Baby? You May Pay More</a>
+                <a href="http://well.blogs.nytimes.com/2013/07/03/getting-insurance-to-pay-for-midwives/">Getting Insurance to Pay for Midwives</a>
+        </div>
+    </section>
+    <section class="section-03 Readers-Perspectives clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Pregnancy</span>
+                <span class="part-kicker"><a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html#responses-container"><i class="icon"></i>Readers&#39; Perspectives <span class="comment-rel">Pregnancy</span></a></span>
+                <h2><a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html#responses-container"></a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html#responses-container"><img src=""></a>
+                <figcaption class="credit"></figcation>
+            </figure>
+            <p class="summary">
+                I was shocked that the hospital charged me and my baby separately for the room that we shared.
+                    <span class="reader-credit">
+                        <span class="reader-name">Anna </span>
+                        <span class="reader-location"> Akron, OH</span>
+                        <a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html#responses-container">All Responses &raquo;</a>
+                    </span>
+                <a href="http://www.nytimes.com/2013/07/01/health/american-way-of-birth-costliest-in-the-world.html#responses-container" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+    </section>
+    <section class="section-04 Joint-Replacement clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 3</span>
+                <span class="part-kicker"><i class="icon"></i>Joint Replacement</span>
+                <h2><a href="http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html">In Need of a New Hip, but Priced Out of the U.S.</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html"><img src="http://graphics8.nytimes.com/images/2013/08/04/us/04procedures-shopenn/04procedures-shopenn-custom2.jpg"></a>
+                <figcaption class="credit">Josh Haner/The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Michael Shopenn turned to a private hospital in Belgium after he was unable to find an affordable artificial hip in the United States.
+                <a href="http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html#g_procedures_video"><span data-name="Video: Comparing Two Operations" class="icon"></span>Video: Comparing Two Operations</a>
+                <a href="http://www.nytimes.com/2013/08/04/health/for-medical-tourists-simple-math.html#g-graphic-areachart"><span data-name="Graphic: Staying Active" class="icon"></span>Graphic: Staying Active</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2013/08/07/us/the-growing-popularity-of-having-surgery-overseas.html">The Growing Popularity of Having Surgery Overseas</a>
+                <a href="http://www.nytimes.com/2013/08/06/opinion/going-abroad-to-cut-health-costs.html">Going Abroad, to Cut Health Costs</a>
+        </div>
+    </section>
+    <section class="section-05 Prescriptions clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 4</span>
+                <span class="part-kicker"><i class="icon"></i>Prescriptions</span>
+                <h2><a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html">The Soaring Cost of a Simple Breath</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html"><img src="http://graphics8.nytimes.com/images/2013/10/13/science/13asthma_337/13asthma_337-custom1.jpg"></a>
+                <figcaption class="credit">Max Whittaker for The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                The high price of commonly used medications for conditions like asthma contributes heavily to health care costs and certainly causes more widespread anguish.
+                <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#g-graphic-falling"><span data-name="Graphic: What $250 of Qvar Looks Like" class="icon"></span>Graphic: What $250 of Qvar Looks Like</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2013/10/16/us/a-push-to-sell-testosterone-gels-troubles-doctors.html">A Push to Sell Testosterone Gels Troubles Doctors</a>
+                <a href="http://www.nytimes.com/2013/10/23/health/as-drug-costs-rise-bending-the-law-is-one-remedy.html">As Drug Costs Rise, Bending the Law Is One Remedy</a>
+                <a href="http://www.nytimes.com/2013/11/10/sunday-review/good-deals-on-pills-its-anyones-guess.html">Good Deals on Pills? It’s Anyone’s Guess</a>
+                <a href="http://www.nytimes.com/2014/04/27/sunday-review/it-will-save-lives-but-whats-the-cost.html">For Drugs That Save Lives, a Steep Cost</a>
+        </div>
+    </section>
+    <section class="section-06 Readers-Perspectives clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Prescriptions</span>
+                <span class="part-kicker"><a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#responses-container"><i class="icon"></i>Readers&#39; Perspectives <span class="comment-rel">Prescriptions</span></a></span>
+                <h2><a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#responses-container"></a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#responses-container"><img src=""></a>
+                <figcaption class="credit"></figcation>
+            </figure>
+            <p class="summary">
+                I rely on hand-me-down prescriptions from older family members who obtain Albuterol under their Medicare coverage. 
+                    <span class="reader-credit">
+                        <span class="reader-name">Marc </span>
+                        <span class="reader-location"> Ft. Lauderdale, Fla.</span>
+                        <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#responses-container">All Responses &raquo;</a>
+                    </span>
+                <a href="http://www.nytimes.com/2013/10/13/us/the-soaring-cost-of-a-simple-breath.html#responses-container" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+    </section>
+    <section class="section-07 E.R.-Visit clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 5</span>
+                <span class="part-kicker"><i class="icon"></i>E.R. Visit</span>
+                <h2><a href="http://www.nytimes.com/2013/12/03/health/as-hospital-costs-soar-single-stitch-tops-500.html">As Hospital Prices Soar, a Stitch Tops $500</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2013/12/03/health/as-hospital-costs-soar-single-stitch-tops-500.html"><img src="http://graphics8.nytimes.com/images/2013/12/02/us/PROCEDURES-STITCHES-BOY/PROCEDURES-STITCHES-BOY-custom1.jpg"></a>
+                <figcaption class="credit">Fabrizio Costantini for the New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Hospital pricing is often convoluted, and hospital charges represent about a third of the total United States health care bill.
+                <a href="http://www.nytimes.com/2013/12/03/health/as-hospital-costs-soar-single-stitch-tops-500.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2013/12/03/health/as-hospital-costs-soar-single-stitch-tops-500.html#g-costs-graphic"><span data-name="Graphic: Same Injury, Different Costs" class="icon"></span>Graphic: Same Injury, Different Costs</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2013/09/22/sunday-review/is-this-a-hospital-or-a-hotel.html">Is This a Hospital or a Hotel?</a>
+                <a href="http://www.nytimes.com/2013/12/17/us/benefits-questioned-in-tax-breaks-for-nonprofit-hospitals.html">Benefits Questioned in Tax Breaks for Nonprofit Hospitals</a>
+                <a href="http://www.nytimes.com/2013/12/05/health/think-the-er-was-expensive-look-at-the-ambulance-bill.html">Think the E.R. Is Expensive? Look at How Much It Costs to Get There</a>
+        </div>
+    </section>
+    <section class="section-08 Dermatology clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 6</span>
+                <span class="part-kicker"><i class="icon"></i>Dermatology</span>
+                <h2><a href="http://www.nytimes.com/2014/01/19/health/patients-costs-skyrocket-specialists-incomes-soar.html">Patients’ Costs Skyrocket; Specialists’ Incomes Soar</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2014/01/19/health/patients-costs-skyrocket-specialists-incomes-soar.html"><img src="http://graphics8.nytimes.com/images/2014/01/19/us/20140119PROCEDURES-1/20140119PROCEDURES-1-custom1.jpg"></a>
+                <figcaption class="credit">Luke Sharrett for The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Patient costs have risen as doctors have become more entrepreneurial, protecting their turf through lobbying by medical societies and increasing revenues by offering new and more lucrative procedures.
+                <a href="http://www.nytimes.com/2014/01/19/health/patients-costs-skyrocket-specialists-incomes-soar.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2014/01/19/health/patients-costs-skyrocket-specialists-incomes-soar.html#procedures-mohs-scroll-graphic"><span data-name="Graphic: Rich Doctors, Richer Doctors" class="icon"></span>Graphic: Rich Doctors, Richer Doctors</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2014/01/22/opinion/the-costs-of-a-trip-to-the-doctor.html">The Costs of a Trip to the Doctor</a>
+                <a href="http://www.nytimes.com/2014/02/14/us/salaried-doctors-may-not-lead-to-cheaper-health-care.html">Apprehensive, Many Doctors Shift to Jobs With Salaries</a>
+                <a href="http://www.nytimes.com/2014/03/09/sunday-review/when-health-costs-harm-your-credit.html">When Health Costs Harm Your Credit</a>
+                <a href="http://www.nytimes.com/2014/05/18/sunday-review/doctors-salaries-are-not-the-big-cost.html">Medicine’s Top Earners Are Not the M.D.s</a>
+                <a href="http://www.nytimes.com/2014/07/06/sunday-review/long-waits-for-doctors-appointments-have-become-the-norm.html">The Health Care Waiting Game</a>
+        </div>
+    </section>
+    <section class="section-09 Type-1 Diabetes clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 7</span>
+                <span class="part-kicker"><i class="icon"></i>Type 1 Diabetes</span>
+                <h2><a href="http://www.nytimes.com/2014/04/06/health/even-small-medical-advances-can-mean-big-jumps-in-bills.html">Even Small Medical Advances Can Mean Big Jumps in Bills</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2014/04/06/health/even-small-medical-advances-can-mean-big-jumps-in-bills.html"><img src="http://graphics8.nytimes.com/packages/images/health/20140417ptih/screen-7-diabetes.jpg"></a>
+                <figcaption class="credit">Luke Sharrett for The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Some high-tech treatments help patients better control chronic diseases like diabetes, but they also drive an enormous surge in costs, and experts say many of them offer dubious benefits.
+                <a href="http://www.nytimes.com/2014/04/06/health/even-small-medical-advances-can-mean-big-jumps-in-bills.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="related no-jumps">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2014/05/22/us/type-2-diabetics-face-a-flood-of-drugs-and-tests.html">Type 2 Diabetics Face a Flood of Drugs and Tests</a>
+        </div>
+    </section>
+    <section class="section-10 Vaccines clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 8</span>
+                <span class="part-kicker"><i class="icon"></i>Vaccines</span>
+                <h2><a href="http://www.nytimes.com/2014/07/03/health/Vaccine-Costs-Soaring-Paying-Till-It-Hurts.html">The Price of Prevention: Vaccine Costs Soaring</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2014/07/03/health/Vaccine-Costs-Soaring-Paying-Till-It-Hurts.html"><img src="http://graphics8.nytimes.com/images/2014/06/30/us/vaccine-boxes/vaccine-boxes-custom1-v3.jpg"></a>
+                <figcaption class="credit">Ben Sklar for The New York Times</figcation>
+            </figure>
+            <p class="summary">
+                Vaccination prices have risen significantly over the last 30 years, creating dilemmas for physicians and parents and straining public health budgets.
+                <a href="http://www.nytimes.com/2014/07/03/health/Vaccine-Costs-Soaring-Paying-Till-It-Hurts.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2014/07/03/health/Vaccine-Costs-Soaring-Paying-Till-It-Hurts.html#a-fort-knox-of-vaccines"><span data-name="Audio: A Fort Knox of Vaccines" class="icon"></span>Audio: A Fort Knox of Vaccines</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2014/07/09/health/some-generic-drug-prices-are-soaring.html">Rapid Price Increases for Some Generic Drugs Catch Users by Surprise</a>
+                <a href="http://www.nytimes.com/2014/08/01/upshot/why-crucial-vaccines-are-sometimes-unavailable.html">Why Crucial Vaccines Are Sometimes Unavailable</a>
+                <a href="http://www.nytimes.com/2014/11/25/us/lawmakers-look-for-ways-to-provide-relief-for-rising-cost-of-generic-drugs.html">Lawmakers Look for Ways to Provide Relief for Rising Cost of Generic Drugs</a>
+        </div>
+    </section>
+    <section class="section-11 Surprise-Bills clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 9</span>
+                <span class="part-kicker"><i class="icon"></i>Surprise Bills</span>
+                <h2><a href="http://www.nytimes.com/2014/09/21/us/drive-by-doctoring-surprise-medical-bills.html">After Surgery, Surprise $117,000 Medical Bill From Doctor He Didn’t Know</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2014/09/21/us/drive-by-doctoring-surprise-medical-bills.html"><img src="http://graphics8.nytimes.com/images/2014/09/21/us/DRIVEBY/DRIVEBY-videoLarge.jpg"></a>
+                <figcaption class="credit"></figcation>
+            </figure>
+            <p class="summary">
+                In a growing practice, medical assistants, consultants and other hospital staffers, often called in without patients’ knowledge, are charging hefty fees.
+                <a href="http://www.nytimes.com/2014/09/21/us/drive-by-doctoring-surprise-medical-bills.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="related no-jumps">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2014/09/21/sunday-review/high-tech-health-care-useful-to-a-point.html">Can a Computer Replace Your Doctor?</a>
+                <a href="http://www.nytimes.com/2014/09/29/us/costs-can-go-up-fast-when-er-is-in-network-but-the-doctors-are-not.html">Costs Can Go Up Fast When E.R. Is in Network but the Doctors Are Not</a>
+                <a href="http://www.nytimes.com/2014/10/02/upshot/given-choice-parents-pick-cheaper-medical-procedure-for-children.html">Given Choice, Parents Pick Cheaper Medical Procedure for Children</a>
+                <a href="http://www.nytimes.com/2014/10/26/us/as-insurers-try-to-limit-costs-providers-hit-patients-with-more-separate-fees.html">As Insurers Try to Limit Costs, Providers Hit Patients With More Separate Fees</a>
+                <a href="http://www.nytimes.com/2014/11/09/sunday-review/medical-records-top-secret.html">Medical Records: Top Secret</a>
+        </div>
+    </section>
+    <section class="section-12 Tests-and Scans clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 10</span>
+                <span class="part-kicker"><i class="icon"></i>Tests and Scans</span>
+                <h2><a href="http://www.nytimes.com/2014/12/16/health/the-odd-math-of-medical-tests-one-echocardiogram-two-prices-both-high.html">The Odd Math of Medical Tests: One Scan, Two Prices, Both High</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/2014/12/16/health/the-odd-math-of-medical-tests-one-echocardiogram-two-prices-both-high.html"><img src="http://static01.nyt.com/images/2014/12/11/health/ECHO00/ECHO00-videoLarge.jpg"></a>
+                <figcaption class="credit"></figcation>
+            </figure>
+            <p class="summary">
+                Echocardiograms, ultrasound pictures of the heart, are an enticing revenue stream for hospitals and physicians because they are painless and have no side effects.
+                <a href="http://www.nytimes.com/2014/12/16/health/the-odd-math-of-medical-tests-one-echocardiogram-two-prices-both-high.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+        <div class="in-article">
+            <b>In This Article</b>
+                <a href="http://www.nytimes.com/2014/12/16/health/the-odd-math-of-medical-tests-one-echocardiogram-two-prices-both-high.html#echocardiogram-cost"><span data-name="Graphic: High Price for Simple Technology" class="icon"></span>Graphic: High Price for Simple Technology</a>
+                <a href="http://www.nytimes.com/2014/12/16/health/the-odd-math-of-medical-tests-one-echocardiogram-two-prices-both-high.html#echovideo"><span data-name="Video: How Echocardiograms Work" class="icon"></span>Video: How Echocardiograms Work</a>
+        </div>
+        <div class="related ">
+            <b>Follow-up Coverage</b>
+                <a href="http://www.nytimes.com/2015/02/01/us/medical-costs-rise-as-retirees-winter-in-south.html">Medical Costs Rise as Retirees Winter in Florida</a>
+                <a href="http://www.nytimes.com/2015/02/08/sunday-review/insured-but-not-covered.html">Insured, but Not Covered</a>
+        </div>
+    </section>
+    <section class="section-13 Poll clearfix">
+        <div class="contents">
+            <div class="section-meta">
+                <span class="part-order">Part 11</span>
+                <span class="part-kicker"><i class="icon"></i>Poll</span>
+                <h2><a href="http://www.nytimes.com/interactive/2014/12/18/health/cost-of-health-care-poll.html">How the High Cost of Medical Care Is Affecting Americans</a></h2>
+            </div>
+            <figure>
+                <a href="http://www.nytimes.com/interactive/2014/12/18/health/cost-of-health-care-poll.html"><img src="http://graphics8.nytimes.com/images/2014/12/18/health/cost-of-health-care-poll-1418879686102/cost-of-health-care-poll-1418879686102-custom1.png"></a>
+                <figcaption class="credit"></figcation>
+            </figure>
+            <p class="summary">
+                The New York Times/CBS News poll found that affording medical care is a hardship for more Americans than a year ago.
+                <a href="http://www.nytimes.com/interactive/2014/12/18/health/cost-of-health-care-poll.html" class="read-link">Read Article &raquo;</a>
+            </p>
+        </div>
+    </section>
+    <section class="section-13 Readers-Perspectives clearfix">
+        <div class="contents">
+            <p id="fb-promo" class="summary">For a continuing conversation about health care costs and pricing in the United States, please join our Facebook group, <a href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F1445110505760793%2F">Paying Till It Hurts.</a></p>
+        </div>
+    </section>
+
+
+<script>
+var NYTG_ASSETS = "http://graphics8.nytimes.com/newsgraphics/2014/04/09/procedures/b072a5c0d28e3bc9e00a1845668116abb1fc9b10/";
+require(['foundation/main'], function() {
+    require(["http://graphics8.nytimes.com/newsgraphics/2014/04/09/procedures/b072a5c0d28e3bc9e00a1845668116abb1fc9b10/build.js"]);
+});
+</script>
+
+<script>_gaq = [['_setAccount', 'UA-9262032-1'], ['_trackPageview']];</script>
+<script async src="http://www.google-analytics.com/ga.js"></script>
+<!-- Pipeline: 2014-04-09-procedures | February 11, 2015, 07:10PM | b072a5c0d28e3bc9e00a1845668116abb1fc9b10 -->    </div>
+
+    
+    <section id="related-coverage" class="related-coverage nocontent robots-nocontent">
+    <div class="nocontent robots-nocontent">
+        <header>
+            <h2 class="section-heading">
+                                    Related Multimedia                            </h2>
+        </header>
+        <ul class="menu layout-horizontal theme-story">
+                    </ul><!-- end menu -->
+    </div>
+</section><!-- end main section -->
+
+</article>
+                    <div class="search-overlay"></div>
+            </main><!-- close main -->
+            
+            <footer id="page-footer" class="page-footer" role="contentinfo">
+    <nav>
+        <h2 class="visually-hidden">Site Information Navigation</h2>
+         <ul>
+             <li>
+                <a href="http://www.nytimes.com/content/help/rights/copyright/copyright-notice.html" itemprop="copyrightNotice">
+                    &copy; <span itemprop="copyrightYear">2016</span><span itemprop="copyrightHolder provider sourceOrganization" itemscope itemtype="http://schema.org/Organization" itemid="http://www.nytimes.com"><span itemprop="name"> The New York Times Company</span><meta itemprop="tickerSymbol" content="NYSE NYT"/></span>
+                </a>
+            </li>
+            <li class="visually-hidden"><a href="http://www.nytimes.com">Home</a></li>
+            <li class="visually-hidden"><a href="http://query.nytimes.com/search/sitesearch/#/">Search</a></li>
+            <li class="visually-hidden">Accessibility concerns? Email us at <a href="mailto:accessibility@nytimes.com">accessibility@nytimes.com</a>. We would love to hear from you.</li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.com/ref/membercenter/help/infoservdirectory.html">Contact Us</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytco.com/careers">Work With Us</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.whsites.net/mediakit">Advertise</a></li>
+            <li class="wide-viewport-item"><a href="http://www.nytimes.com/content/help/rights/privacy/policy/privacy-policy.html#pp">Your Ad Choices</a></li>
+            <li><a href="http://www.nytimes.com/privacy">Privacy</a></li>
+            <li><a href="http://www.nytimes.com/ref/membercenter/help/agree.html" itemprop="usageTerms">Terms of Service</a></li>
+            <li class="wide-viewport-item last-item"><a href="http://www.nytimes.com/content/help/rights/sale/terms-of-sale.html">Terms of Sale</a></li>
+         </ul>
+    </nav>
+    <nav class="last-nav">
+        <h2 class="visually-hidden">Site Information Navigation</h2>
+        <ul>
+            <li><a href="http://spiderbites.nytimes.com">Site Map</a></li>
+            <li><a href="http://www.nytimes.com/membercenter/sitehelp.html">Help</a></li>
+            <li><a href="https://myaccount.nytimes.com/membercenter/feedback.html">Site Feedback</a></li>
+            <li class="wide-viewport-item last-item"><a href="http://www.nytimes.com/subscriptions/Multiproduct/lp5558.html?campaignId=37WXW">Subscriptions</a></li>
+        </ul>
+    </nav>
+</footer>
+        </div><!-- close page -->
+    </div><!-- close shell -->
+    <script>
+require(['foundation/main'], function () {
+    require(['interactive/main']);
+    require(['jquery/nyt', 'foundation/views/page-manager'], function ($, pageManager) {
+        if (window.location.search.indexOf('disable_tagx') > 0) {
+            return;
+        }
+        $(document).ready(function () {
+            require(['https://a1.nyt.com/analytics/tagx-simple.min.js'], function () {
+                pageManager.trackingFireEventQueue();
+            });
+        });
+    });
+});
+</script>
+
+    <div id="Inv1" class="ad inv1-ad hidden"></div>
+<div id="Inv2" class="ad inv2-ad hidden"></div>
+<div id="Inv3" class="ad inv3-ad hidden"></div>
+<div id="ab1" class="ad ab1-ad hidden"></div>
+<div id="ab2" class="ad ab2-ad hidden"></div>
+<div id="ab3" class="ad ab3-ad hidden"></div>
+<div id="prop1" class="ad prop1-ad hidden"></div>
+<div id="prop2" class="ad prop2-ad hidden"></div>
+<div id="Anchor" class="ad anchor-ad hidden"></div>
+<div id="ADX_CLIENTSIDE" class="ad adx-clientside-ad hidden"></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5bcf2eba4","applicationID":"4492120","transactionName":"YwFXZhRYVhAEVUZcX1pLYEAPFlkTFRhCXUA=","queueTime":0,"applicationTime":177,"ttGuid":"","agentToken":"","userAttributes":"","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
