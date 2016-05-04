@@ -5,7 +5,6 @@ var df = {};
 var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
-
 var wordWeights = {};
 
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
@@ -90,7 +89,6 @@ function toSentences(sentences, doctype, toDocArray) {
 			sentence = stripSent(sentence,true);
 			allSentences.push(sentence);
 		}
-		console.log(allSentences);
 	}
 	return sentences;
 }
@@ -370,6 +368,18 @@ function highlight() {
 
 var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
+
+//console.log(keywords);
+//var articleCategory = getArticleCategory();
+var all_tweets = [];
+var articleTitle = getTitle();
+// console.log(getJSONFile(articleCategory)["inning"]);
+// console.log("The article category is: "+ articleCategory);
+
+//httpGet(weightUrl,null,function() {
+	//var response = event.target.responseText;
+	//jsonScore = JSON.parse(response);
+
 var categoryUrl = machineLearningAPI+keywords;
 var articleCategory;
 
@@ -377,7 +387,9 @@ httpGet(categoryUrl,null,function() {
 	articleCategory = event.target.responseText;
 	console.log(articleCategory);
 	jsonScore = wordWeights[articleCategory];
+	console.log(wordWeights);
 	console.log(jsonScore);
+
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
 			highlight();
@@ -2034,9 +2046,6 @@ cb.__call(
 /*****************************************************************************************************************************************/
 /*****************************************************************************************************************************************/
 
-var all_tweets = [];
-var articleTitle = getTitle();
-
 function getTitle() {
 	// title = document.getElementById('headline').textContent;
 	// title = title.toLowerCase();
@@ -2061,12 +2070,15 @@ function getTweets(keywords, title, top3) {
 	// var search_words = keywords.concat(title).concat(top3);
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
+	//search_words = search_words.splice(0,3);
+	//var query = search_words.join(' ');
+	var query = search_words.join(' OR ');
 	search_words = search_words.splice(0,2);
 	var query = search_words.join(' AND ');
 	var params = {
     	q: query,
     	result_type: "popular",
-    	count: 10,
+    	count: 100,
     	lang: 'en'
 	};
 
@@ -2080,16 +2092,25 @@ function getTweets(keywords, title, top3) {
 	    	}
 	    	if (reply){
 	    		var tweets = reply.statuses;
+	    		console.log(tweets);
 	    		var tweetDict = {};
 	    		for (var j = tweets.length - 1; j >= 0; j--) {
 	    			var t = tweets[j].text;
+	    			var d = tweets[j].created_at;
+	    			var url = t.match(/http[^ ]+/gi);
+	    			if (url) {
+	    				url = url[url.length-1];	
+	    			}
 	    			
 	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
 	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
 					t = t.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~]/gi, '');
 					t = t.replace(/[\s+]/gi, ' ');
-					t = t.toLowerCase();
-	    			all_tweets.push(t);
+					//t = t.toLowerCase();
+	    			
+	    			d = d.replace(/\d\d:\d\d:\d\d \+\d\d\d\d\s/, '');
+
+	    			all_tweets.push([t,d,url]);
 	    		}
 	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
@@ -2113,7 +2134,12 @@ function getTweets(keywords, title, top3) {
 				    tweets.innerHTML += '<h2 style="font-family:\'sans-serif\';">Twitter Feed</h2>\
 				    <br />'
 				    for(var i=0;i<all_tweets.length;i++) {
-				    	tweets.innerHTML+='<div class="alltweets">'+all_tweets[i]+'</div><br /><br />';
+				    	tweets.innerHTML+='<div class="alltweets" style="font-style:italic">'+all_tweets[i][1] + ':'+'</div>\
+				    	<div class="alltweets">'+all_tweets[i][0] +'</div>';
+				    	if (all_tweets[i][2]) {
+							tweets.innerHTML+='<div class="alltweets"><a target="_blank" style="font-size: 12px" href="'+all_tweets[i][2] +'">See the tweet!</a></div>';
+						}
+						tweets.innerHTML+='<br /><br />';
 					}
 
 	    		}
@@ -2151,7 +2177,6 @@ function getQuery(title_words) {
 		});
 	var q0 = title_words.concat(filtered_keywords).concat(filtered_top);
 	return q0;
-
 }
 
 /*update query keywords with most relevant words in tweets*/
@@ -2225,9 +2250,8 @@ function tqueryToSents(qvec,dvec){
 
 /*create ranking of relevant sentences based on tweet query*/
 function rankByTweets() {
-	var title_words = getTitle();
 	var search_words = getTweets();
-	var q0 = getQuery(title_words);
+	var q0 = getQuery(articleTitle);
 	var q1 = tweetsUpdate(q0);
 	var qvec = query2vec(q1);
 
@@ -2235,8 +2259,8 @@ function rankByTweets() {
 
 	for (var i = 0; i < allSentences.length; i++) {
 		var dvec = doc2vec(sentence);
-		var dscore = tqueryToSents(qvec, dvec);
-		ranked.push([i, dscore]);
+		var score = tqueryToSents(qvec, dvec);
+		ranked.push([i, score]);
 	}
 
 	ranked = ranked.sort(function(a,b) {return b[1] - a[1]});
