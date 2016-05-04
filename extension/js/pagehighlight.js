@@ -281,7 +281,7 @@ showScoreTooltip = function() {
     tooltip.style.zIndex = '1000000';
     tooltip.style.color = 'white';
     document.body.appendChild(tooltip);
-    tooltip.innerHTML = '<h2 style="font-family:\'sans-serif\';">Sentence score stats</h2>\
+    tooltip.innerHTML = '<h2>Sentence score stats</h2>\
     <br>\
     <div>Hover over a sentence to see it\'s score</div>\
     <br>\
@@ -2074,7 +2074,7 @@ function getTweets(keywords, title, top3) {
 	//var query = search_words.join(' ');
 	var query = search_words.join(' OR ');
 	search_words = search_words.splice(0,2);
-	var query = search_words.join(' AND ');
+	// var query = search_words.join(' AND ');
 	var params = {
     	q: query,
     	result_type: "popular",
@@ -2091,6 +2091,8 @@ function getTweets(keywords, title, top3) {
 	    		console.log(err);
 	    	}
 	    	if (reply){
+	    		console.log("reply is:")
+	    		console.log(reply);
 	    		var tweets = reply.statuses;
 	    		console.log(tweets);
 	    		var tweetDict = {};
@@ -2101,6 +2103,7 @@ function getTweets(keywords, title, top3) {
 	    			if (url) {
 	    				url = url[url.length-1];	
 	    			}
+	    			var user = tweets[j]["user"]["name"];
 	    			
 	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
 	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
@@ -2110,7 +2113,7 @@ function getTweets(keywords, title, top3) {
 	    			
 	    			d = d.replace(/\d\d:\d\d:\d\d \+\d\d\d\d\s/, '');
 
-	    			all_tweets.push([t,d,url]);
+	    			all_tweets.push([t,d,url,user]);
 	    		}
 	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
@@ -2120,26 +2123,30 @@ function getTweets(keywords, title, top3) {
 				    tweets.style.position='fixed';
 				    tweets.style["overflow"]='scroll';
 				    tweets.style.width="220px";
-				    tweets.style.height="150px";
+				    tweets.style.height="300px";
 				    tweets.style.right="10px";
 				    tweets.style.top="350px";
 				    tweets.style.padding = "10px";
 				    tweets.style.backgroundColor="black";
-				    tweets.style.opacity = '0.8';
 				    tweets.style.fontFamily = 'sans-serif';
 				    tweets.style.fontSize = '14px';
 				    tweets.style.zIndex = '1000000';
 				    tweets.style.color = 'white';
+				    tweets.style["border-radius"] ='5px';
 				    document.body.appendChild(tweets);
-				    tweets.innerHTML += '<h2 style="font-family:\'sans-serif\';">Twitter Feed</h2>\
+				    tweets.innerHTML += '<h2>Twitter Feed</h2>\
 				    <br />'
 				    for(var i=0;i<all_tweets.length;i++) {
-				    	tweets.innerHTML+='<div class="alltweets" style="font-style:italic">'+all_tweets[i][1] + ':'+'</div>\
-				    	<div class="alltweets">'+all_tweets[i][0] +'</div>';
+				    	tweets.innerHTML+='<div class="alltweets">\
+				    	<div class="date">'+all_tweets[i][1]+'</div>\
+				    	<div class="user">'+all_tweets[i][3]+'</div>\
+				    	<div class="tweet-text">'+all_tweets[i][0]+'</div>';
+				  //   	tweets.innerHTML+='<div class="alltweets" style="font-style:italic">'+all_tweets[i][1] + ':'+'</div>\
+				  //   	<div class="alltweets">'+all_tweets[i][0] +'</div>';
 				    	if (all_tweets[i][2]) {
-							tweets.innerHTML+='<div class="alltweets"><a target="_blank" style="font-size: 12px" href="'+all_tweets[i][2] +'">See the tweet!</a></div>';
+							tweets.innerHTML+='<div class="see-tweet" style="font-size:10px;"><a style="color:#3cf;" target="_blank" style="font-size: 12px" href="'+all_tweets[i][2] +'">See the tweet!</a></div>';
 						}
-						tweets.innerHTML+='<br /><br />';
+						tweets.innerHTML+='</div><br /><br />';
 					}
 
 	    		}

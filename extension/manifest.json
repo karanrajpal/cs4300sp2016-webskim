@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.nytimes.com/*"],
-      "js": ["js/stemmer.js","js/pagehighlight.js","data/sports.json","data/business.json","data/politics.json","data/science.json","data/health.json"]
+      "js": ["js/stemmer.js","js/pagehighlight.js","data/sports.json","data/business.json","data/politics.json","data/science.json","data/health.json"],
+      "css" : ["css/extension.css"]
     }
   ],
 
