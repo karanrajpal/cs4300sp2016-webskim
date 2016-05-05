@@ -403,7 +403,7 @@ function getLinks() {
 
 function getTitleWords() {
 	var title = document.getElementsByTagName('title')[0];
-	var titleWords = links[i].innerHTML.toLowerCase().split(' ');
+	var titleWords = title.innerHTML.toLowerCase().split(' ');
 	return titleWords;
 }
 function getMetaDescription() {
@@ -2222,12 +2222,14 @@ function getTweets(keywords, title, top3) {
 
 	//uncommented the next line - ignoring  top3, just for now
 	// var search_words = keywords.concat(title).concat(top3);
+	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',')
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
-	//search_words = search_words.splice(0,3);
+	search_words = search_words.splice(0,3);
 	//var query = search_words.join(' ');
 	var query = search_words.join(' OR ');
-	search_words = search_words.splice(0,2);
+	console.log("The final query is "+query);
+	// search_words = search_words.splice(0,2);
 	// var query = search_words.join(' AND ');
 	var params = {
     	q: query,
