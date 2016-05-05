@@ -139,14 +139,43 @@ function getTF_DF() {
 	}
 }
 
-/*bump up TF of keywords by 5 - idk this is also random*/
-function bumpKeywords(keywords) {
-	for (var i = 0; i < keywords.length; i++) {
-		var keyword = keywords[i];
-		if (tf[keyword] != undefined) {
-			tf[keyword] += 5;
+// /*bump up TF of keywords by 5 - idk this is also random*/
+// function bumpKeywords(keywords) {
+// 	for (var i = 0; i < keywords.length; i++) {
+// 		var keyword = keywords[i];
+// 		if (tf[keyword] != undefined) {
+// 			tf[keyword] += 5;
+// 		}
+// 	}
+// }
+
+// /*bump up TF of links by 5 - idk this is also random*/
+// function bumpLinks(linkWords) {
+// 	for (var i = 0; i < linkWords.length; i++) {
+// 		var linkWord = linkWords[i];
+// 		if (tf[linkWord] != undefined) {
+// 			tf[linkWord] += 5;
+// 		}
+// 	}
+// }
+
+// /*bump up TF of title by 5 - idk this is also random*/
+// function bumpTitle(titleWords) {
+// 	for (var i = 0; i < titleWords.length; i++) {
+// 		var titleWord = titleWords[i];
+// 		if (tf[titleWord] != undefined) {
+// 			tf[titleWord] += 20;
+// 		}
+// 	}
+// }
+
+function bumpWords(words,score) {
+	for (var i = 0; i < words.length; i++) {
+		var word = words[i];
+		if (tf[word] != undefined) {
+			tf[word] += score;
 		}
-	}
+	}	
 }
 
 /*calculate the TF-IDF of each word in the article*/
@@ -155,7 +184,6 @@ function calculateTFIDF() {
 	var keys = Object.keys(tf);
 	for (var i = 0; i < keys.length; i++) {
 		var term = keys[i];
-
 		tfidf[term] = (tf[term]/keys.length) * (df[term].length/totalNumberOfSentences); 
 	}
 }
@@ -195,11 +223,30 @@ function cosSim(dvec) {
 	return cossim;
 }
 
+/* Calculate the product of the 2 scores */
+function dot(dvec) {
+	var docterms = Object.keys(dvec);
+	var ascore = 0;
+	var bscore = 0;
+	for (var i = 0; i < docterms.length; i++) {
+		var term = docterms[i];
+		ascore += dvec[term];
+		if (jsonScore[term] != undefined) {
+			bscore += jsonScore[term];
+		}
+	}
+	/* If the sentence has no words from the training set, we assign it a really score instead of 0 */
+	if(bscore==0) { bscore = 0.000001; }
+
+	return (ascore * bscore / docterms.length);
+}
+
 /*get cos sim of docs, highlight if above threshold */
 function hiliteTFIDF(){
 
 	getTF_DF();
-	bumpKeywords(keywords);
+	// bumpKeywords(keywords);
+	bumpWords(keywords,5);
 	calculateTFIDF();
 
 	//console.log(tf);
@@ -240,6 +287,91 @@ function hiliteTFIDF(){
 	getTweets(keywords, articleTitle);
 }
 
+
+/*get cos sim of docs, highlight if above threshold */
+function hiliteTFIDFLinks(){
+
+	getTF_DF();
+	bumpWords(keywords,5);
+	bumpWords(linkWords,100);
+	bumpWords(titleWords,20);
+	bumpWords(metaWords,50);
+	calculateTFIDF();
+
+	//console.log(tf);
+	//console.log(tfidf);
+
+	var threshold = 0.005;			//this is super arbitrary idk
+
+	var paras = document.querySelectorAll('p.story-body-text.story-content');
+
+	var scoreMatrix = [];
+	var toBeSortedScores = [];
+
+	/* Pass 1 - Build score of each matrix */
+	for (var i = 0; i < paras.length; i++) {
+		var sentences = paras[i].innerHTML;
+		sentences = toSentences(sentences, null, false);
+		scoreMatrix[i] = [];
+
+		for (var k = 0; k < sentences.length; k++) {
+			var sentence = sentences[k];
+			var svec = doc2vec(stripSent(sentence, true));
+			// var sentScore = cosSim(svec);
+			var sentScore = dot(svec);
+			scoreMatrix[i].push({});
+			toBeSortedScores.push({ i: i, k: k, score: sentScore });
+		}
+	}
+
+	// 1 Get a 1d array of objects with each object as i, k, score.
+	// 2 Sort this by score
+	// 3 Loop through and assign a rank to each object
+	// 4 Create a 2d array where i,k  is the rank, score of that sentence
+
+	toBeSortedScores.sort(function(a,b) { return b.score - a.score; });
+
+	for (var j = 0; j < toBeSortedScores.length; j++) {
+		var entry = toBeSortedScores[j];
+		scoreMatrix[entry.i][entry.k] = { score: entry.score, rank: j+1 };
+	}
+
+	var percentageThreshold = 0.3;
+	var rankLimit = Math.ceil(percentageThreshold * toBeSortedScores.length);
+
+	document.getElementById('averagescore').innerHTML="Percent highlighted: "+(percentageThreshold*100)+"%";
+
+	/* Pass 2 - Highlight sentences */
+	for (var i = 0; i < paras.length; i++) {
+		var sentences = paras[i].innerHTML;
+		sentences = toSentences(sentences, null, false);
+		paras[i].innerHTML = '';
+		for (var k = 0; k < sentences.length; k++) {
+			var sentScore = scoreMatrix[i][k].score;
+			var rank = scoreMatrix[i][k].rank;
+			if (rank < rankLimit) {
+				sentences[k]='<mark tfidf-score="'+ sentScore +'" rank="'+rank+'" onmouseover="\
+				var sentscore = document.getElementById(\'sent\');\
+				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
+				var rankEl = document.getElementById(\'rank\');\
+				rankEl.innerHTML = \'Rank : \'+this.getAttribute(\'rank\');\
+				">'+sentences[k]+'</mark>';
+			} else {
+				sentences[k] = '<span tfidf-score="'+ sentScore +'" rank="'+rank+'" onmouseover="\
+				var sentscore = document.getElementById(\'sent\');\
+				sentscore.innerHTML = this.getAttribute(\'tfidf-score\');\
+				var rankEl = document.getElementById(\'rank\');\
+				rankEl.innerHTML = \'Rank : \'+this.getAttribute(\'rank\');\
+				">'+sentences[k]+'</span>';
+			}
+		}
+		paras[i].innerHTML+=sentences.join('. ');
+	}
+
+	//probably change where this is called?
+	getTweets(keywords, articleTitle);
+}
+
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 /******************************************ONLOAD ARTICLE PROCESSING FUNCTIONS**********************************************/
@@ -257,6 +389,31 @@ function getKeywords() {
 		return false;
 	});
 	return keywords;
+}
+
+function getLinks() {
+	var links = document.querySelectorAll('p.story-body-text.story-content a');
+	var linkWords = [];
+	for (var i = 0; i < links.length; i++) {
+		var linkContent = links[i].innerHTML.toLowerCase().split(' ');
+		for (var j = 0; j < linkContent.length; j++) {
+			linkWords.push(linkContent[j])
+		}
+	}
+	return linkWords;
+}
+
+function getTitle() {
+	var title = document.getElementsByTagName('title')[0];
+	var titleWords = links[i].innerHTML.toLowerCase().split(' ');
+	return titleWords;
+}
+function getMetaDescription() {
+	var metadesc = document.getElementsByName('description')[0].getAttribute('content');
+	var althead = document.querySelector('meta[itemprop="alternativeHeadline"]').getAttribute('content');
+	var imagealt = document.querySelector('meta[property="twitter:image:alt"]').getAttribute('content');
+	var metaWords = (metadesc+" "+althead+" "+imagealt).toLowerCase().split(' ');
+	return metaWords;
 }
 
 function getArticleCategory() {
@@ -290,6 +447,8 @@ showScoreTooltip = function() {
     <div id="averagescore">Reading the article...</div>\
     <br>\
     <div>Score : <span id="sent"></span></div>\
+    <br>\
+    <div id="rank"></div>\
     ';
 }();
 
@@ -369,6 +528,9 @@ function highlight() {
 
 var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
+var linkWords = getLinks();
+var titleWords = getTitle();
+var metaWords = getMetaDescription();
 var categoryUrl = machineLearningAPI+keywords;
 var articleCategory;
 
@@ -382,6 +544,8 @@ httpGet(categoryUrl,null,function() {
 			highlight();
 		} else if(items[key]=='tfidf2') {
 			hiliteTFIDF();
+		} else if(items[key]=='tfidflinks') {
+			hiliteTFIDFLinks();
 		} else {
 			hiliteTFIDF();
 		}
