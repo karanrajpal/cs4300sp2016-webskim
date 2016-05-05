@@ -44,12 +44,16 @@ var stopwords = ['a','about','above','across','after','again','all','almost','al
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 
-function stripSent(sentence, removeLinks) {
+function stripSent(sentence, removeLinks,removeBrackets) {
 
 	if (removeLinks) {
 		//strip paragraph of links
 		sentence = sentence.replace(/<a [^<]+">/g, '');
 		sentence = sentence.replace(/<\/a>/g, '');
+	}
+
+	if(removeBrackets) {
+		sentence = sentence.replace(/\([^)]*\)/g, "");
 	}
 
 	//strip all sentences of all punctuation
@@ -290,10 +294,11 @@ function hiliteTFIDF(){
 function hiliteTFIDFLinks(){
 
 	getTF_DF();
-	bumpWords(keywords,5);
+	bumpWords(keywords,10);
 	bumpWords(linkWords,100);
 	bumpWords(titleWords,20);
 	bumpWords(metaWords,50);
+	bumpWords(firstSentenceWords,100);
 	calculateTFIDF();
 
 	//console.log(tf);
@@ -414,6 +419,14 @@ function getMetaDescription() {
 	return metaWords;
 }
 
+function getFirstSentence() {
+	var first = document.querySelector('p.story-body-text.story-content').innerHTML;
+	first = stripSent(first,true);
+	first = first.split('. ')[0];
+	var sentenceWords = first.split(' ');
+	return sentenceWords;
+}
+
 function getArticleCategory() {
   return document.querySelector('[name="CG"]').getAttribute('content');
 }
@@ -530,6 +543,7 @@ var keywords = getKeywords();
 var linkWords = getLinks();
 var titleWords = getTitleWords();
 var metaWords = getMetaDescription();
+var firstSentenceWords = getFirstSentence();
 var all_tweets = [];
 var articleTitle = getTitle();
 var categoryUrl = machineLearningAPI+keywords;
@@ -2222,13 +2236,14 @@ function getTweets(keywords, title, top3) {
 
 	//uncommented the next line - ignoring  top3, just for now
 	// var search_words = keywords.concat(title).concat(top3);
-	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',')
+	var keywords = document.querySelector('[name="keywords"]').getAttribute('content').split(',');
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
 	search_words = search_words.splice(0,3);
 	//var query = search_words.join(' ');
-	var query = search_words.join(' OR ');
-	console.log("The final query is "+query);
+	var query = stripSent(search_words.join(' OR '),false,true);
+	query = query.replace(/ or /g,' OR ');
+	console.log("The FINAL query is "+query);
 	// search_words = search_words.splice(0,2);
 	// var query = search_words.join(' AND ');
 	var params = {
