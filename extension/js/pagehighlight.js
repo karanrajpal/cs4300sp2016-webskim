@@ -5,7 +5,6 @@ var df = {};
 var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
-
 var wordWeights = {};
 
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
@@ -90,7 +89,6 @@ function toSentences(sentences, doctype, toDocArray) {
 			sentence = stripSent(sentence,true);
 			allSentences.push(sentence);
 		}
-		console.log(allSentences);
 	}
 	return sentences;
 }
@@ -403,7 +401,7 @@ function getLinks() {
 	return linkWords;
 }
 
-function getTitle() {
+function getTitleWords() {
 	var title = document.getElementsByTagName('title')[0];
 	var titleWords = links[i].innerHTML.toLowerCase().split(' ');
 	return titleWords;
@@ -440,7 +438,7 @@ showScoreTooltip = function() {
     tooltip.style.zIndex = '1000000';
     tooltip.style.color = 'white';
     document.body.appendChild(tooltip);
-    tooltip.innerHTML = '<h2 style="font-family:\'sans-serif\';">Sentence score stats</h2>\
+    tooltip.innerHTML = '<h2>Sentence score stats</h2>\
     <br>\
     <div>Hover over a sentence to see it\'s score</div>\
     <br>\
@@ -451,6 +449,7 @@ showScoreTooltip = function() {
     <div id="rank"></div>\
     ';
 }();
+
 
 function highlight() {
   // sentencesScore
@@ -529,8 +528,10 @@ function highlight() {
 var machineLearningAPI = "https://salty-scrubland-69028.herokuapp.com/fetchCategory?keywords=";
 var keywords = getKeywords();
 var linkWords = getLinks();
-var titleWords = getTitle();
+var titleWords = getTitleWords();
 var metaWords = getMetaDescription();
+var all_tweets = [];
+var articleTitle = getTitle();
 var categoryUrl = machineLearningAPI+keywords;
 var articleCategory;
 
@@ -538,7 +539,9 @@ httpGet(categoryUrl,null,function() {
 	articleCategory = event.target.responseText;
 	console.log(articleCategory);
 	jsonScore = wordWeights[articleCategory];
+	console.log(wordWeights);
 	console.log(jsonScore);
+
 	getSavedData('METHOD', function(items,key) {
 		if(items[key]=='tfidf') {
 			highlight();
@@ -2197,21 +2200,20 @@ cb.__call(
 /*****************************************************************************************************************************************/
 /*****************************************************************************************************************************************/
 
-var all_tweets = [];
-var articleTitle = getTitle();
-
 function getTitle() {
-	title = document.getElementById('headline').textContent;
-	title = title.toLowerCase();
-	title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
-	title_words = title.split(' ');
-	for (var i = 0; i < title_words.length; i++) {
-		var w = title_words[i];
-		if (stopwords.indexOf(w) != -1){
-			title_words.splice(i, 1);
-		}
-	}
-	console.log(title_words);
+	// title = document.getElementById('headline').textContent;
+	// title = title.toLowerCase();
+	// title = title.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()”“\\]/g, '');
+	// title_words = title.split(' ');
+	// for (var i = 0; i < title_words.length; i++) {
+	// 	var w = title_words[i];
+	// 	if (stopwords.indexOf(w) != -1){
+	// 		title_words.splice(i, 1);
+	// 	}
+	// }
+	// console.log(title_words);
+	title = document.querySelector('meta[property="twitter:title"]');
+	title_words = title.getAttribute('content').split(' ');
 	return title_words;
 }
 
@@ -2222,12 +2224,15 @@ function getTweets(keywords, title, top3) {
 	// var search_words = keywords.concat(title).concat(top3);
 	var search_words = keywords;
 	console.log("search words is: " +search_words);
-	search_words = search_words.splice(0,3);
-	var query = search_words.join(' ');
+	//search_words = search_words.splice(0,3);
+	//var query = search_words.join(' ');
+	var query = search_words.join(' OR ');
+	search_words = search_words.splice(0,2);
+	// var query = search_words.join(' AND ');
 	var params = {
     	q: query,
     	result_type: "popular",
-    	count: 10,
+    	count: 100,
     	lang: 'en'
 	};
 
@@ -2240,20 +2245,65 @@ function getTweets(keywords, title, top3) {
 	    		console.log(err);
 	    	}
 	    	if (reply){
+	    		console.log("reply is:")
+	    		console.log(reply);
 	    		var tweets = reply.statuses;
+	    		console.log(tweets);
 	    		var tweetDict = {};
 	    		for (var j = tweets.length - 1; j >= 0; j--) {
 	    			var t = tweets[j].text;
+	    			var d = tweets[j].created_at;
+	    			var url = t.match(/http[^ ]+/gi);
+	    			if (url) {
+	    				url = url[url.length-1];	
+	    			}
+	    			var user = tweets[j]["user"]["name"];
 	    			
 	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
 	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
 					t = t.replace(/[-!"#$%&()*+,-.\/;<=>?@[\]^_`{|}~]/gi, '');
 					t = t.replace(/[\s+]/gi, ' ');
-					t = t.toLowerCase();
-	    			all_tweets.push(t);
+					//t = t.toLowerCase();
+	    			
+	    			d = d.replace(/\d\d:\d\d:\d\d \+\d\d\d\d\s/, '');
+
+	    			all_tweets.push([t,d,url,user]);
 	    		}
-	    		console.log("fethed the tweets, they are: ");
+	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
+	    		if(all_tweets.length > 0) {
+	    			var tweets = document.createElement('div');
+				    tweets.id="tweets";
+				    tweets.style.position='fixed';
+				    tweets.style["overflow"]='scroll';
+				    tweets.style.width="220px";
+				    tweets.style.height="300px";
+				    tweets.style.right="10px";
+				    tweets.style.top="350px";
+				    tweets.style.padding = "10px";
+				    tweets.style.backgroundColor="black";
+				    tweets.style.fontFamily = 'sans-serif';
+				    tweets.style.fontSize = '14px';
+				    tweets.style.zIndex = '1000000';
+				    tweets.style.color = 'white';
+				    tweets.style["border-radius"] ='5px';
+				    document.body.appendChild(tweets);
+				    tweets.innerHTML += '<h2>Twitter Feed</h2>\
+				    <br />'
+				    for(var i=0;i<all_tweets.length;i++) {
+				    	tweets.innerHTML+='<div class="alltweets">\
+				    	<div class="date">'+all_tweets[i][1]+'</div>\
+				    	<div class="user">'+all_tweets[i][3]+'</div>\
+				    	<div class="tweet-text">'+all_tweets[i][0]+'</div>';
+				  //   	tweets.innerHTML+='<div class="alltweets" style="font-style:italic">'+all_tweets[i][1] + ':'+'</div>\
+				  //   	<div class="alltweets">'+all_tweets[i][0] +'</div>';
+				    	if (all_tweets[i][2]) {
+							tweets.innerHTML+='<div class="see-tweet" style="font-size:10px;"><a style="color:#3cf;" target="_blank" style="font-size: 12px" href="'+all_tweets[i][2] +'">See the tweet!</a></div>';
+						}
+						tweets.innerHTML+='</div><br /><br />';
+					}
+
+	    		}
 	    	}
 	    },
 	    true
@@ -2288,7 +2338,6 @@ function getQuery(title_words) {
 		});
 	var q0 = title_words.concat(filtered_keywords).concat(filtered_top);
 	return q0;
-
 }
 
 /*update query keywords with most relevant words in tweets*/
@@ -2362,9 +2411,8 @@ function tqueryToSents(qvec,dvec){
 
 /*create ranking of relevant sentences based on tweet query*/
 function rankByTweets() {
-	var title_words = getTitle();
 	var search_words = getTweets();
-	var q0 = getQuery(title_words);
+	var q0 = getQuery(articleTitle);
 	var q1 = tweetsUpdate(q0);
 	var qvec = query2vec(q1);
 
@@ -2372,8 +2420,8 @@ function rankByTweets() {
 
 	for (var i = 0; i < allSentences.length; i++) {
 		var dvec = doc2vec(sentence);
-		var dscore = tqueryToSents(qvec, dvec);
-		ranked.push([i, dscore]);
+		var score = tqueryToSents(qvec, dvec);
+		ranked.push([i, score]);
 	}
 
 	ranked = ranked.sort(function(a,b) {return b[1] - a[1]});

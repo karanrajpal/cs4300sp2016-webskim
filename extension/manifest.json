@@ -3,7 +3,7 @@
 
   "name": "WebSkim",
   "description": "WebSkim highlights pages for you automatically using Information Retrieval and Machine Learning",
-  "version": "1.0.2",
+  "version": "1.0.3",
 
   "browser_action": {
     "default_icon": "ws.png",
@@ -13,7 +13,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.nytimes.com/*"],
-      "js": ["js/stemmer.js","js/pagehighlight.js","data/sports.json","data/business.json","data/politics.json","data/science.json","data/health.json"]
+      "js": ["js/stemmer.js","js/pagehighlight.js","data/sports.json","data/business.json","data/politics.json","data/science.json","data/health.json"],
+      "css" : ["css/extension.css"]
     }
   ],
 
