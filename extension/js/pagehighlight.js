@@ -6,6 +6,7 @@ var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
 var wordWeights = {};
+var percentageThresholdEnteredByUser;
 
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
 /*some words removed:
@@ -338,8 +339,7 @@ function hiliteTFIDFLinks(){
 		var entry = toBeSortedScores[j];
 		scoreMatrix[entry.i][entry.k] = { score: entry.score, rank: j+1 };
 	}
-
-	var percentageThreshold = 0.3;
+	var percentageThreshold = percentageThresholdEnteredByUser ? percentageThresholdEnteredByUser/100 : 0.3;
 	var rankLimit = Math.ceil(percentageThreshold * toBeSortedScores.length);
 
 	document.getElementById('averagescore').innerHTML="Percent highlighted: "+(percentageThreshold*100)+"%";
@@ -562,11 +562,16 @@ httpGet(categoryUrl,null,function() {
 		} else if(items[key]=='tfidf2') {
 			hiliteTFIDF();
 		} else if(items[key]=='tfidflinks') {
-			hiliteTFIDFLinks();
+			getSavedData('THRESHOLD', function(items,key) {
+				percentageThresholdEnteredByUser = items[key];
+				hiliteTFIDFLinks();
+			});
 		} else {
 			hiliteTFIDF();
 		}
 	});
+
+	
 });
 
 /**********************************************************************************************************************************/
