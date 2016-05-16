@@ -6,6 +6,7 @@ var totalNumberOfSentences = 0;
 var tfidf = {};
 var allSentences = [];
 var wordWeights = {};
+var percentageThresholdEnteredByUser;
 
 /*modified stopword list taken from Chris Buckley at http://www.lextek.com/manuals/onix/stopwords1.html*/
 /*some words removed:
@@ -338,8 +339,7 @@ function hiliteTFIDFLinks(){
 		var entry = toBeSortedScores[j];
 		scoreMatrix[entry.i][entry.k] = { score: entry.score, rank: j+1 };
 	}
-
-	var percentageThreshold = 0.3;
+	var percentageThreshold = percentageThresholdEnteredByUser ? percentageThresholdEnteredByUser/100 : 0.3;
 	var rankLimit = Math.ceil(percentageThreshold * toBeSortedScores.length);
 
 	document.getElementById('averagescore').innerHTML="Percent highlighted: "+(percentageThreshold*100)+"%";
@@ -414,7 +414,10 @@ function getTitleWords() {
 function getMetaDescription() {
 	var metadesc = document.getElementsByName('description')[0].getAttribute('content');
 	var althead = document.querySelector('meta[itemprop="alternativeHeadline"]').getAttribute('content');
-	var imagealt = document.querySelector('meta[property="twitter:image:alt"]').getAttribute('content');
+	var imagealt="";
+	if (document.querySelector('meta[property="twitter:image:alt"]') != null) {
+		imagealt = document.querySelector('meta[property="twitter:image:alt"]').getAttribute('content');
+	}
 	var metaWords = (metadesc+" "+althead+" "+imagealt).toLowerCase().split(' ');
 	return metaWords;
 }
@@ -441,8 +444,8 @@ showScoreTooltip = function() {
     tooltip.style.position='fixed';
     tooltip.style.width="220px";
     tooltip.style.height="170px";
-    tooltip.style.right="10px";
-    tooltip.style.top="150px";
+    tooltip.style.right="1%";
+    tooltip.style.top="25%";
     tooltip.style.padding = "10px";
     tooltip.style.backgroundColor="black";
     tooltip.style.opacity = '0.8';
@@ -450,7 +453,7 @@ showScoreTooltip = function() {
     tooltip.style.fontSize = '14px';
     tooltip.style.zIndex = '1000000';
     tooltip.style.color = 'white';
-    document.body.appendChild(tooltip);
+    document.getElementById("main").appendChild(tooltip);
     tooltip.innerHTML = '<h2>Sentence score stats</h2>\
     <br>\
     <div>Hover over a sentence to see it\'s score</div>\
@@ -562,11 +565,16 @@ httpGet(categoryUrl,null,function() {
 		} else if(items[key]=='tfidf2') {
 			hiliteTFIDF();
 		} else if(items[key]=='tfidflinks') {
-			hiliteTFIDFLinks();
+			getSavedData('THRESHOLD', function(items,key) {
+				percentageThresholdEnteredByUser = items[key];
+				hiliteTFIDFLinks();
+			});
 		} else {
 			hiliteTFIDF();
 		}
 	});
+
+	
 });
 
 /**********************************************************************************************************************************/
@@ -2241,14 +2249,14 @@ function getTweets(keywords, title, top3) {
 	console.log("search words is: " +search_words);
 	search_words = search_words.splice(0,3);
 	//var query = search_words.join(' ');
-	var query = stripSent(search_words.join(' OR '),false,true);
-	query = query.replace(/ or /g,' OR ');
+	var query = stripSent(search_words.join(' AND '),false,true);
+	query = query.replace(/ and /gi,' ');
 	console.log("The FINAL query is "+query);
 	// search_words = search_words.splice(0,2);
 	// var query = search_words.join(' AND ');
 	var params = {
     	q: query,
-    	result_type: "popular",
+    	result_type: 'mixed',
     	count: 100,
     	lang: 'en'
 	};
@@ -2270,11 +2278,9 @@ function getTweets(keywords, title, top3) {
 	    		for (var j = tweets.length - 1; j >= 0; j--) {
 	    			var t = tweets[j].text;
 	    			var d = tweets[j].created_at;
-	    			var url = t.match(/http[^ ]+/gi);
-	    			if (url) {
-	    				url = url[url.length-1];	
-	    			}
-	    			var user = tweets[j]["user"]["name"];
+	    			var tweet_id = tweets[j]["id_str"];
+	    			var user = tweets[j]["user"]["screen_name"];
+	    			var url = "https://twitter.com/".concat(user).concat("/status/").concat(tweet_id);
 	    			
 	    			//strip tweet down to just text (no mentions, no retweets, no hashtags)
 	    			t = t.replace(/[@#][^ ]+|http[^ ]+|RT\s/gi,'');
@@ -2284,30 +2290,30 @@ function getTweets(keywords, title, top3) {
 	    			
 	    			d = d.replace(/\d\d:\d\d:\d\d \+\d\d\d\d\s/, '');
 
-	    			all_tweets.push([t,d,url,user]);
+	    			all_tweets.push([t,d,url,"@".concat(user)]);
 	    		}
 	    		console.log("fetched the tweets, they are: ");
 	    		console.log(all_tweets);
-	    		if(all_tweets.length > 0) {
-	    			var tweets = document.createElement('div');
-				    tweets.id="tweets";
-				    tweets.style.position='fixed';
-				    tweets.style["overflow"]='scroll';
-				    tweets.style.width="220px";
-				    tweets.style.height="300px";
-				    tweets.style.right="10px";
-				    tweets.style.top="350px";
-				    tweets.style.padding = "10px";
-				    tweets.style.backgroundColor="black";
-				    tweets.style.fontFamily = 'sans-serif';
-				    tweets.style.fontSize = '14px';
-				    tweets.style.zIndex = '1000000';
-				    tweets.style.color = 'white';
-				    tweets.style["border-radius"] ='5px';
-				    document.body.appendChild(tweets);
-				    tweets.innerHTML += '<h2>Twitter Feed</h2>\
+	    		var tweets = document.createElement('div');
+				tweets.id="tweets";
+				tweets.style.position='fixed';
+				tweets.style["overflow"]='scroll';
+				tweets.style.width="220px";
+				tweets.style.height="250px";
+				tweets.style.right="1%";
+				tweets.style.top="55%";
+				tweets.style.padding = "10px";
+				tweets.style.backgroundColor="black";
+				tweets.style.fontFamily = 'sans-serif';
+				tweets.style.fontSize = '14px';
+				tweets.style.zIndex = '1000000';
+				tweets.style.color = 'white';
+				tweets.style["border-radius"] ='5px';
+				document.getElementById("main").appendChild(tweets);
+				tweets.innerHTML += '<h2>Twitter Feed</h2>\
 				    <br />'
-				    for(var i=0;i<all_tweets.length;i++) {
+				if(all_tweets.length > 0) {
+				    for(var i=all_tweets.length-1;i>0;i--) {
 				    	tweets.innerHTML+='<div class="alltweets">\
 				    	<div class="date">'+all_tweets[i][1]+'</div>\
 				    	<div class="user">'+all_tweets[i][3]+'</div>\
@@ -2319,8 +2325,27 @@ function getTweets(keywords, title, top3) {
 						}
 						tweets.innerHTML+='</div><br /><br />';
 					}
-
 	    		}
+	    		else {
+	    			tweets.innerHTML+='Sorry, we couldn\'t find any recent tweets related to this article. To see some older results, click below!';
+	    			tweets.innerHTML+= '<br /><br />';
+	    		}
+
+	    		var oldTweets = document.createElement("div");
+					oldTweets.id="oldTweetsButton";
+				    oldTweets.style.backgroundColor='#1da1f2';
+				    oldTweets.style.color = 'white';
+				    oldTweets.style["border-radius"] ='5px';
+				    oldTweets.style["text-align"] = "center";
+				    oldTweets.style.padding = "10px";
+				    oldTweets.style["margin"] = "auto";
+
+				    
+				    var newQ = query.replace(/\s+/gi, '%20');
+				    var webSearchURL = "<a target=\"_blank\" style=\"color:white\" href =".concat("\"https://twitter.com/search?q=").concat(newQ).concat("&lang=en\">Click here for more tweets!</a>");
+				    oldTweets.innerHTML = webSearchURL;
+				    tweets.appendChild(oldTweets);
+				    tweets.innerHTML+='<br /><br />';
 	    	}
 	    },
 	    true

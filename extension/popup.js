@@ -6,19 +6,32 @@ function setupChoiceController() {
 			document.getElementById('tfidf2').checked = true;
 		}
 	});
+    getSavedData('THRESHOLD',function(items,key) {
+        if(items!==null && typeof items[key]!=='undefined') {
+            document.getElementById('thresholdinput').value = items[key];
+        } else {
+            document.getElementById('thresholdinput').value = 30;
+        }
+    });
 	// Inline functions like onclick aren't allowed.
 	document.addEventListener('click',function() {
 		var target = event.target;
 		if(hasClass(target,'save-button')) {
+            saveThresholdPercentage();
 			changeChoice();
+
 		}
 	});
+}
+
+function saveThresholdPercentage() {
+    var checkedItem = document.getElementById("thresholdinput");
+    setSavedData('THRESHOLD',checkedItem.value);
 }
 
 function changeChoice() {
 	var checkedItem = document.querySelector('input[name="method"]:checked');
 	setSavedData('METHOD',checkedItem.value);
-	debugger;
 	chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
     });
