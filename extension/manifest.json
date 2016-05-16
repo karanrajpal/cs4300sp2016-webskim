@@ -3,7 +3,7 @@
 
   "name": "WebSkim",
   "description": "WebSkim highlights pages for you automatically using Information Retrieval and Machine Learning",
-  "version": "1.0.4",
+  "version": "1.0.5",
 
   "browser_action": {
     "default_icon": "ws.png",
